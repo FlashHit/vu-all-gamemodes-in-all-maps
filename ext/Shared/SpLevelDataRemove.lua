@@ -1,5 +1,4 @@
 require '__shared/SpLevelApprovedWorldPartList'
-require '__shared/Kaffarov_logic'
 
 Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through every single partition so, if there is an instance in one of them we want to change, we can do so.
 

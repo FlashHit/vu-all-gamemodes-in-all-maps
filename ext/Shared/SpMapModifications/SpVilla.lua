@@ -1583,6 +1583,126 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('1D8D8B71-9303-44ED-A04D-1609BA
 
 end)
 
+-- Exclude EffectReferenceObjectData
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('CCCE4D60-1742-4EA0-A453-D39FE5F0FF4D'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_Embers_M_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('B5C6EB6A-3C59-47AB-8F88-57F2FDF8E31E'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_Embers_M_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('FAAA9A85-6FB2-4BDE-A57A-679FACC355B3'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_Embers_M_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('3F56FBB5-33C8-4596-806D-B3794E630D78'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_Embers_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('3C75616F-775B-4020-A487-24AF2CB609F0'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_Fire_FollowRoof_M_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('8D49DBBE-ACE5-4F0D-81AC-0F66B9F72B25'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('BA127C05-07AB-4C1F-9D9D-638F3A6EBE57'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('0F26CFCA-3A90-429C-AFE0-98B52A64FE5A'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('83954463-129C-4510-B515-D720E5D18187'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('328E9788-0328-46F3-9087-39A05D8A3736'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('887D0A41-A1EC-4BFC-B4BD-A60A9B013F2F'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('F31C4365-1355-4185-8FB7-50339A1AB421'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('84C61A32-F725-4BCA-AE28-C517FFBA76D7'), function(instance)
+
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	--print('FX_Amb_Generic_BurningPaper_S_01...')
+
+end)
+
+
 -- Improve the visual environment -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('1DF4DCD7-880C-4C5A-B3E7-6411337F4572'), function(instance)

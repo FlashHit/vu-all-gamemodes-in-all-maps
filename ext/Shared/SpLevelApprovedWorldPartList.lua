@@ -638,9 +638,11 @@ approvedWorldPartRefGuids = {
     'CC5F35BF-3220-4A6B-B4FD-F400A4135400', -- Sound
     'B9429E26-4434-486E-985C-DEA17A870106', -- Sound_Schematic
     '5100BCA5-5A27-42E5-9EA4-3EA546D374E7', -- Background_Art
-    --'A3D9981E-4EBC-4CC6-88E6-F42ABA4AC406', -- Basement_Art ---------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    'A3D9981E-4EBC-4CC6-88E6-F42ABA4AC406', -- Basement_Art
     '9313A7B9-3744-4F8C-BFFA-012792F53472', -- Basement_SND (sound)
     '83C24440-B178-44B7-9FB6-6ACC7DF475C8', -- Basement_SOUND
+	'B086DC7D-4A0F-4B50-96D5-88B7CADD0006', -- Basement_Logic
+	'459B3FD2-5A00-4FA1-8C5C-3A966FE00FD9', -- Basement_MOUT_Targets
     '8572A407-3595-41C7-9F33-89017C9CCC01', -- Blackburn_Art
     'F3742F48-1F8B-4907-AD79-22254C1090C0', -- Chopper_Art
     'E10A72D8-8AC7-4971-A9A4-BB8A71550CB8', -- Drive_Art
@@ -649,7 +651,7 @@ approvedWorldPartRefGuids = {
     'D28BECF2-4CC5-4859-8A6E-0FE33C29C592', -- Drive_PC_Art
     'BCF88E61-76DE-4A97-8DF9-74BE465385C1', -- Garden_Art
     '0C958FD2-53F9-4136-8F1E-F8EE615FB49F', -- Garden_PC_Art
-    --'4186466D-DE1E-4643-A84F-EB7153F411D9', -- GateHouse_Art --------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '4186466D-DE1E-4643-A84F-EB7153F411D9', -- GateHouse_Art
     '773A76D3-0A27-47E3-B189-E26F6B41380A', -- GateHouse_SND (sound)
     'E8118191-0818-4EA6-8F72-65954F4A76AA', -- Halo_Art
     '6814A128-9179-45CD-81C0-7F415FCA2D39', -- Halo_FX
@@ -658,7 +660,7 @@ approvedWorldPartRefGuids = {
     '18887BD0-5649-494C-9359-E83616226B38', -- PoolHouse_Art
     '0246BE9F-BDF6-4A52-909D-D28C8260605E', -- Rail_Art
     '31172FE0-4705-4DB4-AD6F-75317891F64A', -- Rail_Overgrowth
-    --'62F9D1A5-CE13-4E7E-BEBF-BAA5838808FE', -- Villa_Art ------------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '62F9D1A5-CE13-4E7E-BEBF-BAA5838808FE', -- Villa_Art
     '9FF53760-262E-4474-8E0A-BA2E8D32B87A', -- Villa_Lighting
     'A0D08ABC-2524-4783-9B0E-106E1BE3DF77', -- Villa_SOUND_Schematic
     'B12A0A29-8117-433F-AD97-98668834FD85', -- Villa_PC_Art

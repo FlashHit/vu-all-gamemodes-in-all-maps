@@ -36,7 +36,8 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
     -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
     -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
-    if (string.find(levelName, 'SP_Villa') == nil) then
+    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
+    and gameModeName ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -84,7 +85,8 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
-    if (string.find(levelName, 'SP_Villa') == nil) then
+    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
+    and gameModeName ~= 'SquadDeathMatch0' then
         return
     end
 

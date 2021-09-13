@@ -21,7 +21,8 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if (string.find(levelName, 'SP_Villa') == nil) then
+    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
+    and gameModeName ~= 'SquadDeathMatch0' then
         return
     end
 

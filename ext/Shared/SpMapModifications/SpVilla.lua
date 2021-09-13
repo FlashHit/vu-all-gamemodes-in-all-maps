@@ -1,5 +1,44 @@
 -- Courtesy of keku645
 
+----------------------
+-- Exclude WorldPartReferenceObjectData levels --
+----------------------
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('FC4BDD65-38C2-4DEE-84D9-9DA57693B8E0'), function(instance)
+    --print('Basement_SQUAD...')
+    local thisInstance = WorldPartReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('111A4662-C79E-4767-8285-80BA231E6214'), function(instance)
+    --print('Basement_SQUAD_Schematic...')
+    local thisInstance = WorldPartReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('BEF979B7-E7ED-4880-B66D-F812C0E1B9D6'), function(instance)
+    --print('Basement_VO...')
+    local thisInstance = WorldPartReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('72F17BE4-73B8-4D2B-971B-9D09698754EF'), function(instance)
+    --print('Basement_MOUT...')
+    local thisInstance = WorldPartReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('459B3FD2-5A00-4FA1-8C5C-3A966FE00FD9'), function(instance)
+    --print('Basement_MOUT_Targets...')
+    local thisInstance = WorldPartReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = false
+end)
+
 -- Remove doors, invisible walls --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('43213EF7-7041-47AD-826B-A548739EF950'), function(instance)
@@ -1823,4 +1862,51 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782
 
     --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
 
+end)
+
+-- Exclude assets
+
+-- villa_art
+Events:Subscribe('Partition:Loaded', function(partition)
+if (string.find(partition.name, 'villa_art')) then
+
+	
+ for _, instance in pairs(partition.instances) do
+
+ 	if instance.typeInfo.name == 'ReferenceObjectData' then
+	
+            local thisInstance = ReferenceObjectData(instance)
+            thisInstance:MakeWritable()
+            thisInstance.excluded = true
+            --print('ReferenceObjectData excluded YOOOOOOOOOOOOOO.')
+    end
+
+   end
+ end
+end)
+
+-- Villa
+
+-- Disable static model group
+ResourceManager:RegisterInstanceLoadHandler(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('040EA39D-A7BF-7A38-5EBF-16F473E6B0A6'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+end)
+-- Clear static model group member data array
+ResourceManager:RegisterInstanceLoadHandler(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('040EA39D-A7BF-7A38-5EBF-16F473E6B0A6'), function(instance)
+    --print('Clearing StaticModelGroupEntityData member data array...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.memberDatas:clear()
+end)
+
+--Garden_Art
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('A30ABEE4-3971-40B2-B6FD-AF6B70BDF21D'), Guid('3FC89D4E-6512-47A9-806F-EFA0EFDE3662'), function(instance)
+    --print('GardenMonument_Destruction_Prefab...')
+    local thisInstance = ReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
 end)

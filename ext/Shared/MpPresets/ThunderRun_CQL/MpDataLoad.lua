@@ -1,6 +1,13 @@
 -- Mount superbundles
 Events:Subscribe('Level:LoadResources', function()
 
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+	
+	if string.find(levelName, 'SP_Tank') == nil or gameModeName ~= 'ConquestLarge0' then
+        return
+    end
+
     print('Mounting Operation Firestorm superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/mp_012/mp_012')
 

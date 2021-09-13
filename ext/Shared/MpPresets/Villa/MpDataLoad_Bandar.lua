@@ -13,6 +13,15 @@
 -- Mount superbundles
 Events:Subscribe('Level:LoadResources', function()
 
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+	
+	if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
+    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'TankSuperiority0' then
+        return
+    end
+
+
     print('Mounting XP3 superbundle...')
     ResourceManager:MountSuperBundle('xp3chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
     print('Mounting Ziba Tower superbundle for MP logic...')

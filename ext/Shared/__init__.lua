@@ -20,8 +20,10 @@ require '__shared/MpPresets/AddVoiceOverLogic'
 
 
 -- Kaffarov's Villa
-require '__shared/MpPresets/Villa/MpDataLoad'
-require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Villa/MpDataLoad_Ziba'
+require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef_Ziba'
+require '__shared/MpPresets/Villa/MpDataLoad_Bandar'
+require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef_Bandar'
 require '__shared/MpPresets/Villa/MapModifications/_MapModificationManager'
 
 

@@ -7,6 +7,8 @@ spLevelExcludedSubWorldList = {
 	--'A200572D-46FA-4830-8994-EE0379100DD5', --Villa
 	'21758A6B-2563-4CF4-AE5E-6F515AADEE6D', --Halo
 	'6738929D-DE12-4816-AF2A-FA44FF4FFA1B', --blackburn
+
+
 }
 
 -- If you're making a map from a singleplayer or co-op terrain, often you will want to exclude an entire part of the level - also known as a SubWorld.

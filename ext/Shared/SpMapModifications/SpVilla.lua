@@ -1885,22 +1885,28 @@ if (string.find(partition.name, 'villa_art')) then
  end
 end)
 
--- Villa
 
 -- Disable static model group
+
+-- chopper
+ResourceManager:RegisterInstanceLoadHandler(Guid('547B4CC4-E654-44FC-9198-E64686EBD430'), Guid('238CCA5D-CF48-130D-DA40-5CA4EAA4A3AC'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+
+-- Villa
 ResourceManager:RegisterInstanceLoadHandler(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('040EA39D-A7BF-7A38-5EBF-16F473E6B0A6'), function(instance)
     --print('Removing StaticModelGroupEntityData...')
     local thisInstance = StaticModelGroupEntityData(instance)
     thisInstance:MakeWritable()
     thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
 end)
--- Clear static model group member data array
-ResourceManager:RegisterInstanceLoadHandler(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('040EA39D-A7BF-7A38-5EBF-16F473E6B0A6'), function(instance)
-    --print('Clearing StaticModelGroupEntityData member data array...')
-    local thisInstance = StaticModelGroupEntityData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.memberDatas:clear()
-end)
+
 
 --Garden_Art
 

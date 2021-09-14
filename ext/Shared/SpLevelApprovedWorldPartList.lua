@@ -665,5 +665,6 @@ approvedWorldPartRefGuids = {
     'A0D08ABC-2524-4783-9B0E-106E1BE3DF77', -- Villa_SOUND_Schematic
     'B12A0A29-8117-433F-AD97-98668834FD85', -- Villa_PC_Art
     'D879E38A-622C-4CA8-9440-0A96F3A1A96E', -- Villa_Background
+	'8DC3AABD-A6C4-4546-A648-40FF1DE014A8', -- Visual_Environment
 
 }

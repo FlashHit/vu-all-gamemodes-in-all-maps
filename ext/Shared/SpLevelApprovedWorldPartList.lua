@@ -666,5 +666,6 @@ approvedWorldPartRefGuids = {
     'B12A0A29-8117-433F-AD97-98668834FD85', -- Villa_PC_Art
     'D879E38A-622C-4CA8-9440-0A96F3A1A96E', -- Villa_Background
 	'8DC3AABD-A6C4-4546-A648-40FF1DE014A8', -- Visual_Environment
+	'FDBB63E5-C8D1-4167-B521-4299BAAB14A6', -- Visual_Environment_Schematic
 
 }

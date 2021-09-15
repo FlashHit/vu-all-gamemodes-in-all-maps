@@ -1744,125 +1744,102 @@ end)
 
 -- Improve the visual environment -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('1DF4DCD7-880C-4C5A-B3E7-6411337F4572'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('2222F55C-0697-45D8-B9D4-EFE75568CB0E'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('290F76F3-F04B-4C12-90E0-A025AE53E7D4'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('94EC90D6-215B-45A8-8DB4-C68F6E3BDDD5'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('2FEE3596-90FE-4C77-84E1-F587AC760B2F'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('64AA3337-575E-4663-A839-4C5F50D8D8C2'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('D225E8DD-2BEF-4101-B974-C05B41B39443'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('EE39A705-A2F4-4678-AB06-1B8293E1AEC0'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
 end)
 
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('D859BB00-521F-4AB5-9158-A2D19C7FFC8F'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('934B4C56-C2A6-490E-AB86-E636AB38CED4'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('E1D99DE3-AC0F-472A-A11B-9999A049DE3A'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('9EE2E11D-6388-45B9-A52C-EA48A9FCF18D'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData...')
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('814838A9-6164-4534-8B13-03FB0B9922F3'), Guid('B33F4AFC-6534-4716-976D-8B21C3AD17F1'), function(instance)
+    local thisInstance = AreaProximityEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.realm = 0
+	--print('Disabling AreaProximityEntityData YOOOOOOOOOOOOOOOOOOO...')
+end)
+
+-- Excluding Halo Brief
 ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('6B4A55AE-AE08-456B-9A02-4491A11EDC00'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
     local thisInstance = VisualEnvironmentReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.excluded = true
+	--print('Halo Brief excluded...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('68D18DAE-4E69-492A-A992-802F68F74857'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
+-- Excluding Halo Jump
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('2FEE3596-90FE-4C77-84E1-F587AC760B2F'), function(instance)
     local thisInstance = VisualEnvironmentReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.excluded = true
+	--print('Halo Jump excluded...')
 end)
 
+-- Excluding WhiteOut
 ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('DA77DADD-D867-473A-BCA4-1EEDA22940AB'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
     local thisInstance = VisualEnvironmentReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.excluded = true
+	--print('Halo WhiteOut excluded...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('7B81AFB6-6E56-4BBE-B803-8545185EC729'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
+-- Excluding VIlla Interior
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('68D18DAE-4E69-492A-A992-802F68F74857'), function(instance)
     local thisInstance = VisualEnvironmentReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
+    thisInstance.excluded = true
+	--print('VIlla Interior excluded...')
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('37D30DF9-7F1E-416D-A7EB-F1A8E1ADA281'), function(instance)
 
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('BC792517-E150-4DC0-96F4-1BBF4271B5D9'), function(instance)
-
-    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
-
-    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.blueprint = spLevelSkyBp
-
-    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
-
-end)
 
 -- Exclude assets
 

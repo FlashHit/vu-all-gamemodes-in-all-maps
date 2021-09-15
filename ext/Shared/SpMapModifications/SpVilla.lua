@@ -1839,6 +1839,18 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782
 	--print('VIlla Interior excluded...')
 end)
 
+-- Replacing Sunny Morning
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('290F76F3-F04B-4C12-90E0-A025AE53E7D4'), function(instance)
+
+    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
+
+    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.blueprint = spLevelSkyBp
+
+    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
+
+end)
 
 
 -- Exclude assets

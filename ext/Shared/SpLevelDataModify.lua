@@ -128,7 +128,7 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
             thisInstance:MakeWritable()
 
             -- Disable fog which comes default on some levels, such as Comrades (SP_Paris) or Thunder Run (SP_Tank)
-            thisInstance.enable = false
+            thisInstance.enable = true
 
         end
 

@@ -26,6 +26,13 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('xp2chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
     print('Mounting Ziba Tower superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.
+	print('Mounting SP Villa superbundle...')
+    ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
+	print('Mounting SP chunks superbundle...')
+    ResourceManager:MountSuperBundle('spchunks')
+	ResourceManager:MountSuperBundle('chunks0')
+	ResourceManager:MountSuperBundle('chunks1')
+	ResourceManager:MountSuperBundle('chunks2')
 
 end)
 
@@ -57,12 +64,13 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         print('Injecting MP bundles...')
         bundles = {
             'ui/flow/bundle/loadingbundlemp', 
-            'levels/xp2_skybar/xp2_skybar', 
+            'levels/xp2_skybar/xp2_skybar',
             'levels/xp2_skybar/deathmatch', 
             'levels/xp2_skybar/teamdm',
 			'levels/xp2_skybar/domination',
 			'levels/xp2_skybar/gunmaster',
 			'levels/xp2_skybar/squaddm',
+			'levels/sp_villa/sp_villa',
             bundles[1],
         }
 
@@ -131,6 +139,78 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 	print('Adding Ziba Tower Gunmaster registry...')
     local zibaGunmasterRegistry = ResourceManager:FindInstanceByGuid(Guid('06B999B3-6989-46C3-BCF3-37DEC0B7A531'), Guid('412E7620-8C4D-A090-AFF0-37057687F097'))
     ResourceManager:AddRegistry(zibaGunmasterRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding SP_Villa registry...')
+    local SP_VillaRegistry = ResourceManager:FindInstanceByGuid(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('383F2AC9-94BF-286D-587A-27594550D561'))
+    ResourceManager:AddRegistry(SP_VillaRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Background registry...')
+    local BackgroundRegistry = ResourceManager:FindInstanceByGuid(Guid('F749441A-8971-4946-B147-397CB6F1A85B'), Guid('AA481C32-952C-BE32-6F60-6D4E213250D0'))
+    ResourceManager:AddRegistry(BackgroundRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Basement registry...')
+    local BasementRegistry = ResourceManager:FindInstanceByGuid(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('44A043A8-9A9A-A65F-C1CD-9C6E189C2729'))
+    ResourceManager:AddRegistry(BasementRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Chopper registry...')
+    local ChopperRegistry = ResourceManager:FindInstanceByGuid(Guid('547B4CC4-E654-44FC-9198-E64686EBD430'), Guid('45936AC0-B0E6-9E10-D074-F1F07AD7B251'))
+    ResourceManager:AddRegistry(ChopperRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Drive registry...')
+    local DriveRegistry = ResourceManager:FindInstanceByGuid(Guid('F01F2D5B-3C51-43A9-A6C1-74FD2EC2FBF4'), Guid('E0067531-456F-9159-0035-50070FA051BA'))
+    ResourceManager:AddRegistry(DriveRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Drive_2 registry...')
+    local Drive_2Registry = ResourceManager:FindInstanceByGuid(Guid('E8D4462E-AB80-49CD-BCE3-B27DBF8278D5'), Guid('BB0547A9-23C8-F39A-3D9D-393B7227A9C9'))
+    ResourceManager:AddRegistry(Drive_2Registry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Drive_PC registry...')
+    local Drive_PCRegistry = ResourceManager:FindInstanceByGuid(Guid('635FF876-9AFB-41F7-BF2F-071FCE9A1B57'), Guid('E56CF861-F8FD-2E89-1487-78E52A236D75'))
+    ResourceManager:AddRegistry(Drive_PCRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Garden registry...')
+    local GardenRegistry = ResourceManager:FindInstanceByGuid(Guid('B82A6F46-14AD-446E-8A1E-46FB03D19610'), Guid('0CA867A4-1F8D-E99D-0D4E-763B239A74F5'))
+    ResourceManager:AddRegistry(GardenRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Garden_PC registry...')
+    local Garden_PCRegistry = ResourceManager:FindInstanceByGuid(Guid('E2FCA80C-70F1-4466-8A4D-15A5616B5F1B'), Guid('8FCEF965-FF05-6F29-82E4-89412B5DC44F'))
+    ResourceManager:AddRegistry(Garden_PCRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding GateHouse registry...')
+    local GateHouseRegistry = ResourceManager:FindInstanceByGuid(Guid('1934EC11-D3CF-41B3-939D-1E99364C1920'), Guid('9C99DF8B-B297-27AD-C644-1FA844924DF7'))
+    ResourceManager:AddRegistry(GateHouseRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Landing registry...')
+    local LandingRegistry = ResourceManager:FindInstanceByGuid(Guid('1CE226F4-17AC-4DC2-810A-E0899E22ED0B'), Guid('49C7DB9D-C2A4-DB0B-4E84-D0FE5701BA7F'))
+    ResourceManager:AddRegistry(LandingRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Poolhouse registry...')
+    local PoolhouseRegistry = ResourceManager:FindInstanceByGuid(Guid('0F934885-455D-43D4-8188-A5C387263A69'), Guid('161A4648-8B2F-F840-947A-CDE4FF2BDB5D'))
+    ResourceManager:AddRegistry(PoolhouseRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Poolhouse_Extra registry...')
+    local Poolhouse_ExtraRegistry = ResourceManager:FindInstanceByGuid(Guid('5B213131-EE0E-437A-9C9E-ED719169DDC8'), Guid('E668C95B-02FE-5142-1CA2-19B6D587638B'))
+    ResourceManager:AddRegistry(Poolhouse_ExtraRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Rail registry...')
+    local RailRegistry = ResourceManager:FindInstanceByGuid(Guid('C6753483-91D3-4718-AEAD-3E60D6074210'), Guid('7839231F-7A1F-D622-8C73-EE951B129ED0'))
+    ResourceManager:AddRegistry(RailRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding RailSUV registry...')
+    local RailSUVRegistry = ResourceManager:FindInstanceByGuid(Guid('07132115-00D5-4D91-886F-9B275021D55F'), Guid('05C82B30-EFED-EFBC-8954-338F7F62E120'))
+    ResourceManager:AddRegistry(RailSUVRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	--print('Adding Villa registry...')
+    --local VillaRegistry = ResourceManager:FindInstanceByGuid(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('2FEFEDB2-EDA4-2353-33F2-D77E57EBF5BE'))
+    --ResourceManager:AddRegistry(VillaRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Villa_Extra registry...')
+    local Villa_ExtraRegistry = ResourceManager:FindInstanceByGuid(Guid('387A11A6-2017-4C74-9509-A9EE0140B290'), Guid('C436D6F4-8874-C951-AEE3-66AC5838BAAF'))
+    ResourceManager:AddRegistry(Villa_ExtraRegistry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Villa_PC registry...')
+    local Villa_PCRegistry = ResourceManager:FindInstanceByGuid(Guid('6FF867EF-5C65-41B3-8836-2DAD7CE63522'), Guid('27A4D318-0C1B-AA64-8A84-5E4B8E125C0E'))
+    ResourceManager:AddRegistry(Villa_PCRegistry, ResourceCompartment.ResourceCompartment_Game)
 
 end)
 

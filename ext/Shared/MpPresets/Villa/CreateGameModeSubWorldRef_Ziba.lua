@@ -31,6 +31,8 @@ Events:Subscribe('Partition:Loaded', function(partition)
     -- Deathmatch --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     local zibaDeathmatchSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('2DF41167-0BAB-11E1-AA4E-EFBA5D767A10'), Guid('E031587A-9C68-4A85-A05E-204F6C8122DA')))
+	
+	
     -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
     -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
     -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
@@ -41,6 +43,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     local spLevelData = LevelData(partition.primaryInstance)
     spLevelData:MakeWritable()
     spLevelData.objects:add(zibaDeathmatchSubWorldReferenceObjectData)
+
 
 end)
 

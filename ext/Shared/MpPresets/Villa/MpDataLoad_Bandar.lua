@@ -75,7 +75,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/xp3_desert/rushlarge0',
 			'levels/xp3_desert/squadrush0',
 			'levels/xp3_desert/tanksuperiority',
-			'levels/sp_villa/sp_villa',
+
             bundles[1],
         }
 

@@ -70,7 +70,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/xp2_skybar/domination',
 			'levels/xp2_skybar/gunmaster',
 			'levels/xp2_skybar/squaddm',
-			'levels/sp_villa/sp_villa',
             bundles[1],
         }
 

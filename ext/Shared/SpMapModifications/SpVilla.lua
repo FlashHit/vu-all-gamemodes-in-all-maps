@@ -1,11 +1,56 @@
 -- Courtesy of keku645
 
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('59B72028-B735-4DD5-BA3A-3586F91BD4DB'), function(instance)
+    print('Enabling static Enlighten data...')
+    local thisInstance = StaticEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enable = true
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('623975E7-E434-447F-8FBB-A6262DD1E9C7'), Guid('BD24B3F3-E185-466C-A73F-3D93EA7CCD11'), function(instance)
+    print('DynamicEnlightenEntityData disabled...')
+    local thisInstance = DynamicEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+	thisInstance.enable = false
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('2FFEA4C0-B08F-4226-87C5-D741C0D7A472'), Guid('A0CD8029-297A-459C-A377-B1B521C5C3B9'), function(instance)
+    print('DynamicEnlightenEntityData disabled...')
+    local thisInstance = DynamicEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enable = false
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('4B11EEBB-74A9-4E3E-B289-5B8B37C693F6'), Guid('E9C44D41-33BA-4467-990E-10118B0CC428'), function(instance)
+    print('DynamicEnlightenEntityData disabled...')
+    local thisInstance = DynamicEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enable = false
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('9487719F-DAAE-429A-A849-A124C17548DB'), Guid('A49D70CF-780F-4872-A00F-9092098E51F9'), function(instance)
+    print('DynamicEnlightenEntityData disabled...')
+    local thisInstance = DynamicEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enable = false
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('CA392F7F-2370-4A92-8126-47871FD8D94C'), Guid('C7C9D442-46C2-4EBE-8949-BB9F651A4B11'), function(instance)
+    print('DynamicEnlightenEntityData disabled...')
+    local thisInstance = DynamicEnlightenEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enable = false
+end)
+
+
 ----------------------
 -- Exclude WorldPartReferenceObjectData levels --
 ----------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('FC4BDD65-38C2-4DEE-84D9-9DA57693B8E0'), function(instance)
-    --print('Basement_SQUAD...')
+    --print('Basement_SQUAD ...')
     local thisInstance = WorldPartReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.excluded = true

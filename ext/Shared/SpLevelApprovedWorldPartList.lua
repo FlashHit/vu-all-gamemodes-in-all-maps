@@ -632,6 +632,7 @@ approvedWorldPartRefGuids = {
 
     -- Kaffarov SP_Villa ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'A96DC518-E143-EDFC-DCAC-897405F69C89', -- Default (terrain)
+	'12DEA66F-8102-AA98-B76E-7B7BC4C10C81', -- Default_schematic (terrain)
     '3BE3A922-89A2-4EFD-8564-7456177A666D', -- Overgrowth
     'BD91043F-5A1F-4F0F-98DA-95619FBB9DC8', -- FX
     '98FBEC86-0C3B-4876-8BEF-0072CFCBF24F', -- Underground
@@ -667,5 +668,10 @@ approvedWorldPartRefGuids = {
     'D879E38A-622C-4CA8-9440-0A96F3A1A96E', -- Villa_Background
 	'8DC3AABD-A6C4-4546-A648-40FF1DE014A8', -- Visual_Environment
 	'FDBB63E5-C8D1-4167-B521-4299BAAB14A6', -- Visual_Environment_Schematic
+	'E598A17F-2C99-4A9E-B0E6-1996A11A8934', -- Lightmap_01_L
+    '57F4BD2E-DC3A-4E52-9D59-4F4C7A9040E4', -- Lightmap_02_L
+    '611D2D74-B014-46FD-9F74-A20624EA8E56', -- Lightmap_03_L
+	'68C1FC16-F090-4E32-BB75-250AB90EAFA6', -- Lightmap_Cutscene01_L
+	'5F333210-27DB-49B6-8370-3D345D82A6DB', -- Lightmap_Cutscene02_L
 
 }

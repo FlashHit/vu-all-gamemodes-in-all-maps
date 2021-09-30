@@ -9,7 +9,13 @@
 -- This sounds complicated, but is remarkably easy (I know, the simplicity of it got me the first time: I massively overcomplicated it).
 -- Again, instructions for how to do this are annotated below. Message SassythSasqutch#9081 on Discord with any questions. Literally anything. Please speak to me.
 
+
+---------------------
+---Air Superiority---
+---------------------
+
 Events:Subscribe('Partition:Loaded', function(partition)
+
 
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
@@ -21,28 +27,94 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
-    and gameModeName ~= 'SquadDeathMatch0' then
+    if string.find(levelName, 'XP2_Skybar') == nil or gameModeName ~= 'AirSuperiority0' then
         return
     end
 
     -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
-
-    -- Deathmatch --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    local zibaDeathmatchSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('2DF41167-0BAB-11E1-AA4E-EFBA5D767A10'), Guid('E031587A-9C68-4A85-A05E-204F6C8122DA')))
 	
+----------------------
+
+    local NebandanASSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('C4A49551-19D4-11E2-A0B4-E3BFB6B30185'), Guid('90122F63-A2BA-486D-BE53-DA5804FFF265')))
 	
-    -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
-    -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
-    -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
-    -- I copied the partition and instance GUIDs and pasted them above, as you can see.
-    -- Of course, you will need to find your own. You can use the exact same method.
 
     -- Add to LevelData 'Objects' array
     local spLevelData = LevelData(partition.primaryInstance)
     spLevelData:MakeWritable()
-    spLevelData.objects:add(zibaDeathmatchSubWorldReferenceObjectData)
+    spLevelData.objects:add(NebandanASSubWorldReferenceObjectData)
+	--print('Nebandan AS SubWorldReferenceObjectData added')
+
+end)
+
+----------------
+---Squad Rush---
+----------------
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
+    -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
+    if string.find(levelName, 'XP2_Skybar') == nil or gameModeName ~= 'SquadRush0' then
+        return
+    end
+
+    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
+	
+----------------------
+
+    local ShieldSRSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('1248DAFC-BAEF-46B0-95E9-4B38A0BF2F2E')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(ShieldSRSubWorldReferenceObjectData)
+	--print('Shield Squad Rush SubWorldReferenceObjectData added')
+
+end)
+
+--------------------
+--Capture The Flag--
+--------------------
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
+    -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
+    if string.find(levelName, 'XP2_Skybar') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
+
+    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
+	
+----------------------
+
+    local NebandanASSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('C4A49551-19D4-11E2-A0B4-E3BFB6B30185'), Guid('76FA4875-2B90-4922-A22E-17CF7AEB69B1')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(NebandanASSubWorldReferenceObjectData)
+	--print('Nebandan CTF SubWorldReferenceObjectData added')
 
 end)
 

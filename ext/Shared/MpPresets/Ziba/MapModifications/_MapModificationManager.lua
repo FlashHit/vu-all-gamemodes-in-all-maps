@@ -8,13 +8,15 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Kaffarov's Villa
-    if (string.find(levelName, 'SP_Villa') == nil) then
+    if (string.find(levelName, 'XP2_Skybar') == nil) then
         return
     end
 
     print('Initialising default map modification scripts...')
 
-    require '__shared/MpPresets/Villa/MapModifications/MapModifications_Villa_Ziba'
+    require '__shared/MpPresets/Ziba/MapModifications/AirSuperiority'
+	require '__shared/MpPresets/Ziba/MapModifications/SquadRush'
+	require '__shared/MpPresets/Ziba/MapModifications/CaptureTheFlag'
 
 end)
 

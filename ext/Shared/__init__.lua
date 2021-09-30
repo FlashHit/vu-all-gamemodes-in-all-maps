@@ -26,11 +26,22 @@ require '__shared/MpPresets/Villa/MpDataLoad_Bandar'
 require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef_Bandar'
 require '__shared/MpPresets/Villa/MapModifications/_MapModificationManager'
 
+-- Rock and a Hard Place 
+require '__shared/MpPresets/Valley/MpDataLoad_Shield'
+require '__shared/MpPresets/Valley/CreateGameModeSubWorldRef_Shield'
+require '__shared/MpPresets/Valley/MapModifications/_MapModificationManager'
+
 
 -- Thunder Run
 require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'
 require '__shared/MpPresets/ThunderRun_CQL/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/ThunderRun_CQL/MapModifications/_MapModificationManager'
+
+
+-- Ziba
+require '__shared/MpPresets/Ziba/MpDataLoad'
+require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
 
 -- Print every bundle that is loaded.
 Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)

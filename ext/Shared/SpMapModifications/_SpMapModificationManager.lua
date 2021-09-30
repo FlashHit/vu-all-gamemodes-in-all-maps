@@ -9,3 +9,4 @@
 -- Allows the Basement_Logic WorldPartData to be loaded for basement lights. Thanks to keku645.
 
 require '__shared/SpMapModifications/SpVilla'
+require '__shared/SpMapModifications/SpValley'

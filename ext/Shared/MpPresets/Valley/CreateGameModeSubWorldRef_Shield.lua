@@ -21,18 +21,16 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
-    and gameModeName ~= 'SquadDeathMatch0' then
+    if string.find(levelName, 'SP_Valley') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
+    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 
     -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
 
-    -- Deathmatch --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -- CONQUEST --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    local zibaDeathmatchSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('2DF41167-0BAB-11E1-AA4E-EFBA5D767A10'), Guid('E031587A-9C68-4A85-A05E-204F6C8122DA')))
-	
-	
+    local ShieldCQSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('8DA44181-5029-48BA-B28A-F9C4563EA353')))
     -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
     -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
     -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
@@ -42,9 +40,38 @@ Events:Subscribe('Partition:Loaded', function(partition)
     -- Add to LevelData 'Objects' array
     local spLevelData = LevelData(partition.primaryInstance)
     spLevelData:MakeWritable()
-    spLevelData.objects:add(zibaDeathmatchSubWorldReferenceObjectData)
+    spLevelData.objects:add(ShieldCQSubWorldReferenceObjectData)
+	
+	--DEATHMATCH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    local ShieldTDMSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('B2E9ABCA-4FAD-4F52-B44A-133B62E01780')))
+    -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
+    -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
+    -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
+    -- I copied the partition and instance GUIDs and pasted them above, as you can see.
+    -- Of course, you will need to find your own. You can use the exact same method.
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(ShieldTDMSubWorldReferenceObjectData)
+	
+	--RUSH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    local ShieldRushSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('1248DAFC-BAEF-46B0-95E9-4B38A0BF2F2E')))
+    -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
+    -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
+    -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
+    -- I copied the partition and instance GUIDs and pasted them above, as you can see.
+    -- Of course, you will need to find your own. You can use the exact same method.
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(ShieldRushSubWorldReferenceObjectData)
 
 end)
+
 
 -- That's it. Your preset is ready. Load the singleplayer or COOP map you made it for in the right gamemode, and it 'should' work.
 -- I put 'should' in inverted commas bc I know these things never work first time. Message me if you need a hand.

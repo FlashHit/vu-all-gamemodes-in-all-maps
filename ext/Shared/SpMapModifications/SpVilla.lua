@@ -1,13 +1,143 @@
 -- Courtesy of keku645
 
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('59B72028-B735-4DD5-BA3A-3586F91BD4DB'), function(instance)
-    print('Enabling static Enlighten data...')
-    local thisInstance = StaticEnlightenEntityData(instance)
+--[[ResourceManager:RegisterInstanceLoadHandler(Guid('EA74D798-2116-A15A-8BD8-6E900C5712F0'), Guid('EA74D798-2116-A15A-8BD8-6E900C5712F0'), function(instance)
+    
+    local thisInstance = TextureAsset(instance)
     thisInstance:MakeWritable()
-    thisInstance.enable = true
+    thisInstance.name = 'levels/xp2_skybar/lighting/ed_xp2_skybar_skyvisibilitytexture'
+
+    print('TextureAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
 
 end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('6D552025-6104-E497-FA56-A9BE4FAB6DCD'), Guid('6D552025-6104-E497-FA56-A9BE4FAB6DCD'), function(instance)
+    
+    local thisInstance = TextureAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.name = 'levels/xp2_skybar/lighting/ed_xp2_skybar_skyvisibilitytexture'
+
+    print('TextureAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('7B9E8337-0C23-C2C8-D349-80D082EABCBA'), Guid('7B9E8337-0C23-C2C8-D349-80D082EABCBA'), function(instance)
+    
+    local thisInstance = TextureAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.name = 'levels/xp2_skybar/lighting/ed_xp2_skybar_skyvisibilitytexture'
+
+    print('TextureAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('B26E0930-7060-2C27-829C-3665049A3FF2'), Guid('B26E0930-7060-2C27-829C-3665049A3FF2'), function(instance)
+    
+    local thisInstance = TextureAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.name = 'levels/xp2_skybar/lighting/ed_xp2_skybar_skyvisibilitytexture'
+
+    print('TextureAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('B9ED8F70-B8ED-CAD7-6C24-B43AB3188067'), Guid('B9ED8F70-B8ED-CAD7-6C24-B43AB3188067'), function(instance)
+    
+    local thisInstance = TextureAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.name = 'levels/xp2_skybar/lighting/ed_xp2_skybar_skyvisibilitytexture'
+
+    print('TextureAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('FB63DF90-77BA-11E0-B777-ABBB22EDAF1F'), Guid('9C8333BD-DD6F-574F-311C-3560C7B2E76C'), function(instance)
+    
+    local thisInstance = EnlightenDataAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.skyVisibilityTexture = nil
+
+    print('EnlightenDataAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('FA55B4F5-A0AE-11E0-B3EE-E45AC39AAB38'), Guid('0CC114BC-986F-D132-7882-C061DDD8168F'), function(instance)
+    
+    local thisInstance = EnlightenDataAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.skyVisibilityTexture = nil
+
+    print('EnlightenDataAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('3BDFCBAC-DC8D-11E0-8602-80D01049BF49'), Guid('8474AC31-F673-D508-D8A9-34612EFB3D6F'), function(instance)
+    
+    local thisInstance = EnlightenDataAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.skyVisibilityTexture = nil
+
+    print('EnlightenDataAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('525093BC-DC8D-11E0-8602-80D01049BF49'), Guid('996C7A27-AAAA-E6D3-7014-D786B8832605'), function(instance)
+    
+    local thisInstance = EnlightenDataAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.skyVisibilityTexture = nil
+
+    print('EnlightenDataAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('B8BD4C07-7D4E-11E0-9E3F-B55CAF053850'), Guid('81DECCEE-36BB-ED85-3A74-46BD7E6B780F'), function(instance)
+    
+    local thisInstance = EnlightenDataAsset(instance)
+    thisInstance:MakeWritable()
+    thisInstance.skyVisibilityTexture = nil
+
+    print('EnlightenDataAsset replaced. YOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+
+end)]]
+
+
+
+--[[ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('290F76F3-F04B-4C12-90E0-A025AE53E7D4'), function(instance)
+
+    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('114513D9-B27E-4BAA-9385-CA8132CD576B'), Guid('6688B779-DA54-4251-949B-A995A7F673F5'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
+
+    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.blueprint = spLevelSkyBp
+
+    --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('CA136457-9600-41EF-B9F2-934B791656D9'), function(instance)
+
+    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('114513D9-B27E-4BAA-9385-CA8132CD576B'), Guid('6688B779-DA54-4251-949B-A995A7F673F5'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
+
+    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.blueprint = spLevelSkyBp
+
+    print('SP level sky loaded.')
+
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('59B72028-B735-4DD5-BA3A-3586F91BD4DB'), function(instance)
+
+    local villaEnlightenData = StaticEnlightenData(ResourceManager:FindInstanceByGuid(Guid('DEE97758-572B-11E1-B73C-E86324471A13'), Guid('B6EAE39C-3060-3109-5D58-0D3D8329A650')))
+    local villaDynamicEnlightenData = EnlightenDataAsset(ResourceManager:FindInstanceByGuid(Guid('97F45CEF-428D-11E1-93E5-A06626FE501B'), Guid('609A7CBF-925F-A3DE-B1CE-1DF24E1F4347')))
+
+    local xp2_skybarEnlightenEntityData = StaticEnlightenEntityData(instance)
+    xp2_skybarEnlightenEntityData:MakeWritable()
+    xp2_skybarEnlightenEntityData.enlightenData = villaEnlightenData
+    xp2_skybarEnlightenEntityData.dynamicEnlightenData = villaDynamicEnlightenData
+    print('Static Lighting Replaced')
+end)]]
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('623975E7-E434-447F-8FBB-A6262DD1E9C7'), Guid('BD24B3F3-E185-466C-A73F-3D93EA7CCD11'), function(instance)
     print('DynamicEnlightenEntityData disabled...')
@@ -1884,7 +2014,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782
 	--print('VIlla Interior excluded...')
 end)
 
--- Replacing Sunny Morning
+--[[-- Replacing Sunny Morning
 ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('290F76F3-F04B-4C12-90E0-A025AE53E7D4'), function(instance)
 
     local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2259EFB0-DBF5-11E0-8D74-C56D7052CE5F'), Guid('A980E6CF-0F80-4058-8B4B-3F81B3AD8CF1'))) -- VisualEnvironmentBlueprint from the SP_Villa/Lighting/SP_010_Poolhouse_Cutscene_01 partition for the skybox
@@ -1895,7 +2025,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782
 
     --print('SKYBOX REPLACED YOOOOOOOOOOOOOO.')
 
-end)
+end)]]
 
 
 -- Exclude assets

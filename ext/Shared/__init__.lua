@@ -31,6 +31,11 @@ require '__shared/MpPresets/Valley/MpDataLoad_Shield'
 require '__shared/MpPresets/Valley/CreateGameModeSubWorldRef_Shield'
 require '__shared/MpPresets/Valley/MapModifications/_MapModificationManager'
 
+-- Going Hunting
+require '__shared/MpPresets/Carrier/MpDataLoad_Wake'
+require '__shared/MpPresets/Carrier/CreateGameModeSubWorldRef_Wake'
+require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
+
 
 -- Thunder Run
 require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'
@@ -44,7 +49,7 @@ require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
 
 -- Print every bundle that is loaded.
-Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
+--[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 
     for _, bundle in pairs(bundles) do
 
@@ -53,3 +58,11 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     end
 
 end)
+
+Hooks:Install('ResourceManager:LoadBundles', 100, function(hook, bundles, compartment)
+    local result = "compartment: "..tostring(compartment).."\nbundles:"
+    for _,bundle in pairs(bundles) do
+        result = result.."\n"..bundle
+    end
+    print(result)
+end)]]

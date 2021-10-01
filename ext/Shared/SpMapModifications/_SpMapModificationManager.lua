@@ -10,3 +10,4 @@
 
 require '__shared/SpMapModifications/SpVilla'
 require '__shared/SpMapModifications/SpValley'
+require '__shared/SpMapModifications/SpCarrier'

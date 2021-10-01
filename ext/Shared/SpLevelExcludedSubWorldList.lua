@@ -43,6 +43,20 @@ spLevelExcludedSubWorldList = {
 	'E08E31DB-93A5-4CD4-B352-AD9F43C2C60C', --ValleyJet_EndScene]]
 }
 
+--Going Hunting
+spLevelExcludedSubWorldList = {
+    '43FC502F-D96E-4D1A-A74D-517B68135794', --ParticleClouds
+	'966EA326-20EF-4C37-A48A-6D73287D8EAE', --ART_DogfightPartTwo_Backdrop
+	'7729AA6C-0037-49DA-8B19-0DD583B4D3FD', --Area_Highway_Of_Death
+	'9F88CE2A-DCF0-470B-A273-4ECFB906327F', --Area_Dogfight_1
+	'423E6E1E-99BD-46CE-8BA6-1FAD037F5F5F', --Area_Dogfight_2
+	'7B1C3B14-0587-4DDB-B418-0BF52D6632D3', --Area_Going_Home
+	'CD946615-3733-4D58-82BB-9ED1545109EB', --CarrierStart_playerAndWingmanAnimations
+	'F815FFBF-9EF4-41B4-BB4D-1E727D8ECFD2', --DogfightPartOne_Backdrop
+	'966EA326-20EF-4C37-A48A-6D73287D8EAE', --ART_DogfightPartTwo_Backdrop
+
+}
+
 -- If you're making a map from a singleplayer or co-op terrain, often you will want to exclude an entire part of the level - also known as a SubWorld.
 -- For this, you want to disable autoload for that SubWorld. The process is as follows, with SP_Villa/Halo_Backdrop as our example:
 

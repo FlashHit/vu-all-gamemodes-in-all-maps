@@ -7,45 +7,19 @@ spLevelExcludedSubWorldList = {
     'AAF5C58D-85BF-4D71-853A-8EDDDEEF6B11', --Halo_Backdrop
 	--'A200572D-46FA-4830-8994-EE0379100DD5', --Villa
 	'21758A6B-2563-4CF4-AE5E-6F515AADEE6D', --Halo
+	'AAF5C58D-85BF-4D71-853A-8EDDDEEF6B11', --Halo_Backdrop
 	'6738929D-DE12-4816-AF2A-FA44FF4FFA1B', --blackburn
 	--'F45F077C-4EB5-4054-B920-5EB1EDC630E8', --Lightmap_Cutscene01
 	--'4ADDAE84-6D5B-4943-8112-F3D92121D71D', --Lightmap_Cutscene02
 	--'A5F8D104-76AA-434B-8489-DC194B3C273B', --Lightmap_01
 	--'F277F47D-A4A1-4957-9290-DD087D5B7853', --Lightmap_02
 	--'9366E540-4967-4F80-99BB-15090429BF33', --Lightmap_03
-}
-
---Rock and a Hard Place
-spLevelExcludedSubWorldList = {
-    --[['80357DAD-E965-4C3D-827D-E6121769A593', --Airdrop
-	'89278D98-37FA-42A7-B497-2BCC79F60289', --Forest
-	'0C32AA35-A62C-4D8F-9B9E-85897B754C8D', --Valley
-	'7F38DD95-C788-4649-BD23-EEAE7A861F44', --Ridge
-	'BD508EE7-32E8-4B5A-9DA8-4F6E8E7BE82E', --Hillside
-	'8594329A-6E2B-4287-91FB-CA77672A9D9C', --BriefingOnHill
-	'B970446C-BEB2-41AE-A4C2-745488BFF9BC', --AmbientWar
-	'2F978B5E-C11D-4ADC-8456-4A6D00CE7708', --ForestArt
-	'4FF8B7AD-BDF2-4238-9BA0-7AA2C5F08C58', --ValleyArt
-	'17BED6A4-D249-4616-A068-F0872B82B3D2', --RunDownHill
-	'10B7653E-10AC-411D-8EC6-7E2F06C6B9AC', --ValleyField1
-	'A984D2A2-ACDF-4E49-8079-0E9E9869DFF3', --ValleyField2
-	'EA29CB2D-B5C8-4C65-A3D7-28ED2394BC76', --ValleyTankBriefing
-	'D1D07F09-0513-43CE-AD50-61F5B62C7DE6', --ValleyTankBattle
-	'45FD4F98-109D-4138-9CEA-1D9560AF2E1B', --ValleyArtilleryCamp
-	'8EB8E075-05D7-4A0C-9C69-48AC9F14B8D0', --ValleyAdvanceToBridge
-	'06F3E7A5-0817-42F4-B48C-3CD3547B9F1E', --ValleyJetBriefing
-	'CD426964-4A5B-45BC-80A7-A74FA859E412', --ValleyJet
-	'1F0CE6CB-ABDD-4711-BC0E-E20EC242BA0E', --Zone1
-	'C61AAECD-28D2-410F-B27B-674723BDE7D5', --Zone2
-	'5176E28F-7A3E-4A03-9394-EB41F3AC9B1B', --Zone3
-	'C840B6DD-D4C1-4F64-935D-A6A929F77FD5', --Zone4
-	'A3E9A576-47E6-41D4-BE7B-00A8D58C9A0B', --Zone5
-	'E08E31DB-93A5-4CD4-B352-AD9F43C2C60C', --ValleyJet_EndScene]]
-}
-
+	
+	
+--------------------------------------------------------------------------
 --Going Hunting
-spLevelExcludedSubWorldList = {
-    '43FC502F-D96E-4D1A-A74D-517B68135794', --ParticleClouds
+--------------------------------------------------------------------------
+'43FC502F-D96E-4D1A-A74D-517B68135794', --ParticleClouds
 	'966EA326-20EF-4C37-A48A-6D73287D8EAE', --ART_DogfightPartTwo_Backdrop
 	'7729AA6C-0037-49DA-8B19-0DD583B4D3FD', --Area_Highway_Of_Death
 	'9F88CE2A-DCF0-470B-A273-4ECFB906327F', --Area_Dogfight_1
@@ -54,8 +28,16 @@ spLevelExcludedSubWorldList = {
 	'CD946615-3733-4D58-82BB-9ED1545109EB', --CarrierStart_playerAndWingmanAnimations
 	'F815FFBF-9EF4-41B4-BB4D-1E727D8ECFD2', --DogfightPartOne_Backdrop
 	'966EA326-20EF-4C37-A48A-6D73287D8EAE', --ART_DogfightPartTwo_Backdrop
+	
+--------------------------------------------------------------------------
+--Aygan Village
+--------------------------------------------------------------------------
+    --'D8B1E3A9-7FF8-4700-832F-2C59BBCEC333', --AB01_GameplayCovers_Parent
+	--'335FAA07-A77B-4252-9769-62AD7F009ED3', --AB01_MortarTeam_Parent
+	--'07D92F16-A594-454C-BA16-FE22935495ED', --AB00_Vehicle_MobileAA_Parent
 
 }
+
 
 -- If you're making a map from a singleplayer or co-op terrain, often you will want to exclude an entire part of the level - also known as a SubWorld.
 -- For this, you want to disable autoload for that SubWorld. The process is as follows, with SP_Villa/Halo_Backdrop as our example:

@@ -1,4 +1,44 @@
+------------------------
+------------------------
+-----Block minimap------
+------------------------
+------------------------
 
+ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('87F977F5-CAF8-45C0-9A63-0E4D5B5DF657'), function(instance)
+
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('398AAF3B-852E-4F3B-A617-CB09B4CFD52E'), function(instance)
+
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('EA4CEFBD-DCC0-4493-84E8-6F3C6A0719CC'), function(instance)
+
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('BE8BC2F2-CA05-41AB-9B33-06BD61699129'), function(instance)
+
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
 
 -- Camera Spawn
 

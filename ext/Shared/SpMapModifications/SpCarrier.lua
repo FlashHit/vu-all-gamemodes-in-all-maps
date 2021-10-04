@@ -116,29 +116,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3C0DE194-B689-11DF-B8D0-D42ED2
 end)
 
 
--- Disable old minimap
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('12F3EC6B-A63A-4B0C-B0CA-68A4A3B13E28'), Guid('61D33A7D-6823-456D-897F-6E93FF1014CF'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' then
-        return
-    end
-
-    print('Removing minimap textures...')
-
-    local thisInstance = UILevelDescriptionComponent(instance)
-    thisInstance:MakeWritable()
-    thisInstance.minimapData.combatAreaColor = Vec4(0,0,0,0)
-    thisInstance.minimapData.detailTextureTint = Vec4(0,0,0,0)
-    thisInstance.minimapData.fadeTexture = nil
-    thisInstance.minimapData.airRadarFadeTexture = nil
-    thisInstance.minimapData.detailTexture = nil
-    thisInstance.minimapData.combatAreaMultiplyTexture = nil
-    thisInstance.minimapData.worldSize = 1.0
-    thisInstance.minimapData.useStreamingMinimap = false
-    thisInstance.minimapData.useCombatAreaTexture = false
-end)
-
-
 ------------------
 ---ReverVolumes---
 ------------------

@@ -139,6 +139,11 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6B420080-18CB-11E0-B456-BF5782
     print('Static Lighting Replaced')
 end)]]
 
+
+--------------------------------------
+--Disable DynamicEnlightenEntityData--
+--------------------------------------
+
 ResourceManager:RegisterInstanceLoadHandler(Guid('623975E7-E434-447F-8FBB-A6262DD1E9C7'), Guid('BD24B3F3-E185-466C-A73F-3D93EA7CCD11'), function(instance)
     print('DynamicEnlightenEntityData disabled...')
     local thisInstance = DynamicEnlightenEntityData(instance)
@@ -174,6 +179,37 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('CA392F7F-2370-4A92-8126-47871F
     thisInstance.enable = false
 end)
 
+------------------------
+--Disable Halo jump FX--
+------------------------
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('67600800-1168-4928-81F7-DE225918773E'), function(instance)
+    --print('EffectReferenceObjectData disabled...')
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('5E29DD4D-59F7-46E2-820B-FBA71E76FC21'), function(instance)
+    --print('EffectReferenceObjectData disabled...')
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('EAC99297-C357-470E-BC1E-6012038E8FF1'), function(instance)
+    --print('EffectReferenceObjectData disabled...')
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('5E98734A-BDB6-4585-AC71-AE56161D9F79'), Guid('065A8A47-8C16-4590-82BD-FBC9577CA7B1'), function(instance)
+    --print('EffectReferenceObjectData disabled...')
+    local thisInstance = EffectReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
 
 ----------------------
 -- Exclude WorldPartReferenceObjectData levels --

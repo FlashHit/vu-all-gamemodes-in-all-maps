@@ -36,6 +36,11 @@ require '__shared/MpPresets/Carrier/MpDataLoad_Wake'
 require '__shared/MpPresets/Carrier/CreateGameModeSubWorldRef_Wake'
 require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
 
+-- Aygan Village
+require '__shared/MpPresets/Aygan_Village/MpDataLoad_Bandar'
+require '__shared/MpPresets/Aygan_Village/CreateGameModeSubWorldRef_Bandar'
+require '__shared/MpPresets/Aygan_Village/MapModifications/_MapModificationManager'
+
 
 -- Thunder Run
 require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'

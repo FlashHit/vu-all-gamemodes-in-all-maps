@@ -29,9 +29,17 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/COOP_006/COOP_006' then
 
-        ServerUtils:SetCustomMapName('Fire from the Sky')
+        ServerUtils:SetCustomMapName('Aygan Village')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/4x5sdl4.jpg'})
 
+    end
+	
+	if gameMode == "TankSuperiority0" then
+        -- If the gameMode is "TankSuperiority0" then set the custom game mode to KOTH
+        ServerUtils:SetCustomGameModeName('King of the Hill')
+    else
+        -- If it isn't we want to clear the game mode name
+        ServerUtils:ClearCustomGameModeName()
     end
 
     -- Operation Exodus COOP_007 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -102,7 +110,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/SP_Jet/SP_Jet' then
 
-        ServerUtils:SetCustomMapName('Going Hunting')
+        ServerUtils:SetCustomMapName('Carrier')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GzPgiX9.jpg'})
 
     end
@@ -156,7 +164,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/SP_Valley/SP_Valley' then
 
-        ServerUtils:SetCustomMapName('Rock and Hard Place')
+        ServerUtils:SetCustomMapName('Valley')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GPZAhT0.jpg'})
 
     end

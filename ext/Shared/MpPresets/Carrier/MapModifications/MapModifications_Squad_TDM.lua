@@ -1,4 +1,17 @@
+------------------------
+------------------------
+-----Block minimap------
+------------------------
+------------------------
 
+ResourceManager:RegisterInstanceLoadHandler(Guid('DF4586C3-856E-4C1D-8D24-730DE460DB69'), Guid('CC26B55C-9AFB-4E2A-ACAD-B61601442329'), function(instance)
+
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
 
 -- United States ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

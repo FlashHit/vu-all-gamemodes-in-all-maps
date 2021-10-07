@@ -53,6 +53,11 @@ require '__shared/MpPresets/Ziba/MpDataLoad'
 require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
 
+-- Metro
+require '__shared/MpPresets/Metro/MpDataLoad_Ziba'
+require '__shared/MpPresets/Metro/CreateGameModeSubWorldRef_Ziba'
+require '__shared/MpPresets/Metro/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

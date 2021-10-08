@@ -58,6 +58,11 @@ require '__shared/MpPresets/Metro/MpDataLoad_Ziba'
 require '__shared/MpPresets/Metro/CreateGameModeSubWorldRef_Ziba'
 require '__shared/MpPresets/Metro/MapModifications/_MapModificationManager'
 
+-- Noshahr Canals
+require '__shared/MpPresets/Noshahr_Canals/MpDataLoad_Noshahr_Canals_Ziba'
+require '__shared/MpPresets/Noshahr_Canals/CreateGameModeSubWorldRef_Noshahr_Canals_Ziba'
+require '__shared/MpPresets/Noshahr_Canals/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

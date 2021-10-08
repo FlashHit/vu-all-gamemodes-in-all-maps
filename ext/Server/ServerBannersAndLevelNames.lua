@@ -33,14 +33,6 @@ Events:Subscribe('Level:LoadResources', function()
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/4x5sdl4.jpg'})
 
     end
-	
-	if gameMode == "TankSuperiority0" then
-        -- If the gameMode is "TankSuperiority0" then set the custom game mode to KOTH
-        ServerUtils:SetCustomGameModeName('King of the Hill')
-    else
-        -- If it isn't we want to clear the game mode name
-        ServerUtils:ClearCustomGameModeName()
-    end
 
     -- Operation Exodus COOP_007 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -1,6 +1,8 @@
 # vu-all-gamemodes-in-all-maps
 
-Modification for Battlefield 3 (using the Venice Unleashed framework) allowing singleplayer and co-op maps to be played in multiplayer with a universal solution.
+Modification for Battlefield 3 (using the Venice Unleashed framework) allowing singleplayer and co-op maps to be played in multiplayer with a universal solution, with the same solution is now possible to add any gamemode to any map, this is the purpose of this mod.
+This mod is ready to be played so unless you find any bugs it should be good to go.
+
 This is a fork from the original mod [vu-spterrains](https://github.com/SassythSasqutch/vu-spterrains) from *SassythSasqutch*:
 
 ## Maps & Gamemodes

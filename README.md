@@ -5,13 +5,14 @@
 This mod is still WIP, I'll update the mod with more gamemodes when I have time.
 
 
-| Level                      | Gamemode (as in MapList)              |
-| -------------------------- | ------------------------              |
-| Teheran Highway	         | `GunMaster0` `Domination0`            |
-| Damavand Peak	             | `GunMaster0` `Domination0`            |
-| Noshahr Canals	         | `GunMaster0` `Domination0`            |
-| Operation Metro	         | `GunMaster0` `Domination0`            |
-| Ziba Tower	             | `AirSuperiority0` `CaptureTheFlag0` `CaptureTheFlag0` `SquadRush0`|
+| Level                              | Gamemode (as in MapList)              |
+| --------------------------         | ------------------------              |
+| Teheran Highway `MP_003`	         | `GunMaster0` `Domination0`            |
+| Damavand Peak	 `MP_013`            | `GunMaster0` `Domination0`            |
+| Noshahr Canals `MP_017`	         | `GunMaster0` `Domination0`            |
+| Operation Metro `MP_Subway`	     | `GunMaster0` `Domination0`            |
+| Ziba Tower `XP2_Skybar`	         | `AirSuperiority0` `CaptureTheFlag0` `CaptureTheFlag0` `SquadRush0`|
+| Kaffarov `sp_villa`	             | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
                          
 
 More custom layouts will be made in the future.
@@ -47,31 +48,9 @@ sp_finale        -    The Great Destroyer
 
 **NOTE**: Some quirk of Frostbite or something means that this mod can't load Thunder Run (sp_tank) if Fear No Evil (sp_tank_b) is allowed to load in MP - the server loads Fear No Evil every time you put 'sp_tank' in the server MapList. A dirty fix has been implemented: *if you wish to play Fear No Evil, change line 5 in `vu-spterrains/ext/Shared/__init__.lua` to 'true'*.
 
-If you put all of the above in your MapList (in the same order), you can also use the `vu-spterrains.skipto` command whilst in game. To enable this, comment back in the 'SkipToLevel' requirements in `Server/__init__.lua` and `Client/__init__.lua`.
+## Known issues
 
-## Gamemodes - Default
-
-By default, load Team Deathmatch CQ (`TeamDeathMatchC0`) to explore. Since there will be closed doors and invisible walls in some levels, I recommend a NoClip mod, like [txt's and Powback's vu-noclip mod here](https://github.com/romunro/VU-Noclip) - press 'v', and you will be able to move anywhere you want.
-
-## Gamemodes - Freecam
-
-To use a freecam to look around, load any gamemode other than `TeamDeathMatchC0`. If the map has a custom layout (see below), don't load that gamemode either.
-
-## Gamemodes - Custom Layouts
-
-Some maps have custom layouts, making them playable for more than just exploration.
-
-| Level                      | Gamemode (as in MapList) | Description                                                                                                          |
-| -------------------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| Thunder Run `SP_Tank`      | `ConquestLarge0`         | Follows (mostly) the mission, starting in the desert and running towards Tehran. Maybe biggest CQL map in BF.        |
-
-More custom layouts will be made in the future.
-
-There are instructions for making your own custom layouts (aka 'presets') in `vu-spterrains/ext/Shared/MpPresets/Default`. If your preset works, message me and I will add it to the mod: the more, the merrier.
-
-## Other issues
-
-Many SP levels have issues with certain parts of the map (WorldPart instances, in particular), causing the server to crash. For this reason, these have been excluded. The list of approved WorldParts - including ones which should be approved, but are excluded for their problems - can be seen and edited at `vu-spterrains/ext/Shared/SpLevelApprovedWorldPartList.lua`. Operation Swordbreaker (SP_Earthquake) is a level which is particularly hurt by this. It seems like it could be a small no. of props/assets creating this issue, so at some point I will try and fix it.
+Due the lack of Rime (at the moment of writing these lines) it is not possible to replace textures, thats why there aren't those "orange lines" that shows the player where the actual OOB of the map is.
 
 ## (For map makers) Excluding SubWorlds
 

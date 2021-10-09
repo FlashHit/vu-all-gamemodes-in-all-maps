@@ -21,6 +21,15 @@ This mod is still WIP, I'll update the mod with more gamemodes when I have time.
 | Valley // `sp_valley`	         | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	         | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Aygan Village // `coop_006`	 | `ConquestSmall0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `RushLarge0` `TankSuperiority0` `SquadDeathMatch0`|
+
+
+
+
+
+## Important
+
+
+**It's mandatory to download my [CustomLevelLoader](https://github.com/keku645/CustomLevelLoader), gamemodes have been ported based on the layout of such custom maps.**
                          
 
 More custom layouts will be made in the future.

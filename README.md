@@ -1,4 +1,20 @@
-# vu-spterrains
+#vu-all-gamemodes-in-all-maps
+
+## Maps & Gamemodes
+
+This mod is still WIP, I'll update the mod with more gamemodes while I have time.
+
+
+| Level                      | Gamemode (as in MapList) |
+| -------------------------- | ------------------------ |
+| Teheran Highway	         | `GunMaster0`             |
+|                            | `Domination0`            |  
+----------------------------------------------------------
+| Damavand Peak	             |                           
+
+More custom layouts will be made in the future.
+
+There are instructions for making your own custom layouts (aka 'presets') in `vu-spterrains/ext/Shared/MpPresets/Default`. If your preset works, message me and I will add it to the mod: the more, the merrier.
 
 *Update: the mod's finished (for now). Thanks to Bree_Arnold who found the last issue.*
 

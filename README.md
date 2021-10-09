@@ -9,6 +9,9 @@ This mod is still WIP, I'll update the mod with more gamemodes when I have time.
 | -------------------------- | ------------------------              |
 | Teheran Highway	         | `GunMaster0` `Domination0`            |
 | Damavand Peak	             | `GunMaster0` `Domination0`            |
+| Noshahr Canals	         | `GunMaster0` `Domination0`            |
+| Operation Metro	         | `GunMaster0` `Domination0`            |
+| Ziba Tower	             | `AirSuperiority0` `CaptureTheFlag0` `CaptureTheFlag0` `SquadRush0`|
                          
 
 More custom layouts will be made in the future.

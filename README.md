@@ -5,10 +5,10 @@
 This mod is still WIP, I'll update the mod with more gamemodes when I have time.
 
 
-| Level                      | Gamemode (as in MapList) |
-| -------------------------- | ------------------------ |
-| Teheran Highway	         | `GunMaster0`             |
-|                            | `Domination0`            |  
+| Level                      | Gamemode (as in MapList)              |
+| -------------------------- | ------------------------              |
+| Teheran Highway	         | `GunMaster0` `Domination0`            |
+|                            |             |  
 | Damavand Peak	             |                           
                          
 

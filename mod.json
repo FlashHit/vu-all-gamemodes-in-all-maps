@@ -1,13 +1,14 @@
 {
-	"Name": "SP and Co-Op Terrains",
-	"Description": "Allows singleplayer and co-op terrains to be played in multiplayer.",
+	"Name": "All gamemodes in all maps",
+	"Description": "All gamemodes in all maps to be played in multiplayer.",
 	"Version": "1.0",
-	"Authors": "SassythSasqutch",
+	"Authors": "SassythSasqutch and Keku645",
 	"HasVeniceEXT": true,
 	"HasWebUI": false,
 	"Dependencies": {
 	},
 	"Tags": [
-        "spterrain"
+        "spterrain",
+		"more-gamemodes"
 	]
 }

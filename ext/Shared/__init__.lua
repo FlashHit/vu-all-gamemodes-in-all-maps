@@ -68,6 +68,11 @@ require '__shared/MpPresets/Damavand_Peak/MpDataLoad_Damavand_Peak_Ziba'
 require '__shared/MpPresets/Damavand_Peak/CreateGameModeSubWorldRef_Damavand_Peak_Ziba'
 require '__shared/MpPresets/Damavand_Peak/MapModifications/_MapModificationManager'
 
+-- Teheran Highway	
+require '__shared/MpPresets/Teheran/MpDataLoad_Teheran_Ziba'
+require '__shared/MpPresets/Teheran/CreateGameModeSubWorldRef_Teheran_Ziba'
+require '__shared/MpPresets/Teheran/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

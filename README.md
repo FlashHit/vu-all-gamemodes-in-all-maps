@@ -5,12 +5,12 @@
 This mod is still WIP, I'll update the mod with more gamemodes when I have time.
 
 
-| Level                              | Gamemode (as in MapList)              |
-| -------------------------- | ------------------------              |
+| Level                          | New Gamemodes (as in MapList)         |
+| --------------------------     | ------------------------              |
 | Teheran Highway // `MP_003`	 | `GunMaster0` `Domination0`            |
-| Damavand Peak	// `MP_013`    | `GunMaster0` `Domination0`            |
+| Damavand Peak	// `MP_013`      | `GunMaster0` `Domination0`            |
 | Noshahr Canals // `MP_017`	 | `GunMaster0` `Domination0`            |
-| Operation Metro // `MP_Subway`| `GunMaster0` `Domination0`            |
+| Operation Metro // `MP_Subway` | `GunMaster0` `Domination0`            |
 | Ziba Tower // `XP2_Skybar`	 | `AirSuperiority0` `CaptureTheFlag0` `CaptureTheFlag0` `SquadRush0`|
 | Kaffarov // `sp_villa`	     | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
                          

@@ -73,6 +73,11 @@ require '__shared/MpPresets/Teheran/MpDataLoad_Teheran_Ziba'
 require '__shared/MpPresets/Teheran/CreateGameModeSubWorldRef_Teheran_Ziba'
 require '__shared/MpPresets/Teheran/MapModifications/_MapModificationManager'
 
+-- Grand Bazaar
+require '__shared/MpPresets/Bazaar/MpDataLoad_Bazaar_Ziba'
+require '__shared/MpPresets/Bazaar/CreateGameModeSubWorldRef_Bazaar_Ziba'
+require '__shared/MpPresets/Bazaar/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

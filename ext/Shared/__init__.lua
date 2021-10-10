@@ -78,6 +78,11 @@ require '__shared/MpPresets/Bazaar/MpDataLoad_Bazaar_Ziba'
 require '__shared/MpPresets/Bazaar/CreateGameModeSubWorldRef_Bazaar_Ziba'
 require '__shared/MpPresets/Bazaar/MapModifications/_MapModificationManager'
 
+-- Caspian Border
+require '__shared/MpPresets/Caspian/MpDataLoad_Caspian_Ziba'
+require '__shared/MpPresets/Caspian/CreateGameModeSubWorldRef_Caspian_Ziba'
+require '__shared/MpPresets/Caspian/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

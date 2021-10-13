@@ -12,6 +12,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | --------------------------     | ------------------------              |
 | Teheran Highway // `MP_003`	 | `GunMaster0` `Domination0`            |
 | Seine Crossing // `MP_011`	 | `GunMaster0` `Domination0`            |
+| Operation Firestorm // `MP_012`	 | `GunMaster0` `Domination0`            |
 | Damavand Peak	// `MP_013`      | `GunMaster0` `Domination0`            |
 | Noshahr Canals // `MP_017`	 | `GunMaster0` `Domination0`            |
 | Operation Metro // `MP_Subway` | `GunMaster0` `Domination0`            |

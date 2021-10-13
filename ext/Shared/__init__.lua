@@ -88,6 +88,11 @@ require '__shared/MpPresets/Seine/MpDataLoad_Seine_Ziba'
 require '__shared/MpPresets/Seine/CreateGameModeSubWorldRef_Seine_Ziba'
 require '__shared/MpPresets/Seine/MapModifications/_MapModificationManager'
 
+-- Operation Firestorm
+require '__shared/MpPresets/Firestorm/MpDataLoad_Firestorm_Ziba'
+require '__shared/MpPresets/Firestorm/CreateGameModeSubWorldRef_Firestorm_Ziba'
+require '__shared/MpPresets/Firestorm/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

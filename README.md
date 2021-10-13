@@ -8,21 +8,21 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 ## Maps & Gamemodes
 
 
-| Level                          | New Gamemodes (as in MapList)         |
-| --------------------------     | ------------------------              |
-| Teheran Highway // `MP_003`	 | `GunMaster0` `Domination0`            |
-| Seine Crossing // `MP_011`	 | `GunMaster0` `Domination0`            |
+| Level                              | New Gamemodes (as in MapList)         |
+| --------------------------         | ------------------------              |
+| Teheran Highway // `MP_003`	     | `GunMaster0` `Domination0`            |
+| Seine Crossing // `MP_011`	     | `GunMaster0` `Domination0`            |
 | Operation Firestorm // `MP_012`	 | `GunMaster0` `Domination0`            |
-| Damavand Peak	// `MP_013`      | `GunMaster0` `Domination0`            |
-| Noshahr Canals // `MP_017`	 | `GunMaster0` `Domination0`            |
-| Operation Metro // `MP_Subway` | `GunMaster0` `Domination0`            |
-| Grand Bazaar // `MP_001`       | `GunMaster0` `Domination0`            |
-| Caspian Border // `MP_007`     | `GunMaster0` `Domination0`            |
-| Ziba Tower // `XP2_Skybar`	 | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
-| Kaffarov // `sp_villa`	     | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
-| Valley // `sp_valley`	         | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
-| Carrier // `sp_jet`	         | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
-| Aygan Village // `coop_006`	 | `ConquestSmall0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `RushLarge0` `TankSuperiority0` `SquadDeathMatch0`|
+| Damavand Peak	// `MP_013`          | `GunMaster0` `Domination0`            |
+| Noshahr Canals // `MP_017`	     | `GunMaster0` `Domination0`            |
+| Operation Metro // `MP_Subway`     | `GunMaster0` `Domination0`            |
+| Grand Bazaar // `MP_001`           | `GunMaster0` `Domination0`            |
+| Caspian Border // `MP_007`         | `GunMaster0` `Domination0`            |
+| Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
+| Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
+| Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
+| Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
+| Aygan Village // `coop_006`	     | `ConquestSmall0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `RushLarge0` `TankSuperiority0` `SquadDeathMatch0`|
 
 
 **This mod is still WIP, I'll update the mod with more gamemodes when I have time.**

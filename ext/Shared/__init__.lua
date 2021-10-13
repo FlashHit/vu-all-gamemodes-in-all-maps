@@ -93,6 +93,11 @@ require '__shared/MpPresets/Firestorm/MpDataLoad_Firestorm_Ziba'
 require '__shared/MpPresets/Firestorm/CreateGameModeSubWorldRef_Firestorm_Ziba'
 require '__shared/MpPresets/Firestorm/MapModifications/_MapModificationManager'
 
+-- Kharg Island
+require '__shared/MpPresets/Kharg/MpDataLoad_Kharg_Ziba'
+require '__shared/MpPresets/Kharg/CreateGameModeSubWorldRef_Kharg_Ziba'
+require '__shared/MpPresets/Kharg/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

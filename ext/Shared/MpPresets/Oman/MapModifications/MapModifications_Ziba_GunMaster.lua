@@ -1,18 +1,14 @@
+--Camera Base Spawn for Gunmaster -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
---Camera Base Spawn  for Domination ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('F96EC322-0164-4327-A58F-090A87E12D21'), function(instance) --Camera base Spawn
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('E2B8541C-5A6C-41FC-81B8-3B03E9885B50'), Guid('5CC778D8-F292-4673-BFE3-DC516FC98308'), function(instance) --Camera base Spawn
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
-
-
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprintTransform.trans = Vec3(-393.373047, 112.257629, 191.747070)
-	print('Camera base from Kharg Island Domination')
+    thisInstance.blueprintTransform.trans = Vec3(-44.793945, 63.530094, -161.475586)
+	print('Camera base from Gulf of Oman Gunmaster')
 
 end)
 
@@ -27,7 +23,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('F82320E2-7AEB-4601-8D9E-E2DBE47FA242'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018'or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002'or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -35,14 +31,14 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018'or SharedUtils:GetCurrent
     thisInstance:MakeWritable()
 
     local infSpawn1 = LinearTransform(
-        Vec3(0.999400, 0.000000, -0.034637),
+        Vec3(-0.849934, 0.000000, -0.526890),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.034637, 0.000000, 0.999400),
-Vec3(-551.121094, 94.167770, 45.263672)
+Vec3(0.526890, 0.000000, -0.849934),
+Vec3(-49.500977, 38.003712, -229.923828)
     )
 
     thisInstance.transform = infSpawn1
-	print('Spawns from Kharg Island Domination')
+	print('Spawns from Gulf of Oman Gunmaster')
 
 end)
 
@@ -50,7 +46,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('CB5B1580-A123-472B-A32D-7FE9727D6C75'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -58,10 +54,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn2 = LinearTransform(
-        Vec3(0.940715, 0.000000, -0.339198),
+        Vec3(-0.230982, 0.000000, -0.972958),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.339198, 0.000000, 0.940715),
-Vec3(-559.480469, 93.442184, 41.130859)
+Vec3(0.972958, 0.000000, -0.230982),
+Vec3(-48.576172, 38.209766, -236.595703)
     )
 
     thisInstance.transform = infSpawn2
@@ -72,7 +68,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('F138050A-19CD-4D4E-BA6D-F193A41BEE12'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -80,10 +76,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn3 = LinearTransform(
-        Vec3(0.675676, 0.000000, -0.737198),
+        Vec3(0.881623, 0.000000, 0.471955),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.737198, 0.000000, 0.675676),
-Vec3(-554.896484, 93.463722, 53.815567)
+Vec3(-0.471955, 0.000000, 0.881623),
+Vec3(-51.335938, 38.018360, -227.337891)
     )
 
     thisInstance.transform = infSpawn3
@@ -94,7 +90,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('A436F327-6DAA-4620-8CED-F2C874FA508A'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -102,10 +98,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn4 = LinearTransform(
-        Vec3(0.813010, 0.000000, -0.582250),
+        Vec3(-0.453599, 0.000000, -0.891206),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.582250, 0.000000, 0.813010),
-Vec3(-545.735352, 93.440231, 41.222656)
+Vec3(0.891206, 0.000000, -0.453599),
+Vec3(-50.017578, 38.161915, -220.840103)
     )
 
     thisInstance.transform = infSpawn4
@@ -116,7 +112,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('514DABC4-07B0-47F3-AB6E-90A1D25CF9A8'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -124,10 +120,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn5 = LinearTransform(
-       Vec3(0.018538, 0.000000, 0.999828),
+       Vec3(0.685887, 0.000000, -0.727708),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999828, 0.000000, 0.018538),
-Vec3(-540.030273, 93.438309, 53.065430)
+Vec3(0.727708, 0.000000, 0.685887),
+Vec3(-43.786133, 37.783985, -230.869141)
     )
 
     thisInstance.transform = infSpawn5
@@ -138,7 +134,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('F68CB5EA-2171-42D9-B870-8D57A8F92E53'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -146,10 +142,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn6 = LinearTransform(
-        Vec3(-0.026253, 0.000000, -0.999655),
+        Vec3(0.911811, 0.000000, -0.410611),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999655, 0.000000, -0.026253),
-Vec3(-552.329102, 94.158981, 41.200195)
+Vec3(0.410611, 0.000000, 0.911811),
+Vec3(-38.592892, 37.883598, -233.496109)
     )
 
     thisInstance.transform = infSpawn6
@@ -160,7 +156,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('2D170C53-19C8-43D7-A2DF-1070B7BEF251'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -168,10 +164,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn7 = LinearTransform(
-        Vec3(0.531688, 0.000000, -0.846940),
+        Vec3(-0.144372, 0.000000, -0.989523),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.846940, 0.000000, 0.531688),
-Vec3(-540.004883, 93.438293, 46.780273)
+Vec3(0.989523, 0.000000, -0.144372),
+Vec3(-43.606445, 38.207870, -215.426758)
     )
 
     thisInstance.transform = infSpawn7
@@ -182,7 +178,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('39247D83-D1C1-4D54-A7C0-F02DDE1FFA9D'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -190,10 +186,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn8 = LinearTransform(
-        Vec3(-0.966810, 0.000000, 0.255498),
+        Vec3(0.884518, 0.000000, -0.466506),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.255498, 0.000000, -0.966810),
-Vec3(-501.631836, 89.738098, 179.860352)
+Vec3(0.466506, 0.000000, 0.884518),
+Vec3(-25.391602, 38.483204, -267.213867)
     )
 
     thisInstance.transform = infSpawn8
@@ -204,7 +200,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('3469EC64-8B24-4301-BBA0-4D8225412CC3'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -212,10 +208,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn9 = LinearTransform(
-        Vec3(-0.956925, 0.000000, 0.290335),
+        Vec3(0.983872, 0.000000, -0.178873),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.290335, 0.000000, -0.956925),
-Vec3(-510.490479, 89.606270, 176.622055)
+Vec3(0.178873, 0.000000, 0.983872),
+Vec3(-22.516533, 38.421688, -263.037109)
     )
 
     thisInstance.transform = infSpawn9
@@ -226,7 +222,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('24E9A34E-9D23-4716-9AEE-931A4A89A996'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -234,10 +230,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn10 = LinearTransform(
-        Vec3(0.956571, 0.000000, -0.291498),
+        Vec3(0.990531, 0.000000, 0.137290),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.291498, 0.000000, 0.956571),
-Vec3(-508.826141, 89.532059, 184.525375)
+Vec3(-0.137290, 0.000000, 0.990531),
+Vec3(-18.208971, 38.562340, -257.933594)
     )
 
     thisInstance.transform = infSpawn10
@@ -248,7 +244,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('880CA1BE-E581-444B-8EB8-F3201E6F2690'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -256,10 +252,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn11 = LinearTransform(
-        Vec3(-0.769665, 0.000000, -0.638448),
+        Vec3(0.531099, 0.000000, -0.847310),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.638448, 0.000000, -0.769665),
-Vec3(-501.828735, 89.737160, 199.051666)
+Vec3(0.847310, 0.000000, 0.531099),
+Vec3(-10.833984, 36.757618, -264.296875)
     )
 
     thisInstance.transform = infSpawn11
@@ -270,7 +266,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('B5A6A1C1-1369-4350-A5A0-4286A64FBC35'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -278,10 +274,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn12 = LinearTransform(
-        Vec3(-0.965614, 0.000000, 0.259982),
+        Vec3(0.967499, 0.000000, 0.252875),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.259982, 0.000000, -0.965614),
-Vec3(-496.975586, 89.739059, 198.766602)
+Vec3(-0.252875, 0.000000, 0.967499),
+Vec3(-13.687433, 36.735317, -269.636932)
     )
 
     thisInstance.transform = infSpawn12
@@ -292,7 +288,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('1B130233-F379-4E7D-97EB-E5269586F62B'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -300,10 +296,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn13 = LinearTransform(
-        Vec3(0.186221, 0.000000, -0.982508),
+        Vec3(0.817308, 0.000000, 0.576201),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.982508, 0.000000, 0.186221),
-Vec3(-504.125977, 89.626755, 203.204102)
+Vec3(-0.576201, 0.000000, 0.817308),
+Vec3(-11.809570, 36.866016, -265.746094)
     )
 
     thisInstance.transform = infSpawn13
@@ -314,7 +310,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('EE839F9D-C153-42C3-A818-2E57BA698D52'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -322,10 +318,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn14 = LinearTransform(
-        Vec3(0.921367, 0.000000, -0.388694),
+        Vec3(-0.696401, 0.000000, -0.717653),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.388694, 0.000000, 0.921367),
-Vec3(-418.964844, 90.717697, 254.687500)
+Vec3(0.717653, 0.000000, -0.696401),
+Vec3(73.085938, 32.709820, -215.729492)
     )
 
     thisInstance.transform = infSpawn14
@@ -336,7 +332,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('4DC8902E-E01B-4AEA-9D7C-30AE6486A0A2'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -344,10 +340,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn15 = LinearTransform(
-       Vec3(0.168729, 0.000000, 0.985663),
+       Vec3(0.983702, 0.000000, 0.179809),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.985663, 0.000000, 0.168729),
-Vec3(-428.607574, 90.915863, 256.858246)
+Vec3(-0.179809, 0.000000, 0.983702),
+Vec3(82.764648, 32.711720, -216.477539)
     )
 
     thisInstance.transform = infSpawn15
@@ -358,7 +354,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('4EB47674-D451-426C-BD3F-30625C202740'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -366,10 +362,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn16 = LinearTransform(
-       Vec3(0.168729, 0.000000, 0.985663),
+        Vec3(-0.145880, 0.000000, 0.989302),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.985663, 0.000000, 0.168729),
-Vec3(-428.607574, 90.915863, 256.858246)
+Vec3(-0.989302, 0.000000, -0.145880),
+Vec3(76.750977, 36.734180, -213.500977)
     )
 
     thisInstance.transform = infSpawn16
@@ -380,7 +376,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('794B4702-E6CC-419F-8A8D-75BE1A875F97'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -388,10 +384,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn17 = LinearTransform(
-       Vec3(0.191690, 0.000000, -0.981456),
+       Vec3(0.477372, 0.000000, 0.878701),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.981456, 0.000000, 0.191690),
-Vec3(-432.276306, 91.847488, 269.999939)
+Vec3(-0.878701, 0.000000, 0.477372),
+Vec3(77.084961, 36.735157, -217.459961)
     )
 
     thisInstance.transform = infSpawn17
@@ -402,7 +398,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('6B51D955-4E17-4002-8E00-5DC76584AA17'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -410,10 +406,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn18 = LinearTransform(
-        Vec3(0.191690, 0.000000, -0.981456),
+        Vec3(0.663254, 0.000000, 0.748394),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.981456, 0.000000, 0.191690),
-Vec3(-432.276306, 91.847488, 269.999939)
+Vec3(-0.748394, 0.000000, 0.663254),
+Vec3(84.202148, 36.736134, -214.575195)
     )
 
     thisInstance.transform = infSpawn18
@@ -424,7 +420,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('E9CD4CB4-60E5-45E2-973A-526A2560EDEC'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -432,10 +428,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn19 = LinearTransform(
-       Vec3(-0.003040, 0.000000, -0.999995),
+       Vec3(0.999894, 0.000000, 0.014580),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999995, 0.000000, -0.003040),
-Vec3(-416.624084, 91.398323, 268.402313)
+Vec3(-0.014580, 0.000000, 0.999894),
+Vec3(81.061523, 37.049992, -217.866211)
     )
 
     thisInstance.transform = infSpawn19
@@ -446,7 +442,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('1A74E4D7-53FB-4763-8795-C0A8FBE4DD32'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -454,10 +450,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn20 = LinearTransform(
-        Vec3(-0.970163, 0.000000, 0.242454),
+        Vec3(-0.994787, 0.000000, -0.101972),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.242454, 0.000000, -0.970163),
-Vec3(-367.779297, 90.720505, 298.306641)
+Vec3(0.101972, 0.000000, -0.994787),
+Vec3(52.088867, 32.442188, -172.610352)
     )
 
     thisInstance.transform = infSpawn20
@@ -468,7 +464,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('C6E626E3-1FF3-4EE1-8CBB-D160860D7411'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -476,10 +472,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn21 = LinearTransform(
-       Vec3(-0.997782, 0.000000, 0.066562),
+       Vec3(-0.828039, 0.000000, 0.560670),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.066562, 0.000000, -0.997782),
-Vec3(-386.582031, 90.720505, 292.333984)
+Vec3(-0.560670, 0.000000, -0.828039),
+Vec3(56.855480, 32.450981, -173.118378)
     )
 
     thisInstance.transform = infSpawn21
@@ -490,7 +486,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('A58526F0-1B3E-41F8-B763-C33737BD636E'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -498,10 +494,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn22 = LinearTransform(
-        Vec3(-0.958131, 0.000000, 0.286329),
+        Vec3(0.999300, 0.000000, -0.037412),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.286329, 0.000000, -0.958131),
-Vec3(-386.495117, 90.720505, 283.841797)
+Vec3(0.037412, 0.000000, 0.999300),
+Vec3(61.492188, 32.442188, -182.881836)
     )
 
     thisInstance.transform = infSpawn22
@@ -512,7 +508,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('4F1BA019-AC3B-45C0-83AE-88F1F1F47F3F'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 	
@@ -520,10 +516,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn23 = LinearTransform(
-        Vec3(-0.401479, 0.000000, 0.915868),
+        Vec3(-0.626137, 0.000000, -0.779713),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.915868, 0.000000, -0.401479),
-Vec3(-392.975586, 90.720505, 293.363281)
+Vec3(0.779713, 0.000000, -0.626137),
+Vec3(57.395508, 36.464649, -180.772461)
     )
 
     thisInstance.transform = infSpawn23
@@ -534,7 +530,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('D34765A8-C891-46F6-8783-268363C09C09'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -542,10 +538,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn24 = LinearTransform(
-        Vec3(-0.401479, 0.000000, 0.915868),
+        Vec3(-0.718321, 0.000000, 0.695712),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.915868, 0.000000, -0.401479),
-Vec3(-392.975586, 90.720505, 293.363281)
+Vec3(-0.695712, 0.000000, -0.718321),
+Vec3(57.245117, 36.792194, -175.462891)
     )
 
     thisInstance.transform = infSpawn24
@@ -556,7 +552,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('21F1D498-E5EB-4738-8D91-4A4445C4D3F1'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -564,10 +560,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn25 = LinearTransform(
-        Vec3(-0.899783, 0.000000, -0.436337),
+        Vec3(-0.973093, 0.000000, -0.230412),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.436337, 0.000000, -0.899783),
-Vec3(-374.207031, 90.720505, 288.506836)
+Vec3(0.230412, 0.000000, -0.973093),
+Vec3(52.414063, 36.477345, -174.353516)
     )
 
     thisInstance.transform = infSpawn25
@@ -578,7 +574,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('BA6C9A4D-5615-4D5D-A274-B2C9DE3D8A65'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -586,10 +582,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn26 = LinearTransform(
-        Vec3(-0.873186, 0.000000, -0.487387),
+        Vec3(-0.814455, 0.000000, -0.580226),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.487387, 0.000000, -0.873186),
-Vec3(-360.401367, 90.720505, 244.541016)
+Vec3(0.580226, 0.000000, -0.814455),
+Vec3(-6.546875, 35.999855, -123.902344)
     )
 
     thisInstance.transform = infSpawn26
@@ -600,7 +596,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('38C285D6-2ACA-41B8-8A08-4F16A52B72E9'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -608,10 +604,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn27 = LinearTransform(
-       Vec3(-0.880331, 0.000000, -0.474360),
+       Vec3(-0.779294, 0.000000, 0.626659),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.474360, 0.000000, -0.880331),
-Vec3(-350.155273, 90.720505, 248.548828)
+Vec3(-0.626659, 0.000000, -0.779294),
+Vec3(12.005859, 35.999851, -115.959961)
     )
 
     thisInstance.transform = infSpawn27
@@ -622,7 +618,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('C309FB03-B863-4442-9A37-F3EAB90D2B06'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -630,10 +626,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn28 = LinearTransform(
-        Vec3(-0.900996, 0.000000, -0.433828),
+        Vec3(-0.545429, 0.000000, 0.838157),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.433828, 0.000000, -0.900996),
-Vec3(-344.982422, 90.720505, 251.238281)
+Vec3(-0.838157, 0.000000, -0.545429),
+Vec3(28.435547, 35.999832, -136.624023)
     )
 
     thisInstance.transform = infSpawn28
@@ -644,7 +640,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('9ED17469-36F3-439A-9B37-C4C02AD89BAB'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -652,10 +648,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn29 = LinearTransform(
-        Vec3(-0.890683, 0.000000, -0.454626),
+        Vec3(0.546745, 0.000000, -0.837299),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.454626, 0.000000, -0.890683),
-Vec3(-332.951172, 90.720505, 256.591797)
+Vec3(0.837299, 0.000000, 0.546745),
+Vec3(12.250977, 36.043751, -141.312500)
     )
 
     thisInstance.transform = infSpawn29
@@ -666,7 +662,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('76F2DBEC-8821-4B27-B19F-DB049B3831B6'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -674,10 +670,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn30 = LinearTransform(
-        Vec3(-0.951362, 0.000000, -0.308076),
+        Vec3(-0.576466, 0.000000, 0.817121),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.308076, 0.000000, -0.951362),
-Vec3(-322.098633, 90.720505, 264.963867)
+Vec3(-0.817121, 0.000000, -0.576466),
+Vec3(16.179688, 36.044727, -128.041016)
     )
 
     thisInstance.transform = infSpawn30
@@ -688,7 +684,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('FC906C0D-B05B-4A1D-9ADE-69B668B81BF5'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -696,10 +692,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn31 = LinearTransform(
-       Vec3(0.249062, 0.000000, 0.968488),
+       Vec3(-0.966238, 0.000000, -0.257650),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.968488, 0.000000, 0.249062),
-Vec3(-331.321289, 90.698471, 213.691406)
+Vec3(0.257650, 0.000000, -0.966238),
+Vec3(13.214844, 40.067188, -129.963867)
     )
 
     thisInstance.transform = infSpawn31
@@ -710,7 +706,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('B0DCD329-6A7E-4F70-9207-A359802F1442'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -718,10 +714,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn32 = LinearTransform(
-        Vec3(0.055899, 0.000000, -0.998436),
+        Vec3(-0.618888, 0.000000, 0.785479),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.998436, 0.000000, 0.055899),
-Vec3(-311.698242, 90.819191, 117.463867)
+Vec3(-0.785479, 0.000000, -0.618888),
+Vec3(-30.151367, 38.139454, -162.556641)
     )
 
     thisInstance.transform = infSpawn32
@@ -732,7 +728,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('FD7B4D0D-FF48-47D1-8678-660E40BA0DE3'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -740,10 +736,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn33 = LinearTransform(
-        Vec3(0.464494, 0.000000, -0.885576),
+        Vec3(-0.754484, 0.000000, -0.656319),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.885576, 0.000000, 0.464494),
-Vec3(-286.337891, 90.720505, 119.893555)
+Vec3(0.656319, 0.000000, -0.754484),
+Vec3(-26.430664, 38.137501, -160.084961)
     )
 
     thisInstance.transform = infSpawn33
@@ -754,7 +750,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('3E8A15F9-A84D-4EF3-9607-800831D8AA8D'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -762,10 +758,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn34 = LinearTransform(
-        Vec3(0.555346, 0.000000, 0.831619),
+       Vec3(0.544707, 0.000000, -0.838626),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.831619, 0.000000, 0.555346),
-Vec3(-271.760742, 90.720505, 128.983398)
+Vec3(0.838626, 0.000000, 0.544707),
+Vec3(-28.457031, 38.063282, -156.727539)
     )
 
     thisInstance.transform = infSpawn34
@@ -776,7 +772,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('3D2921E2-628E-4A6D-A0E2-F9FB82E7A28B'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -784,10 +780,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn35 = LinearTransform(
-        Vec3(0.243664, 0.000000, 0.969860),
+        Vec3(-0.552231, 0.000000, 0.833691),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.969860, 0.000000, 0.243664),
-Vec3(-270.451172, 91.531052, 148.544922)
+Vec3(-0.833691, 0.000000, -0.552231),
+Vec3(-30.032227, 38.063282, -145.377930)
     )
 
     thisInstance.transform = infSpawn35
@@ -798,7 +794,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('454A16AA-27C2-4AE1-B1B7-E9481D777D0A'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -806,10 +802,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn36 = LinearTransform(
-        Vec3(-0.967166, 0.000000, 0.254146),
+        Vec3(-0.552231, 0.000000, 0.833691),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.254146, 0.000000, -0.967166),
-Vec3(-271.423828, 91.531052, 143.647461)
+Vec3(-0.833691, 0.000000, -0.552231),
+Vec3(-30.984375, 38.130924, -153.208984)
     )
 
     thisInstance.transform = infSpawn36
@@ -820,7 +816,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('A82F03CE-97CD-46AC-9321-D689E0714E25'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -828,10 +824,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn37 = LinearTransform(
-        Vec3(0.967709, 0.000000, -0.252070),
+        Vec3(-0.183780, 0.000000, 0.982967),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.252070, 0.000000, 0.967709),
-Vec3(-289.551758, 90.720505, 135.287109)
+Vec3(-0.982967, 0.000000, -0.183780),
+Vec3(-30.764648, 38.135548, -158.045898)
     )
 
     thisInstance.transform = infSpawn37
@@ -842,7 +838,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('03B8ABF0-D6CD-443E-B672-128B8C42235E'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -850,10 +846,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn38 = LinearTransform(
-        Vec3(0.920740, 0.000000, -0.390178),
+        Vec3(0.563549, 0.000000, -0.826083),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.390178, 0.000000, 0.920740),
-Vec3(-358.765625, 90.720505, 92.116211)
+Vec3(0.826083, 0.000000, 0.563549),
+Vec3(-68.219727, 38.367970, -187.121094)
     )
 
     thisInstance.transform = infSpawn38
@@ -864,7 +860,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('D9024766-6EC1-43D1-8D85-EF687714A155'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -872,10 +868,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn39 = LinearTransform(
-       Vec3(0.204409, 0.000000, 0.978886),
+        Vec3(0.999958, 0.000000, -0.009210),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.978886, 0.000000, 0.204409),
-Vec3(-348.207001, 90.935425, 97.714874)
+Vec3(0.009210, 0.000000, 0.999958),
+Vec3(-65.676758, 38.367970, -191.346680)
     )
 
     thisInstance.transform = infSpawn39
@@ -886,7 +882,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('5CDDD095-898B-41AC-9216-9DA24EF84843'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -894,10 +890,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn40 = LinearTransform(
-        Vec3(0.237914, 0.000000, 0.971286),
+        Vec3(0.575000, 0.000000, -0.818154),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.971286, 0.000000, 0.237914),
-Vec3(-357.868164, 91.530090, 88.333008)
+Vec3(0.818154, 0.000000, 0.575000),
+Vec3(-63.645508, 38.698048, -193.955078)
     )
 
     thisInstance.transform = infSpawn40
@@ -908,7 +904,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('5E1601D2-D7B8-42C0-937E-78CD959AF727'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -916,10 +912,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn41 = LinearTransform(
-        Vec3(0.969641, 0.000000, -0.244533),
+        Vec3(0.566906, 0.000000, -0.823783),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.244533, 0.000000, 0.969641),
-Vec3(-354.481445, 91.530083, 86.487305)
+Vec3(0.823783, 0.000000, 0.566906),
+Vec3(-61.184570, 38.698048, -199.850586)
     )
 
     thisInstance.transform = infSpawn41
@@ -930,7 +926,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('B142A0B3-588D-4121-98CB-C1EF3EE2EFA5'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -938,10 +934,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn42 = LinearTransform(
-         Vec3(0.273816, 0.000000, 0.961782),
+        Vec3(0.827791, 0.000000, 0.561036),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.961782, 0.000000, 0.273816),
-Vec3(-361.569336, 90.719559, 84.537109)
+Vec3(-0.561036, 0.000000, 0.827791),
+Vec3(-66.122070, 38.697071, -196.377930)
     )
 
     thisInstance.transform = infSpawn42
@@ -952,7 +948,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('01C1CC45-F698-4EAA-93EF-C047BEC78C37'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -960,10 +956,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn43 = LinearTransform(
-         Vec3(-0.248441, 0.000000, -0.968647),
+        Vec3(-0.999990, 0.000000, 0.004498),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.968647, 0.000000, -0.248441),
-Vec3(-384.634766, 90.720505, 92.571289)
+Vec3(-0.004498, 0.000000, -0.999990),
+Vec3(-70.208008, 38.205860, -196.646484)
     )
 
     thisInstance.transform = infSpawn43
@@ -975,7 +971,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('761E60D8-748B-41EA-BBF7-E4A9E99623EB'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -985,7 +981,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-558.359558, 93.068787, 58.375248), Vec3(-535.692017, 93.787109, 58.316780), Vec3(-535.136597, 93.143791, 26.905804), Vec3(-567.023560, 93.801025, 26.316343)
+        Vec3(-31.321228, 38.594471, -229.241501), Vec3(-52.412254, 40.000404, -243.713348), Vec3(-62.958839, 37.642242, -226.924103), Vec3(-41.223526, 37.969330, -212.400909)
     }
 
 
@@ -997,7 +993,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('61BB0CAB-FA5F-4C7C-88CC-830B79E6D9E0'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1007,7 +1003,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-517.742249, 89.306297, 168.496521), Vec3(-507.731659, 89.072235, 208.579697), Vec3(-477.650299, 89.626358, 200.650345), Vec3(-487.689789, 89.626373, 160.975830)
+        Vec3(-18.475101, 38.589237, -251.326401), Vec3(-28.043589, 38.155411, -268.001617), Vec3(-14.073924, 36.787167, -271.714722), Vec3(-2.081264, 36.670746, -259.148254)
     }
 
 
@@ -1019,7 +1015,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('8C632607-4F3A-416B-9A9D-9E16DFDC6B10'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1029,7 +1025,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-433.083221, 90.397720, 274.480255), Vec3(-412.923309, 90.720131, 269.356445), Vec3(-417.239319, 90.720123, 252.419357), Vec3(-439.478088, 90.620575, 257.639221)
+        Vec3(66.639572, 32.756470, -215.191223), Vec3(73.863358, 32.688000, -207.942459), Vec3(81.101936, 32.688000, -210.291855), Vec3(84.004997, 32.466686, -207.613815), Vec3(91.430000, 32.688000, -215.129807), Vec3(83.470200, 32.687996, -222.981461), Vec3(78.797783, 32.715740, -218.307037), Vec3(74.459373, 32.688000, -222.594604)
     }
 
 
@@ -1041,7 +1037,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('97879D03-5BC9-4059-975B-4024B53F889B'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1051,7 +1047,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-397.192474, 91.012856, 307.833588), Vec3(-403.839172, 91.012863, 281.662598), Vec3(-372.445923, 91.012856, 273.035339), Vec3(-365.773071, 90.909019, 299.564270)
+         Vec3(48.950672, 32.354050, -169.443954), Vec3(60.018703, 32.391121, -169.441040), Vec3(60.034794, 32.391117, -175.530212), Vec3(66.885361, 32.391121, -175.601563), Vec3(66.629761, 32.391121, -187.419083), Vec3(56.234097, 32.455105, -187.391861), Vec3(52.776478, 32.391121, -180.793991), Vec3(48.909851, 32.448944, -180.722275)
     }
 
 
@@ -1063,7 +1059,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('52726966-78B2-4BA5-839A-E813B8BD06DF'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1073,7 +1069,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-317.472717, 90.720131, 271.199280), Vec3(-328.560486, 90.720131, 211.058456), Vec3(-375.633392, 90.720139, 221.897491), Vec3(-370.703949, 90.720139, 241.677353)
+        Vec3(12.741695, 36.000549, -109.519035), Vec3(30.621588, 36.030445, -137.024277), Vec3(6.880219, 36.004288, -152.377106), Vec3(-10.870321, 36.109364, -124.928673)
     }
 
 
@@ -1085,7 +1081,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('137AD610-1384-4261-8A0B-C8920F7D7684'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1095,7 +1091,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-       Vec3(-301.498535, 90.970192, 170.030029), Vec3(-259.419281, 90.932030, 159.779785), Vec3(-271.737091, 90.012589, 109.142334), Vec3(-315.157776, 90.964386, 115.833954)
+        Vec3(-44.424717, 38.074699, -152.604141), Vec3(-29.207481, 38.063080, -142.980392), Vec3(-16.247297, 37.780678, -164.013031), Vec3(-30.803673, 38.084988, -173.674484)
     }
 
 
@@ -1107,7 +1103,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('860B2B75-2A96-4CB5-A4CA-1536114FEC4C'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1117,7 +1113,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-344.687866, 90.161514, 100.477867), Vec3(-349.661713, 90.995499, 78.352486), Vec3(-387.319763, 90.102943, 88.058395), Vec3(-383.001617, 90.845146, 108.025261)
+        Vec3(-63.825054, 38.431568, -179.192230), Vec3(-51.262123, 38.208958, -198.916992), Vec3(-64.818581, 38.202267, -207.726639), Vec3(-78.143234, 38.203709, -188.551865)
     }
 
 
@@ -1127,122 +1123,6 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 
 end)
 
--------------------------
--- Objective positions --
--------------------------
-
--- Entrance (A)  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('9FF8B79B-1C11-42D2-B713-5AC6EE4E3294'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = VolumeVectorShapeData(instance)
-    thisInstance:MakeWritable()
-	thisInstance.height = 5
-    thisInstance.points:clear()
-
-    local points = {
-        Vec3(-518.802063, 88.748772, 72.523567), Vec3(-486.294037, 88.626358, 72.880676), Vec3(-485.928802, 88.626366, 79.313438), Vec3(-485.789368, 88.690926, 88.921539), Vec3(-487.467896, 88.690926, 93.736092), Vec3(-512.994202, 88.690926, 94.150665), Vec3(-514.895203, 88.690926, 92.575272), Vec3(-516.579895, 88.690926, 84.979179), Vec3(-518.291504, 88.684944, 79.625076)
-    }
-    
-    for _, point in pairs(points) do
-        thisInstance.points:add(point)
-    end
-
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('1B3AE1D0-E8F2-454A-9F0E-CAE7A5680AAA'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = ReferenceObjectData(instance)
-    thisInstance:MakeWritable()
-
-    local flagPos = Vec3(-502.555664, 89.495911, 88.646713)
-    thisInstance.blueprintTransform.trans = flagPos
-
-end)
-
-
-
--- Balcony (B)  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('0CE53A8A-3464-4592-AC12-5ABFCC729390'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = VolumeVectorShapeData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.points:clear()
-
-    local points = {
-        Vec3(-442.217712, 90.720123, 207.837662), Vec3(-438.194611, 90.720131, 206.753342), Vec3(-435.790741, 90.720123, 215.663391), Vec3(-425.811951, 90.720123, 212.989777), Vec3(-425.051788, 90.720139, 221.431595), Vec3(-422.447906, 90.707764, 231.395844), Vec3(-439.169128, 90.687805, 236.073669), Vec3(-440.560120, 90.720123, 236.071640), Vec3(-441.837036, 90.720139, 235.733032), Vec3(-442.882172, 90.720131, 234.864700), Vec3(-443.498505, 90.720131, 233.626266), Vec3(-445.462769, 90.720131, 226.316528), Vec3(-447.449371, 90.720131, 218.589722), Vec3(-449.577118, 90.720123, 209.954330)
-    }
-
-    for _, point in pairs(points) do
-        thisInstance.points:add(point)
-    end
-
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('E5DCE705-B125-4A28-8863-CE8BEB0420FD'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = ReferenceObjectData(instance)
-    thisInstance:MakeWritable()
-
-    local flagPos = Vec3(-438.475586, 90.719528, 221.990234)
-    thisInstance.blueprintTransform.trans = flagPos
-
-end)
-
-
-
--- Bedroom (C)  ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('3EEC58FF-33D5-47B7-AD6A-1532D71A1A72'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = VolumeVectorShapeData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.points:clear()
-
-    local points = {
-        Vec3(-361.565369, 98.755005, 134.728790), Vec3(-359.146729, 98.849632, 144.038559), Vec3(-388.123169, 98.719574, 151.607513), Vec3(-390.532867, 98.766197, 142.283371)
-    }
-
-    for _, point in pairs(points) do
-        thisInstance.points:add(point)
-    end
-
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('BAEC17AC-E3A5-4222-8A42-FD875EAAA5B0'), Guid('B00EB7A9-A2BB-4BA1-A454-9D1719592481'), function(instance)
-
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-        return
-    end
-
-    local thisInstance = ReferenceObjectData(instance)
-    thisInstance:MakeWritable()
-    
-    local flagPos = Vec3(-371.422852, 98.754738, 144.163086)
-    thisInstance.blueprintTransform.trans = flagPos
-
-end)
 
 ---------
 -- OOB --
@@ -1250,7 +1130,7 @@ end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5B274606-C861-411A-B60A-F23B6277F92A'), Guid('FD46D2B0-CA5D-41B5-940C-DA973B8DF3F7'), function(instance)
 
-if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
         return
     end
 
@@ -1260,7 +1140,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-529.162170, 85.621292, 159.576126), Vec3(-548.041199, 85.641983, 124.985367), Vec3(-558.008728, 85.770599, 89.078491), Vec3(-570.844543, 85.319702, 62.640141), Vec3(-571.491943, 85.208183, 35.682133), Vec3(-567.744263, 85.177826, 7.344246), Vec3(-489.326691, 85.453003, 13.324928), Vec3(-454.771423, 85.021950, 26.656803), Vec3(-375.511536, 85.445602, 65.537354), Vec3(-267.101654, 85.841507, 119.903465), Vec3(-231.188431, 85.954521, 165.499863), Vec3(-209.697327, 85.048286, 271.511993), Vec3(-307.966217, 85.720123, 294.626678), Vec3(-368.346802, 85.012856, 301.120209), Vec3(-436.984985, 85.012863, 319.522156), Vec3(-472.675110, 85.265038, 271.475891), Vec3(-498.541779, 85.560966, 246.542953), Vec3(-516.782837, 85.276321, 203.220200), Vec3(-521.368958, 85.625977, 175.768280)
+        Vec3(-96.912132, 30.437511, -155.724426), Vec3(8.560044, 31.213692, -88.851471), Vec3(40.435181, 30.591312, -115.007133), Vec3(81.382172, 30.330481, -145.126556), Vec3(108.787880, 32.120789, -180.574142), Vec3(108.453201, 31.241524, -207.862930), Vec3(99.720230, 31.418968, -225.455017), Vec3(84.227684, 30.820040, -235.636444), Vec3(54.140232, 32.806042, -236.563385), Vec3(38.624458, 33.336922, -250.590240), Vec3(-5.663157, 35.852901, -266.538086), Vec3(-22.344248, 37.648170, -277.530792), Vec3(-46.408207, 37.884136, -261.021179), Vec3(-69.152390, 35.905113, -226.358154), Vec3(-86.549316, 34.052780, -209.531723), Vec3(-100.706612, 33.352436, -186.690826), Vec3(-107.952324, 32.900894, -172.053146), Vec3(-102.206741, 30.536648, -159.545731)
     }
 
     for _, point in pairs(points) do
@@ -1268,4 +1148,3 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     end
 
 end)
-

@@ -103,6 +103,11 @@ require '__shared/MpPresets/Karkand/MpDataLoad_Karkand_Ziba'
 require '__shared/MpPresets/Karkand/CreateGameModeSubWorldRef_Karkand_Ziba'
 require '__shared/MpPresets/Karkand/MapModifications/_MapModificationManager'
 
+-- Gulf of Oman
+require '__shared/MpPresets/Oman/MpDataLoad_Oman_Ziba'
+require '__shared/MpPresets/Oman/CreateGameModeSubWorldRef_Oman_Ziba'
+require '__shared/MpPresets/Oman/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

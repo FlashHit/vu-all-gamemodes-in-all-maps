@@ -98,6 +98,11 @@ require '__shared/MpPresets/Kharg/MpDataLoad_Kharg_Ziba'
 require '__shared/MpPresets/Kharg/CreateGameModeSubWorldRef_Kharg_Ziba'
 require '__shared/MpPresets/Kharg/MapModifications/_MapModificationManager'
 
+-- Strike at Karkand
+require '__shared/MpPresets/Karkand/MpDataLoad_Karkand_Ziba'
+require '__shared/MpPresets/Karkand/CreateGameModeSubWorldRef_Karkand_Ziba'
+require '__shared/MpPresets/Karkand/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

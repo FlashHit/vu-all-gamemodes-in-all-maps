@@ -118,6 +118,10 @@ require '__shared/MpPresets/Wake/MpDataLoad_Wake_Ziba'
 require '__shared/MpPresets/Wake/CreateGameModeSubWorldRef_Wake_Ziba'
 require '__shared/MpPresets/Wake/MapModifications/_MapModificationManager'
 
+-- Alborz Mountains
+require '__shared/MpPresets/Alborz/MpDataLoad_Alborz_Ziba'
+require '__shared/MpPresets/Alborz/CreateGameModeSubWorldRef_Alborz_Ziba'
+require '__shared/MpPresets/Alborz/MapModifications/_MapModificationManager'
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

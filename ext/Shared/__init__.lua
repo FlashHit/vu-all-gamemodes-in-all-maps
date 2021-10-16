@@ -108,6 +108,11 @@ require '__shared/MpPresets/Oman/MpDataLoad_Oman_Ziba'
 require '__shared/MpPresets/Oman/CreateGameModeSubWorldRef_Oman_Ziba'
 require '__shared/MpPresets/Oman/MapModifications/_MapModificationManager'
 
+-- Sharqi Peninsula
+require '__shared/MpPresets/Sharqi/MpDataLoad_Sharqi_Ziba'
+require '__shared/MpPresets/Sharqi/CreateGameModeSubWorldRef_Sharqi_Ziba'
+require '__shared/MpPresets/Sharqi/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

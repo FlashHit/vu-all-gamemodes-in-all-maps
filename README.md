@@ -25,6 +25,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Wake Island // `XP1_004`           | `GunMaster0` `Domination0`            |
 | Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0`            |
+| Armored Shield // `XP3_Alborz`     | `GunMaster0` `Domination0`            |
 | Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
 | Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|

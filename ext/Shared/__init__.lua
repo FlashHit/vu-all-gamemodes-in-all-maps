@@ -113,6 +113,11 @@ require '__shared/MpPresets/Sharqi/MpDataLoad_Sharqi_Ziba'
 require '__shared/MpPresets/Sharqi/CreateGameModeSubWorldRef_Sharqi_Ziba'
 require '__shared/MpPresets/Sharqi/MapModifications/_MapModificationManager'
 
+-- Wake Island
+require '__shared/MpPresets/Wake/MpDataLoad_Wake_Ziba'
+require '__shared/MpPresets/Wake/CreateGameModeSubWorldRef_Wake_Ziba'
+require '__shared/MpPresets/Wake/MapModifications/_MapModificationManager'
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

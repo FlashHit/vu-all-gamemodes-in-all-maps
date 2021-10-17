@@ -179,6 +179,11 @@ require '__shared/MpPresets/Monolith/MpDataLoad_Monolith_Ziba'
 require '__shared/MpPresets/Monolith/CreateGameModeSubWorldRef_Monolith_Ziba'
 require '__shared/MpPresets/Monolith/MapModifications/_MapModificationManager'
 
+-- Talah Market
+require '__shared/MpPresets/Talah/MpDataLoad_Talah_Ziba'
+require '__shared/MpPresets/Talah/CreateGameModeSubWorldRef_Talah_Ziba'
+require '__shared/MpPresets/Talah/MapModifications/_MapModificationManager'
+
 
 ----------------
 ----End Game----

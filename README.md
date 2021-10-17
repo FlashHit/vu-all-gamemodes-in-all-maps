@@ -25,7 +25,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Wake Island // `XP1_004`           | `GunMaster0` `Domination0`            |
 | Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0`            |
-| Armored Shield // `XP3_Alborz`     | `GunMaster0` `Domination0`            |
+| Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0`            |
 | Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0`            |
 | Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0`            |
 | Azadi Palace // `XP4_Parl`         | `Domination0`                         |

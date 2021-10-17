@@ -127,6 +127,14 @@ require '__shared/MpPresets/Alborz/MapModifications/_MapModificationManager'
 require '__shared/MpPresets/Shield/MpDataLoad_Shield_Ziba'
 require '__shared/MpPresets/Shield/CreateGameModeSubWorldRef_Shield_Ziba'
 require '__shared/MpPresets/Shield/MapModifications/_MapModificationManager'
+
+-- Bandar Desert
+require '__shared/MpPresets/Bandar/MpDataLoad_Bandar_Ziba'
+require '__shared/MpPresets/Bandar/CreateGameModeSubWorldRef_Bandar_Ziba'
+require '__shared/MpPresets/Bandar/MapModifications/_MapModificationManager'
+
+
+
 -- Print every bundle that is loaded.
 --[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
 

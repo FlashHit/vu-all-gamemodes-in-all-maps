@@ -17,7 +17,9 @@ require '__shared/MpPresets/AddVoiceOverLogic'
 --require '__shared/MpPresets/Default/CreateGameModeSubWorldRef'
 --require '__shared/MpPresets/Default/MapModifications/_MapModificationManager' -- I'm offloading all the code to start the map modification scripts to its own file. This way, I can guarantee they only run when a SP/COOP map is loaded in TDM CQ. You can see how this works in MapModificationsManager.lua itself.
 
-
+-------------
+---SP Maps---
+-------------
 
 -- Kaffarov's Villa
 require '__shared/MpPresets/Villa/MpDataLoad_Ziba'
@@ -36,22 +38,24 @@ require '__shared/MpPresets/Carrier/MpDataLoad_Wake'
 require '__shared/MpPresets/Carrier/CreateGameModeSubWorldRef_Wake'
 require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
 
+-- Thunder Run
+require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'
+require '__shared/MpPresets/ThunderRun_CQL/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/ThunderRun_CQL/MapModifications/_MapModificationManager'
+
+-----------------
+----COOP Maps----
+-----------------
+
 -- Aygan Village
 require '__shared/MpPresets/Aygan_Village/MpDataLoad_Bandar'
 require '__shared/MpPresets/Aygan_Village/CreateGameModeSubWorldRef_Bandar'
 require '__shared/MpPresets/Aygan_Village/MapModifications/_MapModificationManager'
 
 
--- Thunder Run
-require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'
-require '__shared/MpPresets/ThunderRun_CQL/CreateGameModeSubWorldRef'
-require '__shared/MpPresets/ThunderRun_CQL/MapModifications/_MapModificationManager'
-
-
--- Ziba
-require '__shared/MpPresets/Ziba/MpDataLoad'
-require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
-require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
+--------------------
+----Vanilla Maps----
+--------------------
 
 -- Metro
 require '__shared/MpPresets/Metro/MpDataLoad_Ziba'
@@ -98,6 +102,20 @@ require '__shared/MpPresets/Kharg/MpDataLoad_Kharg_Ziba'
 require '__shared/MpPresets/Kharg/CreateGameModeSubWorldRef_Kharg_Ziba'
 require '__shared/MpPresets/Kharg/MapModifications/_MapModificationManager'
 
+----------------------
+----Close Quarters----
+----------------------
+
+-- Ziba
+require '__shared/MpPresets/Ziba/MpDataLoad'
+require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
+
+
+-----------------------
+----Back To Karkand----
+-----------------------
+
 -- Strike at Karkand
 require '__shared/MpPresets/Karkand/MpDataLoad_Karkand_Ziba'
 require '__shared/MpPresets/Karkand/CreateGameModeSubWorldRef_Karkand_Ziba'
@@ -118,6 +136,10 @@ require '__shared/MpPresets/Wake/MpDataLoad_Wake_Ziba'
 require '__shared/MpPresets/Wake/CreateGameModeSubWorldRef_Wake_Ziba'
 require '__shared/MpPresets/Wake/MapModifications/_MapModificationManager'
 
+----------------------
+----Armored Killed----
+----------------------
+
 -- Alborz Mountains
 require '__shared/MpPresets/Alborz/MpDataLoad_Alborz_Ziba'
 require '__shared/MpPresets/Alborz/CreateGameModeSubWorldRef_Alborz_Ziba'
@@ -137,6 +159,20 @@ require '__shared/MpPresets/Bandar/MapModifications/_MapModificationManager'
 require '__shared/MpPresets/Death_Valley/MpDataLoad_Death_Valley_Ziba'
 require '__shared/MpPresets/Death_Valley/CreateGameModeSubWorldRef_Death_Valley_Ziba'
 require '__shared/MpPresets/Death_Valley/MapModifications/_MapModificationManager'
+
+-----------------
+----Aftermath----
+-----------------
+
+-- Azadi Palace
+require '__shared/MpPresets/Azadi/MpDataLoad_Azadi_Ziba'
+require '__shared/MpPresets/Azadi/CreateGameModeSubWorldRef_Azadi_Ziba'
+require '__shared/MpPresets/Azadi/MapModifications/_MapModificationManager'
+
+
+----------------
+----End Game----
+----------------
 
 
 

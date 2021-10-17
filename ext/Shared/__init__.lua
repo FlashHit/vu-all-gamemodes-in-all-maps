@@ -133,6 +133,11 @@ require '__shared/MpPresets/Bandar/MpDataLoad_Bandar_Ziba'
 require '__shared/MpPresets/Bandar/CreateGameModeSubWorldRef_Bandar_Ziba'
 require '__shared/MpPresets/Bandar/MapModifications/_MapModificationManager'
 
+-- Death Valley
+require '__shared/MpPresets/Death_Valley/MpDataLoad_Death_Valley_Ziba'
+require '__shared/MpPresets/Death_Valley/CreateGameModeSubWorldRef_Death_Valley_Ziba'
+require '__shared/MpPresets/Death_Valley/MapModifications/_MapModificationManager'
+
 
 
 -- Print every bundle that is loaded.

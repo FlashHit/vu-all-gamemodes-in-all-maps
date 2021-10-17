@@ -27,6 +27,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0`            |
 | Armored Shield // `XP3_Alborz`     | `GunMaster0` `Domination0`            |
 | Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0`            |
+| Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0`            |
 | Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
 | Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|

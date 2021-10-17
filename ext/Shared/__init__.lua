@@ -169,6 +169,11 @@ require '__shared/MpPresets/Azadi/MpDataLoad_Azadi_Ziba'
 require '__shared/MpPresets/Azadi/CreateGameModeSubWorldRef_Azadi_Ziba'
 require '__shared/MpPresets/Azadi/MapModifications/_MapModificationManager'
 
+-- Epicenter
+require '__shared/MpPresets/Epicenter/MpDataLoad_Epicenter_Ziba'
+require '__shared/MpPresets/Epicenter/CreateGameModeSubWorldRef_Epicenter_Ziba'
+require '__shared/MpPresets/Epicenter/MapModifications/_MapModificationManager'
+
 
 ----------------
 ----End Game----

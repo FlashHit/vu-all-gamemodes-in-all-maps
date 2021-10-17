@@ -174,6 +174,11 @@ require '__shared/MpPresets/Epicenter/MpDataLoad_Epicenter_Ziba'
 require '__shared/MpPresets/Epicenter/CreateGameModeSubWorldRef_Epicenter_Ziba'
 require '__shared/MpPresets/Epicenter/MapModifications/_MapModificationManager'
 
+-- Markaz Monolith
+require '__shared/MpPresets/Monolith/MpDataLoad_Monolith_Ziba'
+require '__shared/MpPresets/Monolith/CreateGameModeSubWorldRef_Monolith_Ziba'
+require '__shared/MpPresets/Monolith/MapModifications/_MapModificationManager'
+
 
 ----------------
 ----End Game----

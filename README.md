@@ -30,6 +30,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0`            |
 | Azadi Palace // `XP4_Parl`         | `Domination0`                         |
 | Epicenter // `XP4_Quake`           | `Domination0`                         |
+| Markaz Monolith // `XP4_FD`        | `Domination0`                         |
 | Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
 | Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|

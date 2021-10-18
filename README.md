@@ -35,6 +35,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Operation Riverside // `XP5_001`   | `GunMaster0` `Domination0`            |
 | Nebandan Flats // `XP5_002`        | `GunMaster0` `Domination0`            |
 | Kiasar Railroad // `XP5_003`       | `GunMaster0` `Domination0`            |
+| Sabalan Pipeline // `XP5_004`      | `GunMaster0` `Domination0`            |
 | Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0`|
 | Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|

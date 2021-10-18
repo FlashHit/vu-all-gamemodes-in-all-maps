@@ -204,6 +204,11 @@ require '__shared/MpPresets/Kiasar/MpDataLoad_Kiasar_Ziba'
 require '__shared/MpPresets/Kiasar/CreateGameModeSubWorldRef_Kiasar_Ziba'
 require '__shared/MpPresets/Kiasar/MapModifications/_MapModificationManager'
 
+-- Sabalan Pipeline
+require '__shared/MpPresets/Sabalan/MpDataLoad_Sabalan_Ziba'
+require '__shared/MpPresets/Sabalan/CreateGameModeSubWorldRef_Sabalan_Ziba'
+require '__shared/MpPresets/Sabalan/MapModifications/_MapModificationManager'
+
 
 
 -- Print every bundle that is loaded.

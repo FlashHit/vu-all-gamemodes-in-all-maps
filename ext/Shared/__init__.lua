@@ -199,6 +199,11 @@ require '__shared/MpPresets/Nebandan/MpDataLoad_Nebandan_Ziba'
 require '__shared/MpPresets/Nebandan/CreateGameModeSubWorldRef_Nebandan_Ziba'
 require '__shared/MpPresets/Nebandan/MapModifications/_MapModificationManager'
 
+-- Kiasar Railroad
+require '__shared/MpPresets/Kiasar/MpDataLoad_Kiasar_Ziba'
+require '__shared/MpPresets/Kiasar/CreateGameModeSubWorldRef_Kiasar_Ziba'
+require '__shared/MpPresets/Kiasar/MapModifications/_MapModificationManager'
+
 
 
 -- Print every bundle that is loaded.

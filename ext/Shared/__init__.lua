@@ -194,6 +194,11 @@ require '__shared/MpPresets/Riverside/MpDataLoad_Riverside_Ziba'
 require '__shared/MpPresets/Riverside/CreateGameModeSubWorldRef_Riverside_Ziba'
 require '__shared/MpPresets/Riverside/MapModifications/_MapModificationManager'
 
+-- Nebandan Flats
+require '__shared/MpPresets/Nebandan/MpDataLoad_Nebandan_Ziba'
+require '__shared/MpPresets/Nebandan/CreateGameModeSubWorldRef_Nebandan_Ziba'
+require '__shared/MpPresets/Nebandan/MapModifications/_MapModificationManager'
+
 
 
 -- Print every bundle that is loaded.

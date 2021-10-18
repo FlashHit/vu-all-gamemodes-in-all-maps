@@ -189,6 +189,11 @@ require '__shared/MpPresets/Talah/MapModifications/_MapModificationManager'
 ----End Game----
 ----------------
 
+-- Operation Riverside
+require '__shared/MpPresets/Riverside/MpDataLoad_Riverside_Ziba'
+require '__shared/MpPresets/Riverside/CreateGameModeSubWorldRef_Riverside_Ziba'
+require '__shared/MpPresets/Riverside/MapModifications/_MapModificationManager'
+
 
 
 -- Print every bundle that is loaded.

@@ -7,7 +7,7 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Kaffarov's Villa
+    -- Don't continue if the level is not Ziba
     if (string.find(levelName, 'XP2_Skybar') == nil) then
         return
     end

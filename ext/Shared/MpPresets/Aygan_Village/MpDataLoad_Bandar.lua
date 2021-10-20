@@ -16,8 +16,7 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 	
-	if string.find(levelName, 'COOP_006') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'TankSuperiority0' then
+	if string.find(levelName, 'COOP_006') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0' and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'TankSuperiority0' then
         return
     end
 
@@ -73,10 +72,10 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
             'levels/xp4_rubble/xp4_rubble',
 			'levels/xp5_002/xp5_002',
 			'levels/xp3_desert/xp3_desert',
-            'levels/xp3_desert/conquest', 
-			'levels/xp3_desert/rush',
-			'levels/xp3_desert/deathmatch',
-			'levels/xp3_desert/tanksuperiority',
+            --'levels/xp3_desert/conquest', 
+			--'levels/xp3_desert/rush',
+			--'levels/xp3_desert/deathmatch',
+			--'levels/xp3_desert/tanksuperiority',
 
             bundles[1],
         }

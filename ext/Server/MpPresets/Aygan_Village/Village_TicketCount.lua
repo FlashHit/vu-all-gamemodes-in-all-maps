@@ -70,15 +70,6 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 end)
 
 
--- Chat Commands
-Events:Subscribe('Player:Chat', function(player, recipientMask, message)
-    if message == '!enableVE' and player.name == 'keku645' then
-        NetEvents:Broadcast('enableVE', 'Aygan Sandstorm')
-    elseif message == '!disableVE' and player.name == 'keku645'  then
-        NetEvents:Broadcast('disableVE', 'Aygan Sandstorm')
-    end
-end)
-
 
 --Bluetint disabled only here
 

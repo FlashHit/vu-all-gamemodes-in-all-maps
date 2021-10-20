@@ -24,17 +24,6 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
--- VE Preset
-
-local m_AyganPreset = require '__shared/MpPresets/Aygan_Village/MapModifications/ayganVE.lua'
-
-Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicatedServer)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
-        return
-    end
-    Events:Dispatch('VEManager:RegisterPreset', 'Aygan Sandstorm', m_AyganPreset)
-	print('Registering preset')
-end)
 
 --[[Events:Subscribe('Level:Destroy', function()
 

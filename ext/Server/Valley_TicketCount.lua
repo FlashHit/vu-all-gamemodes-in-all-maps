@@ -69,7 +69,7 @@ end)
 
 --Bluetint disabled only here
 
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+--[[Events:Subscribe('Level:LoadingInfo', function(screenInfo)
     if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
@@ -80,5 +80,5 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
    if SharedUtils:GetLevelName() == 'Levels/SP_Valley/SP_Valley' then
         RCON:SendCommand('vu.colorcorrectionenabled', {"false"})
 	end
-end)
+end)]]
 

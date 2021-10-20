@@ -13,21 +13,3 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('5BC8BB57-D053-42EE-8F6B-AC74FC
     thisInstance.fields[12].value = 'CString "WORKSHOP"' -- D
 end)
 
--- Enable Preset
-Events:Subscribe('VEManager:PresetsLoaded', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
-        return
-    end
-    Events:Dispatch('VEManager:EnablePreset', 'Aygan Sandstorm')
-	print('Enabling preset')
-end)
-
-NetEvents:Subscribe('enableVE', function(p_PresetName)
-    Events:Dispatch('VEManager:EnablePreset', p_PresetName)
-    print('Enabling VE Command preset')
-end)
-
-NetEvents:Subscribe('disableVE', function(p_PresetName)
-    Events:Dispatch('VEManager:DisablePreset', p_PresetName)
-    print('Disabling preset VE Command')
-end)

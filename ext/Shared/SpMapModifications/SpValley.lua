@@ -43,9 +43,9 @@ end)]]
 --------------------
 
 -- Excluding VE_SP_Valley_01
---[[ResourceManager:RegisterInstanceLoadHandler(Guid('9B6EE657-5639-4A04-AA88-16E9E201806E'), Guid('DF6774FE-C064-4591-875C-19F870ED56BF'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('9B6EE657-5639-4A04-AA88-16E9E201806E'), Guid('DF6774FE-C064-4591-875C-19F870ED56BF'), function(instance)
     local thisInstance = VisualEnvironmentReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.excluded = true
 	--print('VE_SP_Valley_01 excluded...')
-end)]]
+end)

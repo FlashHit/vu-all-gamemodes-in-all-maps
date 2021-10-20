@@ -31,7 +31,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BC
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprintTransform.trans = Vec3(-241.081055, 344.834778, 313.253906)
+    thisInstance.blueprintTransform.trans = Vec3(-241.081055, 444.834778, 313.253906)
+	print ('US camera base moved')
+	
 
 end)
 
@@ -484,7 +486,8 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BC
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-    thisInstance.blueprintTransform.trans = Vec3(-382.606445, 331.091614, 1017.817383)
+    thisInstance.blueprintTransform.trans = Vec3(-382.606445, 431.091614, 1017.817383)
+	print ('RU camera base moved')
 
 end)
 

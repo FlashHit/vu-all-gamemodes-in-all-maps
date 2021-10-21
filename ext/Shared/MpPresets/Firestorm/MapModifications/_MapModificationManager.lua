@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Operation Firestorm
-    if string.find(levelName, 'MP_012') then
+    if string.find(levelName, 'MP_012') and gameModeName == 'Domination0' then
      
 
     print('Initialising Operation Firestorm Domination scripts...')
@@ -39,3 +39,21 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Operation Firestorm
+    if string.find(levelName, 'MP_012') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Operation Firestorm CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Firestorm/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

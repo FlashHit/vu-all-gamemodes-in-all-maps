@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Kharg Island
-    if string.find(levelName, 'MP_018') then
+    if string.find(levelName, 'MP_018') and gameModeName == 'Domination0' then
      
 
     print('Initialising Kharg Island Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Kharg Island
+    if string.find(levelName, 'MP_018') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Kharg Island CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Kharg/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

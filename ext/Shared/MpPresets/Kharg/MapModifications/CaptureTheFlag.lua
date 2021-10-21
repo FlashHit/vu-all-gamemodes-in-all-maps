@@ -60,7 +60,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance.points:clear()
 
     local points = {
-       Vec3(79.360001, 46.080002, -2.559999), Vec3(92.160011, 46.080002, -2.559999), Vec3(92.160004, 46.080002, -21.324135), Vec3(104.959999, 46.080002, -21.324135), Vec3(154.054565, 27.836437, -65.289291), Vec3(168.050140, 30.207361, -77.595795), Vec3(174.809280, 10.239729, -115.380325), Vec3(132.403168, 10.239731, -157.039139), Vec3(97.983749, 34.239716, -152.330872), Vec3(84.991211, 34.239723, -166.738617), Vec3(71.038193, 29.765358, -152.844849), Vec3(74.239998, 46.080002, -121.599998), Vec3(52.480000, 46.080002, -101.893547), Vec3(-56.319996, 46.080002, -101.171951), Vec3(-56.320000, 46.080002, -26.880001), Vec3(-104.959999, 46.080002, -26.880003), Vec3(-104.959991, 46.080002, 42.240002), Vec3(-111.360001, 46.080002, 42.240002), Vec3(-111.360001, 46.080002, 69.120003), Vec3(-83.200005, 46.080002, 69.120003), Vec3(-108.800003, 46.080002, 94.720001), Vec3(-93.440002, 46.080002, 110.080002), Vec3(-83.199997, 46.080002, 99.839996), Vec3(-55.040001, 46.080002, 129.279999), Vec3(-47.359997, 46.080002, 121.599991), Vec3(-25.600002, 46.080002, 143.360001), Vec3(-44.738567, 46.080002, 162.498581), Vec3(-1.320436, 46.080002, 206.120438), Vec3(-7.679999, 46.080002, 208.639999), Vec3(-58.880005, 46.080002, 205.112915), Vec3(-58.880001, 46.080002, 253.440002), Vec3(-58.880001, 46.080002, 332.799988), Vec3(30.719999, 46.080002, 332.799988), Vec3(46.080006, 46.080002, 332.800018), Vec3(46.080002, 46.080002, 314.880005), Vec3(92.160004, 46.080002, 314.880005), Vec3(92.160011, 46.080002, 258.559998), Vec3(94.720001, 46.080002, 258.559998), Vec3(117.760002, 46.080002, 212.479996), Vec3(88.319992, 46.080002, 212.479996), Vec3(88.320000, 46.080002, 191.999985), Vec3(140.800018, 46.080002, 192.000015), Vec3(140.800003, 46.080002, 154.880005), Vec3(66.560005, 46.080002, 80.639992), Vec3(66.559998, 46.080002, 65.279991), Vec3(92.160011, 46.080002, 65.279999), Vec3(92.160004, 46.080002, 46.080013), Vec3(79.359993, 46.080002, 46.080002)
+       Vec3(175.502457, 97.638504, 707.793518), Vec3(265.700104, 116.111435, 612.640625), Vec3(310.081879, 140.538162, 469.487366), Vec3(231.972076, 137.493195, 272.212311), Vec3(108.986885, 128.379761, 111.398666), Vec3(-47.248352, 118.056999, -0.352524), Vec3(-209.448334, 124.976349, -112.812912), Vec3(-315.858093, 124.000854, -195.138565), Vec3(-380.838043, 102.282806, -330.374695), Vec3(-472.613708, 91.753510, -414.117798), Vec3(-571.899292, 96.918518, -426.837708), Vec3(-646.111572, 96.672211, -344.410095), Vec3(-635.738159, 92.588837, -259.202393), Vec3(-644.827576, 92.983093, -106.238708), Vec3(-606.687317, 73.042931, 81.579041), Vec3(-512.660156, 75.470634, 274.465515), Vec3(-367.695801, 46.238510, 446.443207), Vec3(-73.955727, 39.862682, 663.317505), Vec3(136.623840, 60.817764, 723.049011)
     }
 
 
@@ -128,10 +128,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 	
 	    local CTFBaseUS = LinearTransform(
-        Vec3(0.999722, 0.000000, -0.023562),
+        Vec3(0.026585, 0.000000, -0.999647),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.023562, 0.000000, 0.999722),
-Vec3(68.116211, 1.440234, -86.279297)
+Vec3(0.999647, 0.000000, 0.026585),
+Vec3(-516.563477, 90.797653, -73.531250)
     )
 
     thisInstance.blueprintTransform = CTFBaseUS
@@ -149,10 +149,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 	
 	    local CTFBaseRU = LinearTransform(
-        Vec3(-0.999778, 0.000000, 0.021064),
+        Vec3(0.231013, 0.000000, 0.972951),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.021064, 0.000000, -0.999778),
-Vec3(67.798828, 13.119923, 210.990234)
+Vec3(-0.972951, 0.000000, 0.231013),
+Vec3(-55.700195, 90.297676, 329.459961)
     )
 
     thisInstance.blueprintTransform = CTFBaseRU
@@ -176,10 +176,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn1 = LinearTransform(
-        Vec3(0.730867, 0.000000, 0.682520),
+        Vec3(0.966146, 0.000000, -0.257995),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.682520, 0.000000, 0.730867),
-Vec3(153.542969, 5.120898, -101.896484)
+Vec3(0.257995, 0.000000, 0.966146),
+Vec3(-521.612122, 95.734421, -168.443375)
     )
 
     thisInstance.transform = infSpawn1
@@ -195,10 +195,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn2 = LinearTransform(
-        Vec3(0.716777, 0.000000, -0.697303),
+        Vec3(0.994880, 0.000000, -0.101060),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.697303, 0.000000, 0.716777),
-Vec3(85.941406, 5.118954, -135.996094)
+Vec3(0.101060, 0.000000, 0.994880),
+Vec3(-448.872070, 100.820114, -304.145508)
     )
 
     thisInstance.transform = infSpawn2
@@ -214,10 +214,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn3 = LinearTransform(
-        Vec3(-0.711779, 0.000000, 0.702404),
+        Vec3(0.996355, 0.000000, 0.085303),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.702404, 0.000000, -0.711779),
-Vec3(155.358398, 5.121875, -83.935547)
+Vec3(-0.085303, 0.000000, 0.996355),
+Vec3(-508.552734, 101.657043, -285.806641)
     )
 
     thisInstance.transform = infSpawn3
@@ -233,10 +233,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn4 = LinearTransform(
-        Vec3(-0.024810, 0.000000, -0.999692),
+        Vec3(-0.860683, 0.000000, -0.509141),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999692, 0.000000, -0.024810),
-Vec3(47.839844, 6.419727, -79.275391)
+Vec3(0.509141, 0.000000, -0.860683),
+Vec3(-574.534180, 90.973434, -91.998047)
     )
 
     thisInstance.transform = infSpawn4
@@ -252,10 +252,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn5 = LinearTransform(
-        Vec3(0.720889, 0.000000, 0.693051),
+        Vec3(-0.999645, 0.000000, 0.026657),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.693051, 0.000000, 0.720889),
-Vec3(67.195313, 1.280078, -106.844727)
+Vec3(-0.026657, 0.000000, -0.999645),
+Vec3(-565.782227, 90.846489, -50.944328)
     )
 
     thisInstance.transform = infSpawn5
@@ -279,10 +279,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn1 = LinearTransform(
-        Vec3(-0.999941, 0.000000, 0.010849),
+        Vec3(0.282163, 0.000000, 0.959366),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.010849, 0.000000, -0.999941),
-Vec3(74.502930, 12.799632, 301.657227)
+Vec3(-0.959366, 0.000000, 0.282163),
+Vec3(71.597656, 91.157051, 571.724609)
     )
 
     thisInstance.transform = infSpawn1
@@ -298,10 +298,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn2 = LinearTransform(
-        Vec3(-0.999894, 0.000000, 0.014563),
+        Vec3(-0.800404, 0.000000, -0.599461),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.014563, 0.000000, -0.999894),
-Vec3(39.155273, 12.799632, 298.041016)
+Vec3(0.599461, 0.000000, -0.800404),
+Vec3(16.698242, 91.158981, 488.273438)
     )
 
     thisInstance.transform = infSpawn2
@@ -317,10 +317,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn3 = LinearTransform(
-        Vec3(-0.046724, 0.000000, -0.998908),
+       Vec3(0.237335, 0.000000, 0.971428),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.998908, 0.000000, -0.046724),
-Vec3(-4.714844, 16.640430, 269.834961)
+Vec3(-0.971428, 0.000000, 0.237335),
+Vec3(23.250977, 91.158005, 409.557617)
     )
 
     thisInstance.transform = infSpawn3
@@ -336,10 +336,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn4 = LinearTransform(
-        Vec3(0.003401, 0.000000, -0.999994),
+        Vec3(-0.971062, 0.000000, 0.238827),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999994, 0.000000, 0.003401),
-Vec3(-3.041992, 12.640429, 238.209961)
+Vec3(-0.238827, 0.000000, -0.971062),
+Vec3(-48.189453, 91.160934, 382.079102)
     )
 
     thisInstance.transform = infSpawn4
@@ -355,10 +355,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
     thisInstance:MakeWritable()
 
     local infSpawn5 = LinearTransform(
-        Vec3(-0.019824, 0.000000, 0.999803),
+        Vec3(0.999976, 0.000000, -0.006874),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999803, 0.000000, -0.019824),
-Vec3(97.842773, 12.799618, 220.681641)
+Vec3(0.006874, 0.000000, 0.999976),
+Vec3(-47.649414, 91.158005, 262.318359)
     )
 
     thisInstance.transform = infSpawn5
@@ -383,13 +383,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local bird1 = LinearTransform(
-        Vec3(0.747369, -0.042789, -0.663029),
-        Vec3(0.024834, 0.999026, -0.036480),
-        Vec3(0.663945, 0.010798, 0.747704),
-        Vec3(-2116.036377, 75.144028, -498.519623)
+        Vec3(0.993057, 0.000000, 0.117634),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.117634, 0.000000, 0.993057),
+Vec3(-449.411865, 100.906075, -290.458984)
     )
 
     thisInstance.blueprintTransform = bird1
@@ -407,10 +407,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local abrams1 = LinearTransform(
-        Vec3(-0.690853, 0.000000, 0.722995),
+        Vec3(0.710936, 0.000000, 0.703257),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.722995, 0.000000, -0.690853),
-Vec3(147.540039, 4.959765, -86.547852)
+Vec3(-0.703257, 0.000000, 0.710936),
+Vec3(-439.889648, 104.814255, -249.513672)
     )
 
     thisInstance.blueprintTransform = abrams1
@@ -428,10 +428,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Humvee1 = LinearTransform(
-        Vec3(0.703701, 0.000000, -0.710496),
+        Vec3(0.916574, 0.000000, -0.399864),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.710496, 0.000000, 0.703701),
-Vec3(114.611328, 4.960742, -119.917969)
+Vec3(0.399864, 0.000000, 0.916574),
+Vec3(-475.481323, 103.586754, -243.772324)
     )
 
     thisInstance.blueprintTransform = Humvee1
@@ -449,10 +449,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike1 = LinearTransform(
-        Vec3(0.727693, 0.000000, 0.685903),
+        Vec3(0.963720, 0.000000, 0.266916),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.685903, 0.000000, 0.727693),
-Vec3(123.752930, 5.121875, -129.172852)
+Vec3(-0.266916, 0.000000, 0.963720),
+Vec3(-472.599609, 100.979347, -284.451172)
     )
 
     thisInstance.blueprintTransform = Bike1
@@ -470,10 +470,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike2 = LinearTransform(
-        Vec3(0.697072, 0.000000, -0.717001),
+        Vec3(0.960428, 0.000000, 0.278530),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.717001, 0.000000, 0.697072),
-Vec3(91.445313, 5.118952, -147.775391)
+Vec3(-0.278530, 0.000000, 0.960428),
+Vec3(-480.532227, 100.111130, -197.886719)
     )
 
     thisInstance.blueprintTransform = Bike2
@@ -491,10 +491,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike3 = LinearTransform(
-        Vec3(0.722580, 0.000000, 0.691287),
+        Vec3(0.999927, 0.000000, -0.012089),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.691287, 0.000000, 0.722580),
-Vec3(152.696289, 5.120898, -100.001953)
+Vec3(0.012089, 0.000000, 0.999927),
+Vec3(-509.921875, 90.798630, -115.285156)
     )
 
     thisInstance.blueprintTransform = Bike3
@@ -512,10 +512,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike4 = LinearTransform(
-        Vec3(0.716778, 0.000000, 0.697301),
+        Vec3(-0.999758, 0.000000, 0.022012),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.697301, 0.000000, 0.716778),
-Vec3(121.262703, 4.981291, -89.419670)
+Vec3(-0.022012, 0.000000, -0.999758),
+Vec3(-517.701172, 90.798630, -62.358398)
     )
 
     thisInstance.blueprintTransform = Bike4
@@ -533,10 +533,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike5 = LinearTransform(
-        Vec3(0.519790, 0.000000, 0.854294),
+        Vec3(0.954804, 0.000000, -0.297237),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.854294, 0.000000, 0.519790),
-Vec3(87.131836, 1.120898, -64.799805)
+Vec3(0.297237, 0.000000, 0.954804),
+Vec3(-498.208984, 91.814270, -149.317383)
     )
 
     thisInstance.blueprintTransform = Bike5
@@ -554,10 +554,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Bike6 = LinearTransform(
-        Vec3(0.556565, 0.000000, 0.830804),
+        Vec3(0.997446, 0.000000, 0.071422),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.830804, 0.000000, 0.556565),
-Vec3(42.051758, 1.120898, -70.366211)
+Vec3(-0.071422, 0.000000, 0.997446),
+Vec3(-525.451172, 90.798630, -138.342773)
     )
 
     thisInstance.blueprintTransform = Bike6
@@ -582,13 +582,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local bird1 = LinearTransform(
-        Vec3(0.747369, -0.042789, -0.663029),
-        Vec3(0.024834, 0.999026, -0.036480),
-        Vec3(0.663945, 0.010798, 0.747704),
-        Vec3(-2116.036377, 75.144028, -498.519623)
+        Vec3(-0.976345, 0.000000, 0.216218),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.216218, 0.000000, -0.976345),
+Vec3(43.775391, 91.157051, 591.003906)
     )
 
     thisInstance.blueprintTransform = bird1
@@ -606,10 +606,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local abrams1 = LinearTransform(
-        Vec3(-0.018551, 0.000000, -0.999828),
+        Vec3(0.256229, 0.000000, 0.966616),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999828, 0.000000, -0.018551),
-Vec3(-40.434570, 12.640429, 241.755859)
+Vec3(-0.966616, 0.000000, 0.256229),
+Vec3(26.271484, 91.157051, 415.284180)
     )
 
     thisInstance.blueprintTransform = abrams1
@@ -627,10 +627,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local Humvee1 = LinearTransform(
-        Vec3(-0.011124, 0.000000, -0.999938),
+        Vec3(-0.932387, 0.000000, -0.361461),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999938, 0.000000, -0.011124),
-Vec3(-39.042969, 12.640429, 229.207031)
+Vec3(0.361461, 0.000000, -0.932387),
+Vec3(14.711914, 91.160934, 513.182617)
     )
 
     thisInstance.blueprintTransform = Humvee1
@@ -648,10 +648,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU1 = LinearTransform(
-        Vec3(-0.998217, 0.000000, 0.059694),
+        Vec3(-0.572876, 0.000000, 0.819642),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.059694, 0.000000, -0.998217),
-Vec3(73.687500, 12.800586, 288.821289)
+Vec3(-0.819642, 0.000000, -0.572876),
+Vec3(56.968750, 91.158005, 549.651367)
     )
 
     thisInstance.blueprintTransform = BikeRU1
@@ -669,10 +669,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU2 = LinearTransform(
-        Vec3(-0.990740, 0.000000, -0.135774),
+        Vec3(-0.349010, 0.000000, 0.937119),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.135774, 0.000000, -0.990740),
-Vec3(31.625977, 12.800586, 278.255859)
+Vec3(-0.937119, 0.000000, -0.349010),
+Vec3(26.405273, 91.158005, 434.625977)
     )
 
     thisInstance.blueprintTransform = BikeRU2
@@ -690,10 +690,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU3 = LinearTransform(
-        Vec3(-0.008342, 0.000000, -0.999965),
+        Vec3(0.268772, 0.000000, 0.963204),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999965, 0.000000, -0.008342),
-Vec3(-21.479492, 12.719839, 237.650482)
+Vec3(-0.963204, 0.000000, 0.268772),
+Vec3(13.178711, 91.172684, 348.250000)
     )
 
     thisInstance.blueprintTransform = BikeRU3
@@ -711,10 +711,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU4 = LinearTransform(
-        Vec3(0.035881, 0.000000, 0.999356),
+        Vec3(-0.856196, 0.000000, 0.516652),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999356, 0.000000, 0.035881),
-Vec3(100.955078, 12.640429, 232.335938)
+Vec3(-0.516652, 0.000000, -0.856196),
+Vec3(-47.003906, 91.158005, 370.047852)
     )
 
     thisInstance.blueprintTransform = BikeRU4
@@ -732,10 +732,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU5 = LinearTransform(
-        Vec3(-0.999785, 0.000000, 0.020711),
+        Vec3(0.238234, 0.000000, 0.971208),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.020711, 0.000000, -0.999785),
-Vec3(49.701172, 11.968554, 205.927734)
+Vec3(-0.971208, 0.000000, 0.238234),
+Vec3(-88.837891, 91.158005, 295.060547)
     )
 
     thisInstance.blueprintTransform = BikeRU5
@@ -753,10 +753,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeRU6 = LinearTransform(
-        Vec3(-0.957980, 0.000000, 0.286836),
+        Vec3(-0.329794, 0.000000, 0.944053),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.286836, 0.000000, -0.957980),
-Vec3(48.850586, 12.640429, 237.791016)
+Vec3(-0.944053, 0.000000, -0.329794),
+Vec3(-105.902344, 91.158005, 347.085938)
     )
 
     thisInstance.blueprintTransform = BikeRU6
@@ -780,10 +780,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeShared1 = LinearTransform(
-        Vec3(-0.999849, 0.000000, -0.017357),
+        Vec3(-0.370170, 0.000000, -0.928964),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.017357, 0.000000, -0.999849),
-Vec3(20.097656, 1.396290, 42.892578)
+Vec3(0.928964, 0.000000, -0.370170),
+Vec3(-411.423706, 90.721527, 229.978516)
     )
 
     thisInstance.blueprintTransform = BikeShared1
@@ -801,10 +801,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_018/MP_018' or SharedUtils:GetCurren
 	thisInstance.excluded = false
 
     local BikeShared2 = LinearTransform(
-        Vec3(0.979769, 0.000000, -0.200132),
+        Vec3(0.900285, 0.000000, -0.435300),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.200132, 0.000000, 0.979769),
-Vec3(6.314453, 1.288867, -19.749023)
+Vec3(0.435300, 0.000000, 0.900285),
+Vec3(-480.065430, 89.549606, 165.067383)
     )
 
     thisInstance.blueprintTransform = BikeShared2

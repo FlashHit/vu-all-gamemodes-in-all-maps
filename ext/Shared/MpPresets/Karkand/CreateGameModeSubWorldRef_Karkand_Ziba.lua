@@ -21,49 +21,9 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'GunMaster0' then
-
-
-    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
-
-    -- Deathmatch --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    local zibaDeathmatchSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('2DF41167-0BAB-11E1-AA4E-EFBA5D767A10'), Guid('E031587A-9C68-4A85-A05E-204F6C8122DA')))
-	
-	
-    -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
-    -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
-    -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
-    -- I copied the partition and instance GUIDs and pasted them above, as you can see.
-    -- Of course, you will need to find your own. You can use the exact same method.
-
-    -- Add to LevelData 'Objects' array
-    local spLevelData = LevelData(partition.primaryInstance)
-    spLevelData:MakeWritable()
-    spLevelData.objects:add(zibaDeathmatchSubWorldReferenceObjectData)
-	
-	else
+    if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' then 
 	        return
     end
-
-
-
-end)
-
-Events:Subscribe('Partition:Loaded', function(partition)
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
-    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
-        return
-    end
-
-    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
-    -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'Domination0' then
-
 
     -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
 
@@ -83,11 +43,10 @@ Events:Subscribe('Partition:Loaded', function(partition)
     spLevelData:MakeWritable()
     spLevelData.objects:add(zibaDeathmatchSubWorldReferenceObjectData)
 
-	else
-	        return
-    end
 
 end)
+
+
 
 -- That's it. Your preset is ready. Load the singleplayer or COOP map you made it for in the right gamemode, and it 'should' work.
 -- I put 'should' in inverted commas bc I know these things never work first time. Message me if you need a hand.

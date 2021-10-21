@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Metro
-    if string.find(levelName, 'MP_Subway') then
+    if string.find(levelName, 'MP_Subway') and gameModeName == 'Domination0' then
      
 
     print('Initialising Metro Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Metro
+    if string.find(levelName, 'MP_Subway') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Metro CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Metro/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

@@ -15,7 +15,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Kharg Island // `MP_018`	         | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Operation Firestorm // `MP_012`	 | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Damavand Peak	// `MP_013`          | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Noshahr Canals // `MP_017`	     | `GunMaster0` `Domination0`            |
+| Noshahr Canals // `MP_017`	     | `GunMaster0` `Domination0` `CaptureTheFlag0`            |
 | Operation Metro // `MP_Subway`     | `GunMaster0` `Domination0`            |
 | Grand Bazaar // `MP_001`           | `GunMaster0` `Domination0`            |
 | Caspian Border // `MP_007`         | `GunMaster0` `Domination0`            |

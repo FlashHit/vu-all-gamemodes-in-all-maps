@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Noshahr
-    if string.find(levelName, 'MP_017') then
+    if string.find(levelName, 'MP_017') and gameModeName == 'Domination0' then
      
 
     print('Initialising Noshahr Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Noshahr
+    if string.find(levelName, 'MP_017') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Noshahr CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Noshahr_Canals/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

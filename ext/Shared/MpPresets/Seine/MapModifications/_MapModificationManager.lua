@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Seine Crossing
-    if string.find(levelName, 'MP_011') then
+    if string.find(levelName, 'MP_011') and gameModeName == 'Domination0' then
      
 
     print('Initialising Seine Crossing Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Seine Crossing
+    if string.find(levelName, 'MP_011') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Seine Crossing CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Seine/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

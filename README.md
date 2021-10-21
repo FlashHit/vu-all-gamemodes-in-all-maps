@@ -11,7 +11,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Level                              | New Gamemodes (as in MapList)         |
 | --------------------------         | ------------------------                               |
 | Teheran Highway // `MP_003`	     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Seine Crossing // `MP_011`	     | `GunMaster0` `Domination0`                             |
+| Seine Crossing // `MP_011`	     | `GunMaster0` `Domination0` `CaptureTheFlag0`                           |
 | Kharg Island // `MP_018`	         | `GunMaster0` `Domination0`            |
 | Operation Firestorm // `MP_012`	 | `GunMaster0` `Domination0`            |
 | Damavand Peak	// `MP_013`          | `GunMaster0` `Domination0`            |

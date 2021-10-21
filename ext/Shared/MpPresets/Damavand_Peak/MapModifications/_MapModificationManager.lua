@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Damavand Peak
-    if string.find(levelName, 'MP_013') then
+    if string.find(levelName, 'MP_013') and gameModeName == 'Domination0' then
      
 
     print('Initialising Damavand Peak Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Damavand Peak
+    if string.find(levelName, 'MP_013') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Damavand Peak CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Damavand_Peak/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

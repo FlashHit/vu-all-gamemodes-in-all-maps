@@ -21,7 +21,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Caspian Border // `MP_007`         | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Strike at Karkand // `XP1_001`     | `GunMaster0` `Domination0` `CaptureTheFlag0`            |
 | Gulf of Oman // `XP1_002`          | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Sharqi Peninsula // `XP1_003`      | `GunMaster0` `Domination0`            |
+| Sharqi Peninsula // `XP1_003`      | `GunMaster0` `Domination0` `CaptureTheFlag0`            |
 | Wake Island // `XP1_004`           | `GunMaster0` `Domination0`            |
 | Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0`            |

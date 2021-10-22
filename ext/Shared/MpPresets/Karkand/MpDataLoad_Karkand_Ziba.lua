@@ -16,21 +16,20 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 	
-	if string.find(levelName, 'XP1_001') and gameModeName == 'Domination0' then
+	if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' then 
+	        return
+    end
 
 
-
-    print('Mounting XP2 superbundle...')
+    --print('Mounting XP2 superbundle...')
     ResourceManager:MountSuperBundle('xp2chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
-    print('Mounting Ziba Tower superbundle for MP logic...')
+    --print('Mounting Ziba Tower superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.)
 	ResourceManager:MountSuperBundle('chunks0')
 	ResourceManager:MountSuperBundle('chunks1')
 	ResourceManager:MountSuperBundle('chunks2')
 	
-		else
-	        return
-    end
+
 
 end)
 
@@ -50,8 +49,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
     -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
     -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'Domination0' then
-
+    if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' then 
+	        return
+    end
 
     if #bundles == 1 and bundles[1] == levelName then
 
@@ -84,10 +84,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     end
 
     -- TODO: UI Pre-EOR and EOR
-	
-		else
-	        return
-    end
+
 
 end)
 
@@ -99,8 +96,9 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'Domination0' then
-
+    if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' then 
+	        return
+    end
 
     -- These need some digging. Find the RegistryContainers for the LevelData of your MP level, and the SubWorld(s) for the gamemode you're using.
     -- For example, here, the 'Ziba Tower' registry is from http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json. Press the orange bold text saying 'RegistryContainer' (might take a sec to load, these are big), and copy the partitiona and instance GUIDs.
@@ -123,33 +121,29 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
     local zibaDomRegistry = ResourceManager:FindInstanceByGuid(Guid('55BC5B5B-6039-4DDF-B273-2AEA13622E4B'), Guid('1B42E26B-ECF3-9013-05E3-7F1B4A4B82CA'))
     ResourceManager:AddRegistry(zibaDomRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
-		else
-	        return
-    end
 
 
 end)
 
 
+
+----------------------
+---Capture The Flag---
+----------------------
+
 Events:Subscribe('Level:LoadResources', function()
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_001/XP1_001' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
+        return
+    else
+end
 
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
+    --print('Mounting XP5 superbundle...')
+    ResourceManager:MountSuperBundle('xp5chunks') 
+   -- print('Mounting Sabalan Pipeline superbundle for MP logic...')
+    ResourceManager:MountSuperBundle('levels/xp5_004/xp5_004')  
+
+
 	
-	if string.find(levelName, 'XP1_001') and gameModeName == 'GunMaster0' then
-
-
-
-    print('Mounting XP2 superbundle...')
-    ResourceManager:MountSuperBundle('xp2chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
-    print('Mounting Ziba Tower superbundle for MP logic...')
-    ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.)
-	ResourceManager:MountSuperBundle('chunks0')
-	ResourceManager:MountSuperBundle('chunks1')
-	ResourceManager:MountSuperBundle('chunks2')
-		else
-	        return
-    end
 
 end)
 
@@ -169,41 +163,36 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
     -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
     -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'GunMaster0' then
-
+    if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
 
     if #bundles == 1 and bundles[1] == levelName then
 
-        print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
+        --print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
 
-        print('Injecting MP bundles...')
+       
         bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
-            'levels/xp2_skybar/xp2_skybar',
-            'levels/xp2_skybar/deathmatch', 
-			'levels/xp2_skybar/gunmaster',
+            'levels/xp5_004/xp5_004',
+            'levels/xp5_004/ctf',
             bundles[1],
         }
+		-- print('Injecting MP bundles...')
 
         hook:Pass(bundles, compartment)
 
     end
 
-
     -- Complete thanks to Powback and kiwidog who made me take one last look at the bundles so that I could notice this
     -- Intercepts the UiPlaying bundle for the SP or COOP level, and replaces it with an MP one
-    for i, bundle in pairs(bundles) do
+        for i, bundle in pairs(bundles) do
         if bundle == levelName..'_UiPlaying' then
             bundles = {
-                'ui/flow/bundle/ingamebundlemp', -- Leave this
-                'levels/xp2_skybar/xp2_skybar_uiplaying' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+			    'ui/flow/bundle/ingamebundlemp', -- Leave this
+                'levels/xp5_004/xp5_004_uiplaying' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
             }
             hook:Pass(bundles,compartment)
         end
-    end
-	
-		else
-	        return
     end
 
     -- TODO: UI Pre-EOR and EOR
@@ -218,8 +207,9 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'XP1_001') and gameModeName == 'GunMaster0' then
-
+    if string.find(levelName, 'XP1_001') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
 
     -- These need some digging. Find the RegistryContainers for the LevelData of your MP level, and the SubWorld(s) for the gamemode you're using.
     -- For example, here, the 'Ziba Tower' registry is from http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json. Press the orange bold text saying 'RegistryContainer' (might take a sec to load, these are big), and copy the partitiona and instance GUIDs.
@@ -230,23 +220,13 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- http://webx.powback.com is a great resource.
 
-    print('Adding Ziba Tower registry...')
-    local zibaRegistry = ResourceManager:FindInstanceByGuid(Guid('2DF41167-0BAB-11E1-AA4E-EFBA5D767A10'), Guid('96EF016C-4246-27BF-E65F-D93E823EA96C'))
-    ResourceManager:AddRegistry(zibaRegistry, ResourceCompartment.ResourceCompartment_Game)
+    --print('Adding Sabalan Pipeline registry...')
+    local NebandanRegistry = ResourceManager:FindInstanceByGuid(Guid('07BE1949-19EA-11E2-8E8A-A9B21FEA266E'), Guid('D08BA075-3DB4-B5CF-B0AF-425D1FE90234'))
+    ResourceManager:AddRegistry(NebandanRegistry, ResourceCompartment.ResourceCompartment_Game)
 
-    print('Adding Ziba Tower \'Deathmatch\' registry...')
-    local zibaDeathmatchRegistry = ResourceManager:FindInstanceByGuid(Guid('F2B8C98F-F166-48CA-A63C-E7235DBF243F'), Guid('1C820A38-4F85-14C2-3909-8C1921CDEC45'))
-    ResourceManager:AddRegistry(zibaDeathmatchRegistry, ResourceCompartment.ResourceCompartment_Game)
-	
-	
-	print('Adding Ziba Tower Gunmaster registry...')
-    local zibaGunmasterRegistry = ResourceManager:FindInstanceByGuid(Guid('06B999B3-6989-46C3-BCF3-37DEC0B7A531'), Guid('412E7620-8C4D-A090-AFF0-37057687F097'))
-    ResourceManager:AddRegistry(zibaGunmasterRegistry, ResourceCompartment.ResourceCompartment_Game)
-
-	else
-	        return
-    end
-
+    --print('Adding Sabalan Pipeline \'Capture the Flag\' registry...')
+    local NebandanASRegistry = ResourceManager:FindInstanceByGuid(Guid('4210A5DE-754B-4881-9C0E-E37EEF0542EF'), Guid('DD65DCFF-51C7-9AD4-3F48-3D824CFF8178'))
+    ResourceManager:AddRegistry(NebandanASRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
 
 end)
@@ -260,6 +240,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('B048FCB3-CF34-B3CF-4EDC-730B3E
 
     LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('GunMaster0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('Domination0')
+	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('CaptureTheFlag0')
 
 end)
 

@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Sabalan Pipeline
-    if string.find(levelName, 'XP5_004') then
+    if string.find(levelName, 'XP5_004') and gameModeName == 'Domination0' then
      
 
     print('Initialising Sabalan Pipeline Domination scripts...')

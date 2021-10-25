@@ -49,6 +49,40 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
 end)
 
+
+--Capture the flag
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
+    -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
+    if string.find(levelName, 'XP4_Quake') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
+
+    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
+	
+----------------------
+
+    local NebandanASSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('3DF41561-D87B-4526-B153-85D09BAA07C7'), Guid('70080DB4-8119-422F-B454-B236129930D9')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(NebandanASSubWorldReferenceObjectData)
+	--print('Nebandan CTF SubWorldReferenceObjectData added')
+
+end)
 -- That's it. Your preset is ready. Load the singleplayer or COOP map you made it for in the right gamemode, and it 'should' work.
 -- I put 'should' in inverted commas bc I know these things never work first time. Message me if you need a hand.
 

@@ -19,18 +19,18 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Operation Metro // `MP_Subway`     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Grand Bazaar // `MP_001`           | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Caspian Border // `MP_007`         | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Strike at Karkand // `XP1_001`     | `GunMaster0` `Domination0` `CaptureTheFlag0`            |
+| Strike at Karkand // `XP1_001`     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Gulf of Oman // `XP1_002`          | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Sharqi Peninsula // `XP1_003`      | `GunMaster0` `Domination0` `CaptureTheFlag0`            |
+| Sharqi Peninsula // `XP1_003`      | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Wake Island // `XP1_004`           | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
 | Donya Fortress // `XP2_Palace`	 | `CaptureTheFlag0` |
 | Operation 925 // `XP2_Office`	     | `CaptureTheFlag0` |
 | Scrapmetal // `XP2_Factory`	     | `CaptureTheFlag0`|
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0`            |
-| Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0`            |
-| Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0`            |
+| Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
+| Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
+| Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Azadi Palace // `XP4_Parl`         | `Domination0`                         |
 | Epicenter // `XP4_Quake`           | `Domination0`                         |
 | Markaz Monolith // `XP4_FD`        | `Domination0`                         |

@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Armored Shield
-    if string.find(levelName, 'XP3_Shield') then
+    if string.find(levelName, 'XP3_Shield') and gameModeName == 'Domination0' then
      
 
     print('Initialising Armored Shield Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Armored Shield
+    if string.find(levelName, 'XP3_Shield') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Armored Shield CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Shield/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

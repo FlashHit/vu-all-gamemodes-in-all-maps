@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Bandar Desert
-    if string.find(levelName, 'XP3_Desert') then
+    if string.find(levelName, 'XP3_Desert') and gameModeName == 'Domination0' then
      
 
     print('Initialising Bandar Desert Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Bandar Desert
+    if string.find(levelName, 'XP3_Desert') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Bandar Desert Capture The Flag scripts...')
+
+    require '__shared/MpPresets/Bandar/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

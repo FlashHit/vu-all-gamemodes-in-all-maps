@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Death Valley
-    if string.find(levelName, 'XP3_Valley') then
+    if string.find(levelName, 'XP3_Valley') and gameModeName == 'Domination0' then
      
 
     print('Initialising Death Valley Domination scripts...')
@@ -39,3 +39,20 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Death Valley
+    if string.find(levelName, 'XP3_Valley') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Death Valley Capture The Flag scripts...')
+
+    require '__shared/MpPresets/Death_Valley/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

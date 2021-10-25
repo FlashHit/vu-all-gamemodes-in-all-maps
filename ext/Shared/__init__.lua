@@ -38,11 +38,6 @@ require '__shared/MpPresets/Carrier/MpDataLoad_Wake'
 require '__shared/MpPresets/Carrier/CreateGameModeSubWorldRef_Wake'
 require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
 
--- Thunder Run
-require '__shared/MpPresets/ThunderRun_CQL/MpDataLoad'
-require '__shared/MpPresets/ThunderRun_CQL/CreateGameModeSubWorldRef'
-require '__shared/MpPresets/ThunderRun_CQL/MapModifications/_MapModificationManager'
-
 -----------------
 ----COOP Maps----
 -----------------
@@ -117,9 +112,9 @@ require '__shared/MpPresets/Donya/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Donya/MapModifications/_MapModificationManager'
 
 -- Operation 925
-require '__shared/MpPresets/Operation_925/MpDataLoad'
-require '__shared/MpPresets/Operation_925/CreateGameModeSubWorldRef'
-require '__shared/MpPresets/Operation_925/MapModifications/_MapModificationManager'
+--require '__shared/MpPresets/Operation_925/MpDataLoad'
+--require '__shared/MpPresets/Operation_925/CreateGameModeSubWorldRef'
+--require '__shared/MpPresets/Operation_925/MapModifications/_MapModificationManager'
 
 -- Scrapmetal
 require '__shared/MpPresets/Scrapmetal/MpDataLoad'

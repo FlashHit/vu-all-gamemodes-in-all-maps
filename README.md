@@ -34,7 +34,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Azadi Palace // `XP4_Parl`         | `Domination0` `CaptureTheFlag0`                        |
 | Epicenter // `XP4_Quake`           | `Domination0` `CaptureTheFlag0`                        |
 | Markaz Monolith // `XP4_FD`        | `Domination0` `CaptureTheFlag0`                        |
-| Talah Market // `XP4_Rubble`       | `Domination0`                         |
+| Talah Market // `XP4_Rubble`       | `Domination0` `CaptureTheFlag0`                        |
 | Operation Riverside // `XP5_001`   | `GunMaster0` `Domination0`            |
 | Nebandan Flats // `XP5_002`        | `GunMaster0` `Domination0`            |
 | Kiasar Railroad // `XP5_003`       | `GunMaster0` `Domination0`            |

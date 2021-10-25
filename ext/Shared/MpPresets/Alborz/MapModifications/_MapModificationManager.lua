@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Alborz Mountains
-    if string.find(levelName, 'XP3_Alborz') then
+    if string.find(levelName, 'XP3_Alborz') and gameModeName == 'Domination0' then
      
 
     print('Initialising Alborz Mountains Domination scripts...')
@@ -39,3 +39,21 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Alborz Mountains
+    if string.find(levelName, 'XP3_Alborz') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Alborz Mountains CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Alborz/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

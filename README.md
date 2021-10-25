@@ -27,7 +27,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Donya Fortress // `XP2_Palace`	 | `CaptureTheFlag0` |
 | Operation 925 // `XP2_Office`	     | `CaptureTheFlag0` |
 | Scrapmetal // `XP2_Factory`	     | `CaptureTheFlag0`|
-| Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0`            |
+| Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0`            |
 | Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0`            |
 | Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0`            |

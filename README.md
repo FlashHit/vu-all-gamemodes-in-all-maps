@@ -31,7 +31,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Death Valley // `XP3_Valley`       | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
-| Azadi Palace // `XP4_Parl`         | `Domination0`                         |
+| Azadi Palace // `XP4_Parl`         | `Domination0` `CaptureTheFlag0`                        |
 | Epicenter // `XP4_Quake`           | `Domination0`                         |
 | Markaz Monolith // `XP4_FD`        | `Domination0`                         |
 | Talah Market // `XP4_Rubble`       | `Domination0`                         |

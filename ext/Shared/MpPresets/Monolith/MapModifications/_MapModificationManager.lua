@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Markaz Monolith
-    if string.find(levelName, 'XP4_FD') then
+    if string.find(levelName, 'XP4_FD') and gameModeName == 'Domination0' then
      
 
     print('Initialising Markaz Monolith Domination scripts...')
@@ -22,3 +22,20 @@ Events:Subscribe('Level:LoadResources', function()
 end)
 
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Markaz Monolith
+    if string.find(levelName, 'XP4_FD') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Markaz Monolith CaptureTheFlag scripts...')
+
+    require '__shared/MpPresets/Monolith/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
+
+end)

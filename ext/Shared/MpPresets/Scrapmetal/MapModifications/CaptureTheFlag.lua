@@ -5,7 +5,7 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('65002E2F-1D1D-429A-B517-541D2CDD90A6'), Guid('D849A434-D1AF-4170-97F6-C5F72FBEDA37'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Factory/XP2_Factory' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
         return
     else
 end
@@ -22,7 +22,7 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('268750F3-D6D1-42A7-85DE-A363AC18F130'), Guid('466F3AD5-3EDC-4BB9-93F7-0E3CD83FB1C4'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Factory/XP2_Factory' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
         return
     else
 end
@@ -35,7 +35,7 @@ end
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('268750F3-D6D1-42A7-85DE-A363AC18F130'), Guid('A40903DE-5AFE-46EA-AF18-83ED09F38119'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Factory/XP2_Factory' or SharedUtils:GetCurrentGameMode() ~= 'CaptureTheFlag0' then
         return
     else
 end
@@ -56,11 +56,11 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
-	thisInstance.height = 19
+	thisInstance.height = 30
     thisInstance.points:clear()
 
     local points = {
-       Vec3(58.447243, 7.817251, 52.938095), Vec3(-58.185600, 7.817251, 52.280270), Vec3(-59.158787, 7.817247, -40.175049), Vec3(57.054199, 7.817245, -41.244476)
+       Vec3(-17.776669, 4.279952, 61.431244), Vec3(18.088837, 4.279952, 61.736969), Vec3(26.568129, 4.903628, 53.267357), Vec3(26.484282, 4.279952, 11.177990), Vec3(28.932793, 4.150936, -51.793259), Vec3(-22.880001, 4.530318, -54.044064), Vec3(-24.221800, 4.279952, -20.054806), Vec3(-24.228838, 4.279952, -19.498156), Vec3(-25.041248, 4.279952, -19.052696), Vec3(-25.170099, 4.279952, -11.168484), Vec3(-25.044621, 4.279952, 1.366905), Vec3(-47.219490, 4.279952, 1.288255), Vec3(-48.013565, 4.279952, 36.685593), Vec3(-37.603134, 4.279952, 55.425789)
     }
 
 
@@ -119,10 +119,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 	
 	    local CTFBaseUS = LinearTransform(
-        Vec3(0.999555, 0.000000, -0.029826),
+        Vec3(-0.999730, 0.000000, 0.023254),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.029826, 0.000000, 0.999555),
-Vec3(46.26, 10.13, -0.12)
+Vec3(-0.023254, 0.000000, -0.999730),
+Vec3(-8.860352, 19.203911, 34.770508)
     )
 
     thisInstance.blueprintTransform = CTFBaseUS
@@ -137,10 +137,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 	
 	    local CTFBaseRU = LinearTransform(
-        Vec3(0.999555, 0.000000, -0.029826),
+        Vec3(0.999452, 0.000000, 0.033094),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.029826, 0.000000, 0.999555),
-Vec3(-43.92, 10.27, -2.96)
+Vec3(-0.033094, 0.000000, 0.999452),
+Vec3(9.124023, 12.799627, -41.342773)
     )
 
     thisInstance.blueprintTransform = CTFBaseRU
@@ -161,10 +161,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn1 = LinearTransform(
-        Vec3(0.999888, 0.000000, -0.014991),
+        Vec3(-0.002778, 0.000000, 0.999996),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.014991, 0.000000, 0.999888),
-Vec3(41.164063, 10.243945, -17.212891)
+Vec3(-0.999996, 0.000000, -0.002778),
+Vec3(25.320313, 19.203913, 41.000000)
     )
 
     thisInstance.transform = infSpawn1
@@ -177,10 +177,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn2 = LinearTransform(
-        Vec3(-0.999922, 0.000000, 0.012492),
+        Vec3(0.487179, 0.000000, 0.873302),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.012492, 0.000000, -0.999922),
-Vec3(33.590820, 10.243945, 17.505859)
+Vec3(-0.873302, 0.000000, 0.487179),
+Vec3(24.628906, 19.203924, 32.695313)
     )
 
     thisInstance.transform = infSpawn2
@@ -193,10 +193,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn3 = LinearTransform(
-        Vec3(0.010380, 0.000000, 0.999946),
+        Vec3(0.819269, 0.000000, 0.573409),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999946, 0.000000, 0.010380),
-Vec3(30.870117, 15.360156, -26.742188)
+Vec3(-0.573409, 0.000000, 0.819269),
+Vec3(16.531250, 19.204884, 20.306641)
     )
 
     thisInstance.transform = infSpawn3
@@ -209,10 +209,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn4 = LinearTransform(
-        Vec3(0.013166, 0.000000, 0.999913),
+        Vec3(0.230068, 0.000000, 0.973175),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999913, 0.000000, 0.013166),
-Vec3(22.814453, 15.362109, 16.288086)
+Vec3(-0.973175, 0.000000, 0.230068),
+Vec3(16.413086, 19.203911, 13.575195)
     )
 
     thisInstance.transform = infSpawn4
@@ -225,10 +225,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn5 = LinearTransform(
-        Vec3(0.021876, 0.000000, 0.999761),
+        Vec3(0.610346, 0.000000, 0.792135),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.999761, 0.000000, 0.021876),
-Vec3(27.520460, 10.902194, -17.389648)
+Vec3(-0.792135, 0.000000, 0.610346),
+Vec3(25.410156, 16.484180, 22.429688)
     )
 
     thisInstance.transform = infSpawn5
@@ -249,10 +249,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn1 = LinearTransform(
-        Vec3(-0.009165, 0.000000, -0.999958),
+        Vec3(0.810481, 0.000000, -0.585764),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999958, 0.000000, -0.009165),
-Vec3(-40.480335, 10.879699, 7.644531)
+Vec3(0.585764, 0.000000, 0.810481),
+Vec3(-0.594727, 12.800586, -41.031250)
     )
 
     thisInstance.transform = infSpawn1
@@ -265,10 +265,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn2 = LinearTransform(
-        Vec3(0.999953, 0.000000, 0.009730),
+        Vec3(0.649049, 0.000000, -0.760747),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.009730, 0.000000, 0.999953),
-Vec3(-34.425781, 10.879704, -9.775391)
+Vec3(0.760747, 0.000000, 0.649049),
+Vec3(-20.561523, 12.790154, -24.688477)
     )
 
     thisInstance.transform = infSpawn2
@@ -281,10 +281,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn3 = LinearTransform(
-        Vec3(0.005119, 0.000000, -0.999987),
+        Vec3(-0.011486, 0.000000, 0.999934),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999987, 0.000000, 0.005119),
-Vec3(-34.893555, 15.361133, 16.562500)
+Vec3(-0.999934, 0.000000, -0.011486),
+Vec3(8.621354, 18.881641, -20.795898)
     )
 
     thisInstance.transform = infSpawn3
@@ -297,10 +297,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn4 = LinearTransform(
-        Vec3(-0.999999, 0.000000, -0.001661),
+        Vec3(0.639784, 0.000000, 0.768555),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.001661, 0.000000, -0.999999),
-Vec3(-35.431641, 15.386539, 2.710938)
+Vec3(-0.768555, 0.000000, 0.639784),
+Vec3(9.010742, 18.301563, -42.656250)
     )
 
     thisInstance.transform = infSpawn4
@@ -313,10 +313,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FA5DDE26-DCB4-45CF-80B8-D83010
     thisInstance:MakeWritable()
 
     local infSpawn5 = LinearTransform(
-        Vec3(-0.015662, 0.000000, -0.999877),
+        Vec3(0.999473, 0.000000, -0.032471),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.999877, 0.000000, -0.015662),
-Vec3(-36.225586, 15.360156, -23.218750)
+Vec3(0.032471, 0.000000, 0.999473),
+Vec3(-19.975586, 18.879713, -43.179688)
     )
 
     thisInstance.transform = infSpawn5

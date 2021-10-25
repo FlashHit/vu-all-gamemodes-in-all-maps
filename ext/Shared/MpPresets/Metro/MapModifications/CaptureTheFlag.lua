@@ -446,13 +446,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:Get
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local Bike1 = LinearTransform(
-        Vec3(-0.894996, 0.000000, 0.446074),
+        Vec3(-0.925949, 0.000000, 0.377648),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.446074, 0.000000, -0.894996),
-Vec3(-73.041992, 70.448044, 193.120117)
+Vec3(-0.377648, 0.000000, -0.925949),
+Vec3(-171.791016, 59.258617, -290.469727)
     )
 
     thisInstance.blueprintTransform = Bike1
@@ -467,13 +467,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:Get
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local Bike2 = LinearTransform(
-        Vec3(-0.999557, 0.000000, -0.029757),
+        Vec3(-0.996318, 0.000000, -0.085737),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.029757, 0.000000, -0.999557),
-Vec3(-114.708008, 70.451950, 136.525391)
+Vec3(0.085737, 0.000000, -0.996318),
+Vec3(-186.368164, 59.258595, -273.188477)
     )
 
     thisInstance.blueprintTransform = Bike2
@@ -645,13 +645,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:Get
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local BikeRU1 = LinearTransform(
-        Vec3(-0.375090, 0.000000, -0.926989),
+        Vec3(0.927757, 0.000000, -0.373184),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.926989, 0.000000, -0.375090),
-Vec3(-699.722656, 73.407036, 3.551758)
+Vec3(0.373184, 0.000000, 0.927757),
+Vec3(-213.990234, 62.128738, -605.831055)
     )
 
     thisInstance.blueprintTransform = BikeRU1
@@ -666,13 +666,13 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:Get
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
+	thisInstance.excluded = false
 
     local BikeRU2 = LinearTransform(
-        Vec3(0.460124, 0.000000, -0.887855),
+        Vec3(0.728020, 0.000000, -0.685556),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.887855, 0.000000, 0.460124),
-Vec3(-596.619141, 70.664841, 16.944336)
+Vec3(0.685556, 0.000000, 0.728020),
+Vec3(-163.696289, 62.129688, -610.045898)
     )
 
     thisInstance.blueprintTransform = BikeRU2

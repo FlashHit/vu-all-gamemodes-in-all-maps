@@ -106,10 +106,25 @@ require '__shared/MpPresets/Kharg/MapModifications/_MapModificationManager'
 ----Close Quarters----
 ----------------------
 
--- Ziba
+-- Ziba Tower
 require '__shared/MpPresets/Ziba/MpDataLoad'
 require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
+
+-- Donya Fortress
+require '__shared/MpPresets/Donya/MpDataLoad'
+require '__shared/MpPresets/Donya/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Donya/MapModifications/_MapModificationManager'
+
+-- Operation 925
+require '__shared/MpPresets/Operation_925/MpDataLoad'
+require '__shared/MpPresets/Operation_925/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Operation_925/MapModifications/_MapModificationManager'
+
+-- Scrapmetal
+require '__shared/MpPresets/Scrapmetal/MpDataLoad'
+require '__shared/MpPresets/Scrapmetal/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Scrapmetal/MapModifications/_MapModificationManager'
 
 
 -----------------------

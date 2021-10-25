@@ -7,16 +7,16 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Ziba
-    if (string.find(levelName, 'XP2_Skybar') == nil) then
+    -- Don't continue if the level is not Donya Fortress
+    if (string.find(levelName, 'XP2_Factory') == nil) then
         return
     end
 
-    print('Initialising Ziba Tower modification scripts...')
+    print('Initialising Scrapmetal modification scripts...')
 
-    require '__shared/MpPresets/Ziba/MapModifications/AirSuperiority'
-	require '__shared/MpPresets/Ziba/MapModifications/SquadRush'
-	require '__shared/MpPresets/Ziba/MapModifications/CaptureTheFlag'
+    require '__shared/MpPresets/Scrapmetal/MapModifications/AirSuperiority'
+	require '__shared/MpPresets/Scrapmetal/MapModifications/SquadRush'
+	require '__shared/MpPresets/Scrapmetal/MapModifications/CaptureTheFlag'
 
 end)
 

@@ -61,13 +61,50 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Valley.
+    -- Don't continue if the level is not Carrier
     if string.find(levelName, 'SP_Jet') and gameModeName == 'TeamDeathMatchC0' then
      
 
     print('Initialising Carrier TDM scripts...')
 
     require '__shared/MpPresets/Carrier/MapModifications/MapModifications_TDM'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Carrier
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'Domination0' then
+     
+
+    print('Initialising Carrier Domination scripts...')
+
+    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_Domination'
+	else
+	--print('Blocking Strike at Karkand Domination scripts...')
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Carrier
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'GunMaster0' then
+     
+
+    print('Initialising Carrier Gunmaster scripts...')
+
+    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_GunMaster'
 	else
 	return
 	end

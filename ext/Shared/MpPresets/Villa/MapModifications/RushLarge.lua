@@ -1,6 +1,6 @@
 -- Check map being loaded
 Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicatedServer)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 end)
@@ -13,7 +13,7 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('02A382E5-32F5-423F-8E78-A87ADCFA13F6'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -25,7 +25,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('4BFDC9A0-7F27-4973-B271-917C2A2E02E6'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -37,7 +37,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('B557D576-E0CE-4DDD-8835-F64BC2842D4F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -49,7 +49,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('C8AE6071-73E6-419B-8065-ACF9A8B11334'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -61,7 +61,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('48DC09A0-02E3-4DCE-84D8-DCC6F96E3D39'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -73,7 +73,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('7C0FD7FC-A036-4FA5-8970-9B8830B6AC31'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -85,7 +85,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('4C6C4FA6-B1A2-40E9-9686-E0417B9B532E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -97,7 +97,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7DD537C8-B2AD-4329-818A-04F89C78C785'), Guid('F2E28210-1990-4AB1-AE39-268D12DC8C01'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -118,7 +118,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('41DEE139-7877-47C5-8BFC-013EFB5C9855'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -129,7 +129,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('1AE15A40-DBF3-4DB4-AA4F-EF10E4648B1C'), Guid('99EDF585-1EC8-4246-879C-B8DEE34495B8'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -151,7 +151,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9897DFF7-0B7C-4010-BB88-30F453453311'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -162,7 +162,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0755109F-10FF-490A-AF07-48FA514CD94C'), Guid('484B879D-C570-4195-A5E9-BD11546F4420'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -183,7 +183,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -194,7 +194,7 @@ end)
 --mcom 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -209,7 +209,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C889E947-704B-426E-9777-308F829ABD3C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -220,7 +220,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('1AE15A40-DBF3-4DB4-AA4F-EF10E4648B1C'), Guid('673EFB49-1613-4F99-84CF-5DDC55A6D9E7'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -242,7 +242,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('3DA4D5BB-39E9-4CA3-9AC4-0EA554E78C7E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -253,7 +253,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0755109F-10FF-490A-AF07-48FA514CD94C'), Guid('FD005B77-9375-4764-B4A7-454D70BAFE4E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -274,7 +274,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -285,7 +285,7 @@ end)
 --mcom 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -300,7 +300,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('07AEE9C9-DDDB-456A-8BD4-55ADFF7616AC'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -311,7 +311,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('1AE15A40-DBF3-4DB4-AA4F-EF10E4648B1C'), Guid('A1B04E11-12A6-4C79-9FC3-C4D1A3851266'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -333,7 +333,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('780DE48B-59B2-4FE6-AB56-B0AE8D573A30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -344,7 +344,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0755109F-10FF-490A-AF07-48FA514CD94C'), Guid('661B602A-A0DB-4734-8304-0DCF16F9CB89'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -365,7 +365,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -376,7 +376,7 @@ end)
 --mcom 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -390,7 +390,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('98905D82-A5D2-4412-AA69-A7CF3EEF6794'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -401,7 +401,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('1AE15A40-DBF3-4DB4-AA4F-EF10E4648B1C'), Guid('E4EBB4BB-5F87-4A69-8A44-99E9DFAF8C12'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -423,7 +423,7 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D177CFB6-9C9F-410C-921D-A154A77B961F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -434,7 +434,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C06
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0755109F-10FF-490A-AF07-48FA514CD94C'), Guid('5687194C-EE1C-4855-BE51-CBD16242E975'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -455,7 +455,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -466,7 +466,7 @@ end)
 --mcom 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('9187A8C0-EBEC-1F22-BE2B-4A891B627F30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -488,7 +488,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C7561B8E-2C8D-4D49-BC99-A56FBF5775FA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -509,7 +509,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('434B8F52-2C28-4938-B371-2306027D2A5E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -530,7 +530,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('AD179A85-2E9B-47C6-8C97-F3BE88A36D50'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -551,7 +551,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('617551FB-A77C-4FF5-AD28-3E9676573365'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -572,7 +572,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('EF597DAB-6C27-491C-987B-E428163E286F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -593,7 +593,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('59CA5192-FE2C-4323-AAB9-E172E5ACD22D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -614,7 +614,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('789CF8D2-BB8B-417D-BB02-B2D6FEAA8787'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -635,7 +635,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('5AA29004-C16C-4312-BD79-B497D889EA67'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -656,7 +656,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('51793801-AD18-4ABE-8C44-9AC6B36AC09F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -677,7 +677,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('A4DB2394-9A54-4F2E-A3BB-E3FF754FEFF4'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -698,7 +698,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8DCD0F9B-F59A-4503-8020-C40657CE0557'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -719,7 +719,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F47A405D-EBEF-45A3-BC0A-566AD5388436'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -742,7 +742,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('13DECCA7-16C5-4737-B027-F7A935B522CD'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -763,7 +763,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('58BFAF24-B244-43B7-B796-D30D20D8BD97'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -784,7 +784,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C9980E3A-F18E-40F2-9B74-8AC4E0A088BC'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -805,7 +805,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('0C6A7D50-A857-4C87-9613-DF89DF12783D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -826,7 +826,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('6BBBC285-081E-428C-973E-D75E8B6DB6CF'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -847,7 +847,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C756C631-70EF-49CB-A725-3E17291A52B9'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -868,7 +868,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('5D1F2C7F-3AD4-4BC1-92E9-2B0C23BA1CEB'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -889,7 +889,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9DFA1063-7DDD-4F84-8DBD-D87BAFE8AA07'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -910,7 +910,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('703FF500-B43C-4C01-AF5F-814A7AE5EDDF'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -931,7 +931,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('7E24FD10-EBB3-44FA-BAE5-615960196D9B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -952,7 +952,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8C9274DE-5D6B-4CD1-8C57-96BD0AF7F8D8'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -975,7 +975,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('EE1E90AC-3F9F-420E-8A89-7E3E79F5C45A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -996,7 +996,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C4F29192-85A0-45E5-90BD-92A00A3B33DA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1017,7 +1017,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9FB8BA6D-A06D-4203-AC16-9428A29763E7'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1038,7 +1038,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D8849930-2CE6-4AF3-BA22-4074E305FD89'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1059,7 +1059,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('2DAB428F-02D4-48E2-A0EC-CCD7097CAF6C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1080,7 +1080,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('93167D4C-A06F-4599-AF12-8736B971B54C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1101,7 +1101,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('FC421412-8420-4ECC-B150-DF6071D1EAF2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1122,7 +1122,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('31CF748F-6D4C-4F87-A999-DFBCBBE70FC1'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1143,7 +1143,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('33037748-7638-4E3D-BE14-EDEFC2D7B143'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1164,7 +1164,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C19CD0B5-6909-FE58-5168-F7D487546F9B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1185,7 +1185,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8FA6FCCA-CAE6-4753-BC92-FC33FCBFC567'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1206,7 +1206,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('31E23B3B-153B-4647-8171-EE2B52FD9E18'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1227,7 +1227,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8BB35A22-5E2C-4FCE-9F48-09C3E957BC79'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1250,7 +1250,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('136C4DD8-BF8C-428B-AFC4-7BA8CDDE38C1'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1271,7 +1271,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('A911A9B9-19C4-4E17-8038-9492F5E9FE9C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1292,7 +1292,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8965ABD7-6244-45CF-AFD0-2DBC2CD29B2D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1313,7 +1313,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('B0B2E9DB-919D-4AA1-A74B-EBF89C328B71'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1334,7 +1334,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('66A41F9C-1A7D-4120-80D9-A52E32CE6019'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1355,7 +1355,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F35A80C2-EECC-4E66-A95B-243BB7A1BC26'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1376,7 +1376,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('6140B4A1-4BB5-48B1-B868-913E01811B6A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1397,7 +1397,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F5EFE5AE-9AA7-4056-9D1C-30A3ABE2A9B6'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1418,7 +1418,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('474A1697-56D3-4381-BE80-C87605773137'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1439,7 +1439,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E1AEB7DE-C57A-4510-B97F-2CCD8DF75D5F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1460,7 +1460,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('809F6BF3-CD4C-4F86-B3CF-10DE229CE7EE'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1481,7 +1481,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('01584FBB-7D4B-4418-9783-403792CEFC30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1512,7 +1512,7 @@ end)
 -- RHIB
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('2197C832-886F-4ADF-80F3-9568D88A5D5E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1532,7 +1532,7 @@ Vec3(1334.929688, 64.543770, -428.642822)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('836CC071-7EFD-450E-B823-E4DE9E64508D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1552,7 +1552,7 @@ Vec3(1334.929688, 64.543770, -428.642822)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('306C8112-7693-4C2A-8850-3D3D1471BADA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1574,7 +1574,7 @@ end)
 -- C-Ram
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('1ACC60E7-6E36-471B-A516-5CF88B89A7D2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1596,7 +1596,7 @@ end)
 -- AAV-7A1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('1920EDFB-2F17-4151-8154-CEAA380F3F1A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1616,7 +1616,7 @@ Vec3(-199.951202, 311.282166, 319.568359)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('16194B71-8EE1-3157-A171-1E8EC90F07EF'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1638,7 +1638,7 @@ end)
 --A10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('4ECB38C4-DD4A-469D-9A9B-E7C92ED5F78A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1660,7 +1660,7 @@ end)
 --M1128
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('98C8D18D-0B7F-41DD-9FB7-9B005C877888'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1680,7 +1680,7 @@ Vec3(-212.221725, 294.192230, 397.255859)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E266E1DD-719E-47C4-9DC6-48C046F231F1'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1704,7 +1704,7 @@ end)
 -- M1128
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('7DAB9E50-FCDB-487F-8DAE-DE105C061973'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1724,7 +1724,7 @@ Vec3(-95.288086, 288.817200, 518.321289)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('FFF44DEA-0F2B-44D0-A3C4-AB21F180FCFA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1746,7 +1746,7 @@ end)
 -- AAV-7A1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F27A7094-0769-475C-98AA-C9B41871D5AD'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1766,7 +1766,7 @@ Vec3(1334.929688, 64.543770, -428.642822)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('6007C4B0-0816-7A9A-EF00-2762F7442622'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1787,7 +1787,7 @@ end)
 -- Quad Bike
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('01261144-06E4-4A94-AECE-BE9E7D7E6E1A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1807,7 +1807,7 @@ Vec3(-124.663086, 288.941223, 499.132813)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E6D07932-BF3F-41A9-9CBE-1115CB8336C2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1831,7 +1831,7 @@ end)
 -- AAV-7A1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C8189994-CABC-4391-B116-D14C3F06FC25'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1853,7 +1853,7 @@ end)
 -- M1128 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E4BEA581-0903-456E-AAAB-D2E9BF007C67'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1875,7 +1875,7 @@ end)
 --Player Spawn for vehicle
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8FA6FCCA-CAE6-4753-BC92-FC33FCBFC567'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1894,7 +1894,7 @@ Vec3(-167.971680, 285.753723, 667.764648)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('A8D050B8-3619-4DBA-99CE-9173A9378BC6'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1916,7 +1916,7 @@ end)
 --Player Spawn for vehicle
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8BB35A22-5E2C-4FCE-9F48-09C3E957BC79'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1937,7 +1937,7 @@ end)
 -- Quad Bike
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('84ED712C-5A65-4D4D-B654-EF9A74106186'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1957,7 +1957,7 @@ Vec3(-308.163086, 290.378723, 893.785156)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('312897DA-F956-4BA3-9D4B-3D545B189F52'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1977,7 +1977,7 @@ Vec3(-171.175781, 285.754700, 673.673828)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('65FFB770-15D2-4516-883E-9EB6FF272906'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -1997,7 +1997,7 @@ Vec3(-253.515625, 286.880676, 749.036133)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('FB1969D5-2707-42A4-95D3-3C37B47C0B98'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2021,7 +2021,7 @@ end)
 -- AAV-7A1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F06D0ACC-28A6-46A9-85FE-11BFA72E5E0B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2043,7 +2043,7 @@ end)
 -- Player spawn for AAV-7A1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('08458707-DC39-DA37-C4F8-11DD45AC6139'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2064,7 +2064,7 @@ end)
 -- M1128 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('EE766509-D2CC-4FBF-938B-CC57172662FB'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2086,7 +2086,7 @@ end)
 --Player Spawn for vehicle
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('474A1697-56D3-4381-BE80-C87605773137'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2105,7 +2105,7 @@ Vec3(75.607422, 291.102356, 698.491211)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('14688490-6FDD-46B4-934F-8E8DFA321BC7'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2127,7 +2127,7 @@ end)
 --Player Spawn for vehicle
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('01584FBB-7D4B-4418-9783-403792CEFC30'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2148,7 +2148,7 @@ end)
 -- Quad Bike
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('AE273795-4079-423B-A088-327BA134CB0D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2178,7 +2178,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9F71C496-8960-4B6C-B4D4-193900E5883B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2199,7 +2199,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('5F883076-3485-449B-A471-B71773D96BA1'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2220,7 +2220,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E6288238-D72A-499B-B33F-8C79B213217B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2241,7 +2241,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('90F497F7-727E-4973-9FB0-2F94EA9FDBEA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2262,7 +2262,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('BA7C7B33-E601-42DD-9ED7-18997CE49E61'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2283,7 +2283,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('C083699C-27FB-47D8-AB86-576EA2CFE4B7'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2304,7 +2304,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D7FCED49-9DE6-4FC5-B8B5-E0EAB25F42E8'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2327,7 +2327,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('969B0B04-BBB9-4524-AF75-BA794DE048E9'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2348,7 +2348,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F293B2CB-27D1-472D-B87A-4D5A1C19F828'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2369,7 +2369,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('31DDBD4A-5F41-4C37-9300-939DA7A98942'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2390,7 +2390,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('AECEE0B5-D3A5-4BA7-87DD-68CF04049AE2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2411,7 +2411,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('431E2B83-4278-47EE-BF4D-C40C8A73711B'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2432,7 +2432,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('7B3DF73C-7AEB-4C83-B4FD-B6422FC21691'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2453,7 +2453,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('812C9432-5C15-41B7-8AB5-BEBFBE8FA821'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2474,7 +2474,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9C899846-926B-4123-A1DC-586B795A5CE9'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2495,7 +2495,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('46A5F37B-631E-48E5-86DE-F6F91E8CFDA5'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2516,7 +2516,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('BA497111-CAB2-4E90-B55E-03BFCC87933F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2537,7 +2537,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('62770B00-CE15-4BB1-8940-617E2A4823A8'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2558,7 +2558,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8806EA63-0575-4BDF-BEB8-12E545010DC2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2581,7 +2581,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F13F5031-9C78-411E-A83A-C9AD0FCB7FF1'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2602,7 +2602,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8DCA78CF-85B0-4BF7-93FF-3EACFADBEB73'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2623,7 +2623,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D8C91318-57EA-4BE0-960D-F32B57AEFB2A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2644,7 +2644,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D220F3B5-4A9E-4C78-BA90-2E539F39B0DA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2665,7 +2665,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('35663476-F26A-45DB-8A6C-A83A2D3FA87F'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2686,7 +2686,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('0C0066E4-96DC-4191-BD40-AB4186D515BB'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2707,7 +2707,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('7A33B2A6-C2C6-46F4-822D-E1DD679D82CA'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2728,7 +2728,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E24AAACF-DB26-441A-B102-05B7C731B6E0'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2749,7 +2749,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('E9DD556A-2107-42F3-A700-5C798EF31CFD'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2770,7 +2770,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('43F6CA58-5E54-4DB9-9B0A-875887F9CED8'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2791,7 +2791,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('CF57169A-CDE1-4CAE-8E44-E720B1B13BC2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2812,7 +2812,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('56D08AA0-6A28-4E0F-BC0E-DDC7B9386A89'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2835,7 +2835,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('91664C81-A5C1-4364-B957-240D84972BC5'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2856,7 +2856,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('37CE309C-E8F2-4C43-849A-193037F8DA0D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2877,7 +2877,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D563CDA6-7A81-4C02-B53F-F30633CA3719'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2898,7 +2898,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('7E137080-01A5-485D-B1B2-D77FA91BAF3C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2919,7 +2919,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D0A89AB5-BD5E-41E2-A299-8EABF29A2E64'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2940,7 +2940,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('D52BD59E-7F5F-41B3-AD61-8B072CEE4804'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2961,7 +2961,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('4B09A270-173B-411B-B20A-54106BE59298'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -2982,7 +2982,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('3EFABF75-8D27-4366-8AB7-83F68BEE4D63'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3003,7 +3003,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('A51E3FD7-2E35-430E-8F01-A5130585C790'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3024,7 +3024,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('62855B51-18AC-4676-B22D-43389852C351'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3045,7 +3045,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('ABE43E04-B0F6-4E4B-A669-547DE696F291'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3066,7 +3066,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('548865BA-1892-4F20-9332-692225FFDB3C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3093,7 +3093,7 @@ end)
 
 --SU25 FrogFoot
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('4104F9BC-9E7B-4E12-9A23-0152957B8227'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3117,7 +3117,7 @@ end)
 --Sprut-SD
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('2ADCFBF4-1EEA-4CF7-8436-2FCA9DCB9CE0'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3141,7 +3141,7 @@ end)
 -- Kornet
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8C27A4C4-5469-4DC6-A43F-4F391FB3F9F2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3163,7 +3163,7 @@ end)
 --Sprut-SD
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('58560159-343B-439F-B8B0-8BBC1CBE8835'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3183,7 +3183,7 @@ Vec3(-166.263672, 290.534973, 835.663086)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('38CEB93E-B3CE-416A-B9C1-70017A296855'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3207,7 +3207,7 @@ end)
 -- Kornet
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('166A9250-EFC5-4E30-A2C8-471FA4EC801D'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3229,7 +3229,7 @@ end)
 --Sprut-SD
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('9A7674BD-73DA-4969-AC9A-D4B6E80077AF'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3249,7 +3249,7 @@ Vec3(53.839844, 290.285950, 769.598633)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('58E4B010-4642-4095-8033-E050922F8CD2'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3273,7 +3273,7 @@ end)
 --Sprut-SD
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('F9397F89-972E-4683-B746-77F22B607330'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3293,7 +3293,7 @@ Vec3(814.246155, 385.695190, 430.046844)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('6A96A667-A421-4214-9DE8-5927BB7DA178'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3315,7 +3315,7 @@ end)
 -- Kornet
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('DC6B54EE-AA3D-498A-AC1D-112D530D668E'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3335,7 +3335,7 @@ Vec3(529.672913, 345.401215, 476.490234)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('A9AB8C68-C241-4CE9-96E2-03483F0B954A'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 
@@ -3359,7 +3359,7 @@ end)
                 --GUNSHIP--
 ------------------------------------------
 ResourceManager:RegisterInstanceLoadHandler(Guid('6AE9FA97-0C9A-4A53-846E-0D9C065924FC'), Guid('8FB4AD29-00D0-4F56-B228-2465AF83F14C'), function(instance)
-    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'RushLarge0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'RushLarge0' then
 	return
     end
 

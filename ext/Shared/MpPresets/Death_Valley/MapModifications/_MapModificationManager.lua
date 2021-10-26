@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Death_Valley/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Death Valley Domination scripts...')
+	--print('Blocking Death Valley Domination scripts...')
 	return
 	end
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Seine/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Seine Crossing Domination scripts...')
+	--print('Blocking Seine Crossing Domination scripts...')
 	return
 	end
 

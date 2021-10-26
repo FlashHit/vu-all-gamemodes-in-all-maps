@@ -232,7 +232,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('CFB99158-567F-BDF6-8D45-2FA3C9
     local thisInstance = LevelDescriptionAsset(instance)
     thisInstance:MakeWritable()
 
-    LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('AirSuperiority0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('SquadRush0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('CaptureTheFlag0')
 

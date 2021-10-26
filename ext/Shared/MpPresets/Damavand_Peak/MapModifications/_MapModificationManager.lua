@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Damavand_Peak/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Damavand Peak Domination scripts...')
+	--print('Blocking Damavand Peak Domination scripts...')
 	return
 	end
 

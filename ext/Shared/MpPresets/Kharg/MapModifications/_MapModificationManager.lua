@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Kharg/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Kharg Island Domination scripts...')
+	--print('Blocking Kharg Island Domination scripts...')
 	return
 	end
 

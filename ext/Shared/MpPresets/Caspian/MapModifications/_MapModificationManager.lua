@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Caspian/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Caspian Domination scripts...')
+	--print('Blocking Caspian Domination scripts...')
 	return
 	end
 

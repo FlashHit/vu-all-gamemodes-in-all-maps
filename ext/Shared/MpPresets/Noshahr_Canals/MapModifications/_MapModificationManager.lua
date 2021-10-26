@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Noshahr_Canals/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Noshahr Domination scripts...')
+	--print('Blocking Noshahr Domination scripts...')
 	return
 	end
 

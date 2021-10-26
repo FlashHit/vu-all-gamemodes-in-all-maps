@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Oman/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Gulf of Oman Domination scripts...')
+	--print('Blocking Gulf of Oman Domination scripts...')
 	return
 	end
 

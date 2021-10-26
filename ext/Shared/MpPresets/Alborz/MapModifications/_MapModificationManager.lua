@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Alborz/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Alborz Mountains Domination scripts...')
+	--print('Blocking Alborz Mountains Domination scripts...')
 	return
 	end
 

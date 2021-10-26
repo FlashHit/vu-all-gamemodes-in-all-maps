@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Nebandan/MapModifications/MapModifications_Ziba_GunMaster_Domination'
 	else
-	print('Blocking Nebandan Flats scripts...')
+	--print('Blocking Nebandan Flats scripts...')
 	return
 	end
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Riverside/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Operation Riverside Domination scripts...')
+	--print('Blocking Operation Riverside Domination scripts...')
 	return
 	end
 

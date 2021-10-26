@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Bazaar/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Grand Bazaar Domination scripts...')
+	--print('Blocking Grand Bazaar Domination scripts...')
 	return
 	end
 

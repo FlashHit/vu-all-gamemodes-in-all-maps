@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Monolith/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Markaz Monolith Domination scripts...')
+	--print('Blocking Markaz Monolith Domination scripts...')
 	return
 	end
 

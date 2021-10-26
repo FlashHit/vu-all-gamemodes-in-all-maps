@@ -12,7 +12,7 @@ Events:Subscribe('Level:LoadResources', function()
         return
     end
 
-    print('Initialising default map modification scripts...')
+    print('Initialising Aygan Village modification scripts...')
 
     require '__shared/MpPresets/Aygan_Village/MapModifications/Conquest_Large'
 	require '__shared/MpPresets/Aygan_Village/MapModifications/Conquest_small'

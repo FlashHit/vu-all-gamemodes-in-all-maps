@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Epicenter/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Epicenter Domination scripts...')
+	--print('Blocking Epicenter Domination scripts...')
 	return
 	end
 

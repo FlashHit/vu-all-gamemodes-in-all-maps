@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Karkand/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Strike at Karkand Domination scripts...')
+	--print('Blocking Strike at Karkand Domination scripts...')
 	return
 	end
 

@@ -7,16 +7,34 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Donya Fortress
-    if (string.find(levelName, 'XP2_Factory') == nil) then
-        return
-    end
+    -- Don't continue if the level is not Sabalan Pipeline
+    if string.find(levelName, 'XP2_Factory') and gameModeName == 'SquadRush0' then
+     
 
-    print('Initialising Scrapmetal modification scripts...')
+    print('Initialising Scrapmetal Squad Rush scripts...')
 
-    require '__shared/MpPresets/Scrapmetal/MapModifications/AirSuperiority'
-	require '__shared/MpPresets/Scrapmetal/MapModifications/SquadRush'
-	require '__shared/MpPresets/Scrapmetal/MapModifications/CaptureTheFlag'
+    require '__shared/MpPresets/Scrapmetal/MapModifications/SquadRush'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Sabalan Pipeline
+    if string.find(levelName, 'XP2_Factory') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Scrapmetal capture the flag scripts...')
+
+    require '__shared/MpPresets/Scrapmetal/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
 
 end)
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Bandar/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Bandar Desert Domination scripts...')
+	--print('Blocking Bandar Desert Domination scripts...')
 	return
 	end
 

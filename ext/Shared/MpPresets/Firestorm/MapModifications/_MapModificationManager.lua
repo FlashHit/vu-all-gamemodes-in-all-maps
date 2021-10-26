@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Firestorm/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Operation Firestorm Domination scripts...')
+	--print('Blocking Operation Firestorm Domination scripts...')
 	return
 	end
 

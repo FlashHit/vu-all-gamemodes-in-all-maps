@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Talah/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Talah Market Domination scripts...')
+	--print('Blocking Talah Market Domination scripts...')
 	return
 	end
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Teheran/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Teheran Highway Domination scripts...')
+	--print('Blocking Teheran Highway Domination scripts...')
 	return
 	end
 

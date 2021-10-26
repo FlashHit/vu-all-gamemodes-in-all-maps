@@ -2,21 +2,41 @@
 
 local done = false
 
+
+
 Events:Subscribe('Level:LoadResources', function()
 
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Donya Fortress
-    if (string.find(levelName, 'XP2_Office') == nil) then
-        return
-    end
+    -- Don't continue if the level is not Sabalan Pipeline
+    if string.find(levelName, 'XP2_Office') and gameModeName == 'SquadRush0' then
+     
 
-    print('Initialising Operation 925 modification scripts...')
+    print('Initialising Operation 925 Squad Rush scripts...')
 
-    require '__shared/MpPresets/Operation_925/MapModifications/AirSuperiority'
-	require '__shared/MpPresets/Operation_925/MapModifications/SquadRush'
-	require '__shared/MpPresets/Operation_925/MapModifications/CaptureTheFlag'
+    require '__shared/MpPresets/Operation_925/MapModifications/SquadRush'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Sabalan Pipeline
+    if string.find(levelName, 'XP2_Office') and gameModeName == 'CaptureTheFlag0' then
+     
+
+    print('Initialising Operation 925 capture the flag scripts...')
+
+    require '__shared/MpPresets/Operation_925/MapModifications/CaptureTheFlag'
+	else
+	return
+	end
 
 end)
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Sharqi/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Sharqi Peninsula Domination scripts...')
+	--print('Blocking Sharqi Peninsula Domination scripts...')
 	return
 	end
 

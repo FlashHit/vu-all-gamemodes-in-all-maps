@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Azadi/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Azadi Palace Domination scripts...')
+	--print('Blocking Azadi Palace Domination scripts...')
 	return
 	end
 

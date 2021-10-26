@@ -14,7 +14,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Villa/MapModifications/MapModifications_Villa_Ziba'
     else
-	print('Blocking Villa map modification scripts...')
+	--print('Blocking Villa map modification scripts...')
 	return
 	end
 end)

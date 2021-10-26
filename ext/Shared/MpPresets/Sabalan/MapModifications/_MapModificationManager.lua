@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Sabalan/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Sabalan Pipeline Domination scripts...')
+	--print('Blocking Sabalan Pipeline Domination scripts...')
 	return
 	end
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Shield/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Armored Shield Domination scripts...')
+	--print('Blocking Armored Shield Domination scripts...')
 	return
 	end
 

@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Wake/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Wake Island Domination scripts...')
+	--print('Blocking Wake Island Domination scripts...')
 	return
 	end
 

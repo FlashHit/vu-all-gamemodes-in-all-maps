@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Kiasar/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Kiasar Railroad Domination scripts...')
+	--print('Blocking Kiasar Railroad Domination scripts...')
 	return
 	end
 

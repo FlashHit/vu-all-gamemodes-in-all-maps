@@ -7,17 +7,70 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Kaffarov's Villa
-    if (string.find(levelName, 'SP_Jet') == nil) then
-        return
-    end
+    -- Don't continue if the level is not Carrier
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'SquadRush0' then
+     
 
-    print('Initialising default map modification scripts...')
+    print('Initialising Carrier Squad Rush scripts...')
 
-    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_Conquest'
-	require '__shared/MpPresets/Carrier/MapModifications/MapModifications_Squad_TDM'
-	require '__shared/MpPresets/Carrier/MapModifications/MapModifications_TDM'
-	require '__shared/MpPresets/Carrier/MapModifications/Squad_Rush'
+    require '__shared/MpPresets/Carrier/MapModifications/Squad_Rush'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Carrier
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'SquadDeathMatch0' then
+     
+
+    print('Initialising Carrier Squad TDM scripts...')
+
+    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_Squad_TDM'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Carrier
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'TeamDeathMatch0' then
+     
+
+    print('Initialising Carrier TDM scripts...')
+
+    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_TDM'
+	else
+	return
+	end
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Valley.
+    if string.find(levelName, 'SP_Jet') and gameModeName == 'TeamDeathMatchC0' then
+     
+
+    print('Initialising Carrier TDM scripts...')
+
+    require '__shared/MpPresets/Carrier/MapModifications/MapModifications_TDM'
+	else
+	return
+	end
 
 end)
 

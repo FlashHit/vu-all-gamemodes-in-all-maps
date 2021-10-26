@@ -10,41 +10,7 @@
 -- Again, instructions for how to do this are annotated below. Message SassythSasqutch#9081 on Discord with any questions. Literally anything. Please speak to me.
 
 
----------------------
----Air Superiority---
----------------------
 
-Events:Subscribe('Partition:Loaded', function(partition)
-
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
-    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
-        return
-    end
-
-    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
-    -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'XP2_Office') == nil or gameModeName ~= 'AirSuperiority0' then
-        return
-    end
-
-    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
-	
-----------------------
-
-    local NebandanASSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('C4A49551-19D4-11E2-A0B4-E3BFB6B30185'), Guid('90122F63-A2BA-486D-BE53-DA5804FFF265')))
-	
-
-    -- Add to LevelData 'Objects' array
-    local spLevelData = LevelData(partition.primaryInstance)
-    spLevelData:MakeWritable()
-    spLevelData.objects:add(NebandanASSubWorldReferenceObjectData)
-	--print('Nebandan AS SubWorldReferenceObjectData added')
-
-end)
 
 ----------------
 ---Squad Rush---

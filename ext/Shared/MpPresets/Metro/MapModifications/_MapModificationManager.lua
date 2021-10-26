@@ -15,7 +15,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/MpPresets/Metro/MapModifications/MapModifications_Ziba_Domination'
 	else
-	print('Blocking Metro Domination scripts...')
+	--print('Blocking Metro Domination scripts...')
 	return
 	end
 

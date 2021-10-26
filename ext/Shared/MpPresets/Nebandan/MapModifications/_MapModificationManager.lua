@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Nebandan Flats
-    if string.find(levelName, 'XP5_002') then
+    if string.find(levelName, 'XP5_002') and gameModeName == 'Domination0' then
      
 
     print('Initialising Nebandan Flats scripts...')

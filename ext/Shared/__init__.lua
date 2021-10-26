@@ -112,9 +112,9 @@ require '__shared/MpPresets/Donya/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Donya/MapModifications/_MapModificationManager'
 
 -- Operation 925
---require '__shared/MpPresets/Operation_925/MpDataLoad'
---require '__shared/MpPresets/Operation_925/CreateGameModeSubWorldRef'
---require '__shared/MpPresets/Operation_925/MapModifications/_MapModificationManager'
+require '__shared/MpPresets/Operation_925/MpDataLoad'
+require '__shared/MpPresets/Operation_925/CreateGameModeSubWorldRef'
+require '__shared/MpPresets/Operation_925/MapModifications/_MapModificationManager'
 
 -- Scrapmetal
 require '__shared/MpPresets/Scrapmetal/MpDataLoad'

@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Operation Riverside
-    if string.find(levelName, 'XP5_001') then
+    if string.find(levelName, 'XP5_001') and gameModeName == 'Domination0' then
      
 
     print('Initialising Operation Riverside Domination scripts...')

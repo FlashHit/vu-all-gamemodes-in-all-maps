@@ -107,13 +107,13 @@ Events:Subscribe('Partition:Loaded', function(partition)
 	
 ----------------------
 
-    local RiversideCTFSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('3DF41561-D87B-4526-B153-85D09BAA07C7'), Guid('70080DB4-8119-422F-B454-B236129930D9')))
+    local sabalanCTFubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('07BE1949-19EA-11E2-8E8A-A9B21FEA266E'), Guid('D03AD781-4FE3-4A3D-9580-A72B338D5B2A')))
 	
 
     -- Add to LevelData 'Objects' array
     local spLevelData = LevelData(partition.primaryInstance)
     spLevelData:MakeWritable()
-    spLevelData.objects:add(RiversideCTFSubWorldReferenceObjectData)
+    spLevelData.objects:add(sabalanCTFubWorldReferenceObjectData)
 	--print('Sabalan CTF SubWorldReferenceObjectData added')
 
 end)

@@ -428,10 +428,10 @@ if SharedUtils:GetLevelName() ~= 'Levels/XP3_Valley/XP3_Valley' or SharedUtils:G
 	thisInstance.excluded = false
 
     local Humvee1 = LinearTransform(
-        Vec3(0.799687, 0.000000, -0.600417),
-Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.600417, 0.000000, 0.799687),
-Vec3(-303.204102, 121.501755, -466.110352)
+        Vec3(0.118915, -0.004022, -0.992896),
+Vec3(0.013902, 0.999901, -0.002386),
+Vec3(0.992807, -0.013519, 0.118959),
+Vec3(-311.465820, 121.660324, -452.265625)
     )
 
     thisInstance.blueprintTransform = Humvee1

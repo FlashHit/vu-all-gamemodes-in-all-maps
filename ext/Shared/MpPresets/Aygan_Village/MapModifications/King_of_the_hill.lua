@@ -5,6 +5,9 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5D44B604-E4EF-4420-B93E-56970355FFBF'), Guid('7785074C-FB8F-4E2B-80E3-9385CE832B42'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     --print('Removing minimap textures...')
 
@@ -14,6 +17,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('5D44B604-E4EF-4420-B93E-569703
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('5D44B604-E4EF-4420-B93E-56970355FFBF'), Guid('4BFC66F5-496E-453E-843E-8368C0D17599'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     --print('Removing minimap textures...')
 
@@ -28,6 +34,9 @@ end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('DF79A070-2E6C-44D1-ADA6-DE52104888FF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -37,6 +46,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('27C36068-B13D-432A-8AB0-FB3861268705'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -55,6 +67,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('AD4A1159-F5FD-4B6F-B3F9-88B9BBB20A9C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -73,6 +88,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('7967BEAC-4171-478A-9384-E56BA76419E4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -91,6 +109,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5DA9E86C-FDCD-4419-A6FE-9EAEC774DAAC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -109,6 +130,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('136DE9CC-9EF7-4009-AA5E-458424253883'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -127,6 +151,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('A8AD0D43-310B-45A5-85F3-7C3859BE79C7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -145,6 +172,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('89443540-7AC6-45C0-91BA-4B82F6BE3BCB'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -163,6 +193,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('AFE9424F-3039-4CE6-AB39-A48FBD38D8A4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -182,7 +215,10 @@ end)
 
 -- RU ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5AE85002-BE33-4316-9C45-05D819D3B985'), function(instance) 
+ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5AE85002-BE33-4316-9C45-05D819D3B985'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end 
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -192,6 +228,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('E890550E-5FAA-40C2-9451-09366800833C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -210,6 +249,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('DD7592CB-7369-4309-A420-965C6440FDC4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -228,6 +270,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('805D5047-AF54-4DCC-96BF-C9683D78AF1E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -246,6 +291,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5912E5D7-0CF0-41C3-A0D6-919939455115'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -264,6 +312,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('B2569E8C-FFF8-46CA-BE9B-DC5A0F9FFE47'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -282,6 +333,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('1526DCD4-D1DD-4A55-8B48-DBCAF241F2C1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -300,6 +354,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('00B9F710-92E7-431E-8D4E-18681051A939'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -319,6 +376,9 @@ end)
 -- SUPERIORITY (A)  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('3F1708EF-3E18-4C6C-9E5A-250BAF10034B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = SphereData(instance)
     thisInstance:MakeWritable()
@@ -334,6 +394,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('DA7480CB-FF01-4033-A8D3-86ECB5CF0D52'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -352,6 +415,9 @@ end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('2987AE65-AA40-49B7-AB6A-05F65ACFC30B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -371,6 +437,9 @@ end)
 --RU SPAWN ZONE
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('6FABDEAA-5067-40AE-918C-08D5137086DE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -389,6 +458,9 @@ end)
 -- PLAYABLE ZONE
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('6AE50E70-CB9F-4145-A42C-7D582665C030'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -413,6 +485,9 @@ end)
 --M1 Abrams:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('71A855B0-60CD-4691-A5F5-FAEB676F13AD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -422,6 +497,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('2FE4632F-4806-4253-8B03-91A7031C32D0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -431,6 +509,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('D25D32A9-386D-432D-BD02-C065F6D88B77'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -440,6 +521,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('7704DA97-8E4E-4454-8283-A24D1CBBD1A3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -449,6 +533,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('E97D66BB-4970-48A0-A9D8-B8F24F048296'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -458,6 +545,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('A6D6F394-08F2-416E-845A-CFBF8B7A68AA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -467,6 +557,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('DC663BD6-1A88-4D6D-8412-E2F8275620F7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -476,6 +569,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('A0CD562C-4442-46FB-800A-D490576BDBD9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -487,6 +583,9 @@ end)
 --T-90:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('D1C5FB30-1497-443D-9729-2B6A278F1BAD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -496,6 +595,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5A61C428-7BBE-4EDA-B4AE-60FAD4BC8602'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -505,6 +607,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('5FDCB324-9655-4E3A-8786-607BE3765B69'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -514,6 +619,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('B3F21B8E-599C-4267-A5BE-355FC882D00E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -523,6 +631,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('0A837157-7079-4D82-A794-124ECC5FC71F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -532,6 +643,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('240803DB-4AC8-4D60-951D-27DD0BF08EBE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -541,6 +655,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('82CDDE54-D978-490B-998C-B3D2820CAE7F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -550,6 +667,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('4B9EBCFD-3AE2-46D9-90CD-648CDB032E01'), Guid('0D2E891B-A321-4161-A15F-E8CDAB5C6C0E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TankSuperiority0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()

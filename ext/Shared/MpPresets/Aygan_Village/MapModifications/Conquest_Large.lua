@@ -2,6 +2,9 @@
 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('76D12E48-70B7-48F4-8E44-AD6DBE52796B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -12,6 +15,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('4FEB3C6F-3CF8-429E-B7AC-E3D3E1CDD63B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -30,6 +36,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('FA73428B-BCE2-4E32-9C64-8DAD66A1765B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -48,6 +57,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('16797451-D873-4E5B-B9F4-346F7B6413DF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -66,6 +78,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('C78B13D8-23C5-457B-ABE4-C626335865BF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -84,6 +99,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('29F27CDC-C4A7-4D0A-BA93-B6E1B5BFFAA8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -102,6 +120,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('763CABC0-BAB8-4D20-B1C6-41078514BE9F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -120,6 +141,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('E12152E9-CA5D-4C1F-85B6-538F60A5A5A4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -138,6 +162,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('32859D41-CECE-4F02-8DE4-F74D83BFF9F0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -160,6 +187,9 @@ end)
 --CENTURION C-RAM
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('5A8D90F4-B24D-4F77-AB7F-3F6104C0FA7B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -179,6 +209,9 @@ end)
 --AH-1Z VIPER
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('A9962587-532E-4A37-94F5-E834BCF73FC9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -200,6 +233,9 @@ end)
 --Growler ITV
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('D4A2DE77-69EA-4326-8743-C9AEA3889C34'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -216,6 +252,9 @@ Vec3(-211.591797, 301.348450, 357.766602)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('FFD480B1-D9CC-4BD6-B40B-7A7569EE27DE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -232,6 +271,9 @@ Vec3(-215.857681, 308.485168, 322.981445)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('B6EF55FB-E9FD-44C1-A3C0-A627695A9752'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -250,6 +292,9 @@ end)
 --Little Bird
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('B8C8EFF1-F8D1-498C-96E4-46B9636C349B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -268,6 +313,9 @@ end)
 --F/A-18E SUPER HORNET 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('849EF137-A18B-4708-A0DC-34D9717F083F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -287,6 +335,9 @@ end)
 --F/A-18E SUPER HORNET 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('F338F5EB-A6A4-4785-85FD-2772B987772D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -306,6 +357,9 @@ end)
 --LAV-AD:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('0D5B8E29-36BF-49A5-BCC6-5CD59E5CBFD5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -324,6 +378,9 @@ end)
 --M1128 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('97C64897-6A1A-4E15-8A6C-A08C63ECE33C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -342,6 +399,9 @@ end)
 --M1128 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('D5FC01A2-4208-4DDA-8E89-E6478C0C289F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -362,6 +422,9 @@ end)
 --M1128 3:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('5E1AB973-FE67-4BD6-889A-ED3D133A4038'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -381,6 +444,9 @@ end)
 --M1 ABRAMS 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('2F44E4E6-E1A9-4557-B3B8-273225C1C032'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -399,6 +465,9 @@ end)
 --M1 ABRAMS 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('45AB6DD5-E590-4FE2-AC7E-FC8BB5CC3A12'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -420,7 +489,10 @@ end)
 
 -- RU ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('B2B4F5C4-7C66-4272-A51F-02016A7CE213'), function(instance) -- Move spawn (does nothing?)
+ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('B2B4F5C4-7C66-4272-A51F-02016A7CE213'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end -- Move spawn (does nothing?)
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -431,6 +503,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('8F31F996-9243-4148-9E7D-5AD619F87C9D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -449,6 +524,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('A4467FDB-A191-492F-903A-FFE0EC0B7507'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -467,6 +545,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('7E27DE30-BEDC-40DC-A735-301EC524234C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -485,6 +566,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('4EDBDC22-C0D8-4391-845C-488942BA767A'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -503,6 +587,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('BAAD8A5F-0B3B-4588-AA5F-E036C1F07574'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -521,6 +608,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('02481B4E-8EFE-4D47-A3A1-762E7451823B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -539,6 +629,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('458D19BD-0B68-414A-9CCB-2DF46CB48EA2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -557,6 +650,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('1663A5B3-B52C-4E30-A4C0-91EC448F1D21'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -575,6 +671,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('9EBB63A2-A49A-4EC8-B6BE-E1717C39AE3F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -593,6 +692,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('A1C2C615-D7C1-4913-80D7-5ED529333A69'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -615,6 +717,9 @@ end)
 --Z-11W
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('1A5B2C0D-7E0D-4642-A576-6FD7302C652D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -633,6 +738,9 @@ end)
 --SU35BM FLANKER-E 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('B5FF7E79-E2D5-41DA-BA22-054A4CDA4C41'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -652,6 +760,9 @@ end)
 --SU35BM FLANKER-E 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('464CA293-E008-4692-941F-C6CA865D3967'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -671,6 +782,9 @@ end)
 --PANTSIR-S1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('BE040042-0AD6-4211-A49E-267131A30556'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -690,6 +804,9 @@ end)
 --9K TUNGUSKA-M:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('8A0E345C-D0CF-4EA6-9D3A-A225179EFD31'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -708,6 +825,9 @@ end)
 --T-90A 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('97A34D08-7277-433E-AC46-CBA14899CEB7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -726,6 +846,9 @@ end)
 --T-90A 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('3C27D1A5-703B-4D19-89FC-8BC6A4DD1FB2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -745,6 +868,9 @@ end)
 --SPRUT-SD 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('7589181C-7FD0-4799-9F6B-1283441665BF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -763,6 +889,9 @@ end)
 --SPRUT-SD 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('1A959011-544C-4438-A61C-2511299B9C2E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -782,6 +911,9 @@ end)
 --SPRUT-SD 3:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('7262F1FD-41C2-4F66-B788-F30655E47A87'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -801,6 +933,9 @@ end)
 --MI-28 HAVOC:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('4B84E3EF-20C3-4B9A-BDD1-9BF3AE59FBD9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -820,6 +955,9 @@ end)
 --VDV BUGGY 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('082B8020-B2EA-4E04-9142-102973CEB7FC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -836,6 +974,9 @@ Vec3(-312.204346, 291.221527, 996.198242)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('CF7986EB-9627-4141-A0A9-B76FA92FC06D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -852,6 +993,9 @@ Vec3(-344.101563, 290.348450, 964.578125)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('7AA36144-C776-469B-85E5-88A227FE8979'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -880,6 +1024,9 @@ end)
 -- TOWN (A)  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('4132BD7D-CF51-4066-B77C-4F444822CEE1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -896,6 +1043,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('D60C822E-8BC5-49E2-A91F-0729ECD9B855'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -914,6 +1064,9 @@ end)
 --Growler ITV
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('803561BB-D946-4B10-9C4F-52ABE5A0CED7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -933,6 +1086,9 @@ end)
 --M1128
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('7B675C08-F92A-4411-9684-4C59431AA7F2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -952,6 +1108,9 @@ end)
 --Quad Bike
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('FCBC5F93-CD3B-4E3E-B4BA-9A40054FD259'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -971,6 +1130,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('E04A5A8C-0F84-4FEA-8786-2C6E052034C0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -989,6 +1151,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('E2211CAD-3107-4814-9628-D20E71F36E95'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1007,6 +1172,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('5904DF60-12D6-4300-8362-E4285B86B3A9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1025,6 +1193,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('9973069B-86FE-4D4B-8AB3-D32F08351DB5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1043,6 +1214,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('E9485B48-2822-42C7-B109-C2FFFBF97211'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1061,6 +1235,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('F7430A01-7B41-4D84-ADD7-A06EFD5E5B00'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1079,6 +1256,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('DDED02B4-FC5D-456C-980E-EE967DFD6630'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1097,6 +1277,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('FBCE4A7B-6686-4A6D-8991-EDBE1C2908DF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1115,6 +1298,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('9266A6B8-767B-42F9-8B08-2B27DD0EC625'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1133,6 +1319,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('8309BC46-AFF7-47AE-BFEC-024EE5B72962'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1151,6 +1340,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('22C90065-2ECB-4203-B5B0-87A36F79CA5D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1169,6 +1361,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('FDC2BC34-CFFE-4CD5-8BD0-626B20598E1C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1187,6 +1382,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('3F379B5A-AF44-47EF-93C8-724171829A2B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1205,6 +1403,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('39AF5308-C848-4720-921A-4752259FEBBA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1223,6 +1424,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('94B3F303-44F4-44AD-A672-7468E47B2EF1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1241,6 +1445,9 @@ end)
 --Spawn 16
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('29CBB539-74D6-490D-ABE2-DB99D50085C1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1259,6 +1466,9 @@ end)
 --Spawn 17
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('358C9FFB-F3A5-43D7-9897-2DD95C937000'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1277,6 +1487,9 @@ end)
 --Spawn 18
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('318F63C1-9A78-4369-B15A-F53F1F9DA808'), Guid('95A5D792-2650-4660-B834-2447CEA682E7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1296,6 +1509,9 @@ end)
 -- RESIDENTIAL (B)  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('6ABC4026-B65E-4D98-8176-2D84A4D5D089'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -1312,6 +1528,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21B
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('583012C6-E8E9-4BBA-9C48-5E434A0F5669'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1330,6 +1549,9 @@ end)
 --Growler 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('0BA31AE5-92CD-4B1F-A10A-4342BA9B26A3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1349,6 +1571,9 @@ end)
 --SPRUT-SD 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('A0497FED-EE50-41C9-A60F-1F396D4CDE44'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1370,6 +1595,9 @@ end)
 --Buggy
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('0BA31AE5-92CD-4B1F-A10A-4342BA9B26A3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1389,6 +1617,9 @@ end)
 --M1128 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('A0497FED-EE50-41C9-A60F-1F396D4CDE44'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1409,6 +1640,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('8F2175C8-BFA1-4837-8368-9563DA5A18D2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1427,6 +1661,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('E9D201E0-7801-428B-9B7F-D5B5F907FC83'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1445,6 +1682,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('06E9CB88-38F9-42D2-8EB6-86570167AA79'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1463,6 +1703,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('BF76B9B7-09B9-4DF1-9BB9-7AE6C22D91D8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1481,6 +1724,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('16235385-63CD-4BDA-9D7F-3B44FB8A64CD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1499,6 +1745,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('7070B8C7-A532-43E7-9E8A-1F087D5F5EAC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1517,6 +1766,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('E1DF1DC5-194A-47AE-8E21-1B06F1F24BDE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1535,6 +1787,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('0A02D165-27F3-499C-A4EE-94A64A5919C1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1553,6 +1808,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('9B780186-E05F-45A2-BD88-EC6FAFDA74BD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1570,6 +1828,9 @@ end)
 
 --Spawn 10
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('0FCC2749-B6C1-45EA-8AEA-DAB2BE6C2D59'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1588,6 +1849,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('98C05852-715D-470D-9A7B-6705047E939B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1606,6 +1870,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('75AF6CEE-D955-491C-A6FB-DF0C7DA5867A'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1624,6 +1891,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('2A2CF5C5-6AD9-42A5-AF0D-D9ED6A1358E4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1642,6 +1912,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('12268178-872B-4919-88A0-0C3F11C73F52'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1660,6 +1933,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('6DADC3BB-5CD7-48B3-98E5-EFC21BD34EE3'), Guid('E8634260-36BD-4AC4-986C-DC068CB45176'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1679,6 +1955,9 @@ end)
 -- RESIDENTIAL (C)  ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('AD58EC92-7440-4E02-A5BA-2A3DA4431769'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -1695,6 +1974,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDB
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('0F028BF4-8FF4-4BA7-892B-24AA9BC45ED3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1713,6 +1995,9 @@ end)
 --QUAD BIKE
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('CC9A58CC-B698-4B54-ADF3-B1B64E651E84'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1734,6 +2019,9 @@ end)
 --VDV BUGGY
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('10206D77-E599-4F19-AEF3-0A36D7BF541E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -1753,6 +2041,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('1EB26C28-56B2-4D0C-94D6-53F3EC8D1713'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1771,6 +2062,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('3002CE01-95B5-43AB-905C-02D29F2148E5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1789,6 +2083,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('E8198568-2672-4E1C-BDB1-1B4BF99EA5AB'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1807,6 +2104,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('58A95EBD-9385-459D-A551-4B732E85F676'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1825,6 +2125,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('4C6E5552-7B06-447B-8399-BA04E6DD7A36'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1843,6 +2146,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('4FA4F97B-DF53-4DDB-979B-811294ACB685'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1861,6 +2167,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('403D9806-8FE2-4D32-9F22-23AACF22E950'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1879,6 +2188,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('B4F4519D-37CE-43D2-9706-B2287E0A2C9C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1897,6 +2209,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('DFE35A7F-BC0C-4790-9614-56DCC322BD64'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1915,6 +2230,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('196FD1D5-68B6-421C-A841-C4B1D21EB250'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1933,6 +2251,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('E6FE0B07-4E11-4B3E-A913-7E614E07FB3E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1951,6 +2272,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('E02BA62E-ED10-4BAA-B4F9-5D7E6777BDC5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1969,6 +2293,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('91FDA666-1E4A-4C9A-BAFE-C2226003681E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -1987,6 +2314,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('BB41893E-B9B1-4D6C-B257-1397050542F1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2005,6 +2335,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('9765ED66-2A64-49C6-95A8-C40E52AC9605'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2023,6 +2356,9 @@ end)
 --Spawn 16
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('F9DA11D4-C342-45E4-B28D-F7D63BA41E69'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2041,6 +2377,9 @@ end)
 --Spawn 17
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('85235242-989D-4667-9158-96DBF79934E1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2059,6 +2398,9 @@ end)
 --Spawn 18
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('C57DCEF5-CDFB-4499-B2FF-F8FE45133DDC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2077,6 +2419,9 @@ end)
 --Spawn 19
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('B3217D4B-BB2B-4F34-967A-F351779D8F06'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2095,6 +2440,9 @@ end)
 --Spawn 20
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F5F4E6CE-D057-446F-91CC-D9CEDBCABF60'), Guid('27C03841-BF72-47D4-8F60-0363DE859FCE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2113,6 +2461,9 @@ end)
 -- WORKSHOP (D)  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('269048B2-8C27-4A12-989A-6FD247CCFCFF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -2129,6 +2480,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BC
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('8FFBB93C-94E2-49B1-8E8B-C6A10A8E2924'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2147,6 +2501,9 @@ end)
 --SPRUT-SD 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('07B41F92-23E1-433B-9831-57ED19CB610D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2166,6 +2523,9 @@ end)
 --Quad Bike 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('0947E1E1-2D6A-4066-89AE-EDF101A7173B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2184,6 +2544,9 @@ end)
 --Quad Bike 2:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('D93EF28F-2D39-4DCD-9C86-A863C5D84AC6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2202,6 +2565,9 @@ end)
 --BM-23:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('90B12DF0-A8A1-4840-BC66-E24A6EAE6928'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2223,6 +2589,9 @@ end)
 --M1128:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('6FCD1231-2F86-489F-98BC-D2FC71F5A1B6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2242,6 +2611,9 @@ end)
 --M142:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('90B12DF0-A8A1-4840-BC66-E24A6EAE6928'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2262,6 +2634,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('B292CE1E-14E4-469B-88B8-FEC74EC73AF4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2280,6 +2655,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('3A37FEBB-81B9-4018-B460-A2C94CFAF3E6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2298,6 +2676,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('68910B8B-8966-4CB6-B840-E28159FF0074'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2316,6 +2697,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('9FB6050C-4BD0-4144-B157-91AF7C3B96C6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2334,6 +2718,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('B0D7914B-8FB9-41BE-9619-B21995F3DBDC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2352,6 +2739,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('A513043C-2A23-4C7F-BB69-5270AD550DA2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2370,6 +2760,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('2F865B56-3E4F-440D-B71C-418744040B08'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2388,6 +2781,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('4BEBBD92-1762-4F70-ADB7-0057D7507ECA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2406,6 +2802,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('1932B45A-D4DE-4DCD-81CA-1B081D5B4881'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2424,6 +2823,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('2613320C-16E4-4CAA-B130-1F969C7ED211'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2442,6 +2844,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('3DDF8EFB-84EA-4BB6-849C-1938BBA77E0F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2460,6 +2865,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('37A84B30-EA75-48EC-8057-27908416A13F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2478,6 +2886,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('840AEF2D-19CB-44A2-8470-C9034118AFF1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2496,6 +2907,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('CD7148BC-AEA2-4836-BA9B-56CAFDE5FFC1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2515,6 +2929,9 @@ end)
 
 -----Disable Flag E----
 --[[ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('7F0B44D3-4C2B-4E3B-936D-55BA4435184A'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2523,6 +2940,9 @@ end)
 end)]]
 ----------------
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('201CBD12-447E-48F2-AF61-B9DB8ABA2306'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -2539,6 +2959,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('7F0B44D3-4C2B-4E3B-936D-55BA4435184A'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2557,6 +2980,9 @@ end)
 --M1128
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('82A70579-7239-49A3-BD6F-9318E08741C8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2576,6 +3002,9 @@ end)
 --Quad Bike 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('2C7BDD9E-F1E4-4638-82B8-5A74185442DF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2594,6 +3023,9 @@ end)
 --Quad Bike 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('83ED483F-C47F-42B5-A9A5-3EF89D4F6FE9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2614,6 +3046,9 @@ end)
 --SPRUT-SD
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('82A70579-7239-49A3-BD6F-9318E08741C8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2633,6 +3068,9 @@ end)
 --BM-23:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('2B7FE29D-B8C9-448C-8048-5EB6523C35A8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2653,6 +3091,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('4C85E772-B100-4DFD-B9A7-2DD6CCD7C5B3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2671,6 +3112,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('6081E077-38D7-41BE-8AFE-FA44DBBCF552'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2689,6 +3133,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('253E616B-D40E-4EDE-A12B-0252F0259378'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2707,6 +3154,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('6DA21E60-4B4C-4095-98B5-DAAD3B332771'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2725,6 +3175,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('44F68161-9A07-4BEC-BD9D-4C7C25F5FE38'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2743,6 +3196,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('71A08175-D492-4723-A5EB-58F9F49C0244'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2761,6 +3217,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('3A4189DA-990E-490C-9F9E-E672B74B3CBD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2779,6 +3238,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('99FC8DE2-1064-49F2-966D-0F971B2B95E4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2797,6 +3259,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('E6D2593E-06ED-4EED-A3F3-AF6A0AC9D04B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2815,6 +3280,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('80232EAA-74E2-4CA1-BB0E-FEEDEC0D1AAB'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2833,6 +3301,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('F97D87B1-383B-46D2-96E8-628709B46F84'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2851,6 +3322,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('460D9229-5097-49BB-BA53-40A3EBCD17D2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2869,6 +3343,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('7A766850-8192-4D36-8231-94AECD4171F1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2887,6 +3364,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('2597FDCE-0EF6-49AA-86ED-17D710108103'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2905,6 +3385,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('49A8AF9F-6FB1-488F-B6E7-AD613B228085'), Guid('2EB5EC9C-81EA-41F8-8B13-66A5E9D0B028'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2926,6 +3409,9 @@ end)
 
 -----Disable Flag F----
 --[[ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('4A61D11E-03BC-4E1E-AEAE-B3C35850DBE9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2934,6 +3420,9 @@ end)
 end)]]
 ----------------
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('32D2635C-913E-4D5C-9D3C-F39383DCE4E8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -2950,6 +3439,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B81
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('4A61D11E-03BC-4E1E-AEAE-B3C35850DBE9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2968,6 +3460,9 @@ end)
 --Quad Bike 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('A112F655-5931-429A-86F8-A32346A4F1B1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -2986,6 +3481,9 @@ end)
 --VDV BUGGY:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('DE459FB9-9F1A-407F-A1C0-350C570B7817'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3004,6 +3502,9 @@ end)
 --SPRUT SD 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('B1888E14-82ED-492D-AF1A-071CF21BE726'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3025,6 +3526,9 @@ end)
 --Growler ITV:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('DE459FB9-9F1A-407F-A1C0-350C570B7817'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3043,6 +3547,9 @@ end)
 --M1128 1:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('B1888E14-82ED-492D-AF1A-071CF21BE726'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3063,6 +3570,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('55721A62-6B31-4CEF-8E2A-966483852BA4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3081,6 +3591,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('B7269DA2-7869-49B7-AD7F-5031B7AB60CB'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3099,6 +3612,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('F3EE975C-AFA4-4583-9357-AD091CE2A415'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3117,6 +3633,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('63BB8C32-7A50-49B7-8857-968C31AC0DB0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3135,6 +3654,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('DDCB1434-BFF4-4D9C-98B9-7DF7EBDC0668'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3153,6 +3675,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('3926E743-3C25-4F5C-B35D-20041BB8A593'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3171,6 +3696,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('ADCE3751-C5CE-4946-BB08-AD2FCC338F9E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3189,6 +3717,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('9B209A19-C3E7-4B68-9BF4-AF51B39BEEC9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3207,6 +3738,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('944F607C-42CD-478A-B9BA-9310E6C33FDA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3225,6 +3759,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('0136D583-0418-4983-B029-A99CD7A75C61'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3243,6 +3780,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('8C4AC0AB-7933-4148-BD59-4497A2570BAA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3261,6 +3801,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('4D123247-2CC8-4617-BE32-66FAA8BAEB66'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3279,6 +3822,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('064D2BF2-DC64-4052-9B93-36C27A0AD0C8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3297,6 +3843,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('39760C33-A3A6-441C-BA4B-34CB28F373F4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3315,6 +3864,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('03839097-8FDD-4935-907B-F02D8C297628'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3333,6 +3885,9 @@ end)
 --Spawn 16
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('A8E76568-E3FA-4236-8405-883C3A5D544F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3351,6 +3906,9 @@ end)
 --Spawn 17
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('43B48B01-ECAC-4783-856D-02DA9E8713E3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3369,6 +3927,9 @@ end)
 --Spawn 18
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('6FFE46BB-C422-428F-A791-377E57D04A29'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3387,6 +3948,9 @@ end)
 --Spawn 19
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('94D456B8-407A-466F-BB83-AE8107554FC0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3405,6 +3969,9 @@ end)
 --Spawn 20
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('A69CCD55-B8F9-435C-A76B-051F82026CC6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3424,6 +3991,9 @@ end)
 
 -----Disable Flag G----
 --[[ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('FC37FB48-9A29-4B6E-91F3-FF9AB42FE9E0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3432,6 +4002,9 @@ end)
 end)]]
 ----------------
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('469497D1-E189-4D83-84E2-1678A48184FA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -3448,6 +4021,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('FC37FB48-9A29-4B6E-91F3-FF9AB42FE9E0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3466,6 +4042,9 @@ end)
 --Little Bird
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('EAEAC860-97B9-4E56-92E5-6E67ABF8825C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3485,6 +4064,9 @@ end)
 --Quad Bike 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('D02832EF-1CA2-4ECA-B34C-6FF7221BEE69'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3503,6 +4085,9 @@ end)
 --Quad Bike 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('983EB572-90A8-49A2-A697-76D7E60FCA4F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3521,6 +4106,9 @@ end)
 --M1128:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('615E63A6-375D-4224-B633-C8D1DDDC8DBC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3542,6 +4130,9 @@ end)
 --Sprut SD:
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('615E63A6-375D-4224-B633-C8D1DDDC8DBC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -3564,6 +4155,9 @@ end)
 
 --Spawn 1
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('03A75591-BFD2-4CE4-BC67-E4E2DE89C88E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3582,6 +4176,9 @@ end)
 --Spawn 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('79A09658-2FD3-419F-9D40-2384D092BEB6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3600,6 +4197,9 @@ end)
 --Spawn 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('5AD47B10-1C4C-400C-9BC6-69E975B96375'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3618,6 +4218,9 @@ end)
 --Spawn 4
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('40CF05BA-6D5A-4742-B25E-1C94F23F92CD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3636,6 +4239,9 @@ end)
 --Spawn 5
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('CDF85DED-B111-4250-BE29-27BEFAA20DF7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3654,6 +4260,9 @@ end)
 --Spawn 6
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('530481DF-2C5A-47F9-B77B-86540EEC70C4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3672,6 +4281,9 @@ end)
 --Spawn 7
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('004DB174-64F6-491E-B042-9DD1F35004F6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3690,6 +4302,9 @@ end)
 --Spawn 8
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('519EE7F9-F085-41D7-B3D7-3864CCFF2028'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3708,6 +4323,9 @@ end)
 --Spawn 9
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('A5B34237-AEBE-4EE0-B141-51EF151402E5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3726,6 +4344,9 @@ end)
 --Spawn 10
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('270D9AFD-662D-40F9-9A00-3A2571487E61'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3744,6 +4365,9 @@ end)
 --Spawn 11
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('2523EF77-CBDE-4175-8D9C-C8CC32049E06'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3762,6 +4386,9 @@ end)
 --Spawn 12
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('74E3F96F-A179-4A8E-8164-CEC1FEA79AA9'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3780,6 +4407,9 @@ end)
 --Spawn 13
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('08CBB1BB-046B-48BC-AFA6-B91CBC0FA5EE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3798,6 +4428,9 @@ end)
 --Spawn 14
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('9794E073-76C0-46D7-AD54-092F87CF5E48'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3816,6 +4449,9 @@ end)
 --Spawn 15
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('FFF5AFE9-3E4D-4A30-9E67-50BD314C68DB'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3834,6 +4470,9 @@ end)
 --Spawn 16
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('D973A107-F8B9-4565-A949-201D4687FCE8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3852,6 +4491,9 @@ end)
 --Spawn 17
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('B0D6EA93-CEB4-4F50-8D05-B2331FC56006'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3870,6 +4512,9 @@ end)
 --Spawn 18
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('87122D55-4F53-4027-92A1-4D982BB26DAC'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3888,6 +4533,9 @@ end)
 --Spawn 19
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('4876119C-63E8-4F08-8CFA-6260017E97B0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3906,6 +4554,9 @@ end)
 --Spawn 20
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D253EC9C-44A3-4008-80AA-FA3A23129B03'), Guid('B6B1F311-6FCB-4331-A6B6-8B61D056D36E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -3934,6 +4585,9 @@ end)
 --Aircraft OOB--
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('17BF2229-4DFF-415D-AEC6-5064CF84CBCE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -3956,6 +4610,9 @@ end)
 -- For US -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('C27130E8-51B5-4318-976A-9D544965C165'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -3975,6 +4632,9 @@ end)
 -- For RU  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('C1A32F58-1997-4352-A097-026106561DAD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -3998,6 +4658,9 @@ end)
 -- Gunship - AC-130 (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('43494425-C151-4EA3-BA76-146B4159B1E8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = LocatorEntityData(instance)
     thisInstance:MakeWritable()
@@ -4016,6 +4679,9 @@ end)
 -- Kornet 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('280D1D10-E874-4397-955B-6FFFA4E6D326'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -4034,6 +4700,9 @@ end)
 -- Kornet 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('C469C391-519A-46AD-BCCF-442E36E8A074'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -4052,6 +4721,9 @@ end)
 -- Kornet 3
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('D3458F3B-B869-4599-9CC8-58B71C5D8175'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -4070,6 +4742,9 @@ end)
 -- TOW 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D54BF4AA-3162-4701-86E6-B4B64466EF18'), Guid('94F52EF3-0155-4B5A-B92A-BB0C4FDAD677'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestLarge0' then
+	return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()

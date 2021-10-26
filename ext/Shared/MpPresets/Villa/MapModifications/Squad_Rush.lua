@@ -6,7 +6,7 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF3DB8CD'), Guid('97871757-0F8D-4353-942B-636ADB6615B8'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -18,7 +18,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF3DB8CD'), Guid('7DA301A5-FA23-43D4-B21C-70AF5E0109BC'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -30,7 +30,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF3DB8CD'), Guid('7C7F129F-1442-4853-A2C4-36566645F515'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -42,7 +42,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3BD7C210-E38D-45CA-BBD3-2299BF3DB8CD'), Guid('C172F402-1324-4864-BA64-7D2410ABFF22'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -66,7 +66,7 @@ end)
 -- Camera Spawn
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('EB7C747F-A6FE-4340-9FB2-EFA39739BDC4'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -78,7 +78,7 @@ end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('AA5CBC81-0713-45DB-B0E5-DE1F346C6A91'), Guid('527D5A4A-31BE-453A-9711-1A5A2E64D3D8'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -102,7 +102,7 @@ end)
 -- Camera Spawn
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('FD408C66-363E-483C-9004-7F4B69E0C641'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -113,7 +113,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('DEB4F441-F4A8-4218-87C2-877292AE3F3B'), Guid('FE26FC9E-501E-403F-984E-E735518F44FE'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -135,7 +135,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('8C81BA4B-EC59-4D7A-A14D-8FC9FA692A98'), Guid('B1F35EAD-7473-E45E-56D6-4F69DDF4C813'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -154,7 +154,7 @@ end)
 -- Camera Spawn
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('1664971B-F524-447B-BED9-E212742600DA'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -165,7 +165,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('AA5CBC81-0713-45DB-B0E5-DE1F346C6A91'), Guid('FC95F497-9D23-4000-BC9C-44F7F2097EF6'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -189,7 +189,7 @@ end)
 -- Camera Spawn
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('17BFB264-C026-4AAD-9867-2ADCCD90BCB8'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -200,7 +200,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('DEB4F441-F4A8-4218-87C2-877292AE3F3B'), Guid('C93D5FE6-4F59-414C-94E2-3C22E123B495'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -222,7 +222,7 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('8C81BA4B-EC59-4D7A-A14D-8FC9FA692A98'), Guid('B1F35EAD-7473-E45E-56D6-4F69DDF4C813'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
     local interface = InterfaceDescriptorData(instance)
@@ -244,7 +244,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('59E941A6-4D19-4D07-B800-D8227061F225'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -263,7 +263,7 @@ Vec3(-208.308594, 301.347473, 362.800781)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('1A70029E-D5B3-4F75-A609-973CA1D1EECD'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -282,7 +282,7 @@ Vec3(-218.384766, 301.903137, 369.122070)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('036BE29B-C168-45ED-A1F6-28E7A4FC3CB7'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -301,7 +301,7 @@ Vec3(-207.893555, 301.903137, 373.674805)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('B78B6797-1F9C-4624-835E-70FF8D7D6E3B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -320,7 +320,7 @@ Vec3(-190.081055, 294.080017, 403.072266)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('5321D40D-D953-4597-8CCD-ECCFF48259D2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -339,7 +339,7 @@ Vec3(-194.244141, 293.687378, 418.262695)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('D4811ED0-6B39-48B1-AF52-823B172AAB63'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -358,7 +358,7 @@ Vec3(-218.571289, 301.367004, 362.975586)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('D0CDA16C-08FB-4AC1-B801-00CB4E2ABC10'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -381,7 +381,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('EF3989B3-A299-40DF-B600-7DFD666DC90C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -400,7 +400,7 @@ Vec3(-82.842773, 285.910950, 548.532227)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('B795977A-7319-4683-AAD8-45D55B2DD9E0'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -419,7 +419,7 @@ Vec3(-88.400391, 285.909973, 566.368164)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('84FF59BA-CA3D-4F66-980E-AEBF7BA77FC3'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -438,7 +438,7 @@ Vec3(-131.978516, 288.089661, 582.421875)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('59A1B769-A9D2-4493-8E27-CD0248DD9EA9'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -457,7 +457,7 @@ Vec3(-189.339844, 286.974426, 597.760742)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('E0E7476F-6499-415F-972C-A1E06ED01D0A'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -476,7 +476,7 @@ Vec3(-198.432617, 286.879700, 617.634766)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('04B8462B-BA0C-4BD4-BA10-ECFE763B344C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -495,7 +495,7 @@ Vec3(-198.020508, 286.879700, 622.168945)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('C0493D41-F1A0-4AAD-97A6-92B9BEB56610'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -514,7 +514,7 @@ Vec3(-220.683594, 287.566223, 625.265625)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('F5EFD7C8-2142-4945-B32E-33903A6FA172'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -544,7 +544,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('CFB68846-B949-432B-8916-7E4CFCB0B7CE'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -563,7 +563,7 @@ Vec3(-189.627930, 286.242004, 623.810547)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('8BFEAA3D-694F-480F-90B8-B078B5B2F51D'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -582,7 +582,7 @@ Vec3(-187.651367, 286.883606, 619.886719)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('09025519-E5FA-474D-A5C1-51C4CE95B54C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -601,7 +601,7 @@ Vec3(-109.604492, 280.406067, 615.119141)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('EFBC687C-C923-46CE-AFA9-D01158D60F73'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -620,7 +620,7 @@ Vec3(-105.241211, 280.372864, 615.182617)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('026E5A0D-473D-4517-ABAE-552F41F95FC4'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -639,7 +639,7 @@ Vec3(-142.253922, 280.992096, 634.124268)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('7410A7D6-A907-42FF-8919-590E0B279D3F'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -658,7 +658,7 @@ Vec3(-160.554749, 281.465637, 638.111511)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('1C7A2B4C-7387-454E-82A9-C68B9D539D0D'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -679,7 +679,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('1F353209-14DB-45FC-B303-9403551EB767'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -698,7 +698,7 @@ Vec3(-212.458008, 281.615051, 641.495117)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('F50B4442-EC14-488D-9D93-91A53DAB328C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -717,7 +717,7 @@ Vec3(-170.695313, 282.472473, 655.410156)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('9DB0C94A-590F-43F1-8091-90C873A3CD87'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -738,7 +738,7 @@ end)
 ---- Zone 2 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('C2A55656-88C2-447A-985F-87B51D2C33D7'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -757,7 +757,7 @@ Vec3(-98.622070, 291.187317, 758.561523)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('1102A4F0-4937-4470-B504-5B91E1D639A5'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -776,7 +776,7 @@ Vec3(-104.246071, 291.788879, 793.160400)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('0D2591F5-AF7E-40E5-B133-666EEB691205'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -795,7 +795,7 @@ Vec3(-157.770508, 287.359253, 792.088867)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('F10DE7AF-2540-4E27-A1B7-C9437156BB24'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -814,7 +814,7 @@ Vec3(-133.457031, 290.534973, 783.794922)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('54683398-DECB-4512-91F6-CCDE96BAE399'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -833,7 +833,7 @@ Vec3(-187.665039, 288.567200, 743.943359)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('4D28F71C-7705-44E6-A6DE-389EEF7E7DA5'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -852,7 +852,7 @@ Vec3(-60.041252, 289.533020, 718.522461)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('AE1475EB-D2EC-4DFC-ABD7-2E3BB1D1169C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -871,7 +871,7 @@ Vec3(-94.580086, 288.926605, 742.321289)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('32BBAD6F-5969-46BB-9390-D49BAFDB7ACA'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -890,7 +890,7 @@ Vec3(-93.128906, 288.690277, 738.952148)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('C5EDFC1A-4931-429F-A5FE-9A85A959AF2D'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 
@@ -909,7 +909,7 @@ Vec3(-102.583984, 288.708801, 738.785156)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0CD08DF3-295C-4B0E-BA40-E3E1B2EC73C7'), Guid('13273DA2-90EE-4902-915B-26795E827C0C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+    if levelName ~= 'Levels/SP_Villa/SP_Villa' or gameMode ~= 'SquadRush0' then
 	return
     end
 

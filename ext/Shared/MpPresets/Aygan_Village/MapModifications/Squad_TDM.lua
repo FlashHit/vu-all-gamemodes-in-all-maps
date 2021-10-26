@@ -1,6 +1,9 @@
 --Base Camera Spawn--
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('2F4FBDA4-3515-43D5-BD76-4ABEC7BDBB3F'), function(instance) --Camera base Spawn
+ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('2F4FBDA4-3515-43D5-BD76-4ABEC7BDBB3F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end --Camera base Spawn
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -15,6 +18,9 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0F62DFD0-365C-438D-98B7-4426E71F6193'), Guid('2EC49F7F-3A13-4BB0-8568-02EF179AC499'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     --print('Removing minimap textures...')
 
@@ -26,6 +32,9 @@ end)
 --------OOB------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('AD4EE061-ECF2-4267-BD50-9FA43EDDD6C1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -45,6 +54,9 @@ end)
 --------FRIENDLYZONES to prevent spawn in front of enemies------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('833DAFA7-12DB-40B6-B04D-8BC57F714487'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -62,6 +74,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D8464
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('8E5A1E76-F70F-475E-A7B8-985DB7180BEF'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -79,6 +94,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D8464
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('4D57C387-8157-4CF5-8A7C-BB13DDA9B2C6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -96,6 +114,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D8464
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('5881A136-AF79-43F4-BFAB-006569C6E9C3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -113,6 +134,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D8464
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('335A282D-42B1-4222-BD26-FD376B76AF7D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -130,6 +154,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D8464
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('5F20B406-71EC-4273-B3BF-4319A726086D'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -153,6 +180,9 @@ end)
 --BMP-2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A2074F27-7D1F-11E0-B283-C22E2A7B7393'), Guid('5E73A80A-C1D0-449F-B677-5F4BEB417C34'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = VehicleSpawnReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -173,6 +203,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('40B36B6A-ECF7-4AE0-B74D-F0137C3A42B3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -191,6 +224,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('A33A0C1E-F7B8-4620-B613-F9C9FAE14BA0'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -209,6 +245,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('D5D13A2D-0707-4402-829C-267FEA6726B5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -227,6 +266,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('19E7BA6E-12F3-4419-A8D7-615C77970CD1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -245,6 +287,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('0D47D8B4-E335-46E0-B977-F5594232152E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -263,6 +308,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('6D481612-9338-473A-8827-60742817DB2B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -281,6 +329,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('E15E360C-87FE-4484-B718-F958901592D1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -299,6 +350,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('52723DF9-86FA-478E-ACFA-980D8E7D3860'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -317,6 +371,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('0196C09D-F422-4307-B162-EA060C4678EA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -335,6 +392,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('A3B0D3F1-FC2C-40EE-86F1-A671BE883749'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -353,6 +413,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('5E449835-4726-4DE0-84F5-BCD7A6D61344'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -371,6 +434,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('99F9E71E-1A76-424A-8234-5DC4B0CBA4B2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -389,6 +455,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('FE13F305-0592-4BCA-ADF3-B5EDB140F0D1'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -407,6 +476,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('ADE7DE42-FBCF-4000-B290-8F35364B856A'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -425,6 +497,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('4B6937F5-DE24-4711-8FE4-7A80642C1BEE'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -443,6 +518,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('238F066D-E2BE-413E-BEFA-33986AFE18E2'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -461,6 +539,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('A6F8ABD3-3CF8-46B0-80A0-361766A9AFA8'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -479,6 +560,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('C6BF5D80-ECF3-4A7F-A782-BAD2B1C415F6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -497,6 +581,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('031FEC20-1BE4-4818-9797-85384EC11097'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -515,6 +602,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('A040DE18-FA76-42F3-92CF-EEF03412549B'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -533,6 +623,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('69D67FF0-F6F2-492E-99E6-EFA4707B7EC6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -551,6 +644,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('41231FBD-BEF5-40EB-9E58-063D47946FC6'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -569,6 +665,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('27420AAB-517B-4540-AD23-0F28F5EFB2B3'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -587,6 +686,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('13DCB617-656F-4708-9891-B55C911C4D37'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -605,6 +707,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('D4C9D093-AE3E-425F-ADFF-67CD4EF6961F'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -623,6 +728,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('69DDF6D0-FD37-42C4-83D3-C1DF7B4AADF5'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -641,6 +749,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('304BE586-C30A-4740-A547-4E5CA7B6368E'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -659,6 +770,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('0F47E5AD-2EFA-441A-93EB-EBD641331DA4'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -677,6 +791,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('5642A2D3-3AC5-4D6E-8CCC-0050C4FFBC28'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -695,6 +812,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('918CBAC4-FE7C-4EBD-8D58-4F919734BCDA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -713,6 +833,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('E9B4CB01-F650-4970-B19B-3887283F802C'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -731,6 +854,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('019E5422-57C5-4FF2-9AAA-E3B34E6A31DA'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -749,6 +875,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('4FE7CF82-9053-4B74-B0EB-A9E984BC5A40'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -767,6 +896,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('BC2137FB-5EF4-41F1-AF50-719E6D181393'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -785,6 +917,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('BB22D3DC-CDE2-475D-A7D2-7C05B9247805'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -803,6 +938,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('55F7FB4E-367D-4D88-8B1F-DED79B19BE19'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -821,6 +959,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('A5525376-550B-4844-8A2A-8F51F5403BE7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -839,6 +980,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('33211272-6AE4-4B53-B338-BDF0E9D0C8DD'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -857,6 +1001,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('C969A808-3E3B-4C89-AE19-985DEB9075F7'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -875,6 +1022,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0E4682F6-F96D-41E1-B8DE-8D84642D9B60'), Guid('E42A364C-FF9E-491B-AA50-8DEB2C8AE261'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+	return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()

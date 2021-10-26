@@ -969,6 +969,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -989,6 +990,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1009,6 +1011,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1029,6 +1032,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1049,6 +1053,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1069,6 +1074,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1111,6 +1117,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1280,6 +1287,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -1302,6 +1310,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {

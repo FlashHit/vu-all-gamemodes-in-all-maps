@@ -51,19 +51,3 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
         RCON:SendCommand('vars.gameModeCounter', {"100"})
 		end
 end)
-
-
---Bluetint enabled only here
-
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-   if SharedUtils:GetLevelName() == 'Levels/SP_Jet/SP_Jet' then
-        RCON:SendCommand('vu.colorcorrectionenabled', {"true"})
-	end
-end)

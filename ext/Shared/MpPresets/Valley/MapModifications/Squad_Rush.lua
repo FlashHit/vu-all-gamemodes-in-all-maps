@@ -1,6 +1,44 @@
 
 
 ------------------------
+------------------------
+-----Block minimap------
+------------------------
+------------------------
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('AD58B5E3-92BE-43AB-933D-1EB0FE82A116'), Guid('7A0FB2CA-8372-4BE6-A24E-97DC751BB825'), function(instance)
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('AD58B5E3-92BE-43AB-933D-1EB0FE82A116'), Guid('C0505688-9C0E-460C-A2D6-DBA1F7A7F2F8'), function(instance)
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('AD58B5E3-92BE-43AB-933D-1EB0FE82A116'), Guid('F620DC1B-4079-43B7-BD1C-8E27D3BB1614'), function(instance)
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('AD58B5E3-92BE-43AB-933D-1EB0FE82A116'), Guid('24C41589-ECBE-4523-A874-94FD74BA8E2F'), function(instance)
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
+------------------------
 ---------M-Coms---------
 ------------------------
 

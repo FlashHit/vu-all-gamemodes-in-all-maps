@@ -1,5 +1,7 @@
 Events:Subscribe('Level:LoadResources', function()
 
+    if string.find(SharedUtils:GetLevelName(), 'SP') or string.find(SharedUtils:GetLevelName(), 'COOP') then
+
     -- Most of these are AI upscaled from 480p or something, and so look questionable. 
     -- Only Thunder Run has a custom image. 
     -- Feel free to take your own and replace the image. If you're willing, I'd appreciate it hugely if you could send your custom image to me to put it into the mod.
@@ -169,5 +171,7 @@ Events:Subscribe('Level:LoadResources', function()
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/FsBNzd5.jpg'})
 
     end
+	else
+	end
 
 end)

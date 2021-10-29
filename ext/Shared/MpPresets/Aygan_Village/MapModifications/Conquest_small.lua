@@ -33,7 +33,7 @@ end)
 -- United States ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('76D12E48-70B7-48F4-8E44-AD6DBE52796B'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('76D12E48-70B7-48F4-8E44-AD6DBE52796B'), function(instance)
     if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestSmall0' then
 	return
     end
@@ -563,7 +563,7 @@ end)
 
 -- RU ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('BA914F96-5DA3-4DD9-BC9E-D312BCF4F568'), Guid('B2B4F5C4-7C66-4272-A51F-02016A7CE213'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('FFFC9A8E-81F0-457E-8EA3-703B811D581C'), Guid('439C57E2-6498-4384-9734-751D3E281DA6'), function(instance)
     if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'ConquestSmall0' then
 	return
     end -- Move spawn (does nothing?)

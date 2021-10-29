@@ -4,6 +4,20 @@ Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicate
     end
 end)
 
+------------------------
+------------------------
+-----Block minimap------
+------------------------
+------------------------
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('0306AE0B-44DD-47B3-9995-1B3CD010B450'), Guid('87276DC1-1EBC-43E8-8E23-F0161BA0D3DB'), function(instance)
+    --print('Removing minimap textures...')
+
+    local thisInstance = UICombatAreaEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.asset = nil
+end)
+
 
 --Base Camera Spawn--
 
@@ -22,6 +36,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -41,6 +56,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -58,6 +74,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -75,6 +92,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -92,6 +110,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {
@@ -109,6 +128,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {

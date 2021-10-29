@@ -70,11 +70,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
             'ui/flow/bundle/loadingbundlemp', 
             'levels/xp3_desert/xp3_desert', 
 			'levels/xp2_skybar/xp2_skybar',
-            'levels/xp3_desert/conquestlarge0', 
-            'levels/xp3_desert/conquestsmall0',
-			'levels/xp3_desert/rushlarge0',
-			'levels/xp3_desert/squadrush0',
-			'levels/xp3_desert/tanksuperiority',
 			'levels/sp_villa/sp_villa',
 			'levels/sp_villa/background',
             'levels/sp_villa/blackburn',
@@ -149,28 +144,8 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
     print('Adding Bandar Desert registry...')
     local BandarRegistry = ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('273AC4A3-21D1-3D7E-B740-9387A30E1AF7'))
     ResourceManager:AddRegistry(BandarRegistry, ResourceCompartment.ResourceCompartment_Game)
-
-    print('Adding Bandar Desert CLQ registry...')
-    local zibaDeathmatchRegistry = ResourceManager:FindInstanceByGuid(Guid('FD899CDE-78E2-409A-8FFE-68828370D627'), Guid('4F81CD2D-1683-F9EE-304D-91260ACB625C'))
-    ResourceManager:AddRegistry(zibaDeathmatchRegistry, ResourceCompartment.ResourceCompartment_Game)
-
-    print('Adding Bandar Desert CQS registry...')
-    local zibaTdmRegistry = ResourceManager:FindInstanceByGuid(Guid('82984037-62DE-48C2-94F1-D58E95933097'), Guid('D2C49805-C8D6-648A-4FE2-1C27240320F1'))
-    ResourceManager:AddRegistry(zibaTdmRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
-	print('Adding Bandar Desert Rush Large registry...')
-    local zibaDomRegistry = ResourceManager:FindInstanceByGuid(Guid('84E193AC-B7A6-4912-A8A4-D8E2544F9778'), Guid('724E2BD4-CFEB-0C82-3A11-8FC98EFB765E'))
-    ResourceManager:AddRegistry(zibaDomRegistry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Bandar Desert Squad Rush registry...')
-    local zibaSquadDMRegistry = ResourceManager:FindInstanceByGuid(Guid('8C81BA4B-EC59-4D7A-A14D-8FC9FA692A98'), Guid('4BF9F070-9789-320C-E7C5-9BCAB33C9CF9'))
-    ResourceManager:AddRegistry(zibaSquadDMRegistry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Bandar Desert Tank Superiority registry...')
-    local zibaGunmasterRegistry = ResourceManager:FindInstanceByGuid(Guid('6B832974-D17B-4F44-87D7-65EDC987BB7E'), Guid('A57D1945-E33C-25B8-1B1D-D3E2519C64DF'))
-    ResourceManager:AddRegistry(zibaGunmasterRegistry, ResourceCompartment.ResourceCompartment_Game)
-	
-		print('Adding SP_Villa registry...')
+	print('Adding SP_Villa registry...')
     local SP_VillaRegistry = ResourceManager:FindInstanceByGuid(Guid('6B420080-18CB-11E0-B456-BF5782883243'), Guid('383F2AC9-94BF-286D-587A-27594550D561'))
     ResourceManager:AddRegistry(SP_VillaRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
@@ -230,9 +205,9 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
     local RailSUVRegistry = ResourceManager:FindInstanceByGuid(Guid('07132115-00D5-4D91-886F-9B275021D55F'), Guid('05C82B30-EFED-EFBC-8954-338F7F62E120'))
     ResourceManager:AddRegistry(RailSUVRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
-	--print('Adding Villa registry...')
-    --local VillaRegistry = ResourceManager:FindInstanceByGuid(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('2FEFEDB2-EDA4-2353-33F2-D77E57EBF5BE'))
-    --ResourceManager:AddRegistry(VillaRegistry, ResourceCompartment.ResourceCompartment_Game)
+	print('Adding Villa registry...')
+    local VillaRegistry = ResourceManager:FindInstanceByGuid(Guid('DD693670-3EDD-448C-8CD3-1463B234E44C'), Guid('2FEFEDB2-EDA4-2353-33F2-D77E57EBF5BE'))
+    ResourceManager:AddRegistry(VillaRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
 	print('Adding Villa_Extra registry...')
     local Villa_ExtraRegistry = ResourceManager:FindInstanceByGuid(Guid('387A11A6-2017-4C74-9509-A9EE0140B290'), Guid('C436D6F4-8874-C951-AEE3-66AC5838BAAF'))

@@ -67,18 +67,5 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 	end
 end)
 
---Bluetint disabled only here
 
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-   if SharedUtils:GetLevelName() == 'Levels/SP_Valley/SP_Valley' then
-        RCON:SendCommand('vu.colorcorrectionenabled', {"false"})
-	end
-end)
 

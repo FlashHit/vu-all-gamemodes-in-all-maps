@@ -42,7 +42,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Kaffarov // `sp_villa`	         | `Domination0` `GunMaster0` `SquadDeathMatch0` `TeamDeathMatchC0` `SquadRush0` `RushLarge0`|
 | Valley // `sp_valley`	             | `ConquestLarge0` `RushLarge0` `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0`|
 | Carrier // `sp_jet`	             | `SquadDeathMatch0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `GunMaster0` `Domination0`|
-| Aygan Village // `coop_006`	     | `ConquestSmall0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `RushLarge0` `TankSuperiority0` `SquadDeathMatch0`|
+| Aygan Village // `coop_006`	     | `ConquestSmall0` `SquadRush0` `TeamDeathMatch0` `TeamDeathMatchC0` `RushLarge0` `TankSuperiority0` `SquadDeathMatch0` `GunMaster0`|
 
 
 **This mod is still WIP, I'll update the mod with more gamemodes when I have time.**

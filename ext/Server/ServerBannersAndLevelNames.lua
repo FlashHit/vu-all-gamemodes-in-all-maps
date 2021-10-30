@@ -1,7 +1,5 @@
 Events:Subscribe('Level:LoadResources', function()
 
-    if string.find(SharedUtils:GetLevelName(), 'SP') or string.find(SharedUtils:GetLevelName(), 'COOP') then
-
     -- Most of these are AI upscaled from 480p or something, and so look questionable. 
     -- Only Thunder Run has a custom image. 
     -- Feel free to take your own and replace the image. If you're willing, I'd appreciate it hugely if you could send your custom image to me to put it into the mod.
@@ -16,6 +14,8 @@ Events:Subscribe('Level:LoadResources', function()
         -- Set server banner
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/zv33mTZ.jpg'})
 
+        goto cont
+
     end
 
     -- Drop 'Em Like Liquid COOP_003 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,6 +24,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('Drop \'Em Like Liquid')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/aev015H.jpg'})
+
+        goto cont
 
     end
 
@@ -34,6 +36,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Aygan Village')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/4x5sdl4.jpg'})
 
+        goto cont
+
     end
 
     -- Operation Exodus COOP_007 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -42,6 +46,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('Operation Exodus')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/OHTswJF.jpg'})
+
+        goto cont
 
     end
 
@@ -52,6 +58,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Exfiltration')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/Tf5j63i.jpg'})
 
+        goto cont
+
     end
 
     -- The Eleventh Hour COOP_010 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -60,6 +68,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('The Eleventh Hour')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/9E8IBc3.jpg'})
+
+        goto cont
 
     end
 
@@ -71,6 +81,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Operation Guillotine')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/4hvwq7U.jpg'})
 
+        goto cont
+
     end
 
     -- Operation Swordbreaker SP_Earthquake -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -78,7 +90,9 @@ Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() == 'Levels/SP_Earthquake/SP_Earthquake' then
 
         ServerUtils:SetCustomMapName('Operation Swordbreaker')
-        RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/eAEv7ua.jpg'})
+        RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/i1GW3vx.jpg'})
+
+        goto cont
 
     end
 
@@ -89,6 +103,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Uprising')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/RYPsLuZ.jpg'})
 
+        goto cont
+
     end
 
     -- The Great Destroyer SP_Finale ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -97,6 +113,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('The Great Destroyer')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/8nrcHLT.jpg'})
+
+        goto cont
 
     end
 
@@ -107,6 +125,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Carrier')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GzPgiX9.jpg'})
 
+        goto cont
+
     end
 
     -- Semper Fidelis SP_New_York ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -115,6 +135,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('Semper Fidelis')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/qz9xETm.jpg'})
+
+        goto cont
 
     end
 
@@ -125,6 +147,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Comrades')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/mTlnWg9.jpg'})
 
+        goto cont
+
     end
 
     -- Night Shift SP_Sniper --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,6 +157,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('Night Shift')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/WSjk0So.jpg'})
+
+        goto cont
 
     end
 
@@ -143,6 +169,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Thunder Run')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/eiDLOtJ.jpg'})
 
+        goto cont
+
     end
 
     -- Fear No Evil SP_Tank_B -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -151,6 +179,8 @@ Events:Subscribe('Level:LoadResources', function()
 
         ServerUtils:SetCustomMapName('Fear No Evil')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/mV3guKq.jpg'})
+
+        goto cont
 
     end
 
@@ -161,6 +191,8 @@ Events:Subscribe('Level:LoadResources', function()
         ServerUtils:SetCustomMapName('Valley')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GPZAhT0.jpg'})
 
+        goto cont
+
     end
 
     -- Kaffarov's Villa SP_Villa ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -168,10 +200,15 @@ Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() == 'Levels/SP_Villa/SP_Villa' then
 
         ServerUtils:SetCustomMapName('Kaffarov\'s Villa')
-        RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/FsBNzd5.jpg'})
+        RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/VS4sq6j.jpg'})
+
+        goto cont
 
     end
-	else
-	end
+
+    RCON:SendCommand('vu.ServerBanner', {''})
+	ServerUtils:ClearCustomMapName()
+
+    ::cont::
 
 end)

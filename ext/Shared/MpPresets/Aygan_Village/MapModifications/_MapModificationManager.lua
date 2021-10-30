@@ -128,6 +128,24 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Aygan Village.
+    if string.find(levelName, 'COOP_006') and gameModeName == 'GunMaster0' then
+     
+
+    print('Initialising Aygan Village Gun Master scripts...')
+
+    require '__shared/MpPresets/Aygan_Village/MapModifications/Gunmaster'
+	else
+	return
+	end
+
+end)
+
 
 --[[Events:Subscribe('Level:Destroy', function()
 

@@ -24,9 +24,9 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 | Sharqi Peninsula // `XP1_003`      | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Wake Island // `XP1_004`           | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Ziba Tower // `XP2_Skybar`	     | `AirSuperiority0` `CaptureTheFlag0` `SquadRush0`|
-| Donya Fortress // `XP2_Palace`	 | `CaptureTheFlag0` |
-| Operation 925 // `XP2_Office`	     | `CaptureTheFlag0` |
-| Scrapmetal // `XP2_Factory`	     | `CaptureTheFlag0`|
+| Donya Fortress // `XP2_Palace`	 | `CaptureTheFlag0` `SquadRush0` |
+| Operation 925 // `XP2_Office`	     | `CaptureTheFlag0` `SquadRush0`|
+| Scrapmetal // `XP2_Factory`	     | `CaptureTheFlag0` `SquadRush0`|
 | Alborz Mountains // `XP3_Alborz`   | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Armored Shield // `XP3_Shield`     | `GunMaster0` `Domination0` `CaptureTheFlag0`           |
 | Bandar Desert // `XP3_Desert`      | `GunMaster0` `Domination0` `CaptureTheFlag0`           |

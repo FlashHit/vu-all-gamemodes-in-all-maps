@@ -17,6 +17,21 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 
     --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
 
+    if SharedUtils:GetCurrentGameMode():match("RushLarge0") then
+        RCON:SendCommand('vars.gameModeCounter', {"60"})
+		end
+end)
+
+Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
+        return
+    end
+    if screenInfo ~= "Registering entity resources" then
+        return
+    end
+
+    --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
+
     if SharedUtils:GetCurrentGameMode():match("TeamDeathMatch0") then
         RCON:SendCommand('vars.gameModeCounter', {"100"})
 		end
@@ -68,5 +83,4 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
 	end
 
 end)
-
 

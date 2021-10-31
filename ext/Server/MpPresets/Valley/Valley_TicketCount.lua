@@ -18,7 +18,7 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
     --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
 
     if SharedUtils:GetCurrentGameMode():match("RushLarge0") then
-        RCON:SendCommand('vars.gameModeCounter', {"200"})
+        RCON:SendCommand('vars.gameModeCounter', {"60"})
 	end
 end)
 
@@ -45,7 +45,7 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
         return
     end
 
-    print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
+    --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
 
     if SharedUtils:GetCurrentGameMode():match("ConquestLarge0") then
         RCON:SendCommand('vars.gameModeCounter', {"100"})

@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Noshahr
-    if string.find(levelName, 'MP_017') and gameModeName == 'Domination0' then
+    if string.find(levelName, 'MP_017') then
      
 
     print('Initialising Noshahr Domination scripts...')

@@ -57,6 +57,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_003/MP_003' or SharedUtils:GetCurren
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
+	thisInstance.height = 0
     thisInstance.points:clear()
 
     local points = {

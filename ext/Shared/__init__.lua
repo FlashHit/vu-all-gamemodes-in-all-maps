@@ -6,7 +6,6 @@ allowFearNoEvil = false
 
 require '__shared/SpLevelDataModify'
 require '__shared/SpLevelDataRemove'
---require '__shared/SpLevelVisualEnvironmentSet'
 require '__shared/SpMapModifications/_SpMapModificationManager'
 
 -- Multiplayer Presets

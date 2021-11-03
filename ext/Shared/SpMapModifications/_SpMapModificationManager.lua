@@ -10,73 +10,47 @@
 
 
 Events:Subscribe('Level:LoadResources', function()
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    if string.find(levelName, 'SP_Jet') then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' then
+	return
+    end
      
-
     print('Initialising Carrier SP scripts...')
 
-require '__shared/SpMapModifications/SpCarrier'
-	else
-
-	return
-	end
+    require '__shared/SpMapModifications/SpCarrier'
 
 end)
 
 Events:Subscribe('Level:LoadResources', function()
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    if string.find(levelName, 'COOP_006') then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
+	return
+    end
      
 
     print('Initialising Aygan Village SP scripts...')
 
-require '__shared/SpMapModifications/SpAyganVillage'
-	else
+    require '__shared/SpMapModifications/SpAyganVillage'
 
-	return
-	end
-
-end)
+	end)
 
 Events:Subscribe('Level:LoadResources', function()
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    if string.find(levelName, 'SP_Valley') then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
+	return
+    end
      
 
     print('Initialising Valley SP scripts...')
 
-require '__shared/SpMapModifications/SpValley'
-	else
+    require '__shared/SpMapModifications/SpValley'
+	
+	end)
 
-	return
-	end
-
-end)
 
 Events:Subscribe('Level:LoadResources', function()
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    if string.find(levelName, 'SP_Villa') then
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
+	return
+    end
      
-
     print('Initialising Villa SP scripts...')
 
-require '__shared/SpMapModifications/SpVilla'
-	else
-
-	return
-	end
-
-end)
+    require '__shared/SpMapModifications/SpVilla'
+	end)

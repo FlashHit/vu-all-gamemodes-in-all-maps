@@ -1,10 +1,3 @@
--- Check map being loaded
-Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicatedServer)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-end)
-
 -- Ticket count
 
 Events:Subscribe('Level:LoadingInfo', function(screenInfo)

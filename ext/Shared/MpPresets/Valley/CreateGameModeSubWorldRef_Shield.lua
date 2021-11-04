@@ -21,8 +21,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Again, change this to have the exact same code as on line 45 of MpDataLoad.lua, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'SP_Valley') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+    if string.find(levelName, 'SP_Valley') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 
@@ -56,19 +55,6 @@ Events:Subscribe('Partition:Loaded', function(partition)
     spLevelData:MakeWritable()
     spLevelData.objects:add(ShieldTDMSubWorldReferenceObjectData)
 	
-	--RUSH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    local ShieldRushSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('1248DAFC-BAEF-46B0-95E9-4B38A0BF2F2E')))
-    -- We are just copying what Ziba Tower uses to point itself towards the 'Deathmatch' SubWorld, so you can find this in the LevelData of the MP map you're using.
-    -- I found this one by going to http://webx.powback.com/#/Levels/XP2_Skybar/XP2_Skybar.json.
-    -- I found and opened the 'Objects' dropdown near the bottom, and found the SubWorldReferenceObjectData I wanted. That's the one with the BundleName 'Levels/XP2_Skybar/DeathMatch' when I expanded it.
-    -- I copied the partition and instance GUIDs and pasted them above, as you can see.
-    -- Of course, you will need to find your own. You can use the exact same method.
-
-    -- Add to LevelData 'Objects' array
-    local spLevelData = LevelData(partition.primaryInstance)
-    spLevelData:MakeWritable()
-    spLevelData.objects:add(ShieldRushSubWorldReferenceObjectData)
 
 end)
 

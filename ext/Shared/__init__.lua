@@ -44,6 +44,10 @@ require '__shared/MpPresets/Aygan_Village/MpDataLoad_Bandar_gunmaster'
 require '__shared/MpPresets/Aygan_Village/CreateGameModeSubWorldRef_Bandar'
 require '__shared/MpPresets/Aygan_Village/MapModifications/_MapModificationManager'
 
+-- Hit and Run
+require '__shared/MpPresets/Hit_and_run/MpDataLoad_Shield'
+require '__shared/MpPresets/Hit_and_run/MapModifications/_MapModificationManager'
+
 
 --------------------
 ----Vanilla Maps----

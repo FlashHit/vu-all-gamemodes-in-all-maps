@@ -9,7 +9,7 @@ Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() == 'Levels/COOP_002/COOP_002' then
 
         -- Set custom map name
-        ServerUtils:SetCustomMapName('Hit and Run')
+        --ServerUtils:SetCustomMapName('Hit and Run')
 
         -- Set server banner
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/zv33mTZ.jpg'})

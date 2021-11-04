@@ -7,7 +7,7 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
-    -- Don't continue if the level is not Bandar Desert
+    -- Don't continue if the level is Bandar Desert
     if string.find(levelName, 'XP3_Desert') and gameModeName == 'Domination0' then
      
 

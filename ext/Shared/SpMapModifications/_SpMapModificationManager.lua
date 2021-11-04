@@ -54,3 +54,14 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/SpMapModifications/SpVilla'
 	end)
+	
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' then
+	return
+    end
+     
+    print('Initialising Hit and Run scripts...')
+
+    require '__shared/SpMapModifications/Hit_and_Run'
+
+end)

@@ -37,6 +37,18 @@ approvedWorldPartRefGuids = {
     '0128A326-FCC4-40E5-ADC8-9C3FF2A4C151', -- AB03_Art_Shell
     '85484594-95D5-4BA0-80DD-3CE13BD1D7C5', -- AB03_Art_Cars_Spotlight
     '26CD4532-8EF4-46D6-803E-583D8DFA5825', -- AB04_Art_Objects
+	'0AA4A680-A557-4499-A1D3-23C4907DEF75', -- AB01_GameplayLogic_Area_1
+	'B3F5C808-FA57-4970-BD6F-60A8047CCBE0', -- AB03_GameplayLogic_Area_1
+	'7438A8CF-82AE-407F-A5D5-14AFE6771085', -- AB03_GameplayLogic_Area_2
+	'EE243CD1-7F59-4847-AFFA-9CDAC82FB793', -- General_Sluice_AB02_Light
+	'3F456504-7B59-4BF8-AF59-0ED3160F9239', -- General_Sluice_AB02_Objects
+	'301B71C8-859F-46FE-990D-BB31235DE7A5', -- General_Sluice_AB02_Sound
+	'A5227A6B-4BF7-41DF-A092-F1071E1FDD02', -- General_Sluice_AB02_Sound_Schematic
+	'447C6023-8C84-4D4E-9546-9B6124216FCC', -- General_Sluice_AB03_Light
+	'EF16B968-8248-49A2-98AB-41DBCD81B3EF', -- General_Sluice_AB03_Objects
+	'ECC6E260-1BA6-4079-BB79-FDAC68793007', -- General_Sluice_AB03_FloorStructure
+	'331B2C8B-06F8-41E2-9BAA-EC5B5C573AF5', -- General_Sluice_AB03_Sound
+	'00E69F65-F76E-4A88-9E02-4379720E2E99', -- General_Sluice_AB03_Sound_Schematic
 
     -- Drop 'Em Like Liquid COOP_003 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     '3F90F5EF-774C-4B82-96B5-7DEBBD323B86', -- Default (terrain)

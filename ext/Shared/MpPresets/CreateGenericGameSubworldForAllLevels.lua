@@ -12,7 +12,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'MP_003') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' then
+    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'MP_003') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 
@@ -45,7 +45,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
         return
     end
 
-    if (string.find(levelName, 'XP2_Office') == nil and string.find(levelName, 'XP2_Skybar') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'SquadRush0' then
+    if (string.find(levelName, 'XP2_Office') == nil and string.find(levelName, 'XP2_Skybar') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'SquadRush0' then
         return
     end
 
@@ -176,7 +176,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'MP_001') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'MP_003') == nil and string.find(levelName, 'XP2_Skybar') == nil) or gameModeName ~= 'CaptureTheFlag0' then
+    if (string.find(levelName, 'MP_001') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'MP_003') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'XP2_Skybar') == nil) or gameModeName ~= 'CaptureTheFlag0' then
         return
     end
 

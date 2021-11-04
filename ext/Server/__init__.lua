@@ -52,6 +52,18 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+-- Hit and Run
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' then
+	return
+    end
+	
+    print('Initialising Hit and Run Ticket Count scripts...')
+
+    require 'MpPresets/Hit_and_run/Hit_and_run_TicketCount'
+
+end)
+
 
 Events:Subscribe('Level:LoadingInfo', function(screenInfo)
   if screenInfo ~= "Registering entity resources" then

@@ -3,5 +3,4 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('mpchunks')
     print('Mounting UI superbundle...')
     ResourceManager:MountSuperBundle('ui')
-
 end)

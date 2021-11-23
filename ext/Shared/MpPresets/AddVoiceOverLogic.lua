@@ -3,7 +3,7 @@
 Events:Subscribe('Partiton:Loaded', function(partition)
 
     -- Don't read any partition not referring to a SP or COOP map
-    if partition == nil or (string.find(partition.name, 'COOP_') == nil and string.find(partition.name, 'SP_') == nil and string.find(partition.name, 'xp2_skybar') == nil) then
+    if partition == nil or (string.find(partition.name, 'COOP_') == nil and string.find(partition.name, 'SP_')== nil) then
         return
     end
 

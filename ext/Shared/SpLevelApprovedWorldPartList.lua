@@ -99,6 +99,7 @@ approvedWorldPartRefGuids = {
     '984F78B2-C978-494D-9F52-043F0D120C97', -- Houses
     '568B5424-A2BF-439A-9067-063A33E845E3', -- Bridges
     'DD5DA24E-AD06-4A7F-A29D-6B9C815724F0', -- General_FX
+	'B396198A-DC06-417D-8BA9-9C9859876C78', -- General_FX
     '249A9EB7-28AC-41CC-853B-79166F73FBF7', -- AB01_Sound
     '7A7563D4-4C4F-415B-919D-867478AAA0E0', -- AB01_Sound_Schematic
 
@@ -561,7 +562,7 @@ approvedWorldPartRefGuids = {
     'A1463978-15F0-4137-9770-7DAA7FE668C6', -- DesertFort_DesignerArt
     '4ADD8067-FF73-47A5-81EE-E0AB462BB3AD', -- DesertFort_Sound
     'A42F098A-05C1-4F86-952D-492A40FF83F0', -- DesertFortPCOnly_Layer
-    --'AEDCBA47-3B7B-408A-B27E-F8814EC7CA50', -- DesertFortSmallObjects_01_LevelArtSubstream --------------- PROBLEMATIC: server CTD on sending spawn messages
+    'AEDCBA47-3B7B-408A-B27E-F8814EC7CA50', -- DesertFortSmallObjects_01_LevelArtSubstream --------------- PROBLEMATIC: server CTD on sending spawn messages
     '2DADBEA7-CE53-4DCC-918E-92D599601D4D', -- DesertIntro_LevelArt
     'DC8300C9-3853-4B31-9B50-3BFA65C3B55D', -- DesertIntro_Sound
     'DFF9F0E4-CC66-4C84-B032-FC3B2E122EF0', -- HighwayOfDeath_01_LevelArt
@@ -569,7 +570,7 @@ approvedWorldPartRefGuids = {
     '03DB12FA-9131-43D8-BFAA-92CED1A7E6C4', -- HighwayOfDeath2_LevelArt
     'A4548DC1-882E-49B0-92A3-EEA4FD2A6A9A', -- HighwayOfDetah2_Sound [sic]
     'B04E3558-79CD-496D-85D0-25B521EF185C', -- HighwayOverpass_01_LevelArt
-    --'FF1E141A-D019-4A7D-ABC5-0E229B2859F3', -- HighwayToTeheran_01_LevelArt ------------------------------ PROBLEMATIC: server CTD on sending spawn messages
+    'FF1E141A-D019-4A7D-ABC5-0E229B2859F3', -- HighwayToTeheran_01_LevelArt ------------------------------ PROBLEMATIC: server CTD on sending spawn messages
     'C21F4205-887C-43CC-8DA6-2118D88576C0', -- HighwayToTeheran_01_Propsketching
     'EC0855CD-6993-4B0F-A1F0-7D67499B0ED3', -- HighwayToTeheran_01_Sound
     '8B2DDC6C-FF27-4D4F-9124-97A5108E023F', -- Highway1_Sound
@@ -581,6 +582,29 @@ approvedWorldPartRefGuids = {
     '8A5F933D-25B4-4AE0-81AF-8DEB5A224082', -- MICLIC_LevelArt
     'D5B9A86F-24BD-4FC4-AA19-CB48B24F1A90', -- MICLIC_Propsketching
     '44AAC126-318B-426B-96FD-3CA6C8BE5D82', -- RoadToDesert_01_LevelArt
+	'11CB307B-EC0F-4BAC-86ED-6D67EAB0048F', -- BankPlaza_01_LevelArt
+	'A851B1A2-3CE9-4268-A079-5E959EFAB0F3', -- BankPlaza_01_Sound
+	'2A30DA83-64ED-4DDC-B354-B5B1B101A0B7', -- BankPlaza_01_LevelArt_Sp_Bank_Export
+	'603FA59B-90A8-40E3-ABD7-E5F280D64092', -- DesertFortSchema_Ambient
+	'46B218AB-8FF2-4CAC-A08A-906293FBE5B9', -- DesertFort_AI
+	--'1025F094-6505-45D8-AB00-172D5CA719A2', -- DesertFort_Ambient -- Jets flying
+	'603FA59B-90A8-40E3-ABD7-E5F280D64092', -- DesertFortSchema_Ambient
+	'FA7DE574-7E6F-4F06-A51E-20D609609EC0', -- DesertFort_EnemyAI
+	'1250F3C2-B37D-4E93-8CA7-44BD00D0CE5F', -- DesertFort_Ambient2
+	'760E14F9-2429-4723-861A-59BFA0AE9529', -- DesertFortSchema_Ambient2
+	--'0A2941D8-FDD7-4732-B296-4051A8BD131F', -- DesertIntro_Ambient -- Jets flying
+	'1ECFD8B7-257E-4608-BEDB-B68206A00EF1', -- DesertIntroSchema_Ambient
+	'448D7110-D5A4-4B9F-A782-DC6C3E76D4BF', -- DriveToBankPlaza_01_Sound
+	'EBB79F23-E6AF-4037-AFF5-B48DF7ACC65D', -- DriveToBankPlaza_01_Lighting
+	'B9BE2036-3719-49E6-B186-0B5EC43583EE', -- DriveToBankPlaza_02_Sound
+	'555D3914-CE3C-4C97-8D3A-3594B7769D30', -- DriveToBankPlaza_03_Sound
+	'ED6C968F-B570-4F0F-ACA7-B32EB7A7640F', -- HighwayOfDeathSchema_Ambient
+	'E8A009CA-1547-4608-BA98-FA08AED6E85E', -- HighwayOfDeath_Ambient
+	'A48677AA-774C-4154-8652-36BA752F8DDF', -- HighwayOfDeathSchema_Sound
+	'9086301D-DC7D-4E0E-A543-DE02F739F16E', -- Highway1_Ambient
+	'EBB5DF84-3D26-498A-B258-CE3958E37DBC', -- HighwayToTeheran_01_Ambient
+	'2C2B7BC6-2297-4088-86ED-EB627715ED4B', -- MICLIC_Ambient
+	'CC292601-3F66-4DC1-965C-9785AAA89338', -- MICLI_Ambient
 
     -- Fear No Evil SP_Tank_B -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'D0897FBA-6686-4116-840E-6333BA63D5FB', -- Default (terrain)
@@ -645,7 +669,7 @@ approvedWorldPartRefGuids = {
     -- Kaffarov SP_Villa ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'A96DC518-E143-EDFC-DCAC-897405F69C89', -- Default (terrain)
 	'12DEA66F-8102-AA98-B76E-7B7BC4C10C81', -- Default_schematic (terrain)
-    '3BE3A922-89A2-4EFD-8564-7456177A666D', -- Overgrowth
+   '3BE3A922-89A2-4EFD-8564-7456177A666D', -- Overgrowth
     'BD91043F-5A1F-4F0F-98DA-95619FBB9DC8', -- FX
     '98FBEC86-0C3B-4876-8BEF-0072CFCBF24F', -- Underground
     'CC5F35BF-3220-4A6B-B4FD-F400A4135400', -- Sound

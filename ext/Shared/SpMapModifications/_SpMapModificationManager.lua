@@ -65,3 +65,14 @@ Events:Subscribe('Level:LoadResources', function()
     require '__shared/SpMapModifications/Hit_and_Run'
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Tank/SP_Tank' then
+	return
+    end
+     
+    print('Initialising Thunder Run scripts...')
+
+    require '__shared/SpMapModifications/Thunder_Run'
+
+end)

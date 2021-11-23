@@ -28,11 +28,6 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.
 	print('Mounting SP Villa superbundle...')
     ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
-	print('Mounting SP chunks superbundle...')
-    ResourceManager:MountSuperBundle('spchunks')
-	ResourceManager:MountSuperBundle('chunks0')
-	ResourceManager:MountSuperBundle('chunks1')
-	ResourceManager:MountSuperBundle('chunks2')
 
 end)
 
@@ -116,6 +111,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         end
     end
 
+
     -- TODO: UI Pre-EOR and EOR
 
 end)
@@ -170,7 +166,7 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('5C66586D-5345-562F-5920-9E05E054BD5F'))) 
     ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
 	
-	print('Adding Lightmap_02 registry...')
+	--[[print('Adding Lightmap_02 registry...')
 	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('E9896092-501A-722A-E668-32A04CC5800C'))) 
     ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
 	
@@ -185,6 +181,10 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 	print('Adding Lightmap_Cutscene02 registry...')
 	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('ABC50C7E-F126-1C2C-A68B-88B82F06D745'))) 
     ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
+	
+	print('Adding Villa registry...')
+	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('383F2AC9-94BF-286D-587A-27594550D561'))) 
+    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)]]
 	
 
 end)

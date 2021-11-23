@@ -195,27 +195,169 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
 end)
 
+-- Bandar Desert Conquest Large and Small
+
+Events:Subscribe('Partition:Loaded', function(partition)
 
 
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
 
 
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
+        return
+    end
 
 
+	
+----------------------
 
+    local BandarCQSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('EDA37E27-FB88-4DA1-B403-0F4A5EC696AD')))
+	
 
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(BandarCQSubWorldReferenceObjectData)
+	print('Bandar Desert CQ SubWorldReferenceObjectData added')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+end)
 
 -- Bandar Desert Rush
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'RushLarge0' and gameModeName ~= 'SquadRush0' then
+        return
+    end
+
+
+	
+----------------------
+
+    local BandarRushSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('E68C9559-9E47-49F1-B679-538BF2DBDD34')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(BandarRushSubWorldReferenceObjectData)
+	print('Bandar Desert Rush SubWorldReferenceObjectData added')
+
+end)
+
+
+-- Bandar Desert Deathmatch
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+        return
+    end
+
+
+	
+----------------------
+
+    local BandarTDMSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('5BC29B45-154A-4DA5-B20A-D99980F7701C')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(BandarTDMSubWorldReferenceObjectData)
+	print('Bandar Desert Deathmatch SubWorldReferenceObjectData added')
+
+end)
+
+-- Bandar Desert Tank Superiority
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'TankSuperiority0' then
+        return
+    end
+
+
+	
+----------------------
+
+    local BandarTSSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('F47DD969-81A6-4B95-BB14-1D17167A7D29')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(BandarTSSubWorldReferenceObjectData)
+	print('Bandar Desert TS SubWorldReferenceObjectData added')
+
+end)
+
+-- Talah Market Gunmaster
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'COOP_006') == nil) or gameModeName ~= 'GunMaster0' then
+        return
+    end
+
+
+	
+----------------------
+
+    local GunmasterSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('6FEEBB6D-9B66-11E1-847F-A3C20EE63DF4'), Guid('D97147B6-9203-4A55-8AAD-8FD2206C9A7F')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(GunmasterSubWorldReferenceObjectData)
+	print('Talah Market GM SubWorldReferenceObjectData added')
+
+end)
+

@@ -77,6 +77,7 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
 
         end
 
+
         if instance.typeInfo.name == 'LevelData' then
 
             -- Thanks to Bree_Arnold for giving me a hand with the below
@@ -84,7 +85,7 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
             thisInstance:MakeWritable()
 
             -- Set as MP in LevelData
-            thisInstance.levelDescription.isCoop = false
+            thisInstance.levelDescription.isCoop = true
             thisInstance.levelDescription.isMultiplayer = true
             thisInstance.levelDescription.isMenu = false
 

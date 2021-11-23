@@ -1,14 +1,6 @@
 -- Courtesy of keku645
 
 Events:Subscribe('Partition:Loaded', function(partition)
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    if string.find(levelName, 'COOP_002') == nil then
-        return
-    end
-	
 	-- Don't read any partition not referring to a SP or COOP map
     if partition == nil or (string.find(partition.name, 'coop_002') == nil) then
         return

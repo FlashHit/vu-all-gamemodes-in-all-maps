@@ -179,6 +179,17 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('CA392F7F-2370-4A92-8126-47871F
     thisInstance.enable = false
 end)
 
+-- chopper
+ResourceManager:RegisterInstanceLoadHandler(Guid('8988D551-8CAA-459D-8D63-6C1976FC1138'), Guid('A5E63E1E-B0A8-9A19-EF3A-CF9FA0CD35CC'), function(instance)
+    print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+
+
 ------------------------
 --Disable Halo jump FX--
 ------------------------

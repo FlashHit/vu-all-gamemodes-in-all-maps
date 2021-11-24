@@ -15,5 +15,3 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('94DD4853-9F33-4AAB-8277-71E5DE
 	thisInstance.fields[9].value = 'CString "SWAMP"' -- D
 
 end)
-
-

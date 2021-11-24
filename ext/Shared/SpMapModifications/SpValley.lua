@@ -15,27 +15,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('9B6EE657-5639-4A04-AA88-16E9E2
     thisInstance.enable = false
 end)
 
---[[ResourceManager:RegisterInstanceLoadHandler(Guid('04A66130-53A0-11E0-9FA2-E9FBF10EC3E8'), Guid('4AAE63BA-C89E-9EC7-C6F5-B05389E95580'), function(instance)
-    print('EnlightenDataAsset replaced YOOOOOOOOOOOOO...')
-    local thisInstance = EnlightenDataAsset(instance)
-    thisInstance:MakeWritable()
-	thisInstance.name = 'levels/xp3_shield/lighting/enlighten_dynamic'
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('1A541F0F-5952-11E0-A28A-9A2BCA4F98D2'), Guid('C1089710-44DC-344C-C9D1-E2F4207858A4'), function(instance)
-    print('EnlightenDataAsset replaced YOOOOOOOOOOOOO...')
-    local thisInstance = EnlightenDataAsset(instance)
-    thisInstance:MakeWritable()
-	thisInstance.name = 'levels/xp3_shield/lighting/enlighten_dynamic'
-end)]]
-
-
---[[ResourceManager:RegisterInstanceLoadHandler(Guid('9B6EE657-5639-4A04-AA88-16E9E201806E'), Guid('4145B204-EC0F-443D-8C85-99C2CD90E991'), function(instance)
-    print('Clearing LevelData objects array...')
-    local thisInstance = LevelData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.objects[1].blueprint:add('523CDAB4-AAEC-4C68-BE5A-E65406C214C1')
-end)]]
 
 
 --------------------
@@ -171,3 +150,136 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6E05633B-1C5B-4ABA-9790-415BE7
     thisInstance.excluded = true
 
 end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('D34CFDC5-FDD2-4857-B700-5189DAE5D292'), Guid('A32556F9-03E5-F951-F8E5-845327C83684'), function(instance) -- StaticModelGroupEntityData
+
+    --print('Removing ValleyArt...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    --thisInstance.enabled = false
+    --thisInstance.memberDatas:clear()
+
+end)
+
+----------------------------
+---Radio Tower Destruction--
+----------------------------
+
+local updateEvent = nil
+
+local elapsedTime = 0
+local duration = 10.0
+
+if SharedUtils:IsServerModule() then
+    Events:Subscribe('Level:Loaded', function()
+        if updateEvent ~= nil then
+            updateEvent:Unsubscribe()
+            updateEvent = nil
+        end
+
+           updateEvent = Events:Subscribe('Engine:Update', function(deltaTime, simulationDeltaTime)
+            elapsedTime = elapsedTime + deltaTime
+            if elapsedTime > duration then
+                print("Checking ticket count")
+                    if IsTeamLowTickets() then
+                          StartSequence()
+                          print("Broadcasting...")
+                          NetEvents:Broadcast('StartSequence')
+
+                          updateEvent:Unsubscribe()
+                          updateEvent = nil
+                    end
+                elapsedTime = 0
+            end
+          end)
+    end)
+end
+
+local threshold = 25
+
+function IsTeamLowTickets()
+  if TicketManager:GetTicketCount(TeamId.Team1) < threshold or
+    TicketManager:GetTicketCount(TeamId.Team2) < threshold then
+      return true
+  end
+
+  return false
+end
+
+local sequenceEntityGuid = Guid('1A32D4B1-A1F8-4C82-ABCE-47316485CB85')
+
+function StartSequence()
+  print("Starting Sequence")
+  local iterator = EntityManager:GetIterator('SequenceEntity')
+  local entity = iterator:Next()
+  while entity ~= nil do
+      if entity.data.instanceGuid == sequenceEntityGuid then
+        print("Found entity")
+        entity:FireEvent('Start')
+        break
+      end
+      
+      entity = iterator:Next()
+  end
+end
+
+NetEvents:Subscribe('StartSequence', StartSequence)
+
+
+--------------------------
+---Enable Wind Turbines---
+--------------------------
+
+--[[class "WindTurbines"
+
+function WindTurbines:OnLevelLoaded(p_LevelName, p_GameMode)
+	self:StartWindTurbines()
+end
+
+local m_Logger = Logger("WindTurbines", true)
+
+function WindTurbines:StartWindTurbines()
+	local s_EntityIterator = EntityManager:GetIterator('SequenceEntity')
+	local s_Entity = s_EntityIterator:Next()
+
+	while s_Entity do
+		s_Entity = Entity(s_Entity)
+
+		if s_Entity.data ~= nil and s_Entity.data.instanceGuid == Guid("F2E30E34-2E82-467B-B160-4BAD4502A465") then
+			m_Logger:Write("Start turbine")
+			local s_Delay = math.random(0, 5000) / 1000
+
+			g_Timers:Timeout(s_Delay, s_Entity, function(p_Entity)
+				p_Entity:FireEvent("Start")
+			end)
+		end
+
+		s_Entity = s_EntityIterator:Next()
+		print('Wind Turbines activated')
+	end
+end
+
+return WindTurbines()]]
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('55F0A120-8860-11E1-A36F-D0BFF236E773'), Guid('F2E30E34-2E82-467B-B160-4BAD4502A465'), function(instance)
+
+    local thisInstance = SequenceEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.autoStart = true
+	--print('Wind Turbines activated')
+
+end)
+
+
+-- =============================================
+-- Cull Distance & Lod
+-- =============================================
+
+-- PowerLine_01B_BrokenBase_Mesh
+ResourceManager:RegisterInstanceLoadHandler(Guid('1E857D81-FFDF-1EBC-D6F2-082F304F5809'), Guid('AB778B7A-AE12-98BC-5733-90A64F29EFFF'), function(p_Instance)
+	p_Instance = RigidMeshAsset(p_Instance)
+	p_Instance:MakeWritable()
+	p_Instance.cullScale = 50.0
+	p_Instance.lodScale = 3.0
+end)
+

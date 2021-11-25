@@ -1,4 +1,4 @@
--- Ziba Tower Domination & Gunmaster
+-- Ziba Tower all game modes
 
 Events:Subscribe('Partition:Loaded', function(partition)
 
@@ -12,7 +12,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'MP_003') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'MP_003') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 
@@ -93,6 +93,66 @@ Events:Subscribe('Partition:Loaded', function(partition)
     spLevelData:MakeWritable()
     spLevelData.objects:add(ShieldSRSubWorldReferenceObjectData)
 	print('Shield Rush SubWorldReferenceObjectData added')
+
+end)
+
+-- Armored Shield Conquest
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+    if (string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
+        return
+    end
+
+    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
+	
+----------------------
+
+    local ShieldCQSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('8DA44181-5029-48BA-B28A-F9C4563EA353')))
+
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(ShieldCQSubWorldReferenceObjectData)
+	print('Shield Conquest SubWorldReferenceObjectData added')
+
+end)
+
+-- Armored Shield DeathMatch
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+    if (string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+        return
+    end
+
+    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
+	
+----------------------
+
+    local ShieldTDMSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('69AFE35D-259F-11E1-98E7-C42BEF8FFB67'), Guid('B2E9ABCA-4FAD-4F52-B44A-133B62E01780')))
+
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(ShieldTDMSubWorldReferenceObjectData)
+	print('Shield TDM SubWorldReferenceObjectData added')
 
 end)
 
@@ -209,7 +269,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
         return
     end
 
@@ -242,7 +302,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'RushLarge0' and gameModeName ~= 'SquadRush0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'RushLarge0' and gameModeName ~= 'SquadRush0' then
         return
     end
 
@@ -309,7 +369,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'TankSuperiority0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'TankSuperiority0' then
         return
     end
 
@@ -361,3 +421,123 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
 end)
 
+-- Air Superiority NebandanFlats
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'XP2_Skybar') == nil) or gameModeName ~= 'AirSuperiority0' then
+        return
+    end
+
+
+	
+----------------------
+
+    local NebandanASSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('C4A49551-19D4-11E2-A0B4-E3BFB6B30185'), Guid('90122F63-A2BA-486D-BE53-DA5804FFF265')))
+	
+
+    -- Add to LevelData 'Objects' array
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(NebandanASSubWorldReferenceObjectData)
+	print('Nebandan AS SubWorldReferenceObjectData added')
+
+end)
+
+
+-- Wake Island Squad Rush
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'SP_Jet') == nil) or gameModeName ~= 'SquadRush0' then
+        return
+    end
+	
+----------------------
+
+    local WakeSRSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('12F3EC6B-A63A-4B0C-B0CA-68A4A3B13E28'), Guid('614D09CD-BD54-44A5-8C56-A6843724FD39')))
+
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(WakeSRSubWorldReferenceObjectData)
+	print('Wake Island Squad Rush SubWorldReferenceObjectData added')
+
+end)
+
+-- Wake Island Squad DeathMatch
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'SP_Jet') == nil) or gameModeName ~= 'SquadDeathMatch0' then
+        return
+    end
+	
+----------------------
+
+    local WakeSQDMSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('12F3EC6B-A63A-4B0C-B0CA-68A4A3B13E28'), Guid('849E5DD3-36E6-4F7B-AF2A-6CE38B96EA0F')))
+
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(WakeSQDMSubWorldReferenceObjectData)
+	print('Wake Island STDM SubWorldReferenceObjectData added')
+
+end)
+
+-- Wake Island DeathMatch
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'SP_Jet') == nil) or gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+        return
+    end
+	
+----------------------
+
+    local WakeTDMSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('12F3EC6B-A63A-4B0C-B0CA-68A4A3B13E28'), Guid('EE683817-254B-4BAD-BE34-AD5E80FEA909')))
+    
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(WakeTDMSubWorldReferenceObjectData)
+	print('Wake Island TDM SubWorldReferenceObjectData added')
+
+end)

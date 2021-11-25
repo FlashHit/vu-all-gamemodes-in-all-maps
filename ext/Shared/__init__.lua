@@ -19,19 +19,15 @@ require '__shared/MpPresets/CreateGenericGameSubworldForAllLevels'
 
 -- Kaffarov's Villa
 require '__shared/MpPresets/Villa/MpDataLoad_Ziba'
-require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef_Ziba'
 require '__shared/MpPresets/Villa/MpDataLoad_Bandar'
-require '__shared/MpPresets/Villa/CreateGameModeSubWorldRef_Bandar'
 require '__shared/MpPresets/Villa/MapModifications/_MapModificationManager'
 
 -- Rock and a Hard Place 
 require '__shared/MpPresets/Valley/MpDataLoad_Shield'
-require '__shared/MpPresets/Valley/CreateGameModeSubWorldRef_Shield'
 require '__shared/MpPresets/Valley/MapModifications/_MapModificationManager'
 
 -- Going Hunting
 require '__shared/MpPresets/Carrier/MpDataLoad_Wake'
-require '__shared/MpPresets/Carrier/CreateGameModeSubWorldRef_Wake'
 require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
 
 -- Thunder Run
@@ -98,7 +94,6 @@ require '__shared/MpPresets/Kharg/MapModifications/_MapModificationManager'
 
 -- Ziba Tower
 require '__shared/MpPresets/Ziba/MpDataLoad'
-require '__shared/MpPresets/Ziba/CreateGameModeSubWorldRef'
 require '__shared/MpPresets/Ziba/MapModifications/_MapModificationManager'
 
 -- Donya Fortress

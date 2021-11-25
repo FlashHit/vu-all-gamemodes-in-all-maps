@@ -356,7 +356,7 @@ end)
 ResourceManager:RegisterInstanceLoadHandler(Guid('CCE6FE0B-7C3A-4B6E-86CF-964F43D70136'), Guid('64D64155-ADBB-2C42-89FA-34A5AE4669E3'), function(instance)
     local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
-    interface.fields[10].value = "LinearTransform ((-0.291064, 0.000000, 0.956704),(0,1,0),(-0.956704, 0.000000, -0.291064),(1100.74,65.09,-689.32))"
+    interface.fields[10].value = "LinearTransform ((-0.291064, 0.000000, 0.956704),(0,1,0),(-0.956704, 0.000000, -0.291064),(1385.56,72.33,-830.85))"
 end)
 
 --mcom 2
@@ -1930,10 +1930,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('AD4D6ADD-6807-4FE1-B6D2-106BA5
     thisInstance:MakeWritable()
 
     local RUinfSpawn32 = LinearTransform(
-        Vec3(-0.891637, 0.000000, -0.452751),
+        Vec3(-0.785356, 0.000000, 0.619044),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(0.452751, 0.000000, -0.891637),
-Vec3(1235.377930, 65.022263, -468.606689)
+Vec3(-0.619044, 0.000000, -0.785356),
+Vec3(1498.849609, 62.610157, -655.729492)
     )
 
     thisInstance.transform = RUinfSpawn32
@@ -1948,10 +1948,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('AD4D6ADD-6807-4FE1-B6D2-106BA5
     thisInstance:MakeWritable()
 
     local RUinfSpawn33 = LinearTransform(
-        Vec3(-0.853831, 0.000000, 0.520550),
+        Vec3(-0.510939, 0.000000, -0.859617),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.520550, 0.000000, -0.853831),
-Vec3(1266.584961, 64.792770, -462.369141)
+Vec3(0.859617, 0.000000, -0.510939),
+Vec3(1504.532227, 69.676559, -771.600586)
     )
 
     thisInstance.transform = RUinfSpawn33
@@ -1966,10 +1966,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('AD4D6ADD-6807-4FE1-B6D2-106BA5
     thisInstance:MakeWritable()
 
     local RUinfSpawn34 = LinearTransform(
-        Vec3(-0.602241, 0.000000, 0.798314),
+        Vec3(-0.468227, 0.000000, 0.883608),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.798314, 0.000000, -0.602241),
-Vec3(1393.736328, 65.552536, -506.157928)
+Vec3(-0.883608, 0.000000, -0.468227),
+Vec3(1684.016602, 71.564270, -778.005615)
     )
 
     thisInstance.transform = RUinfSpawn34
@@ -1984,10 +1984,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('AD4D6ADD-6807-4FE1-B6D2-106BA5
     thisInstance:MakeWritable()
 
     local RUinfSpawn35 = LinearTransform(
-        Vec3(-0.998667, 0.000000, 0.051624),
+        Vec3(-0.893521, 0.000000, 0.449022),
 Vec3(0.000000, 1.000000, 0.000000),
-Vec3(-0.051624, 0.000000, -0.998667),
-Vec3(1373.153320, 64.314255, -484.682617)
+Vec3(-0.449022, 0.000000, -0.893521),
+Vec3(1505.867065, 62.781075, -621.089783)
     )
 
     thisInstance.transform = RUinfSpawn35

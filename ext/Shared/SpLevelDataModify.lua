@@ -85,7 +85,7 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
             thisInstance:MakeWritable()
 
             -- Set as MP in LevelData
-            thisInstance.levelDescription.isCoop = true
+            thisInstance.levelDescription.isCoop = false
             thisInstance.levelDescription.isMultiplayer = true
             thisInstance.levelDescription.isMenu = false
 

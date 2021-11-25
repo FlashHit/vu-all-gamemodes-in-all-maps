@@ -180,10 +180,10 @@ if SharedUtils:IsServerModule() then
            updateEvent = Events:Subscribe('Engine:Update', function(deltaTime, simulationDeltaTime)
             elapsedTime = elapsedTime + deltaTime
             if elapsedTime > duration then
-                print("Checking ticket count")
+                --print("Checking ticket count")
                     if IsTeamLowTickets() then
                           StartSequence()
-                          print("Broadcasting...")
+                          --print("Broadcasting...")
                           NetEvents:Broadcast('StartSequence')
 
                           updateEvent:Unsubscribe()
@@ -209,12 +209,12 @@ end
 local sequenceEntityGuid = Guid('1A32D4B1-A1F8-4C82-ABCE-47316485CB85')
 
 function StartSequence()
-  print("Starting Sequence")
+  --print("Starting Sequence")
   local iterator = EntityManager:GetIterator('SequenceEntity')
   local entity = iterator:Next()
   while entity ~= nil do
       if entity.data.instanceGuid == sequenceEntityGuid then
-        print("Found entity")
+        --print("Found entity")
         entity:FireEvent('Start')
         break
       end
@@ -280,6 +280,27 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('1E857D81-FFDF-1EBC-D6F2-082F30
 	p_Instance = RigidMeshAsset(p_Instance)
 	p_Instance:MakeWritable()
 	p_Instance.cullScale = 50.0
+	p_Instance.lodScale = 3.0
+end)
+
+-- radiotowervalley_static_destroyed_Mesh
+ResourceManager:RegisterInstanceLoadHandler(Guid('B1982AB2-486E-A8AE-77C4-B00913D4165E'), Guid('6AD0FE54-699A-204C-D80A-464FD469C870'), function(p_Instance)
+	p_Instance = CompositeMeshAsset(p_Instance)
+	p_Instance:MakeWritable()
+	p_Instance.lodScale = 3.0
+end)
+
+-- radiotowervalley_model_Mesh
+ResourceManager:RegisterInstanceLoadHandler(Guid('7A38E083-963D-454B-0F70-A355B402D637'), Guid('728EDB19-BAE2-E1BA-E3F7-753C7C0167C2'), function(p_Instance)
+	p_Instance = SkinnedMeshAsset(p_Instance)
+	p_Instance:MakeWritable()
+	p_Instance.lodScale = 3.0
+end)
+
+-- radiotowervalleywires_model_Mesh
+ResourceManager:RegisterInstanceLoadHandler(Guid('1A9255B2-73AC-4D86-0248-7211ADAA5B74'), Guid('157DFBE6-3F33-FACF-CD27-C7DAA9D15A3A'), function(p_Instance)
+	p_Instance = SkinnedMeshAsset(p_Instance)
+	p_Instance:MakeWritable()
 	p_Instance.lodScale = 3.0
 end)
 

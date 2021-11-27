@@ -96,7 +96,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_villa/lightmap_01',
 			'levels/sp_villa/lightmap_02',
 			'levels/sp_villa/lightmap_03',
-            bundles[1],
         }
 
         hook:Pass(bundles, compartment)

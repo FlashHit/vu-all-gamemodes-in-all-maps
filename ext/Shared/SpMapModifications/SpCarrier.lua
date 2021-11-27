@@ -1,20 +1,6 @@
 -- Courtesy of keku645
 
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('3C0DE194-B689-11DF-B8D0-D42ED28AF832'), Guid('410DAD9D-1DEC-46B9-909C-92717FDDE80E'), function(instance)
-   -- print('DynamicEnlightenEntityData disabled...')
-    local thisInstance = DynamicEnlightenEntityData(instance)
-    thisInstance:MakeWritable()
-	thisInstance.enable = false
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('3C0DE194-B689-11DF-B8D0-D42ED28AF832'), Guid('4B0848F0-B36F-4BFA-A1B1-DAC166EFDA96'), function(instance)
-    --print('DynamicEnlightenEntityData disabled...')
-    local thisInstance = DynamicEnlightenEntityData(instance)
-    thisInstance:MakeWritable()
-    thisInstance.enable = false
-end)
-
 -- remove camera shake
 ResourceManager:RegisterInstanceLoadHandler(Guid('1513889B-A8AE-11E0-B869-A6D2F69136D5'), Guid('C290FF40-CFBF-34D0-3028-7101137304FC'), function(instance) -- To change
 

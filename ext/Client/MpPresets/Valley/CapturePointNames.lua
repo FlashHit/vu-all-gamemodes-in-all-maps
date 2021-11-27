@@ -12,6 +12,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('94DD4853-9F33-4AAB-8277-71E5DE
     thisInstance.fields[7].value = 'CString "HIGHGROUND"' -- B
     thisInstance.fields[6].value = 'CString "FOREST"' -- A
     thisInstance.fields[10].value = 'CString "FIELD"' -- E
-	thisInstance.fields[9].value = 'CString "SWAMP"' -- D
+	thisInstance.fields[9].value = 'CString "COMM. STATION"' -- D
 
 end)

@@ -101,8 +101,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_valley/zone3',
 			'levels/sp_valley/zone4',
 			'levels/sp_valley/zone5',
-
-            bundles[1],
         }
 
         hook:Pass(bundles, compartment)

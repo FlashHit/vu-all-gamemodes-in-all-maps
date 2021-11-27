@@ -83,9 +83,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_jet/carrierstart_playerandwingmananimations',
 			'levels/sp_jet/dogfightpartone_backdrop',
 			'levels/sp_jet/particleclouds',
-
-
-            bundles[1],
         }
 
         hook:Pass(bundles, compartment)
@@ -218,7 +215,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_jet/carrierstart_playerandwingmananimations',
 			'levels/sp_jet/dogfightpartone_backdrop',
 			'levels/sp_jet/particleclouds',
-            bundles[1],
         }
 
         hook:Pass(bundles, compartment)

@@ -178,7 +178,7 @@ if SharedUtils:IsServerModule() then
     end)
 end
 
-local threshold = 25
+local threshold = 51
 
 function IsTeamLowTickets()
   if TicketManager:GetTicketCount(TeamId.Team1) < threshold or

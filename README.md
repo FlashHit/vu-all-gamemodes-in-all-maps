@@ -52,7 +52,7 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 ## Important
 
 
-**It's mandatory to download my [CustomLevelLoader](https://github.com/keku645/CustomLevelLoader) and [2dTrees-Removal](https://github.com/keku645/2dTrees-Removal), gamemodes have been ported based on the layout of such custom maps.**
+**It's mandatory to download my [CustomLevelLoader](https://github.com/keku645/CustomLevelLoader), gamemodes have been ported based on the layout of such custom maps.**
 
 **MAKE SURE YOU SET '-highResTerrain' AS A LAUNCH COMMAND FOR YOUR SERVER** (you should do this anyway). Without this, the terrain collision gets trippy.
                          

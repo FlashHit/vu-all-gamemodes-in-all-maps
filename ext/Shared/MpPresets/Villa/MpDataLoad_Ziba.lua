@@ -161,10 +161,6 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
     local zibaGunmasterRegistry = ResourceManager:FindInstanceByGuid(Guid('06B999B3-6989-46C3-BCF3-37DEC0B7A531'), Guid('412E7620-8C4D-A090-AFF0-37057687F097'))
     ResourceManager:AddRegistry(zibaGunmasterRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
-	print('Adding Lightmap_01 registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('5C66586D-5345-562F-5920-9E05E054BD5F'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
-	
 	--[[print('Adding Lightmap_02 registry...')
 	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('E9896092-501A-722A-E668-32A04CC5800C'))) 
     ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)

@@ -34,6 +34,11 @@ require '__shared/MpPresets/Carrier/MapModifications/_MapModificationManager'
 require '__shared/MpPresets/Thunder_Run/MpDataLoad_Bandar'
 require '__shared/MpPresets/Thunder_Run/MapModifications/_MapModificationManager'
 
+-- Operation Swordbreaker
+require '__shared/MpPresets/Operation_Swordbreaker/MpDataLoad_Bandar'
+require '__shared/MpPresets/Operation_Swordbreaker/MpDataLoad_Bandar_gunmaster'
+require '__shared/MpPresets/Operation_Swordbreaker/MapModifications/_MapModificationManager'
+
 -----------------
 ----COOP Maps----
 -----------------
@@ -190,74 +195,3 @@ require '__shared/MpPresets/Kiasar/MapModifications/_MapModificationManager'
 require '__shared/MpPresets/Sabalan/MpDataLoad_Sabalan_Ziba'
 require '__shared/MpPresets/Sabalan/MapModifications/_MapModificationManager'
 
-
-
--- Print every bundle that is loaded.
---[[Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
-
-    for _, bundle in pairs(bundles) do
-
-        print(bundle)
-        
-    end
-
-end)
-
-Hooks:Install('ResourceManager:LoadBundles', 100, function(hook, bundles, compartment)
-    local result = "compartment: "..tostring(compartment).."\nbundles:"
-    for _,bundle in pairs(bundles) do
-        result = result.."\n"..bundle
-    end
-    print(result)
-end)
-
-ResourceManager:RegisterInstanceLoadHandler(Guid('623975E7-E434-447F-8FBB-A6262DD1E9C7'), Guid('BD24B3F3-E185-466C-A73F-3D93EA7CCD11'), function(instance)
-    print('DynamicEnlightenEntityData disabled...')
-    local thisInstance = DynamicEnlightenEntityData(instance)
-    thisInstance:MakeWritable()
-	thisInstance.enable = false
-end)
-
-
-Hooks:Install('EntityFactory:Create', 999999999, function(hook, entityData, transform)
-    if entityData == nil then
-        return
-    end
-
-    local dc = DataContainer(entityData)
-    if dc.instanceGuid == Guid("9C8333BD-DD6F-574F-311C-3560C7B2E76C") or dc.instanceGuid == Guid("BD24B3F3-E185-466C-A73F-3D93EA7CCD11")  then
-        print("IAMHEREIAMHEREIAMHEREIAMHEREIAMHEREIAMHEREIAMHEREIAMHEREIAMHEREIAMHERE")
-        print(dc.instanceGuid)
-    end
-end)
-
-Events:Subscribe('Level:Loaded', function(levelName, gameMode)
-    print("I AM HERE TO DO NOTHING")
-
-    if not SharedUtils:IsClientModule() then
-        print("I DONT LIKE YOU MR SERVER")
-        return
-    end
-
-    local entityData = ResourceManager:SearchForInstanceByGuid(Guid('BD24B3F3-E185-466C-A73F-3D93EA7CCD11'))
-    local ddd = DynamicEnlightenEntityData(entityData)
-    ddd.enable = true
-  
-  
-  -- local entityData = PointLightEntityData()
-  -- entityData.color = Vec3(1.0, 0.0, 0.0)
-  -- entityData.radius = 10.0
-  -- entityData.intensity = 1.0
-  -- entityData.visible = true
-  -- entityData.enlightenEnable = false
-  
-  local entityPos = LinearTransform()
-  entityPos.trans = Vec3(0.0, 0.0, 0.0)
-  
-  local createdEntity = EntityManager:CreateEntity(ddd, entityPos)
-  
-  if createdEntity ~= nil then
-      print("IAMCREATINGANENTITY")
-    createdEntity:Init(Realm.Realm_Client, true)
-  end
-end)]]

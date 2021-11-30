@@ -30,7 +30,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/SpMapModifications/SpAyganVillage'
 
-	end)
+end)
 
 Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
@@ -42,7 +42,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     require '__shared/SpMapModifications/SpValley'
 	
-	end)
+end)
 
 
 Events:Subscribe('Level:LoadResources', function()
@@ -53,7 +53,7 @@ Events:Subscribe('Level:LoadResources', function()
     print('Initialising Villa SP scripts...')
 
     require '__shared/SpMapModifications/SpVilla'
-	end)
+end)
 	
 Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' then
@@ -74,5 +74,16 @@ Events:Subscribe('Level:LoadResources', function()
     print('Initialising Thunder Run scripts...')
 
     require '__shared/SpMapModifications/Thunder_Run'
+
+end)
+
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Earthquake/SP_Earthquake' then
+	return
+    end
+     
+    print('Initialising Operation Swordbreaker scripts...')
+
+    require '__shared/SpMapModifications/Operation_Swordbreaker'
 
 end)

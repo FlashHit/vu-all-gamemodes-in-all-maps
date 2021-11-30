@@ -235,7 +235,7 @@ approvedWorldPartRefGuids = {
     '2D17B52C-1B94-479C-9B52-DA9AB283AC2C', -- Sound_Areas
     '7C02C136-ED9D-4D60-8140-45F7187FD944', -- Sound_Areas_Schematic
     'F5990EE5-A1A4-4E0B-8941-29A98E8A78DE', -- Doors
-    --'A3B3D5AB-EFE7-40B1-B080-38293387FC42', -- Lighting -------------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    'A3B3D5AB-EFE7-40B1-B080-38293387FC42', -- Lighting 
     '4216778C-ADEB-4423-9D35-E80645DFFE0E', -- GlobalLighting
     '2E58C3F6-0E04-45B6-A12E-2133223D8A51', -- AlleyEffects
     '9D700F8D-37F9-4786-80DF-EF5A19F5C34E', -- AlleyProps
@@ -245,7 +245,7 @@ approvedWorldPartRefGuids = {
     '79C39678-4FFC-4991-9D7F-0AE7248455F8', -- Backdrop_InnerCircle
     '9AC0C00B-15B1-4AC6-99D8-4439A17E4A37', -- Backdrop_OuterCircle
     '64821868-B0E2-42A2-9E12-1FB29012253D', -- BazaarART
-    --'F7EDE9A6-D375-42C3-89D6-10C3EF15B0D3', -- Bazaar_Props ---------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    'F7EDE9A6-D375-42C3-89D6-10C3EF15B0D3', -- Bazaar_Props 
     '5E9943A6-CD6C-45C0-BC94-4F500ED6606B', -- BazaarLighting
     'EFC93CCD-5498-47B5-81AB-10558EC294B6', -- BuildingProps
     '3A6091A7-D49D-4A94-8422-6C1F29D1E592', -- BuildingLighting
@@ -257,28 +257,28 @@ approvedWorldPartRefGuids = {
     'B35B5D43-9BF8-4907-AEEA-6663380DDBDF', -- LAVSceneProps
     'BE31C0D0-D1DE-44AA-9242-C12A960D554F', -- LAVSceneSound
     '8AA21B9B-D713-461F-B378-EA41884ABF39', -- MeatMarketBuildings
-    --'5920516C-C9F8-4FB0-825A-77E4C44F3E7B', -- MeatMarketProps ------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '5920516C-C9F8-4FB0-825A-77E4C44F3E7B', -- MeatMarketProps 
     '6B7F183B-0C32-4AF0-9DFE-7F3B622EC56C', -- MeatMarketGround
     '95120D17-3792-42A1-93F2-CD5DDB96EFB5', -- MeatMarketLighting
     'E3B889F3-BEF0-43D2-A789-493D9476685B', -- MeatMarketEffects
     'B06CCFFA-106F-4635-B58A-B3248E9F76D4', -- MeatMarketSound
-    --'1C7F1C4F-1BB5-4FAC-B875-547EF216CA6C', -- ParkingLotProps ------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '1C7F1C4F-1BB5-4FAC-B875-547EF216CA6C', -- ParkingLotProps 
     'E89A61F7-C10B-4B6A-AC47-C8E73AB55901', -- ParkingLotLighting
     'FFC7526C-1AA2-4BD6-85BF-ECF67EA4FF69', -- ParkingLotSound
-    --'FC0085BB-34C1-492F-BD1F-A4BC560C51F6', -- ParkingLotSurroundingBuildings ---------------------------- PROBLEMATIC: server CTD on sending spawn messages
-    --'B5DFD30D-7CA9-4497-AACF-BE9CE65091F3', -- ParkingLotSurroundingProps -------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    'FC0085BB-34C1-492F-BD1F-A4BC560C51F6', -- ParkingLotSurroundingBuildings 
+    'B5DFD30D-7CA9-4497-AACF-BE9CE65091F3', -- ParkingLotSurroundingProps 
     'D53A297E-322D-4DF7-803A-A6A6DA5E016D', -- ParkingLotSurroundingLighting
-    --'1C66C1AC-8E49-4ED9-9DA8-863168E4235B', -- RooftopProps ---------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '1C66C1AC-8E49-4ED9-9DA8-863168E4235B', -- RooftopProps 
     'F055EAF5-F5EB-4491-ABD4-89BA674CE98F', -- RooftopLighting
     'E5B2AC54-5F86-44CA-AEFF-F0DD5FFE5A76', -- RooftopSniperEffects
     'EB8A7D6B-33DD-4A14-9031-49EF4C8606CA', -- RooftopSniperSound
     '37C7FDD4-1E43-44BF-AD58-4D688C9B9E1A', -- RooftopSniperProps
-    --'33527DC1-22F4-408A-B30D-4B2991FC3BF2', -- SchoolProps ----------------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '33527DC1-22F4-408A-B30D-4B2991FC3BF2', -- SchoolProps 
     '8B15A8E3-E3D5-4D6C-B32C-FD91F9227B22', -- SchoolLighting
     '362A1B72-011F-4D79-9175-43DB49F9C536', -- SchoolSound
     '81732781-E971-4657-BE90-995C3465D6C1', -- SchoolEffects
     '874A0871-E36B-4AC6-997C-7E5FC73EFBF9', -- SchoolBuilding_ART
-    --'26E30A27-685F-4775-A7F4-FD84879F82E9', -- StagingAreaProps ------------------------------------------ PROBLEMATIC: server CTD on sending spawn messages
+    '26E30A27-685F-4775-A7F4-FD84879F82E9', -- StagingAreaProps 
     'D89BEC5F-14F0-4910-A32B-4364C99D9E2B', -- StagingAreaVehicles
     'DEB2E13D-BA17-4A82-A5EC-3C08FEF13ADE', -- StagingAreaEffects
     'DB5ED4D5-62D8-4180-9442-D472E8627CF2', -- StagingAreaBuildings
@@ -286,6 +286,32 @@ approvedWorldPartRefGuids = {
     '3F473DAA-3C2C-4E0F-B281-072DACD0C065', -- StreetCrossingProps
     'C8700816-06A0-4565-9A95-CE66BA608BAF', -- StreetCrossingLighting
     '36AA5FB7-505C-42EB-9406-63CC87745331', -- StreetCrossingSound
+	'EFCB921B-D4A2-4CB3-950C-EFF0FDD3A861', -- AlleyLogic
+	'9BA3E7C6-B19F-48A9-AC47-06CCE4AA4E1C', -- BazaarFacade_Buildings
+	'AD4E5C7A-275E-477D-A475-31B99F3A1917', -- BridgeFightLogic
+	'EB71CCCE-4120-4814-AB8F-C467DEE2B004', -- BriefingSound
+	'ADC1FF94-F7BF-4BFA-9436-2732CDC5F3C5', -- BuildingLogic
+	'89A2A2DB-BCDA-4FC7-82AA-52505A495F46', -- BuildingStairWell
+	'5F6710B7-9225-47C8-AEEE-F212B7304183', -- BuildingHallway
+	'24492614-58B7-4EC8-9CD0-3FA1945E92A5', -- CellarLightingSchema
+	'12A4AA2B-56DE-4BF1-A97C-EC7F24671057', -- EarthquakeEffects
+	'BA9842DE-3167-47DA-8E19-1B6930FA126C', -- EarthquakeSound
+	'660E3F24-F752-4642-B3C8-E449B07F6881', -- IED_LOG
+	'1C60FAE0-354D-4444-888A-7FE38E6033F6', -- IED_SCM
+	'FCDFDA31-F383-4331-8746-1FBE17CDC26C', -- LAVSceneLightingSchema
+	'D8BA0C0A-3DD6-44E8-A7B2-8E79B393A393', -- MeatMarketQuakeArea
+	'BABFCD58-DC7D-48D5-8EAD-C95F43C48F52', -- MeatMarketEffectsSchema
+	'F67712E6-E1EB-41E8-897D-C868D3211C03', -- ParkingLotLogic
+	'7DF9CCCC-B19B-4581-8457-CBCCB0788B0E', -- ParkingLotSurroundingsSchema
+	'D99740E0-EA44-4828-8DCC-91B3923E737A', -- RooftopParkourSquad
+	'723CDA89-9A2F-4DE4-923B-452D4C39113C', -- RooftopSniperEffectsSchema
+	'8EF14735-C99D-474E-97CB-381423F2F558', -- SchoolPropsSchema
+	'C7FD44FA-8C99-43B5-9836-A11372452342', -- Destruction
+	'8AA36CDD-F5D5-4F30-9057-5EFE928815A4', -- StagingAreaSoldiers
+	'51C0D4C7-BC5E-411E-9EB9-C393946CB290', -- StagingAreaPropsSchema
+	'F033C9EF-BE11-436A-B239-B944536F4CD2', -- StagingAreaSurroundingBuildings
+	'B24B9F71-E6F9-43BE-A866-518388D105A9', -- StagingAreaSurroundingProps
+	'5DF965D9-F23F-4DE2-BC91-767E80F925E5', -- StagingAreaPropsWin32
 
     -- Uprising SP_Earthquake2 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     '7136D545-F7EE-4A60-0720-27FCB803F896', -- Default (terrain)

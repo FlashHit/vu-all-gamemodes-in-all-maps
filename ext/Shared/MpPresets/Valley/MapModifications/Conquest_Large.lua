@@ -357,13 +357,12 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('08DF85B9-1DFF-462D-AD1A-A88F8F
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
 
     local M11284 = LinearTransform(
-        Vec3(0.747369, -0.042789, -0.663029),
-        Vec3(0.024834, 0.999026, -0.036480),
-        Vec3(0.663945, 0.010798, 0.747704),
-        Vec3(-2116.036377, 75.144028, -498.519623)
+        Vec3(0.719637, 0.000000, 0.694350),
+        Vec3(0.000000, 1.000000, 0.000000),
+        Vec3(-0.694350, 0.000000, 0.719637),
+        Vec3(1643.414063, 50.679516, -1654.657227)
     )
 
     thisInstance.blueprintTransform = M11284
@@ -627,7 +626,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('08DF85B9-1DFF-462D-AD1A-A88F8F
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
-	thisInstance.excluded = true
 
     local SPRUTSD4 = LinearTransform(
         Vec3(-0.021437, 0.000000, 0.999770),

@@ -627,6 +627,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('08DF85B9-1DFF-462D-AD1A-A88F8F
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
+	thisInstance.excluded = true
 
     local SPRUTSD4 = LinearTransform(
         Vec3(-0.021437, 0.000000, 0.999770),

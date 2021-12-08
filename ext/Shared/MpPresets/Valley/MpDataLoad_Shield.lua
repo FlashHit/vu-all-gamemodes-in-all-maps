@@ -153,6 +153,30 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
 end)
 
+--Change Material Grid and EmitterSystemAsset.
+
+Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
+    -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
+    if string.find(levelName, 'SP_Valley') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
+    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+        return
+    end
+
+    -- The vehicles MaterialPair along with the levels MaterialGrid controls how and when a vehicle takes damage. Since Villa MaterialGrid doesnt have any info about tanks, the tank would never take damage.
+    p_LevelData = LevelData(p_LevelData)
+    p_LevelData:MakeWritable()
+    -- Exchanging SP_Valley materialGrid with XP3_Shield materialGrid.
+    p_LevelData.runtimeMaterialGrid = MaterialGridData(ResourceManager:FindInstanceByGuid(Guid('E35F0F53-C50C-BEC2-276E-0E543BB940EC'), Guid('C1A7BD09-31A6-2367-6E53-781EBDB1D936')))
+	-- Exchanging SP_Valley Emitter System with XP3_Shield Emitter System.
+    p_LevelData.emitterSystemAsset = EmitterSystemAsset(ResourceManager:FindInstanceByGuid(Guid('178FC745-33A1-894E-B0C7-AE6B1A126369'), Guid('178FC745-33A1-894E-B0C7-AE6B1A126369')))
+	--print('Material Grid and EmitterSystemAsset Changed')
+end)
+
 -- That's everything we need to load the multiplayer data we need. Now we need to tell the SP/COOP level how to load our chosen gamemode.
 -- That's all done by the CreateGameModeSubWorldRef.lua script.
 -- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.

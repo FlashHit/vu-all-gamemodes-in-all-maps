@@ -87,3 +87,14 @@ Events:Subscribe('Level:LoadResources', function()
     require '__shared/SpMapModifications/Operation_Swordbreaker'
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+	return
+    end
+     
+    print('Initialising Night Shift scripts...')
+
+    require '__shared/SpMapModifications/Night_Shift'
+
+end)

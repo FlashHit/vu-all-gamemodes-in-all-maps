@@ -16,23 +16,15 @@ Events:Subscribe('Level:LoadResources', function()
     local levelName = SharedUtils:GetLevelName()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 	
-	if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'TankSuperiority0' then
+	if string.find(levelName, 'SP_Sniper') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0' and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'TankSuperiority0' then
         return
     end
 
-
-    print('Mounting XP3 superbundle...')
-    ResourceManager:MountSuperBundle('xp3chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
-    print('Mounting Bandar superbundle for MP logic...')
+	--print('Mounting XP3 superbundle...')
+    ResourceManager:MountSuperBundle('xp3chunks')
+   -- print('Mounting Bandar superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp3_desert/xp3_desert') -- Change this to whatever level you're building your preset off.
-	print('Mounting Ziba Tower superbundle...')
-    ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar')
-	print('Mounting XP2 superbundle...')
-    ResourceManager:MountSuperBundle('xp2chunks')
-	print('Mounting SP Villa superbundle...')
-    ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
-	print('Mounting SP chunks superbundle...')
+	ResourceManager:MountSuperBundle('levels/sp_sniper/sp_sniper')
     ResourceManager:MountSuperBundle('spchunks')
 	ResourceManager:MountSuperBundle('chunks0')
 	ResourceManager:MountSuperBundle('chunks1')
@@ -56,46 +48,54 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
     -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
     -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
     -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
-    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'TankSuperiority0' then
+    if string.find(levelName, 'SP_Sniper') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
+    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'TankSuperiority0' then
         return
     end
 
     if #bundles == 1 and bundles[1] == levelName then
 
-        print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
+      --  print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
 
-        print('Injecting MP bundles...')
+       -- print('Injecting MP bundles...')
         bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
-            'levels/xp3_desert/xp3_desert', 
-			'levels/xp2_skybar/xp2_skybar',
-			'levels/sp_villa/sp_villa',
-			'levels/sp_villa/background',
-            'levels/sp_villa/blackburn',
-            'levels/sp_villa/drive_pc',
-            'levels/sp_villa/garden_pc',
-            'levels/sp_villa/railsuv',
-            'levels/sp_villa/villa_pc',
-			'levels/sp_villa/basement',
-			'levels/sp_villa/chopper',
-			'levels/sp_villa/drive',
-			'levels/sp_villa/drive_2',
-			'levels/sp_villa/garden',
-			'levels/sp_villa/gatehouse',
-			'levels/sp_villa/halo',
-			'levels/sp_villa/halo_backdrop',
-			'levels/sp_villa/landing',
-			'levels/sp_villa/poolhouse',
-			'levels/sp_villa/poolhouse_extra',
-			'levels/sp_villa/rail',
-			'levels/sp_villa/villa',
-			'levels/sp_villa/villa_extra',
-			'levels/sp_villa/lightmap_01',
-			'levels/sp_villa/lightmap_02',
-			'levels/sp_villa/lightmap_03',
-			'levels/sp_villa/lightmap_cutscene01',
-			'levels/sp_villa/lightmap_cutscene02',
+            'ui/flow/bundle/loadingbundlemp',
+			'levels/xp3_desert/xp3_desert',
+			'levels/sp_sniper/sp_sniper',
+			'levels/sp_sniper/albashirstrike',
+			'levels/sp_sniper/albashirstrikeart',
+			'levels/sp_sniper/albashirstrikeart_pc',
+			'levels/sp_sniper/background_01',
+			'levels/sp_sniper/background_02',
+			'levels/sp_sniper/background_persistant',
+			'levels/sp_sniper/backstreets',
+			'levels/sp_sniper/briefing',
+			'levels/sp_sniper/failknife',
+			'levels/sp_sniper/mall',
+			'levels/sp_sniper/mall_behindstreet',
+			'levels/sp_sniper/mall_exterior',
+			'levels/sp_sniper/mall_exterior_pc',
+			'levels/sp_sniper/mall_pc',
+			'levels/sp_sniper/malldefence',
+			'levels/sp_sniper/mannequinroom',
+			'levels/sp_sniper/missile',
+			'levels/sp_sniper/overwatch',
+			'levels/sp_sniper/plaza',
+			'levels/sp_sniper/reconnest',
+			'levels/sp_sniper/reconnest_pc',
+			'levels/sp_sniper/rocketapartment',
+			'levels/sp_sniper/sewers',
+			'levels/sp_sniper/malldefence_animation1',
+			'levels/sp_sniper/malldefence_animation2',
+			'levels/sp_sniper/malldefence_animation3',
+			'levels/sp_sniper/malldefence_animation4',
+			'levels/sp_sniper/malldefence_animation5',
+            --'levels/xp3_desert/conquest', 
+			--'levels/xp3_desert/rush',
+			--'levels/xp3_desert/deathmatch',
+			--'levels/xp3_desert/tanksuperiority',
+
+
         }
 
         hook:Pass(bundles, compartment)
@@ -126,8 +126,8 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
     -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'TankSuperiority0' then
+    if string.find(levelName, 'SP_Sniper') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
+    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'TankSuperiority0' then
         return
     end
 
@@ -140,34 +140,9 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
     -- http://webx.powback.com is a great resource.
 
-    print('Adding Bandar Desert registry...')
+   -- print('Adding Bandar registry...')
     local BandarRegistry = ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('273AC4A3-21D1-3D7E-B740-9387A30E1AF7'))
     ResourceManager:AddRegistry(BandarRegistry, ResourceCompartment.ResourceCompartment_Game)
 
 end)
 
---Change Material Grid
-
-Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
-
-    local levelName = SharedUtils:GetLevelName()
-    local gameModeName = SharedUtils:GetCurrentGameMode()
-
-    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
-    -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
-    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' and gameModeName ~= 'RushLarge0'
-    and gameModeName ~= 'SquadRush0' and gameModeName ~= 'TankSuperiority0' then
-        return
-    end
-
-    -- The vehicles MaterialPair along with the levels MaterialGrid controls how and when a vehicle takes damage. Since Villa MaterialGrid doesnt have any info about tanks, the tank would never take damage.
-    p_LevelData = LevelData(p_LevelData)
-    p_LevelData:MakeWritable()
-    -- Exchanging SP_Villa materialGrid with XP3_Desert materialGrid
-    p_LevelData.runtimeMaterialGrid = MaterialGridData(ResourceManager:FindInstanceByGuid(Guid('B9695518-0A56-8183-720E-2A763922CEB3'), Guid('140BAEE0-415B-A04D-3915-0E95DA4A6EE9')))
-	--print('Material Grid Changed')
-end)
-
--- That's everything we need to load the multiplayer data we need. Now we need to tell the SP/COOP level how to load our chosen gamemode.
--- That's all done by the CreateGameModeSubWorldRef.lua script.
--- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.

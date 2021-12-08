@@ -1,6 +1,5 @@
 require '__shared/SpLevelExcludedSubWorldList'
 
--- Set SP loading screens (COOP are already OK - seem to be already designed for MP) - CURRENTLY DYSFUNCTIONAL, MAY NOT BE EASILY POSSIBLE
 
 Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through every single partition so, if there is an instance in one of them we want to change, we can do so.
 

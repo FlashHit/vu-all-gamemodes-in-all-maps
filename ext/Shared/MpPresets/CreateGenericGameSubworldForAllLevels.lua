@@ -269,7 +269,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil and string.find(levelName, 'SP_Earthquake') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil and string.find(levelName, 'SP_Earthquake') == nil and string.find(levelName, 'SP_Sniper') == nil) or gameModeName ~= 'ConquestLarge0' and gameModeName ~= 'ConquestSmall0' then
         return
     end
 
@@ -336,7 +336,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil) or gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Sniper') == nil) or gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 

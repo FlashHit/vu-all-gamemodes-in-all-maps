@@ -189,6 +189,24 @@ end)
 -- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.
 
 
-----test
+--Change Emitter System
+
+Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
+    and gameModeName ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    -- Since we placed assets that do not belong in this map texture atlases have wrong coordinates, thats the reason some particles might look off, because of that we'll be changing the EmitterSystemAsset from the level we're working on by the one we need.
+    p_LevelData = LevelData(p_LevelData)
+    p_LevelData:MakeWritable()
+    -- Exchanging SP_Villa Emitter System with XP2_Skybar Emitter System.
+    p_LevelData.emitterSystemAsset = EmitterSystemAsset(ResourceManager:FindInstanceByGuid(Guid('DDEE8D77-8762-05A7-5EEE-C66508E3B38C'), Guid('DDEE8D77-8762-05A7-5EEE-C66508E3B38C')))
+	--print('Emitter System Changed')
+end)
 
 

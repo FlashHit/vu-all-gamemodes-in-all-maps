@@ -52,6 +52,18 @@ Events:Subscribe('Partition:Loaded', function(partition)
 			--print('MultipleActorScenarioEntityData from Hit and Run disabled')
 
         end
+		
+		if instance.typeInfo.name == 'SpotLightEntityData' then
+
+            local thisInstance = SpotLightEntityData(instance)
+            thisInstance:MakeWritable()
+            thisInstance.castShadowsMinLevel = 3
+			thisInstance.castShadowsEnable = true
+			thisInstance.specularEnable = true
+			thisInstance.enlightenEnable = true
+			thisInstance.shape = 0
+
+        end
 
         
 

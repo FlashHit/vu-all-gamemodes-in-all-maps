@@ -39,6 +39,11 @@ require '__shared/MpPresets/Operation_Swordbreaker/MpDataLoad_Bandar'
 require '__shared/MpPresets/Operation_Swordbreaker/MpDataLoad_Bandar_gunmaster'
 require '__shared/MpPresets/Operation_Swordbreaker/MapModifications/_MapModificationManager'
 
+-- Night Shift
+require '__shared/MpPresets/Night_Shift/MpDataLoad_Bandar'
+require '__shared/MpPresets/Night_Shift/MpDataLoad_Bandar_gunmaster'
+require '__shared/MpPresets/Night_Shift/MapModifications/_MapModificationManager'
+
 -----------------
 ----COOP Maps----
 -----------------

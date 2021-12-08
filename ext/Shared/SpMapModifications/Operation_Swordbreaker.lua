@@ -120,6 +120,31 @@ Events:Subscribe('Partition:Loaded', function(partition)
 
         end
 		
+		
+		if instance.typeInfo.name == 'CharacterStateTriggerEntityData' then
+
+            local thisInstance = CharacterStateTriggerEntityData(instance)
+            thisInstance:MakeWritable()
+            thisInstance.enabled = false
+
+        end
+		
+		if instance.typeInfo.name == 'GeometryTriggerEntityData' then
+
+            local thisInstance = GeometryTriggerEntityData(instance)
+            thisInstance:MakeWritable()
+            thisInstance.enabled = false
+
+        end
+		
+		if instance.typeInfo.name == 'MessageEntityData' then
+
+            local thisInstance = MessageEntityData(instance)
+            thisInstance:MakeWritable()
+            thisInstance.enabled = false
+
+        end
+		
 
         
 

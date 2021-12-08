@@ -527,18 +527,17 @@ approvedWorldPartRefGuids = {
     '298C19FA-0BF8-49DF-A166-00CA028C29EF', -- Sound_Areas_Schematic
     '3A544FDA-ED19-4CAC-8D84-D995CBE01CEF', -- Lighting
     'FA5950A2-7738-4819-938D-42FAB2B2E56C', -- Global_FX
+	'17901028-03BC-4EED-AB45-9F8E7E03693A', -- Global_FX_Schematic
     'B5162184-B897-46D1-B198-04247693BB2F', -- Doors
-    '5580D85D-DEAC-4957-AC92-9F321E23A8EB', -- AlBashirStrikeArt_Buildings
     '7E6C396E-FD68-4A70-B807-0E93A253E238', -- AlBashirStrikeArt_Lighting
     'D1DFF886-08EB-4B88-897A-E76AAA690E1E', -- AlBashirStrikeArt_Vegetation
     '999CBD83-D693-42A4-BA96-4D185C5F175E', -- AlBashirStrikeArt_Cars
     '17ADC739-9B7A-41FC-B65C-A4B827FD6CBB', -- AlBashirStrikeArt_Props
-    '173E3C6B-9598-4755-AEC3-D9E5E8DFCD23', -- AlBashirStrikeArt_Effects
+    '173E3C6B-9598-4755-AEC3-D9E5E8DFCD23', -- AlBashirStrikeArt_Effects  
     'F086D66D-AE9D-4CEA-9C08-04D665FBE11F', -- AlBashirStrikeArt_PC_Props
     '3AE03B3C-4427-4006-97F5-37BE03D248A8', -- SniperNest_view
     '8680085B-FA13-450D-8548-005DD9057841', -- SniperPlaza_Left
     '38BB5997-C844-45AA-9EAE-23808C091FF8', -- Background_Persistant_Buildings [sic]
-    --'B4A8E387-C0A2-4700-A903-9B100355133D', -- Backstreets_BUILDINGS ------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
     '2ED988CA-A4B4-40DB-AFEF-1C27C0E953E7', -- Backstreets_VEGETATION
     'FDB3C9D7-985D-4ED5-ADF3-9BECA1315596', -- Backstreets_SOUND
     'ED63E3B5-373B-4702-BFDC-D0E9B4DF8E27', -- Backstreets_SOUND_Schematic
@@ -546,24 +545,21 @@ approvedWorldPartRefGuids = {
     '49C910A9-EC26-4BFB-A249-6421CEEEBD56', -- Mall_BUILDINGS
     '8CAD5F53-1F55-425E-8648-A837EAEFC365', -- Mall_OBJECTS
     'E722B631-7772-4CB5-A237-6A8B0C9EC6A0', -- Mall_Lighting
-    --'44FCBED8-26F9-4197-A459-C93ACA6E8B92', -- Mall_BehindStreet_Buildings ------------------------------- PROBLEMATIC: server CTD on sending spawn messages
     '2BAFD8D5-93FF-48FE-8600-9515C3B0A3A4', -- Mall_Exterior_Buildings
     '642B9998-E1A9-4DAF-8999-710D51EBBDE1', -- Mall_Exterior_PC_Art
     '93CA8DBB-485C-4FED-9534-531C5D501B3E', -- Mall_PC_Art
     'C77C7E68-130E-493B-B191-096117B7C1DB', -- MallDefence_BUILDINGS
     '6AFDDD26-FB10-4425-BFD2-D069A7118080', -- MallDefence_SOUND_Schematic
     '332BA720-8B46-4D0D-ABF7-7EED90BA3819', -- MannequinRoom_BUILDINGS
-    --'7EFD5BAB-DAD9-4A9A-B783-7F635C831877', -- MannequinRoom_OBJECTS ------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '7EFD5BAB-DAD9-4A9A-B783-7F635C831877', -- MannequinRoom_OBJECTS 
     '40957E7F-3C42-4763-9B61-215F688E3FC2', -- MannequinRoom_SND (sound)
     '618D66EF-63E7-451F-A821-744F16F0CA53', -- MannequinRoom_Art
     '0DB8D78C-E33C-41BD-B2E5-780A1FD2AC4E', -- AB05_Buildings (AB05 is the Missile SubWorld)
     'E00BA273-5549-4C57-AF98-5A1560533C32', -- AB05_Lighting
-    --'BF1AC098-E509-4BFA-A835-BABA2BC5A02F', -- Overwatch_BUILDINGS --------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
     'E2B956F1-26F7-402F-8E56-BD954553CADC', -- Overwatch_Vegetation
-    --'90537578-17C9-4E24-983C-4F170C4F7750', -- AB08_Buildings (AB08 is the Plaza SubWorld) --------------- PROBLEMATIC: server CTD on sending spawn messages
     '787E51FA-A1CC-4D91-A7EE-67763FD088FF', -- AB08_Objects
     'B8324FA0-4331-4A12-BC57-33C1F4AEB354', -- AB08_Lighting
-    --'50322AED-37CB-46F3-9C09-923DB6E4B42A', -- ReconNest_BUILDINGS --------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+    '50322AED-37CB-46F3-9C09-923DB6E4B42A', -- ReconNest_BUILDINGS 
     '1BF78A3D-D47C-4F8B-BF59-665E388E2330', -- ReconNest_VEGETATION
     '06DD16FE-2DD6-4F6F-8D15-985CB328F6AF', -- ReconNest_Lighting
     'EB424438-4BFA-4BD8-B53B-E3D81014913C', -- ReconNest_LIGHTS
@@ -571,11 +567,36 @@ approvedWorldPartRefGuids = {
     '8C68A423-1806-4F9B-8E30-C66695E7D4B3', -- ReconNest_SOUND
     '7C6C52AC-FEAA-40A3-98D5-B33C61843460', -- ReconNest_SOUND_Schematic
     '5B2632F3-ED0B-48C5-BA62-5F766BB666CD', -- ReconNest_PC_Art
-    --'E82A46FC-D6D3-4407-AEEF-B1E3FDE216DC', -- AB04_Buildings (AB04 is the RocketApartment SubWorld) ----- PROBLEMATIC: server CTD on sending spawn messages
+    'E82A46FC-D6D3-4407-AEEF-B1E3FDE216DC', -- AB04_Buildings (AB04 is the RocketApartment SubWorld)
     '053093FD-DDA5-48A7-96AF-CA92856182ED', -- RocketApartment_SND (sound)
     '0615DB7D-1F54-4228-B729-D6111173C4D8', -- AB06_Buildings (AB06 is the Sewers SubWorld)
     'CF6F65AB-A785-490D-B959-64221C1B3CE6', -- Sewers_OBJECTS
     'BE133ED3-7B4D-4B17-8B0F-27BAF573CAE9', -- Sewers_Lighting
+	'D56279A1-5EF7-4BE6-A0C8-3F6B1633BE2B', -- AlBashirStrike_LOGIC
+	'C6EEC664-D701-4F92-8988-CBC6570FEFD1', -- SQUAD_Al_bazir_strike
+	'E0C2F6C0-004A-4D61-B877-D27E8F465D0E', -- AlBashir_Jump
+	'9677A600-BE54-4BF2-ACA6-D22F50F2C292', -- AlBashir_Jump_Logic
+	'822074D8-7FD9-40FB-B726-5E95A933F780', -- Backstreets_LOGIC
+	'A0BF132C-48A1-4045-9E1A-94FC37248F42', -- Briefing_SquadLogic
+	'F2366110-092E-4A42-BCC1-2818DABD1630', -- FailKnife_LOGIC
+	'9C75FF85-F74F-4580-96AB-C033E1798AB1', -- MallDefence_LOGIC
+	'9AC63A99-DAF1-4545-9B42-629A3B836718', -- MallDefence_SOUND
+	'6AFDDD26-FB10-4425-BFD2-D069A7118080', -- MallDefence_SOUND_Schematic
+	'539934F7-1E15-4B5E-8E64-8588A704FD76', -- MannequinRoom_LOGIC
+	'016B4E3C-BD59-4435-AD36-D2DF784B7031', -- MannequinRoom_SQUAD - Remember to disable all sounds but thunder
+	'EA346B24-40A8-448C-8338-2E235A7B1D48', -- MannequinRoom_SQUAD_LOGIC
+	'311B8C94-F9BF-4B84-A828-96719E3C2D9A', -- AB05_Logic
+	'4D471BDF-FFE2-4BF1-9342-37703BBAF1D6', -- Overwatch_LOGIC
+	'D4467E71-B120-4DAF-945D-C89AFC6D4DBF', -- Overwatch_COVER
+	'8E2DCACB-F3BB-4D40-8D03-CCF77736A1E1', -- ReconNest_LOGIC
+	'8A8191D2-B117-4728-913D-F55303BAA434', -- RocketApartment_Logic
+	--'A895F52B-026C-4C76-922A-5F1E939A03B4', -- Sewers_SceneLogic
+	'A11EF067-96B9-4E01-B496-BD221781BD94', -- Sewers_SQUAD_LOGIC
+	'90537578-17C9-4E24-983C-4F170C4F7750', -- AB08_Buildings (AB08 is the Plaza SubWorld) --------------- PROBLEMATIC: server CTD on sending spawn messages
+	'BF1AC098-E509-4BFA-A835-BABA2BC5A02F', -- Overwatch_BUILDINGS --------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+	'44FCBED8-26F9-4197-A459-C93ACA6E8B92', -- Mall_BehindStreet_Buildings ------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+	'B4A8E387-C0A2-4700-A903-9B100355133D', -- Backstreets_BUILDINGS ------------------------------------- PROBLEMATIC: server CTD on sending spawn messages
+	'5580D85D-DEAC-4957-AC92-9F321E23A8EB', -- AlBashirStrikeArt_Buildings
 
     -- Thunder Run SP_Tank ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'A242FC6A-B0B9-1FB1-3B64-C69DDFD8DEF7', -- Default (terrain)

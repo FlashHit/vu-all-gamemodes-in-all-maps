@@ -197,7 +197,7 @@ Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     if string.find(levelName, 'SP_Villa') == nil or gameModeName ~= 'Domination0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'GunMaster0'
-    and gameModeName ~= 'SquadDeathMatch0' then
+    and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'SquadRush0' then
         return
     end
 

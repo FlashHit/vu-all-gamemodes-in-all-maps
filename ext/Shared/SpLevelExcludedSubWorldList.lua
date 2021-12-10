@@ -8,7 +8,6 @@ spLevelExcludedSubWorldList = {
 --Villa
 --------------------------------------------------------------------------
     'AAF5C58D-85BF-4D71-853A-8EDDDEEF6B11', --Halo_Backdrop
-	--'A200572D-46FA-4830-8994-EE0379100DD5', --Villa
 	'21758A6B-2563-4CF4-AE5E-6F515AADEE6D', --Halo
 	'AAF5C58D-85BF-4D71-853A-8EDDDEEF6B11', --Halo_Backdrop
 	'6738929D-DE12-4816-AF2A-FA44FF4FFA1B', --blackburn

@@ -1928,6 +1928,18 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('DD693670-3EDD-448C-8CD3-1463B2
 	thisInstance.memberDatas:clear()
 end)
 
+-- Villa_Extra
+ResourceManager:RegisterInstanceLoadHandler(Guid('387A11A6-2017-4C74-9509-A9EE0140B290'), Guid('99F9454B-9D97-690D-A43B-195174592801'), function(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' and SharedUtils:GetCurrentGameMode() ~= 'Domination0' and SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' and SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0'  then
+	return
+    end
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
 
 --Garden_Art
 

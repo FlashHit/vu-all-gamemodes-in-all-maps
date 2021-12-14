@@ -1,5 +1,75 @@
 -- Courtesy of keku645
 
+---------------------------------------
+-- Remove StaticModelGroupEntityData --
+---------------------------------------
+
+-- ValleyArt
+ResourceManager:RegisterInstanceLoadHandler(Guid('D34CFDC5-FDD2-4857-B700-5189DAE5D292'), Guid('A32556F9-03E5-F951-F8E5-845327C83684'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- Zone 2
+ResourceManager:RegisterInstanceLoadHandler(Guid('AC685F79-A761-42DC-9776-17F5D4DB1F23'), Guid('61938979-BFC6-83A4-7E84-468B19041C34'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- Zone 4
+ResourceManager:RegisterInstanceLoadHandler(Guid('A5EEA052-43B9-403C-BF3E-6D802E66BEA7'), Guid('886DBB7D-7823-9323-17DD-325C06ECF0A7'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- Zone 1
+ResourceManager:RegisterInstanceLoadHandler(Guid('84D4FFAD-8C79-44DA-A1D6-ACDDC79F80AB'), Guid('9CABA4B0-B353-F602-C499-DCB567059808'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- Zone 3
+ResourceManager:RegisterInstanceLoadHandler(Guid('24237FC1-8032-48EE-A694-27719D88E357'), Guid('282FEA92-0CEB-2911-E889-FAFD9C47B609'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- Hillside
+ResourceManager:RegisterInstanceLoadHandler(Guid('2660E458-E4AF-4BA7-A632-00BDF0949119'), Guid('0EE3CD3A-6868-B185-9B8A-6FC8BA3C452C'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+-- ForestArt
+ResourceManager:RegisterInstanceLoadHandler(Guid('161C254F-1BCE-4291-A9C5-81C0A5F28503'), Guid('090D9B0C-980C-0640-B242-A130FC57F303'), function(instance)
+    --print('Removing StaticModelGroupEntityData...')
+    local thisInstance = StaticModelGroupEntityData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.enabled = false
+	thisInstance.memberDatas:clear()
+end)
+
+
+
+
 --------------------
 -- Replace skybox --
 --------------------
@@ -11,9 +81,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('9B6EE657-5639-4A04-AA88-16E9E2
     thisInstance.excluded = true
 	--print('VE_SP_Valley_01 excluded...')
 end)
-
-
-
 
 ------------------
 ---Remove Assets--

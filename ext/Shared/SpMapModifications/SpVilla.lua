@@ -1019,7 +1019,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDA
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('5CCB4242-3A12-49A1-88BF-8C081F0DAA9'), function(instance)
+--[[ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('5CCB4242-3A12-49A1-88BF-8C081F0DAA9'), function(instance)
 
     local thisInstance = WaypointsShapeData(instance)
     thisInstance:MakeWritable()
@@ -1027,7 +1027,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDA
 	thisInstance.waypoints:clear()
 	--print('WaypointsShapeData excluded...')
 
-end)
+end)]]
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('C3D78770-B4E0-4FE2-83F5-AD3FDABDF375'), Guid('274C965B-1B51-4F4B-8252-D6C90CF81970'), function(instance)
 

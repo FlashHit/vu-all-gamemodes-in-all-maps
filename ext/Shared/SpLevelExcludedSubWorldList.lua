@@ -38,6 +38,6 @@ spLevelExcludedSubWorldList = {
 --------------------------------------------------------------------------
 --Night Shift
 --------------------------------------------------------------------------
-    'BF903F50-91C6-4E75-8869-F6E9C467BB01', --Background_01
-	--'48DB5FD0-CFB8-459B-9DA8-018B8E1FEFBA', --AlBashirStrikeArt
+	--'A84D8C58-2E31-442B-B38C-073FCDD73B9D', --Background_Persistant
+	
 }

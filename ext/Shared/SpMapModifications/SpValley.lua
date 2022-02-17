@@ -201,16 +201,6 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('6E05633B-1C5B-4ABA-9790-415BE7
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D34CFDC5-FDD2-4857-B700-5189DAE5D292'), Guid('A32556F9-03E5-F951-F8E5-845327C83684'), function(instance) -- StaticModelGroupEntityData
-
-    --print('Removing ValleyArt...')
-    local thisInstance = StaticModelGroupEntityData(instance)
-    thisInstance:MakeWritable()
-    --thisInstance.enabled = false
-    --thisInstance.memberDatas:clear()
-
-end)
-
 ----------------------------
 ---Radio Tower Destruction--
 ----------------------------

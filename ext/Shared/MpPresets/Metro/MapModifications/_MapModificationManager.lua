@@ -56,3 +56,21 @@ Events:Subscribe('Level:LoadResources', function()
 	end
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Metro
+    if string.find(levelName, 'MP_Subway') and gameModeName == 'ConquestAssaultLarge0' then
+     
+
+    print('Initialising Metro Conquest Assault 64 scripts...')
+
+    require '__shared/MpPresets/Metro/MapModifications/ConquestAssaultLarge'
+	else
+	return
+	end
+
+end)

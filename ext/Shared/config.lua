@@ -36,7 +36,6 @@ Events:Subscribe('Level:LoadResources', function()
 end)
 
 
-
 -- CUSTOM SHADER PARAMETERS
 local EMPTY_SHADER_CONFIG = {
     MATERIALS = {

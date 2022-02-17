@@ -87,6 +87,13 @@ approvedWorldPartRefGuids = {
     '370E16E8-448A-49D3-8CFF-DC84D30ED143', -- AB02_Art_FX
     '5CA21EA9-AD80-46B8-9D9A-C8BF6ECC1D31', -- AB03_Sound
     '2F239FD9-6CB3-4ADE-A8E6-CA8DE52FCF4A', -- AB03_Sound_Schematic
+	'F1235B8A-0A56-4AE4-BC8F-EEFF9D71FFA0', -- AB00_Sewer_GameplayLogic
+	'EAAB5932-DFC3-4F7C-8499-4E847D81E505', -- AB02_GameplayLogic
+	'EAAB5932-DFC3-4F7C-8499-4E847D81E505', -- AB02_GameplayLogic
+	'B130DEAF-9D2D-4480-A2A9-9A23C9AF51A2', -- AB02_GameplayLogic_Area2
+	'5AC29F13-4843-46B8-AC40-FC8286C30046', -- AB03_GameplayLogic
+	'2B5ACC15-2A74-44DA-B4C5-A9CBE37A2CA3', -- General_Connecting_Gameplay
+	'F7B7FD6B-2451-43A8-93A5-A4E7A696A210', -- AB00_GameplayLogic
 
     -- Fire From The Sky COOP_006 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'ED5F6729-5372-6697-C5B5-308A151ACE69', -- Default (terrain)
@@ -101,7 +108,6 @@ approvedWorldPartRefGuids = {
     'DD5DA24E-AD06-4A7F-A29D-6B9C815724F0', -- General_FX
 	'B396198A-DC06-417D-8BA9-9C9859876C78', -- General_FX
     '249A9EB7-28AC-41CC-853B-79166F73FBF7', -- AB01_Sound
-    '7A7563D4-4C4F-415B-919D-867478AAA0E0', -- AB01_Sound_Schematic
 
     -- Operation Exodus COOP_007 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'DED8F258-5034-A6D3-2306-0963095E387D', -- Default (terrain)
@@ -548,7 +554,7 @@ approvedWorldPartRefGuids = {
     '2BAFD8D5-93FF-48FE-8600-9515C3B0A3A4', -- Mall_Exterior_Buildings
     '642B9998-E1A9-4DAF-8999-710D51EBBDE1', -- Mall_Exterior_PC_Art
     '93CA8DBB-485C-4FED-9534-531C5D501B3E', -- Mall_PC_Art
-    'C77C7E68-130E-493B-B191-096117B7C1DB', -- MallDefence_BUILDINGS
+    'C77C7E68-130E-493B-B191-096117B7C1DB', -- MallDefence_BUILDINGS--
     '6AFDDD26-FB10-4425-BFD2-D069A7118080', -- MallDefence_SOUND_Schematic
     '332BA720-8B46-4D0D-ABF7-7EED90BA3819', -- MannequinRoom_BUILDINGS
     '7EFD5BAB-DAD9-4A9A-B783-7F635C831877', -- MannequinRoom_OBJECTS 
@@ -566,7 +572,7 @@ approvedWorldPartRefGuids = {
     'E860D1E1-E43E-4E31-9627-758EE4C79AC2', -- ReconNest_SND (sound)
     '8C68A423-1806-4F9B-8E30-C66695E7D4B3', -- ReconNest_SOUND
     '7C6C52AC-FEAA-40A3-98D5-B33C61843460', -- ReconNest_SOUND_Schematic
-    '5B2632F3-ED0B-48C5-BA62-5F766BB666CD', -- ReconNest_PC_Art
+    '5B2632F3-ED0B-48C5-BA62-5F766BB666CD', -- ReconNest_PC_Art--
     'E82A46FC-D6D3-4407-AEEF-B1E3FDE216DC', -- AB04_Buildings (AB04 is the RocketApartment SubWorld)
     '053093FD-DDA5-48A7-96AF-CA92856182ED', -- RocketApartment_SND (sound)
     '0615DB7D-1F54-4228-B729-D6111173C4D8', -- AB06_Buildings (AB06 is the Sewers SubWorld)

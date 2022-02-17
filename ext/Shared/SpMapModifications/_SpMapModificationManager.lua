@@ -98,3 +98,14 @@ Events:Subscribe('Level:LoadResources', function()
     require '__shared/SpMapModifications/Night_Shift'
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_003/COOP_003' then
+	return
+    end
+     
+    print('Initialising Drop Like Liquid scripts...')
+
+    require '__shared/SpMapModifications/Drop_like_Liquid'
+
+end)

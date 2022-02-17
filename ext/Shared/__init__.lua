@@ -4,6 +4,23 @@
 
 allowFearNoEvil = false
 
+--[[Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not SP or Coop
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil and string.find(levelName, 'SP_Valley') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'SP_Sniper') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'COOP_003') == nil) then
+	        return
+    end
+     
+
+    print('Initialising SP and Coop level modification scripts...')
+
+    require '__shared/SpLevelDataModify'
+    require '__shared/SpLevelDataRemove'
+
+end)]]
 require '__shared/SpLevelDataModify'
 require '__shared/SpLevelDataRemove'
 require '__shared/SpMapModifications/_SpMapModificationManager'
@@ -57,13 +74,17 @@ require '__shared/MpPresets/Aygan_Village/MapModifications/_MapModificationManag
 require '__shared/MpPresets/Hit_and_run/MpDataLoad_Shield'
 require '__shared/MpPresets/Hit_and_run/MapModifications/_MapModificationManager'
 
+-- Drop'em Like Liquid
+require '__shared/MpPresets/Drop_Like_Liquid/MpDataLoad'
+require '__shared/MpPresets/Drop_Like_Liquid/MapModifications/_MapModificationManager'
+
 
 --------------------
 ----Vanilla Maps----
 --------------------
 
 -- Metro
-require '__shared/MpPresets/Metro/MpDataLoad_Ziba'
+require '__shared/MpPresets/Metro/MpDataLoad'
 require '__shared/MpPresets/Metro/MapModifications/_MapModificationManager'
 
 -- Noshahr Canals

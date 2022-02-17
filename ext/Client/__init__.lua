@@ -37,3 +37,13 @@ Events:Subscribe('Level:LoadResources', function()
    require 'MpPresets/Thunder_Run/CapturePointNames'
 
 end)
+
+-- Operation Metro Conquest Asault
+Events:Subscribe('Level:LoadResources', function()
+if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:GetCurrentGameMode() ~= 'ConquestAssaultLarge0' then
+        return
+    end
+
+   require 'MpPresets/Operation_Metro/CapturePointNames_CAL'
+
+end)

@@ -12,7 +12,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'MP_003') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+    if (string.find(levelName, 'XP3_Alborz') == nil and string.find(levelName, 'XP4_Parl') == nil and string.find(levelName, 'XP1_004') == nil and string.find(levelName, 'XP3_Desert') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Jet') == nil and string.find(levelName, 'MP_007') == nil and string.find(levelName, 'MP_013') == nil and string.find(levelName, 'XP3_Valley') == nil and string.find(levelName, 'XP4_Quake') == nil and string.find(levelName, 'MP_012') == nil and string.find(levelName, 'XP1_001') == nil and string.find(levelName, 'MP_018') == nil and string.find(levelName, 'XP5_003') == nil and string.find(levelName, 'MP_Subway') == nil and string.find(levelName, 'XP4_FD') == nil and string.find(levelName, 'XP5_002') == nil and string.find(levelName, 'MP_017') == nil and string.find(levelName, 'XP1_002') == nil and string.find(levelName, 'XP5_001') == nil and string.find(levelName, 'XP5_004') == nil and string.find(levelName, 'MP_011') == nil and string.find(levelName, 'XP1_003') == nil and string.find(levelName, 'XP3_Shield') == nil and string.find(levelName, 'XP4_Rubble') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'MP_003') == nil and string.find(levelName, 'SP_Villa') == nil and string.find(levelName, 'COOP_003') == nil) or gameModeName ~= 'Domination0' and gameModeName ~= 'GunMaster0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
 
@@ -541,3 +541,34 @@ Events:Subscribe('Partition:Loaded', function(partition)
 	print('Wake Island TDM SubWorldReferenceObjectData added')
 
 end)
+
+
+-- wake Island Conquest Assault 64
+
+Events:Subscribe('Partition:Loaded', function(partition)
+
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't read any partition that's nil or not referring to the main level partition of the currently loading map
+    if partition == nil or levelName == nil or partition.name ~= string.lower(levelName) or partition.primaryInstance.typeInfo.name ~= 'LevelData' then
+        return
+    end
+
+
+    if (string.find(levelName, 'MP_Subway') == nil) or gameModeName ~= 'ConquestAssaultLarge0' then
+        return
+    end
+	
+----------------------
+
+    local wakeCALSubWorldReferenceObjectData = SubWorldReferenceObjectData(ResourceManager:FindInstanceByGuid(Guid('12F3EC6B-A63A-4B0C-B0CA-68A4A3B13E28'), Guid('4D1FFD88-BD1F-493F-8F70-A271498637F4')))
+    
+    local spLevelData = LevelData(partition.primaryInstance)
+    spLevelData:MakeWritable()
+    spLevelData.objects:add(wakeCALSubWorldReferenceObjectData)
+	print('wake Island Conquest Assault SubWorldReferenceObjectData added')
+
+end)
+

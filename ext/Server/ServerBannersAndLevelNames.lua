@@ -9,7 +9,7 @@ Events:Subscribe('Level:LoadResources', function()
     if SharedUtils:GetLevelName() == 'Levels/COOP_002/COOP_002' then
 
         -- Set custom map name
-        --ServerUtils:SetCustomMapName('Hit and Run')
+        ServerUtils:SetCustomMapName('Hit and Run')
 
         -- Set server banner
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/zv33mTZ.jpg'})
@@ -33,7 +33,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/COOP_006/COOP_006' then
 
-        --ServerUtils:SetCustomMapName('Aygan Village')
+        ServerUtils:SetCustomMapName('Aygan Village')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/4x5sdl4.jpg'})
 
         goto cont
@@ -122,7 +122,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/SP_Jet/SP_Jet' then
 
-        --ServerUtils:SetCustomMapName('Carrier')
+        ServerUtils:SetCustomMapName('Carrier')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GzPgiX9.jpg'})
 
         goto cont
@@ -188,7 +188,7 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/SP_Valley/SP_Valley' then
 
-        --ServerUtils:SetCustomMapName('Valley')
+        ServerUtils:SetCustomMapName('Valley')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/GPZAhT0.jpg'})
 
         goto cont
@@ -199,8 +199,19 @@ Events:Subscribe('Level:LoadResources', function()
 
     if SharedUtils:GetLevelName() == 'Levels/SP_Villa/SP_Villa' then
 
-       -- ServerUtils:SetCustomMapName('Kaffarov\'s Villa')
+       ServerUtils:SetCustomMapName('Kaffarov\'s Villa')
         RCON:SendCommand('vu.ServerBanner', {'https://i.imgur.com/VS4sq6j.jpg'})
+
+        goto cont
+
+    end
+	
+	-- Metro Extended ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    if SharedUtils:GetLevelName() == 'Levels/MP_Subway/MP_Subway' and SharedUtils:GetCurrentGameMode() == 'ConquestAssaultLarge0' then
+
+        ServerUtils:SetCustomMapName('Metro Extended')
+		RCON:SendCommand('vu.ServerBanner', {''})
 
         goto cont
 

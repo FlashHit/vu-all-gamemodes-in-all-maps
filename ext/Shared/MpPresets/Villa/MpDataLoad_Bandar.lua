@@ -67,6 +67,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         print('Injecting MP bundles...')
         bundles = { 
             'levels/xp3_desert/xp3_desert', 
+			'ui/flow/bundle/loadingbundlemp',
 			'levels/sp_villa/sp_villa',
 			'levels/sp_villa/background',
             'levels/sp_villa/blackburn',
@@ -93,7 +94,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_villa/lightmap_03',
 			'levels/sp_villa/lightmap_cutscene01',
 			'levels/sp_villa/lightmap_cutscene02',
-			'ui/flow/bundle/loadingbundlemp',
 			'levels/xp2_skybar/xp2_skybar',
         }
 

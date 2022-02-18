@@ -20,25 +20,25 @@ Events:Subscribe('Level:LoadResources', function()
     and gameModeName ~= 'SquadRush0' and gameModeName ~= 'SquadDeathMatch0' and gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
         return
     end
-
-
-    print('Mounting XP3 superbundle...')
-    ResourceManager:MountSuperBundle('xp3chunks')
-    print('Mounting Shield superbundle for MP logic...')
-	print('Mounting XP5 superbundle...')
-    ResourceManager:MountSuperBundle('xp5chunks')
-    ResourceManager:MountSuperBundle('levels/xp3_shield/xp3_shield') -- Change this to whatever level you're building your preset off.
+	
+	
 	print('Mounting SP Valley superbundle...')
     ResourceManager:MountSuperBundle('levels/sp_valley/sp_valley')
+    print('Mounting XP3 superbundle...')
+    ResourceManager:MountSuperBundle('xp3chunks')
+	print('Mounting Shield superbundle for MP logic...')
+	ResourceManager:MountSuperBundle('levels/xp3_shield/xp3_shield')
+	print('Mounting SP chunks superbundle...')
+	ResourceManager:MountSuperBundle('spchunks')
+	ResourceManager:MountSuperBundle('chunks0')
+	ResourceManager:MountSuperBundle('chunks1')
+	ResourceManager:MountSuperBundle('chunks2')
+    print('Mounting XP5 superbundle...')
+    ResourceManager:MountSuperBundle('xp5chunks')
 	print('Mounting Bandar superbundle...')
     ResourceManager:MountSuperBundle('levels/xp3_desert/xp3_desert')
 	print('Mounting Kiasar superbundle...')
     ResourceManager:MountSuperBundle('levels/xp5_003/xp5_003')
-	print('Mounting SP chunks superbundle...')
-    ResourceManager:MountSuperBundle('spchunks')
-	ResourceManager:MountSuperBundle('chunks0')
-	ResourceManager:MountSuperBundle('chunks1')
-	ResourceManager:MountSuperBundle('chunks2')
 
 end)
 
@@ -69,8 +69,8 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 
         print('Injecting MP bundles...')
         bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
             'levels/xp3_shield/xp3_shield',
+			'ui/flow/bundle/loadingbundlemp', 
 			'levels/xp3_desert/xp3_desert',
 			'levels/xp5_003/xp5_003',
             'levels/xp3_shield/conquest', 

@@ -20,15 +20,14 @@ Events:Subscribe('Level:LoadResources', function()
         return
     end
 
-
+    print('Mounting SP Jet superbundle...')
+    ResourceManager:MountSuperBundle('levels/sp_jet/sp_jet')
     print('Mounting XP4 superbundle...')
     ResourceManager:MountSuperBundle('xp4chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
 	print('Mounting XP1 superbundle...')
     ResourceManager:MountSuperBundle('xp1chunks')
     print('Mounting Epicenter superbundle...')
     ResourceManager:MountSuperBundle('levels/xp4_quake/xp4_quake') -- Change this to whatever level you're building your preset off.
-	print('Mounting SP Jet superbundle...')
-    ResourceManager:MountSuperBundle('levels/sp_jet/sp_jet')
 	print('Mounting Wake Island superbundle...')
     ResourceManager:MountSuperBundle('levels/xp1_004/xp1_004')
 	print('Mounting SP chunks superbundle...')
@@ -65,11 +64,8 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 
         print('Injecting MP bundles...')
         bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
             'levels/xp1_004/xp1_004',
-			'levels/xp4_quake/xp4_quake',
-            'levels/xp1_004/r', 
-			'levels/xp1_004/tdm',
+			'ui/flow/bundle/loadingbundlemp', 
 			'levels/sp_jet/sp_jet',
 			'levels/sp_jet/area_carrierlanding',
 			'levels/sp_jet/area_dogfight_1',
@@ -83,6 +79,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_jet/carrierstart_playerandwingmananimations',
 			'levels/sp_jet/dogfightpartone_backdrop',
 			'levels/sp_jet/particleclouds',
+			'levels/xp4_quake/xp4_quake',
+            'levels/xp1_004/r', 
+			'levels/xp1_004/tdm',
         }
 
         hook:Pass(bundles, compartment)

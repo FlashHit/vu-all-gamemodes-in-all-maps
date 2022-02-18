@@ -21,7 +21,8 @@ Events:Subscribe('Level:LoadResources', function()
         return
     end
 
-
+    print('Mounting SP Villa superbundle...')
+    ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
     print('Mounting XP3 superbundle...')
     ResourceManager:MountSuperBundle('xp3chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
     print('Mounting Bandar superbundle for MP logic...')
@@ -30,8 +31,6 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar')
 	print('Mounting XP2 superbundle...')
     ResourceManager:MountSuperBundle('xp2chunks')
-	print('Mounting SP Villa superbundle...')
-    ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
 	print('Mounting SP chunks superbundle...')
     ResourceManager:MountSuperBundle('spchunks')
 	ResourceManager:MountSuperBundle('chunks0')
@@ -66,10 +65,8 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
 
         print('Injecting MP bundles...')
-        bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
+        bundles = { 
             'levels/xp3_desert/xp3_desert', 
-			'levels/xp2_skybar/xp2_skybar',
 			'levels/sp_villa/sp_villa',
 			'levels/sp_villa/background',
             'levels/sp_villa/blackburn',
@@ -96,6 +93,8 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_villa/lightmap_03',
 			'levels/sp_villa/lightmap_cutscene01',
 			'levels/sp_villa/lightmap_cutscene02',
+			'ui/flow/bundle/loadingbundlemp',
+			'levels/xp2_skybar/xp2_skybar',
         }
 
         hook:Pass(bundles, compartment)

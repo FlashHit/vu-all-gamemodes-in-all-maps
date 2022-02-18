@@ -21,13 +21,12 @@ Events:Subscribe('Level:LoadResources', function()
         return
     end
 
-
-    print('Mounting XP2 superbundle...')
-    ResourceManager:MountSuperBundle('xp2chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
-    print('Mounting Ziba Tower superbundle for MP logic...')
-    ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.
-	print('Mounting SP Villa superbundle...')
+    print('Mounting SP Villa superbundle...')
     ResourceManager:MountSuperBundle('levels/sp_villa/sp_villa')
+	print('Mounting XP2 superbundle...')
+    ResourceManager:MountSuperBundle('xp2chunks')
+    print('Mounting Ziba Tower superbundle for MP logic...')
+    ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar')
 
 end)
 
@@ -58,13 +57,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 
         print('Injecting MP bundles...')
         bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
-            'levels/xp2_skybar/xp2_skybar',
-            'levels/xp2_skybar/deathmatch', 
-            'levels/xp2_skybar/teamdm',
-			'levels/xp2_skybar/domination',
-			'levels/xp2_skybar/gunmaster',
-			'levels/xp2_skybar/squaddm',
+            'levels/xp2_skybar/xp2_skybar', 
 			'levels/sp_villa/sp_villa',
 			'levels/sp_villa/background',
             'levels/sp_villa/blackburn',
@@ -91,6 +84,12 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_villa/lightmap_03',
 			'levels/sp_villa/lightmap_cutscene01',
 			'levels/sp_villa/lightmap_cutscene02',
+			'ui/flow/bundle/loadingbundlemp', 
+			'levels/xp2_skybar/deathmatch', 
+            'levels/xp2_skybar/teamdm',
+			'levels/xp2_skybar/domination',
+			'levels/xp2_skybar/gunmaster',
+			'levels/xp2_skybar/squaddm',
         }
 
         hook:Pass(bundles, compartment)

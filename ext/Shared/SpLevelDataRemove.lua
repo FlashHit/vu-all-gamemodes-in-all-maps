@@ -49,13 +49,13 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
 
         end
 
-        --[[if instance:Is('SpawnReferenceObjectData') and instance.instanceGuid ~= Guid('Z0000000-0000-0000-0000-00SPTERRAINS') then
+        if instance:Is('SpawnReferenceObjectData') then
 
             local thisInstance = SpawnReferenceObjectData(instance)
             thisInstance:MakeWritable()
             thisInstance.enabled = false
 
-        end]]
+        end
 
         -- TODO: Spawns. Manually create CharacterSpawnReferenceObjectData (to replace disabled one), see if that re-enables UI spawns.
         -- TODO: Look at Powback's and Kiwi's mods. Try and remove logic in same way, wihtout the above WorldPart exclusion method?

@@ -161,26 +161,6 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
     local zibaGunmasterRegistry = ResourceManager:FindInstanceByGuid(Guid('06B999B3-6989-46C3-BCF3-37DEC0B7A531'), Guid('412E7620-8C4D-A090-AFF0-37057687F097'))
     ResourceManager:AddRegistry(zibaGunmasterRegistry, ResourceCompartment.ResourceCompartment_Game)
 	
-	--[[print('Adding Lightmap_02 registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('E9896092-501A-722A-E668-32A04CC5800C'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Lightmap_03 registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('9C7E0D15-2E1D-2A4D-2038-CA517EEC6D28'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Lightmap_Cutscene01 registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('8D4AF35D-DB3F-BEE5-130C-B685CB9B4EF9'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Lightmap_Cutscene02 registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('ABC50C7E-F126-1C2C-A68B-88B82F06D745'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
-	
-	print('Adding Villa registry...')
-	local registry = RegistryContainer(ResourceManager:SearchForInstanceByGuid(Guid('383F2AC9-94BF-286D-587A-27594550D561'))) 
-    ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)]]
-	
 
 end)
 

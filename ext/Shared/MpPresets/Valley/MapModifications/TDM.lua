@@ -1,6 +1,6 @@
 -- Check map being loaded
 Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicatedServer)
-    if levelName ~= 'Levels/SP_Sniper/SP_Sniper' or gameMode ~= 'TeamDeathMatch0' then
+    if levelName ~= 'Levels/SP_Valley/SP_Valley' or gameMode ~= 'TeamDeathMatch0' then
     end
 end)
 
@@ -11,7 +11,7 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0306AE0B-44DD-47B3-9995-1B3CD010B450'), Guid('87276DC1-1EBC-43E8-8E23-F0161BA0D3DB'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
     --print('Removing minimap textures...')
@@ -25,7 +25,7 @@ end)
 --Base Camera Spawn--
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('9158B09C-4884-463A-B1BD-40337EB06A3A'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end --Camera base Spawn
 
@@ -39,7 +39,7 @@ end)
 --------OOB------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('A4B5DDF9-9CA2-4C34-B465-1567FA7537D0'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -62,7 +62,7 @@ end)
 --------FRIENDLYZONES to prevent spawn in front of enemies------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('38BF075C-856C-4746-B267-5A42CA27E44E'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -83,7 +83,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C627F276-1F80-4032-B5EF-9E418C60D268'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -104,7 +104,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E39412A4-AD5A-433C-8539-39086B9365D3'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -125,7 +125,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('51A7A3F4-B355-4513-B247-C369CDA296A5'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -146,7 +146,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('DC623F73-0B82-4263-AFF1-7A101AD88BC1'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -173,7 +173,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('317075FD-2CC0-4232-865D-B61BD0809242'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -194,7 +194,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('02F8AF0B-02CB-4BBB-A019-168239DF3B87'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -215,7 +215,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('D543E53D-437A-484C-AF10-2F9A2D15BE3D'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -236,7 +236,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('222934E0-4D36-4DE8-BA40-A2A858B03334'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -257,7 +257,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E35E2937-EF6E-4980-945F-0E49D0F8F761'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -278,7 +278,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('69E9AF97-7638-4913-ADE7-1174FEE1E82E'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -299,7 +299,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E1AE9FC7-A327-4B5C-ABE2-A746A4BCD885'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -320,7 +320,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('87471EFE-608D-4FB6-95B6-80974CBDE940'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -341,7 +341,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('1F405006-2D29-4A82-B4E9-EAB9CEECA393'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -362,7 +362,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('0B6529BE-5401-4C46-B912-04AE04DFB472'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -383,7 +383,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C56DD115-AA9C-498C-83E8-1621F0D5E2D0'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -404,7 +404,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('65FBB587-E286-4EF3-A21D-152D13C2F4B8'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -425,7 +425,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E7754718-A4AA-40DE-9DC9-44D937F321AE'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -446,7 +446,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('51EAC4B9-3A6C-4F02-AA32-834A5BB913AA'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -467,7 +467,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C5943240-858A-4592-94EE-86D933E1C92C'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -488,7 +488,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('138469AE-AD2D-4611-9B84-3205384E779F'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -509,7 +509,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('F1EDAC7B-7E36-4616-9334-C55CDD342FDF'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -530,7 +530,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('0153E7EE-886D-4F1C-A4E2-A608AA33B3D4'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -551,7 +551,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('B39E6E90-FCB3-4C7F-8975-431595DA816C'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -572,7 +572,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('26FEA1C8-4B0A-4955-B54D-D3D358AD0BAB'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -593,7 +593,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('31692A02-6EC5-46D7-8555-F2F747D571FE'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -614,7 +614,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C894F12E-6478-4BA9-9558-15ADDABC9976'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 
@@ -635,7 +635,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('3E1FBA3C-3219-48B4-B7B1-C7F35D54B3D6'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
         return
     end
 

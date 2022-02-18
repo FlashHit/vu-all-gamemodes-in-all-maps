@@ -8,7 +8,7 @@ Events:Subscribe('Level:LoadResources', function()
     local gameModeName = SharedUtils:GetCurrentGameMode()
 
     -- Don't continue if the level is not Kaffarov's Villa
-    if string.find(levelName, 'SP_Villa') then
+    if string.find(levelName, 'SP_Villa') or gameModeName == 'Domination0' and gameModeName == 'GunMaster0' and gameModeName == 'SquadDeathMatch0' and gameModeName == 'TeamDeathMatchC0' then
 
     print('Initialising Villa Close Quarters modification scripts...')
 

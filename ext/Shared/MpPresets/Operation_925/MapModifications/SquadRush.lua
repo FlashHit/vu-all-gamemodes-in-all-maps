@@ -66,7 +66,6 @@ if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:G
         return
     else
 end
-
     --print('Removing minimap textures...')
 
     local thisInstance = UICombatAreaEntityData(instance)
@@ -86,7 +85,10 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('426644C3-0686-4318-ADBA-F8C1DCE10E56'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.blueprintTransform.trans = Vec3(-84.344727, 7.333866, -20.011719)
@@ -94,7 +96,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('BAC38FFE-453A-44DE-BD10-63368C531F51'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 22
@@ -115,7 +120,10 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('E04AEB5F-0B22-4156-9A46-5371D7C5C176'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.blueprintTransform.trans = Vec3(17.233398, 9.399282, -44.360352)
@@ -123,7 +131,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('6B447753-E6F8-42B9-847E-D2DF07D250C9'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 22
@@ -143,7 +154,10 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0FF6F420-60D2-4FAE-A3B3-B689BB00795A'), Guid('2A074BE8-817B-5B5B-0B7E-9C121F932562'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[1].value = "LinearTransform ((-0.999826, 0.000000, -0.018654)(0,1,0),(0.018654, 0.000000, -0.999826),(-136.26,6.48,-37.21))"
 end)
@@ -158,7 +172,10 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('F7EAEAB3-ABCC-40DA-8F53-637173489D36'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.blueprintTransform.trans = Vec3(36.969727, 10.109179, -45.229492)
@@ -166,7 +183,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('DDBCD494-8FDD-40F7-AD6B-562A1F3C620F'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 22
@@ -187,7 +207,10 @@ end)
 
 -- Camera Spawn
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('089DF637-B994-48A6-BCDB-52CF5FDD580A'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.blueprintTransform.trans = Vec3(-15.063477, 2.651174, -37.366211)
@@ -195,7 +218,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('6B447753-E6F8-42B9-847E-D2DF07D250C9'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 22
@@ -215,7 +241,10 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('0FF6F420-60D2-4FAE-A3B3-B689BB00795A'), Guid('2A074BE8-817B-5B5B-0B7E-9C121F932562'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[4].value = "LinearTransform ((0.999901, 0.000000, 0.014080)(0,1,0),(-0.014080, 0.000000, 0.999901),(-159.67,1.37,-29.79))"
 end)
@@ -232,7 +261,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('69B5D630-CC92-4B7F-8C4A-ED480CEBB352'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -248,7 +280,10 @@ Vec3(-89.883789, 3.851367, -37.587891)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('735CE9E7-96E6-46A9-82F4-B8019ECA3B09'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -264,7 +299,10 @@ Vec3(-87.910156, 3.851367, -59.492188)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('20D76D8F-B0CC-4486-80A9-4E3570F61327'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -280,7 +318,10 @@ Vec3(-88.731445, 3.847461, -9.911133)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('4CFFB518-3F78-46B2-8651-C1AF6C87B897'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -296,7 +337,10 @@ Vec3(-75.146484, 6.399239, -29.738281)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('FAE01D8B-C826-4572-A184-0C7EB254EB97'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -314,7 +358,10 @@ end)
 -- Zone 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('85ED4C01-10C9-48AC-AD9A-DB08A90A83CD'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -330,7 +377,10 @@ Vec3(36.402344, 6.407053, -57.673828)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('5A7CEA9B-BCB6-4BEA-8457-6184BFAA4C5F'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -348,7 +398,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('56017612-441F-4597-A9A5-EF57129C5DE6'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -364,7 +417,10 @@ Vec3(22.336914, 6.406100, -52.063477)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('65EC45EA-DBEB-4C12-A53C-0FAF34C68DF4'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -380,7 +436,10 @@ Vec3(42.353516, 6.408008, -42.287109)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('892DCB7C-D111-405C-8AF6-25E2BA35E2EB'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -396,7 +455,10 @@ Vec3(40.964844, 10.796679, -36.861328)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('C35199BB-547C-419B-A15D-42A5F51FDEDE'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -420,7 +482,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('408BFA59-738B-47F9-92A5-7589074F3293'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -436,7 +501,10 @@ Vec3(43.146484, 6.399219, -31.156250)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('1E6E37EF-15FE-4FC3-A023-19ED837B1E3D'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -452,7 +520,10 @@ Vec3(23.193359, 6.411914, -20.928711)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('B567E55D-9FC5-4295-AA88-11CB08FCBF71'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -468,7 +539,10 @@ Vec3(21.959961, 6.408008, -69.595703)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('8F9F658B-5A00-46AF-A2BA-F4201105B427'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -484,7 +558,10 @@ Vec3(36.157227, 10.796679, -18.343750)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('C63EA9A8-98F0-4856-B8EF-4DFFD967BF2B'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -503,7 +580,10 @@ end)
 -- Zone 2
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('882DCC60-C0E9-4A5D-81A1-E7FF52EA12E9'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -519,7 +599,10 @@ Vec3(-51.565430, 1.280078, -43.722656)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('E5BE7767-B2E7-4763-8143-44685BE80133'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -537,7 +620,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('8D4B6A24-F580-4317-A190-557D4AC1B772'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -553,7 +639,10 @@ Vec3(3.016602, 1.280078, -14.779297)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('238D9759-4F23-4278-816C-EEDCA47F60FD'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -569,7 +658,10 @@ Vec3(-1.296875, 1.280078, -44.476563)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('B8410233-69FA-4F52-B1D3-30D452369A25'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -585,7 +677,10 @@ Vec3(-24.250000, 1.276504, -44.415039)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('F70846DD-35B9-4482-9AD1-8CC4F8059B7F'), Guid('AC0A3417-B63E-46E9-AC89-8E4E414A4726'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Office/XP2_Office' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+        return
+    else
+end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 

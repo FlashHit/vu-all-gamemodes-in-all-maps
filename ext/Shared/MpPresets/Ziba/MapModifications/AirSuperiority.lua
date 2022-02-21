@@ -60,7 +60,10 @@ end)
 ------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('4A024A1B-D04A-41B2-AB41-30CD7A8E95F5'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
     thisInstance.points:clear()
@@ -87,7 +90,10 @@ end)
 --Flag A
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('94F30854-4858-4E9C-958C-90C79C631FC9'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -97,7 +103,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('72EE2B5A-090F-478F-A0C6-753C96D36383'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = SphereData(instance)
     thisInstance:MakeWritable()
     
@@ -112,7 +121,10 @@ end)
 --Flag B
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('AAC70A67-310D-44A6-B455-2720CB7AB0FD'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -122,7 +134,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('1720B440-7FFA-4213-B2D2-0B1728AA4D95'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = SphereData(instance)
     thisInstance:MakeWritable()
     
@@ -138,7 +153,10 @@ end)
 --Flag C
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('21CC4034-BEC1-4386-8ACF-6033BE473B07'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -148,7 +166,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('87684735-256D-49D2-8D4E-9038AD0EDD03'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = SphereData(instance)
     thisInstance:MakeWritable()
     
@@ -174,7 +195,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('FD662E75-3F67-4709-9398-A7885AE80D15'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -192,7 +216,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('FC5C8777-FF55-4045-A08A-80451E4CAE7E'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -210,7 +237,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('B5BEDFBF-78A6-48ED-8AE7-D132623A95B8'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -228,7 +258,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('B1B5155B-0720-44E2-9897-14DDF8F77A56'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -246,7 +279,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('D29081DA-4D60-4BEF-B8FC-8780999299BB'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -264,7 +300,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('B017F54C-4743-4E55-BB22-8B2C37734651'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -282,7 +321,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('D7026CA6-E901-4576-B12F-CED4B282C175'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -300,7 +342,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('8EF997D7-69E4-4BB3-8974-D95AC86F9946'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -318,7 +363,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('8848985A-D955-47BF-B14B-4F2180D3872C'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 	thisInstance.excluded = true
@@ -328,7 +376,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('30B3BDF2-5FAC-4A37-ABA8-C590AC95E4D9'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.excluded = true
@@ -338,7 +389,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('3D32E413-9E1F-4274-99B7-4353E2CE9BC8'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -356,7 +410,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('019BAB5B-BE93-4CEF-8C67-582C2DF8F55C'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -379,7 +436,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('0760CD45-903D-4BFF-8C05-D8D5349A4C52'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -397,7 +457,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('CA73CB5A-A8FC-437B-964B-EDD5C32723FC'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -415,7 +478,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('B94F70C6-5325-47F3-8A15-A430E57DF622'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -433,7 +499,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('C1FAC1CF-9B11-41FB-B900-1D450305FA24'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -451,7 +520,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('CC576E8F-4F69-4B58-B3E4-29F2F450C598'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -469,7 +541,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('D61CDCDE-EEE7-4109-825A-FA4D81B54681'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -487,7 +562,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('DE08A3B9-156E-4241-BE66-21D022900031'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -505,7 +583,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('D21F272D-71A2-4042-9CEC-1C2DEF733E14'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -523,7 +604,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('02888CA9-F3D8-42D7-9583-54BA5BB4F160'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -541,7 +625,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('54342719-7F38-4912-9C9A-F8D69A8EEDAF'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
@@ -559,7 +646,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('A978605E-5037-44F8-938C-76068DD23714'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.excluded = true
@@ -569,7 +659,10 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('3F288A6D-0C47-4941-8004-6328A0928CA0'), Guid('9729CB8C-8FFF-4CD8-A236-4966CE58C5AD'), function(instance)
-
+if SharedUtils:GetLevelName() ~= 'Levels/XP2_Skybar/XP2_Skybar' or SharedUtils:GetCurrentGameMode() ~= 'AirSuperiority0' then
+        return
+    else
+end
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
     thisInstance.excluded = true

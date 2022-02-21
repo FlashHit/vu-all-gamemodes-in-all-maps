@@ -28,11 +28,11 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('xp3chunks')
 	print('Mounting Shield superbundle for MP logic...')
 	ResourceManager:MountSuperBundle('levels/xp3_shield/xp3_shield')
-	print('Mounting SP chunks superbundle...')
-	ResourceManager:MountSuperBundle('spchunks')
-	ResourceManager:MountSuperBundle('chunks0')
-	ResourceManager:MountSuperBundle('chunks1')
-	ResourceManager:MountSuperBundle('chunks2')
+	--print('Mounting SP chunks superbundle...')
+	--ResourceManager:MountSuperBundle('spchunks')
+	--ResourceManager:MountSuperBundle('chunks0')
+	--ResourceManager:MountSuperBundle('chunks1')
+	--ResourceManager:MountSuperBundle('chunks2')
     print('Mounting XP5 superbundle...')
     ResourceManager:MountSuperBundle('xp5chunks')
 	print('Mounting Bandar superbundle...')
@@ -70,12 +70,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         print('Injecting MP bundles...')
         bundles = {
             'levels/xp3_shield/xp3_shield',
-			'ui/flow/bundle/loadingbundlemp', 
-			'levels/xp3_desert/xp3_desert',
+			'ui/flow/bundle/loadingbundlemp',
 			'levels/xp5_003/xp5_003',
-            'levels/xp3_shield/conquest', 
-			'levels/xp3_shield/rush',
-			'levels/xp3_shield/tdm',
+			'levels/xp3_desert/xp3_desert',			
 			'levels/sp_valley/sp_valley',
 			'levels/sp_valley/airdrop',
 			'levels/sp_valley/ambientwar',
@@ -101,6 +98,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_valley/zone3',
 			'levels/sp_valley/zone4',
 			'levels/sp_valley/zone5',
+		    'levels/xp3_shield/conquest', 
+			'levels/xp3_shield/rush',
+			'levels/xp3_shield/tdm',
         }
 
         hook:Pass(bundles, compartment)

@@ -1,3 +1,5 @@
+
+
 Events:Subscribe('Level:LoadResources', function()
     print('Mounting MP superbundle...')
     ResourceManager:MountSuperBundle('mpchunks')
@@ -5,11 +7,9 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('ui')
 end)
 
-
+---------------------------------------------------------------------------------------------------------------------
 
 --Reduce the time to Capture the flag on CTF depending the DLC or map.
-
-
 -----------
 --Vanilla--
 -----------

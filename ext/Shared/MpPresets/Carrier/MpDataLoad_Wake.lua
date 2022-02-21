@@ -66,6 +66,7 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         bundles = {
             'levels/xp1_004/xp1_004',
 			'ui/flow/bundle/loadingbundlemp', 
+			'levels/xp4_quake/xp4_quake',
 			'levels/sp_jet/sp_jet',
 			'levels/sp_jet/area_carrierlanding',
 			'levels/sp_jet/area_dogfight_1',
@@ -79,7 +80,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			'levels/sp_jet/carrierstart_playerandwingmananimations',
 			'levels/sp_jet/dogfightpartone_backdrop',
 			'levels/sp_jet/particleclouds',
-			'levels/xp4_quake/xp4_quake',
             'levels/xp1_004/r', 
 			'levels/xp1_004/tdm',
         }

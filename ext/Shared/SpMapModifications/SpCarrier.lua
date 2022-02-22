@@ -193,7 +193,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' then
         if l_Instance.instanceGuid == Guid("B147D99D-0716-5B8D-970B-6A2AA5504EE3") then
             local l_SoundPatchAsset = SoundPatchAsset(l_Instance)
             l_SoundPatchAsset:MakeWritable()
-            l_SoundPatchAsset.loudness = 70.0
+            l_SoundPatchAsset.loudness = 55.0
         end
     end
 

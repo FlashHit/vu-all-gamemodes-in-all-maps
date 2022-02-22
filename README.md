@@ -55,6 +55,9 @@ This is a fork from the original mod [vu-spterrains](https://github.com/SassythS
 **It's mandatory to download my [CustomLevelLoader](https://github.com/keku645/CustomLevelLoader), gamemodes have been ported based on the layout of such custom maps.**
 
 **MAKE SURE YOU SET '-highResTerrain' AS A LAUNCH COMMAND FOR YOUR SERVER** (you should do this anyway). Without this, the terrain collision gets trippy.
+
+**I recommend you to use my [Vu-Loading-extended](https://github.com/keku645/Vu-Loading-extended) mod.** SP and Coop maps have no loading screens so using this mod you at least would provide a visual feedback of the level while it's loading.
+
                          
 
 ## Known issues

@@ -2032,7 +2032,7 @@ end)
 --------Flag spawnpoints
 
 --Spawn 1
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('66B3588B-0A91-4E8B-B3C4-DAE0C6E8897A'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('66B3588B-0A91-4E8B-B3C4-DAE0C6E8897A'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2050,7 +2050,7 @@ end)
 
 --Spawn 2
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('DD19C5CF-FF66-44F9-B852-8479AED7C97F'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('DD19C5CF-FF66-44F9-B852-8479AED7C97F'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2068,7 +2068,7 @@ end)
 
 --Spawn 3
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('E00FEE22-75E7-431B-9F76-BE6FB2FC30F2'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('E00FEE22-75E7-431B-9F76-BE6FB2FC30F2'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2086,7 +2086,7 @@ end)
 
 --Spawn 4
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('6E055390-9538-4455-AC8B-E2F688A44432'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('6E055390-9538-4455-AC8B-E2F688A44432'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2104,7 +2104,7 @@ end)
 
 --Spawn 5
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('0B56555F-72BA-4BEB-AB55-F0F0D80CDA5E'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('0B56555F-72BA-4BEB-AB55-F0F0D80CDA5E'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2122,7 +2122,7 @@ end)
 
 --Spawn 6
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('962CA51E-8F74-4BBF-B14D-B76F8B799799'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('962CA51E-8F74-4BBF-B14D-B76F8B799799'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2140,7 +2140,7 @@ end)
 
 --Spawn 7
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('B6B9C763-3DB7-499F-8EE1-3F17440AFEAB'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('B6B9C763-3DB7-499F-8EE1-3F17440AFEAB'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -2158,7 +2158,7 @@ end)
 
 --Spawn 8
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('F22C7A43-1277-4018-98BA-3C7C6AB15C93'), Guid('DBEF0E64-52AA-40C9-8A1D-4A54725127AC'), function(instance)
+ResourceManager:RegisterInstanceLoadHandler(Guid('877F24E5-828F-4A52-874F-939839E9EE60'), Guid('DBEF0E64-52AA-40C9-8A1D-4A54725127AC'), function(instance)
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()

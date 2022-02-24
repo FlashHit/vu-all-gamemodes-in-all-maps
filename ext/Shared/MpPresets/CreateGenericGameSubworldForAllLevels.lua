@@ -369,7 +369,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
     end
 
 
-    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'TankSuperiority0' then
+    if (string.find(levelName, 'COOP_006') == nil and string.find(levelName, 'SP_Tank') == nil and string.find(levelName, 'MP_001') == nil and string.find(levelName, 'SP_Villa') == nil) or gameModeName ~= 'TankSuperiority0' then
         return
     end
 

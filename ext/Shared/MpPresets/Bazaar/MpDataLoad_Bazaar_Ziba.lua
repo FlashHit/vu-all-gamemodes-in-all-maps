@@ -227,6 +227,94 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
 end)
 
+-- Tank Superiority ---> B Flag
+
+-- Mount superbundles
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+	
+	if string.find(levelName, 'MP_001') == nil or gameModeName ~= 'TankSuperiority0' then
+        return
+    end
+
+	--print('Mounting XP3 superbundle...')
+    ResourceManager:MountSuperBundle('xp3chunks')
+   -- print('Mounting Bandar superbundle for MP logic...')
+    ResourceManager:MountSuperBundle('levels/xp3_desert/xp3_desert') -- Change this to whatever level you're building your preset off.
+
+end)
+
+-- Inject bundles
+Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the levelName or gameModeName is nil (the mod will not be able to determine what MP preset it should load). Leave this.
+    if levelName == nil or gameModeName == nil then
+        return
+    end
+
+    if string.find(levelName, 'MP_001') == nil or gameModeName ~= 'TankSuperiority0' then
+        return
+    end
+
+    if #bundles == 1 and bundles[1] == levelName then
+
+      --  print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
+
+       -- print('Injecting MP bundles...')
+        bundles = {
+            'ui/flow/bundle/loadingbundlemp',
+			'levels/xp3_desert/xp3_desert',
+            --'levels/xp3_desert/conquest', 
+			--'levels/xp3_desert/rush',
+			--'levels/xp3_desert/deathmatch',
+			--'levels/xp3_desert/tanksuperiority',
+
+            bundles[1],
+        }
+
+        hook:Pass(bundles, compartment)
+
+    end
+
+    -- Complete thanks to Powback and kiwidog who made me take one last look at the bundles so that I could notice this
+    -- Intercepts the UiPlaying bundle for the SP or COOP level, and replaces it with an MP one
+    for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiPlaying' then
+            bundles = {
+                'ui/flow/bundle/ingamebundlemp', -- Leave this
+                'levels/xp3_desert/xp3_desert_uiplaying' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
+
+    -- TODO: UI Pre-EOR and EOR
+
+end)
+
+-- Add resources to registry
+Events:Subscribe('Level:RegisterEntityResources', function(levelData)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ.
+    -- Change this to have the exact same code as on line 45, so that this code only runs when we're loading the map and gamemodes we want.
+    if string.find(levelName, 'MP_001') == nil or gameModeName ~= 'TankSuperiority0' then
+        return
+    end
+
+   -- print('Adding Bandar registry...')
+    local BandarRegistry = ResourceManager:FindInstanceByGuid(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('273AC4A3-21D1-3D7E-B740-9387A30E1AF7'))
+    ResourceManager:AddRegistry(BandarRegistry, ResourceCompartment.ResourceCompartment_Game)
+
+end)
+
 
 -- Grand Bazaar
 ResourceManager:RegisterInstanceLoadHandler(Guid('5FAF9157-D6DD-17B5-2902-B6A31B3C9DFA'), Guid('5FAF9157-D6DD-17B5-2902-B6A31B3C9DFA'), function(instance)
@@ -237,14 +325,10 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('5FAF9157-D6DD-17B5-2902-B6A31B
     LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('GunMaster0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('Domination0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('CaptureTheFlag0')
+	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('TankSuperiority0')
 
 end)
 
--- That's everything we need to load the multiplayer data we need. Now we need to tell the SP/COOP level how to load our chosen gamemode.
--- That's all done by the CreateGameModeSubWorldRef.lua script.
--- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.
 
-
-----test
 
 

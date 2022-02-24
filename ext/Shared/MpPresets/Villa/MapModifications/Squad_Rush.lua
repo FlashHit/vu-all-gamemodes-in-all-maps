@@ -229,7 +229,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('8C81BA4B-EC59-4D7A-A14D-8FC9FA
     end
     local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
-    interface.fields[2].value = "LinearTransform ((-0.721032, 0.000000, -0.692902)(0,1,0),(0.692902, 0.000000, -0.721032),(-90.93,169.41,-465.74))"
+    interface.fields[2].value = "LinearTransform ((0.999815, 0.000000, -0.019217)(0,1,0),(0.019217, 0.000000, 0.999815),(-113.38,169.41,-435.40))"
 end)
 
 

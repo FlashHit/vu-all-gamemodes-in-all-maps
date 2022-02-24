@@ -56,3 +56,21 @@ Events:Subscribe('Level:LoadResources', function()
 	end
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Grand Bazaar
+    if string.find(levelName, 'MP_001') and gameModeName == 'TankSuperiority0' then
+     
+
+    print('Initialising Grand Bazaar BFlag scripts...')
+
+    require '__shared/MpPresets/Bazaar/MapModifications/Bflag'
+	else
+	return
+	end
+
+end)

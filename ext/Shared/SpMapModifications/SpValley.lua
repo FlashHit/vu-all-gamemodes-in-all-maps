@@ -229,7 +229,7 @@ if SharedUtils:IsServerModule() then
                           updateEvent:Unsubscribe()
                           updateEvent = nil
                     end
-                elapsedTime = 0
+                elapsedTime = 5
             end
           end)
     end)

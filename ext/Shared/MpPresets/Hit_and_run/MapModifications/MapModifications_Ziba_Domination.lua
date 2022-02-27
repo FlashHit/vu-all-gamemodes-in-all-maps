@@ -1144,7 +1144,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' or SharedUtils:GetCu
     thisInstance.points:clear()
 
     local points = {
-        Vec3(-41.390335, 9.764681, -46.806210), Vec3(-31.872683, 9.764681, -46.716801), Vec3(-31.864552, 9.792874, -15.682439), Vec3(-41.386951, 9.764681, -15.305861)
+        Vec3(3.618011, 5.302396, 43.067486), Vec3(-9.219978, 5.302397, 42.837666), Vec3(-9.248293, 5.302396, 61.857761), Vec3(4.389892, 5.302396, 61.816517)
     }
     
     for _, point in pairs(points) do
@@ -1162,7 +1162,7 @@ if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' or SharedUtils:GetCu
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
 
-    local flagPos = Vec3(-36.657227, 9.753711, -29.080078)
+    local flagPos = Vec3(-4.216797, 5.302539, 57.737305)
     thisInstance.blueprintTransform.trans = flagPos
 
 end)

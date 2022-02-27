@@ -29,11 +29,6 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar')
 	print('Mounting XP2 superbundle...')
     ResourceManager:MountSuperBundle('xp2chunks')
-	print('Mounting SP chunks superbundle...')
-    ResourceManager:MountSuperBundle('spchunks')
-	ResourceManager:MountSuperBundle('chunks0')
-	ResourceManager:MountSuperBundle('chunks1')
-	ResourceManager:MountSuperBundle('chunks2')
 
 end)
 
@@ -62,9 +57,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
 
         print('Injecting MP bundles...')
-        bundles = {
-            'ui/flow/bundle/loadingbundlemp', 
+        bundles = { 
             'levels/xp3_shield/xp3_shield',
+			'ui/flow/bundle/loadingbundlemp',
 			'levels/xp2_skybar/xp2_skybar',
 			'levels/xp3_shield/rush',
 	
@@ -288,8 +283,9 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
        
         bundles = {
             'levels/xp5_002/xp5_002',
-            'levels/xp5_002/ctf',
+			'ui/flow/bundle/loadingbundlemp',
 			'levels/xp2_skybar/xp2_skybar',
+			'levels/xp5_002/ctf',
             bundles[1],
         }
 		-- print('Injecting MP bundles...')

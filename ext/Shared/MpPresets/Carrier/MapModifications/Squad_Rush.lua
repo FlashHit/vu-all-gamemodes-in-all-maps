@@ -5,7 +5,9 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('87F977F5-CAF8-45C0-9A63-0E4D5B5DF657'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     --print('Removing minimap textures...')
 
     local thisInstance = UICombatAreaEntityData(instance)
@@ -14,7 +16,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('398AAF3B-852E-4F3B-A617-CB09B4CFD52E'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     --print('Removing minimap textures...')
 
     local thisInstance = UICombatAreaEntityData(instance)
@@ -23,7 +27,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('EA4CEFBD-DCC0-4493-84E8-6F3C6A0719CC'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     --print('Removing minimap textures...')
 
     local thisInstance = UICombatAreaEntityData(instance)
@@ -32,7 +38,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFF
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('269EABF9-B2D5-4488-A04E-1CFCFFAEA019'), Guid('BE8BC2F2-CA05-41AB-9B33-06BD61699129'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     --print('Removing minimap textures...')
 
     local thisInstance = UICombatAreaEntityData(instance)
@@ -43,55 +51,73 @@ end)
 -- Camera Spawn
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[1].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499.754,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[2].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499.754,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[3].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[4].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[5].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[6].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[7].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[8].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[9].value = "LinearTransform ((-1,-1.953461E-08,8.742278E-08),(-3.864215E-08,0.9745303,0.224256),(2.081539E-08,0.224256,-0.9745303),(1106.5563,499,-83.57664))"
 end)
@@ -104,7 +130,9 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[13].value = "LinearTransform ((1,0,0),(0,1,0),(0,0,1),(1300.34774,5100.345,4000.647912))"
 end)
@@ -116,7 +144,9 @@ end)
 --------------------Attackers-----------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('AC74A270-B0D8-4FD4-AAF6-D6733095E2A5'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 40
@@ -137,7 +167,9 @@ end)
 ----------------Deffenders------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('C762E389-CD42-419A-BAED-740426591452'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 40
@@ -157,7 +189,9 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[4].value = "LinearTransform ((0.991850, 0.000000, 0.127408)(0,1,0),(-0.127408, 0.000000, 0.991850),(-1406.52,-791.82,1009.42))"
 end)
@@ -173,7 +207,9 @@ end)
 --------------------Attackers-----------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('03983B30-2B44-4D0E-8185-E4EF14471BDD'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 40
@@ -195,7 +231,9 @@ end)
 --Out of Bounds
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('EA7CF3B3-5269-4C48-89C7-B4E00894336B'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
 	thisInstance.height = 40
@@ -215,7 +253,9 @@ end)
 --mcom 1
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('71C03386-0EFC-4233-B1AE-2A73EC74F17B'), Guid('6CA11BDC-CD8F-C069-E7C4-6663F39F1499'), function(instance)
-    local interface = InterfaceDescriptorData(instance)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end    local interface = InterfaceDescriptorData(instance)
     interface:MakeWritable()
     interface.fields[10].value = "LinearTransform ((0.173745, 0.000000, 0.984791)(0,1,0),(-0.984791, 0.000000, 0.173745),(-1409.74,-791.83,1114.07))"
 end)
@@ -232,7 +272,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('D7E6B1EB-D109-4461-A045-1917C83E23BE'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -248,7 +290,9 @@ Vec3(-1221.535156, 485.893402, 1165.904297)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('A7B1BA91-8C29-40AF-A6D1-F744EED87371'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -264,7 +308,9 @@ Vec3(-1200.517578, 485.844543, 1260.302734)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('58334464-14EB-4152-8985-CE75DB24BD76'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -280,7 +326,9 @@ Vec3(-1185.670898, 485.844543, 1271.756836)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('FB34A4BF-05D9-4F79-BBA8-4370BB14FB65'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -296,7 +344,9 @@ Vec3(-1173.863281, 485.844543, 1203.501953)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('9B762FAA-E1BB-424D-94D1-0FF748099AEA'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -312,7 +362,9 @@ Vec3(-1166.672852, 485.846497, 1187.361328)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('7448A226-F1A9-4F38-97F6-BBB2F507141B'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -328,7 +380,9 @@ Vec3(-1223.868164, 485.893463, 1129.460938)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('C6F8DFDB-A488-4A34-99F0-F07BD1A76E8C'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -346,7 +400,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('26D774B5-44A0-4D2A-84A9-30813ABF3340'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -362,7 +418,9 @@ Vec3(-1151.395508, 484.669739, 1052.689453)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('459793DD-D322-4AAC-823D-B4FF5A15150E'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -378,7 +436,9 @@ Vec3(-1152.272461, 484.674622, 1023.282227)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('00A952F0-0B75-4D74-B4F4-EF697055507B'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -394,7 +454,9 @@ Vec3(-1153.468750, 485.844543, 988.368164)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('EF1844A8-339D-453F-A22C-B5FF3D7C2604'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -410,7 +472,9 @@ Vec3(-1174.225586, 485.844543, 949.771484)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('4F63F0B7-7C21-4B09-8567-CCA00C0CD589'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -426,7 +490,9 @@ Vec3(-1223.784180, 485.893402, 996.763672)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('E447C074-A2C2-4FCF-8665-DC8F27397390'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -451,7 +517,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('98F16AC0-BF5E-46E2-8FA7-E91E84F72909'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -467,7 +535,9 @@ Vec3(-1210.367188, 485.895325, 1057.413086)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('325F6315-A494-402B-9BBD-B40126F0BD43'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -483,7 +553,9 @@ Vec3(-1221.034180, 485.895325, 1061.166016)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('E7462ACF-9752-41DD-B518-0630B41D1C02'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -499,7 +571,9 @@ Vec3(-1223.291016, 485.893433, 1125.083984)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('AB6E5011-C9E8-420D-9DD0-CA38FE34830C'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -515,7 +589,9 @@ Vec3(-1224.101563, 485.893433, 1130.655273)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('C06856CE-E632-4517-A172-ED6FD947B986'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -531,7 +607,9 @@ Vec3(-1159.106445, 485.844543, 1050.735352)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('BD14F99E-D3E1-48DD-A484-A2C72EA4D58F'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -547,7 +625,9 @@ Vec3(-1161.518555, 485.844543, 1027.578125)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('BCE7F0D0-094B-4E62-8581-7F048E6EAA25'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -565,7 +645,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('7772C856-13EF-469B-9518-F5694BE9F31D'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -581,7 +663,9 @@ Vec3(-1151.395508, 484.669739, 1052.689453)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('09C8E5EC-3C66-4EDA-9272-B49231509E6F'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -597,7 +681,9 @@ Vec3(-1166.672852, 485.846497, 1187.361328)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('4D6F7229-B6D4-4CD4-96BC-8A522989B6E1'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -613,7 +699,9 @@ Vec3(-1213.119141, 485.893433, 1038.769531)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('67B1C240-E56B-487E-BD96-F187BB8294C0'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 
@@ -629,7 +717,9 @@ Vec3(-1224.101563, 485.893433, 1130.655273)
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('915BADFD-7A7C-4133-BB11-C82FBA85108D'), Guid('FCEE4FAE-CA83-4401-AA52-4A76DF462F45'), function(instance)
-
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'SquadRush0' then
+	return
+    end
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
 

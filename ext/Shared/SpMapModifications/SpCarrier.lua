@@ -10,6 +10,23 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('1513889B-A8AE-11E0-B869-A6D2F6
     soundGraphData.nodes:erase(20)
 end)
 
+-- Enable Player sounds
+ResourceManager:RegisterInstanceLoadHandler(Guid('C682DC62-6AE0-44D2-B0D6-2E5E4D8EEF9B'), Guid('991782A0-C1DF-4B12-99BC-ADB7F2BD9A98'), function(instance) -- To change
+
+   --print('Enable Player sound...')
+    local MixerAsset = MixerAsset(instance)
+    MixerAsset:MakeWritable()
+    MixerAsset.presets:erase(1)
+end)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('C682DC62-6AE0-44D2-B0D6-2E5E4D8EEF9B'), Guid('6FDEFD69-CF22-46DD-927B-D0BA23BADD2F'), function(instance) -- To change
+
+   --print('Enable Player sound...')
+    local MixerPreset = MixerPreset(instance)
+    MixerPreset:MakeWritable()
+    MixerPreset.groups:clear()
+end)
+
 --Remove VEs
 
 -- VE_SP_F18_CarrierLanding

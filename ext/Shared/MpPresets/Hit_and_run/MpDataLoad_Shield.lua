@@ -1,15 +1,3 @@
--- If you're trying to create your own multiplayer preset, you're in the right place to learn how.
--- I've put comments below to try and show you how to create your own preset, so you can make a Rush map out of the Comrades map, or a 1v1 TDM map out of The Eleventh Hour.
-
--- First, you need to load in the right multiplayer data - that's what this Lua file does.
--- The fundamental method for making a multiplayer preset is that you need two parts: the SP or COOP level you want to make the preset for, and the MP level you're using to copy logic from.
-
--- By the way, as a rule of thumb, if there's no comment by a bit of code saying to change it, DON'T CHANGE IT!
-
--- You can use the ThunderRun_CQL preset (adding Conquest Large to Thunder Run SP_Tank) for another set of examples, although unannotated.
-
--- For any questions, SassythSasqutch#9081 on Discord is more than willing to help.
-
 -- Mount superbundles
 Events:Subscribe('Level:LoadResources', function()
 
@@ -19,16 +7,14 @@ Events:Subscribe('Level:LoadResources', function()
 	if string.find(levelName, 'COOP_002') == nil or gameModeName ~= 'SquadRush0' then
         return
     end
-
-
-    print('Mounting XP3 superbundle...')
-    ResourceManager:MountSuperBundle('xp3chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
+	
+    print('Mounting Hit and Run superbundle...')
+    ResourceManager:MountSuperBundle('levels/coop_002/coop_002')
     print('Mounting Shield superbundle for MP logic...')
-    ResourceManager:MountSuperBundle('levels/xp3_shield/xp3_shield') -- Change this to whatever level you're building your preset off.
-	print('Mounting Ziba superbundle...')
-    ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar')
-	print('Mounting XP2 superbundle...')
-    ResourceManager:MountSuperBundle('xp2chunks')
+    ResourceManager:MountSuperBundle('levels/xp3_shield/xp3_shield')
+    print('Mounting XP3 superbundle...')
+    ResourceManager:MountSuperBundle('xp3chunks') 
+
 
 end)
 
@@ -60,11 +46,19 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         bundles = { 
             'levels/xp3_shield/xp3_shield',
 			'ui/flow/bundle/loadingbundlemp',
-			'levels/xp2_skybar/xp2_skybar',
-			'levels/xp3_shield/rush',
+			'levels/coop_002/coop_002',
+			'levels/coop_002/ab01_art_parent',
+			'levels/coop_002/ab01_parent',
+			'levels/coop_002/ab02_art_parent',
+			'levels/coop_002/ab02_parent',
+			'levels/coop_002/ab03_art_parent',
+			'levels/coop_002/ab03_parent',
+			'levels/coop_002/ab04_art_parent',
+			'levels/coop_002/general_sluice_ab02_parent',
+			'levels/coop_002/general_sluice_ab03_parent',
 	
 
-            bundles[1],
+            
         }
 
         hook:Pass(bundles, compartment)

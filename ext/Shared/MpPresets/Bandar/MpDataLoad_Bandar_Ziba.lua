@@ -224,6 +224,78 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
 end)
 
+----------------------
+---Heli Superiority---
+----------------------
+
+Events:Subscribe('Level:LoadResources', function()
+if SharedUtils:GetLevelName() ~= 'Levels/XP3_Desert/XP3_Desert' or SharedUtils:GetCurrentGameMode() ~= 'HeliSuperiority0' then
+        return
+    else
+end
+
+    --print('Mounting XP5 superbundle...')
+    ResourceManager:MountSuperBundle('xp3chunks') 
+   -- print('Mounting Sabalan Pipeline superbundle for MP logic...')
+    ResourceManager:MountSuperBundle('levels/xp3_desert/xp3_desert')  
+
+
+	
+
+end)
+
+-- Inject bundles
+Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compartment)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the levelName or gameModeName is nil (the mod will not be able to determine what MP preset it should load). Leave this.
+    if levelName == nil or gameModeName == nil then
+        return
+    end
+
+    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ. Change TeamDeathMatchC0 to whatever gamemode you're using.
+    -- You will also need to specify the SP/COOP map you're building your preset for. See ThunderRun_CQL for an example of a map-specific preset.
+    -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
+    -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
+    -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
+    if string.find(levelName, 'XP3_Desert') == nil or gameModeName ~= 'HeliSuperiority0' then
+        return
+    end
+
+    if #bundles == 1 and bundles[1] == levelName then
+
+        --print('Gamemode is '..gameModeName..' for map '..levelName..'. Loading default multiplayer preset...')
+
+       
+        bundles = {
+            'levels/xp3_desert/xp3_desert',
+            'levels/xp3_desert/tanksuperiority',
+        }
+		-- print('Injecting MP bundles...')
+
+        hook:Pass(bundles, compartment)
+
+    end
+
+    -- TODO: UI Pre-EOR and EOR
+	
+	    -- Complete thanks to Powback and kiwidog who made me take one last look at the bundles so that I could notice this
+    -- Intercepts the UiPlaying bundle for the SP or COOP level, and replaces it with an MP one
+        for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiPlaying' then
+            bundles = {
+			    'ui/flow/bundle/ingamebundlemp', -- Leave this
+                'levels/xp3_desert/xp3_desert_uiplaying' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
+
+end)
+
+
 
 
 
@@ -237,14 +309,21 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('19C244BC-8BA3-A227-8991-61C188
     LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('GunMaster0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('Domination0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('CaptureTheFlag0')
+	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('HeliSuperiority0')
+	print('LevelDescriptionAsset added YOOOOOOOOOOOOO')
 
 end)
 
--- That's everything we need to load the multiplayer data we need. Now we need to tell the SP/COOP level how to load our chosen gamemode.
--- That's all done by the CreateGameModeSubWorldRef.lua script.
--- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.
+-- Add Heli Superiority
 
+ResourceManager:RegisterInstanceLoadHandler(Guid('4CA1C116-7FA3-4163-A17E-325ACD02FD4F'), Guid('168E865A-7682-11E2-BEA4-BBB97FE088CE'), function(instance)
 
-----test
+    local thisInstance = SubWorldInclusionSetting(instance)
+    thisInstance:MakeWritable()
+
+    thisInstance.enabledOptions:add('HeliSuperiority0')
+	print('SubWorldInclusionSetting added YOOOOOOOOOOOOO')
+
+end)
 
 

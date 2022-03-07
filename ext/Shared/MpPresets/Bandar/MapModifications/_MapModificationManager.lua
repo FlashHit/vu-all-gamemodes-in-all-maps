@@ -56,3 +56,21 @@ Events:Subscribe('Level:LoadResources', function()
 	end
 
 end)
+
+Events:Subscribe('Level:LoadResources', function()
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    -- Don't continue if the level is not Bandar Desert
+    if string.find(levelName, 'XP3_Desert') and gameModeName == 'HeliSuperiority0' then
+     
+
+    print('Initialising Bandar Desert Heli Superiority scripts...')
+
+    require '__shared/MpPresets/Bandar/MapModifications/Heli_Superiority'
+	else
+	return
+	end
+
+end)

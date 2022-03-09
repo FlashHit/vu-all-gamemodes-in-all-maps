@@ -234,9 +234,9 @@ if SharedUtils:GetLevelName() ~= 'Levels/XP3_Desert/XP3_Desert' or SharedUtils:G
     else
 end
 
-    --print('Mounting XP5 superbundle...')
+   -- print('Mounting XP5 superbundle...')
     ResourceManager:MountSuperBundle('xp3chunks') 
-   -- print('Mounting Sabalan Pipeline superbundle for MP logic...')
+   -- print('Mounting Bandar Desert superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp3_desert/xp3_desert')  
 
 
@@ -255,11 +255,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         return
     end
 
-    -- Don't continue if the level is not any singleplayer or coop level in TDM CQ. Change TeamDeathMatchC0 to whatever gamemode you're using.
-    -- You will also need to specify the SP/COOP map you're building your preset for. See ThunderRun_CQL for an example of a map-specific preset.
-    -- E.g., put (string.find(levelName, 'sp_paris') == nil) if you're making a preset for Comrades.
-    -- This is so your preset only loads when the SP/COOP level and gamemode you want is loading.
-    -- PLEASE don't use the TeamDeathMatchC0 gamemode. It is reserved for this (default) preset for exploration.
     if string.find(levelName, 'XP3_Desert') == nil or gameModeName ~= 'HeliSuperiority0' then
         return
     end
@@ -271,9 +266,16 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
        
         bundles = {
             'levels/xp3_desert/xp3_desert',
+			'levels/xp3_desert/xp3_desert_uiplaying',
+			'levels/xp3_desert/xp3_desert_uiloadingmp',
+			'levels/xp3_desert/xp3_desert_uipreendofround',
+			'levels/xp3_desert/xp3_desert_uiendofround',
+			'ui/flow/bundle/loadingbundlemp',
+			'ui/flow/bundle/eorbundle',
+			'ui/flow/bundle/ingamebundlemp',
             'levels/xp3_desert/tanksuperiority',
         }
-		-- print('Injecting MP bundles...')
+		 --print('Injecting MP bundles...')
 
         hook:Pass(bundles, compartment)
 
@@ -310,7 +312,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('19C244BC-8BA3-A227-8991-61C188
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('Domination0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('CaptureTheFlag0')
 	LevelDescriptionInclusionCategory(thisInstance.categories[1]).mode:add('HeliSuperiority0')
-	print('LevelDescriptionAsset added YOOOOOOOOOOOOO')
+	--print('LevelDescriptionAsset added YOOOOOOOOOOOOO')
 
 end)
 
@@ -321,8 +323,8 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('4CA1C116-7FA3-4163-A17E-325ACD
     local thisInstance = SubWorldInclusionSetting(instance)
     thisInstance:MakeWritable()
 
-    thisInstance.enabledOptions:add('HeliSuperiority0')
-	print('SubWorldInclusionSetting added YOOOOOOOOOOOOO')
+    --thisInstance.enabledOptions:add('HeliSuperiority0')
+	--print('SubWorldInclusionSetting added YOOOOOOOOOOOOO')
 
 end)
 

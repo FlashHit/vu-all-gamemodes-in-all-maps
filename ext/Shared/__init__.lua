@@ -2,7 +2,7 @@
 -- Maybe I can find a proper fix later, but for now Fear No Evil is disabled by default, because it's a mediocre map and Thunder Run is fucken sick.
 -- To re-enable it (and thus disable SP_Tank), change the below to 'true'
 
-allowFearNoEvil = false
+allowFearNoEvil = true
 
 --[[Events:Subscribe('Level:LoadResources', function()
 
@@ -60,6 +60,12 @@ require '__shared/MpPresets/Operation_Swordbreaker/MapModifications/_MapModifica
 require '__shared/MpPresets/Night_Shift/MpDataLoad_Bandar'
 require '__shared/MpPresets/Night_Shift/MpDataLoad_Bandar_gunmaster'
 require '__shared/MpPresets/Night_Shift/MapModifications/_MapModificationManager'
+
+-- Fear No Evil
+require '__shared/MpPresets/Fear_No_Evil/MpDataLoad_Bandar'
+require '__shared/MpPresets/Fear_No_Evil/MpDataLoad_Bandar_gunmaster'
+require '__shared/MpPresets/Fear_No_Evil/MapModifications/_MapModificationManager'
+
 
 -----------------
 ----COOP Maps----

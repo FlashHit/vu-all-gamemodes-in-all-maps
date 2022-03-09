@@ -13,7 +13,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('8553F314-33C6-11DE-9A60-82A633
 
     thisInstance.options:add('HeliSuperiority0')
 	
-	print('WorldPartInclusionCriterion ADDED YOOOOOOOO')
+	--print('WorldPartInclusionCriterion ADDED YOOOOOOOO')
 
 end)
 
@@ -24,7 +24,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('B959EF36-A163-11DF-A36F-DFBB9B
 
     MatchmakingSizeConfiguration(thisInstance.criteria.sizeRule.configurations[1]).settings:add('HeliSuperiority')
 	MatchmakingSizeConfiguration(thisInstance.criteria.sizeRule.configurations[2]).settings:add('HeliSuperiority')
-	print('MatchmakingSizeConfiguration added YOOOOOOOOOOOOO')
+	--print('MatchmakingSizeConfiguration added YOOOOOOOOOOOOO')
 
 end)
 
@@ -42,9 +42,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('B959EF36-A163-11DF-A36F-DFBB9B
 
     MatchmakingGenericRule.desiredValues:add(mode0)   
    
-    thisInstance.criteria.genericRules:add(MatchmakingGenericRule)
+    --thisInstance.criteria.genericRules:add(MatchmakingGenericRule)
 	
-	print('GameModeSettings added YOOOOOOOOOOOOO')
+	--print('GameModeSettings added YOOOOOOOOOOOOO')
 
 end)
 
@@ -96,18 +96,17 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('C4DCACFF-ED8F-BC87-F647-0BC8AC
     team2.squadSize = 4
 
     --gameModeSize.teams:add(team0)
-    --gameModeSize.teams:add(team1)
+   -- gameModeSize.teams:add(team1)
     --gameModeSize.teams:add(team2)
 
     gameModeSize.roundsPerMap = 1
     gameModeSize.forceSquad = false    
    
-    thisInstance.information[1].sizes:add(gameModeSize)
+    --thisInstance.information[1].sizes:add(gameModeSize)
 	
-	print('GameModeSettings added YOOOOOOOOOOOOO')
+	--print('GameModeSettings added YOOOOOOOOOOOOO')
 
 end)
-
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('DD219817-9288-11E0-A8CF-E563D3FEDE42'), Guid('73460545-B3D8-D21B-9EBA-C164F76930A4'), function(instance)
 
@@ -122,7 +121,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('DD219817-9288-11E0-A8CF-E563D3
 	thisInstance.battlelogId = "131072"
 	thisInstance.texturePath = "ui/art/gamemode/gm_ts"
 	
-	print('UIGameModeDescription added YOOOOOOOOOOOOO')
+	--print('UIGameModeDescription added YOOOOOOOOOOOOO')
 
 end)
 
@@ -132,7 +131,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('DD219817-9288-11E0-A8CF-E563D3
     thisInstance:MakeWritable()
  
     thisInstance.items:add('73460545-B3D8-D21B-9EBA-C164F76930A4')
-	print('UIItemDescriptionAsset added YOOOOOOOOOOOOO')
+	--print('UIItemDescriptionAsset added YOOOOOOOOOOOOO')
 
 end)
 

@@ -40,4 +40,19 @@ spLevelExcludedSubWorldList = {
 --------------------------------------------------------------------------
 	--'A84D8C58-2E31-442B-B38C-073FCDD73B9D', --Background_Persistant
 	
+--------------------------------------------------------------------------
+--Fear No Evil
+--------------------------------------------------------------------------
+	--'4F4E2D97-D475-4EDA-9B0D-AE236035D0FD', --DriveToBankPlaza_01
+	--'5CEB19E5-A7A0-46CF-853A-AD54BFD33124', --DriveToBankPlaza_03
+	--'12D077C5-27FD-4742-BC79-47B3C74682A9', --BankPlaza_01
+	--'6E98F65B-B25C-4A8C-B9F5-4697B4EF6684', --Outroscene
+	--'9610BA94-2141-434C-8974-A8D709F63A1D', --IntroRail
+	--'454432B1-C338-44EF-87B8-FA4717A16EEA', --BlockedStreet
+	--'CE03003C-CEB8-429D-B2C8-18644EAAA715', --Ambush
+	--'317EB4AE-B59D-4E75-86A1-5A16A6AF54D1', --SideStreet
+	--'FB0949B5-54EC-44B1-A44E-4E263CCB003E', --DriveThrough
+	--'561B4BDF-C184-4684-81CA-424595B10987', --BankPlazaBackdrop
+	--'CF78C157-B026-4F23-A8FF-6DB870E05245', --BlockedStreet2
+	
 }

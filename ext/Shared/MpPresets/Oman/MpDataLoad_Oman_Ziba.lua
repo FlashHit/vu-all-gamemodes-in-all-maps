@@ -1,14 +1,4 @@
--- If you're trying to create your own multiplayer preset, you're in the right place to learn how.
--- I've put comments below to try and show you how to create your own preset, so you can make a Rush map out of the Comrades map, or a 1v1 TDM map out of The Eleventh Hour.
 
--- First, you need to load in the right multiplayer data - that's what this Lua file does.
--- The fundamental method for making a multiplayer preset is that you need two parts: the SP or COOP level you want to make the preset for, and the MP level you're using to copy logic from.
-
--- By the way, as a rule of thumb, if there's no comment by a bit of code saying to change it, DON'T CHANGE IT!
-
--- You can use the ThunderRun_CQL preset (adding Conquest Large to Thunder Run SP_Tank) for another set of examples, although unannotated.
-
--- For any questions, SassythSasqutch#9081 on Discord is more than willing to help.
 
 -- Mount superbundles
 Events:Subscribe('Level:LoadResources', function()
@@ -25,9 +15,12 @@ Events:Subscribe('Level:LoadResources', function()
     ResourceManager:MountSuperBundle('xp2chunks') -- Change this. This is a superbundle containing data for each DLC. Back to Karkand is XP1, Close Quarters is XP2, etcetera. If you're using a vanilla map, you don't need this.
     print('Mounting Ziba Tower superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp2_skybar/xp2_skybar') -- Change this to whatever level you're building your preset off.)
+	ResourceManager:MountSuperBundle('levels/sp_tank_b/sp_tank_b')
 	ResourceManager:MountSuperBundle('chunks0')
 	ResourceManager:MountSuperBundle('chunks1')
 	ResourceManager:MountSuperBundle('chunks2')
+	ResourceManager:MountSuperBundle('spchunks')
+
 	
 
 end)
@@ -60,6 +53,21 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         bundles = {
             'ui/flow/bundle/loadingbundlemp', 
             'levels/xp2_skybar/xp2_skybar',
+			'levels/sp_tank_b/sp_tank_b',
+			'levels/sp_tank_b/ambush',
+			'levels/sp_tank_b/bankplaza_01',
+			'levels/sp_tank_b/bankplazabackdrop',
+			'levels/sp_tank_b/blockedstreet',
+			'levels/sp_tank_b/blockedstreet2',
+			'levels/sp_tank_b/drivethrough',
+			'levels/sp_tank_b/drivetobankplaza_01',
+			'levels/sp_tank_b/drivetobankplaza_03',
+			'levels/sp_tank_b/introrail',
+			'levels/sp_tank_b/lightmap_01',
+			'levels/sp_tank_b/lightmap_02',
+			'levels/sp_tank_b/lightmap_03',
+			'levels/sp_tank_b/outroscene',
+			'levels/sp_tank_b/sidestreet',
             'levels/xp2_skybar/deathmatch', 
 			'levels/xp2_skybar/domination',
             bundles[1],
@@ -135,6 +143,7 @@ end
     ResourceManager:MountSuperBundle('xp5chunks') 
    -- print('Mounting Sabalan Pipeline superbundle for MP logic...')
     ResourceManager:MountSuperBundle('levels/xp5_004/xp5_004')  
+	ResourceManager:MountSuperBundle('levels/sp_tank_b/sp_tank_b')
 
 
 	
@@ -168,6 +177,21 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
        
         bundles = {
             'levels/xp5_004/xp5_004',
+			'levels/sp_tank_b/sp_tank_b',
+			'levels/sp_tank_b/ambush',
+			'levels/sp_tank_b/bankplaza_01',
+			'levels/sp_tank_b/bankplazabackdrop',
+			'levels/sp_tank_b/blockedstreet',
+			'levels/sp_tank_b/blockedstreet2',
+			'levels/sp_tank_b/drivethrough',
+			'levels/sp_tank_b/drivetobankplaza_01',
+			'levels/sp_tank_b/drivetobankplaza_03',
+			'levels/sp_tank_b/introrail',
+			'levels/sp_tank_b/lightmap_01',
+			'levels/sp_tank_b/lightmap_02',
+			'levels/sp_tank_b/lightmap_03',
+			'levels/sp_tank_b/outroscene',
+			'levels/sp_tank_b/sidestreet',
             'levels/xp5_004/ctf',
             bundles[1],
         }
@@ -225,10 +249,6 @@ Events:Subscribe('Level:RegisterEntityResources', function(levelData)
 
 end)
 
-
-
-
-
 -- Gulf of Oman
 ResourceManager:RegisterInstanceLoadHandler(Guid('861C6301-33DE-C4D2-568B-7F3EBC6DBC5D'), Guid('861C6301-33DE-C4D2-568B-7F3EBC6DBC5D'), function(instance)
 
@@ -241,11 +261,100 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('861C6301-33DE-C4D2-568B-7F3EBC
 
 end)
 
--- That's everything we need to load the multiplayer data we need. Now we need to tell the SP/COOP level how to load our chosen gamemode.
--- That's all done by the CreateGameModeSubWorldRef.lua script.
--- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.
+
+---------------
+---SandStorm---
+---------------
 
 
-----test
+
+-- Replace skybox --
+ResourceManager:RegisterInstanceLoadHandler(Guid('D658DDB6-0B1E-4555-ABB8-5BC931C48F16'), Guid('D9778C47-EB0B-4863-B010-E6BFA35B5ACA'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' then
+	return
+	end
+	
+
+	
+
+    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('1B418209-2744-4292-9CA0-BC632E13140B'), Guid('87C14A6B-3368-4CE4-8E19-09A34C071BB4'))) -- VisualEnvironmentBlueprint from the SP_Tank/Lighting/VE_SP_007_CityStreets partition for the skybox  ---CityStreets
+
+    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.blueprint = spLevelSkyBp
+
+    --print('SP level sky loaded YOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO.')
+
+end)
+
+--[[ResourceManager:RegisterInstanceLoadHandler(Guid('D658DDB6-0B1E-4555-ABB8-5BC931C48F16'), Guid('D9778C47-EB0B-4863-B010-E6BFA35B5ACA'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/XP1_002/XP1_002' then
+	return
+	end
+	
+
+	
+
+    local spLevelSkyBp = Blueprint(ResourceManager:FindInstanceByGuid(Guid('2CEC2445-AD50-4D7C-ABB1-B0F369899C7F'), Guid('5780AFE1-85A0-42B3-9369-CBE41A386D1F'))) -- VisualEnvironmentBlueprint from the SP_Tank/Lighting/VE_SP_007_Plaza partition for the skybox
+
+    local thisInstance = VisualEnvironmentReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.blueprint = spLevelSkyBp
+
+    print('SP level sky loaded YOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO.')
+
+end)]]
+
+-------
+----Increase FX instance count + culldistance----
+-------
+
+--FX_Amb_TankB_FlyingTrash_L_Area
+ResourceManager:RegisterInstanceLoadHandler(Guid('B8D36B04-D3D9-11E0-B181-9678FDF97859'), Guid('D8771EEF-31CD-9C92-D081-65661EDC0B6B'), function(p_Instance)
+    
+    p_Instance = EffectEntityData(p_Instance)
+    p_Instance:MakeWritable()
+    p_Instance.cullDistance = 10000000
+	p_Instance.maxInstanceCount = 10000000
+	
+	--print('Culldistance for FX_Amb_TankB_FlyingTrash_L_Area set.')
+
+end)
+
+--FX_Amb_TankB_StormDust_L
+ResourceManager:RegisterInstanceLoadHandler(Guid('100BF8E4-7806-EA75-4A4B-313CEDEC5DDE'), Guid('9FD172D6-A3BF-7A9B-ED81-2648DC916638'), function(p_Instance)
+    
+    p_Instance = EffectEntityData(p_Instance)
+    p_Instance:MakeWritable()
+    p_Instance.cullDistance = 10000000
+	p_Instance.maxInstanceCount = 10000000
+	
+	--print('Culldistance for FX_Amb_TankB_StormDust_L set.')
+
+end)
+
+--FX_Amb_TankB_StormDust_M
+ResourceManager:RegisterInstanceLoadHandler(Guid('E714A8D0-D3D9-11E0-B181-9678FDF97859'), Guid('BCF46ECA-1FF7-5264-C382-103FF1F7B311'), function(p_Instance)
+    
+    p_Instance = EffectEntityData(p_Instance)
+    p_Instance:MakeWritable()
+    p_Instance.cullDistance = 10000000
+	p_Instance.maxInstanceCount = 10000000
+	
+	--print('Culldistance for FX_Amb_TankB_StormDust_M set.')
+
+end)
+
+--FX_Amb_TankB_StormDust_XL
+ResourceManager:RegisterInstanceLoadHandler(Guid('1B693B6A-D3DA-11E0-B181-9678FDF97859'), Guid('9B331BB4-F717-277D-8D21-530FC9E67C71'), function(p_Instance)
+    
+    p_Instance = EffectEntityData(p_Instance)
+    p_Instance:MakeWritable()
+    p_Instance.cullDistance = 10000000
+	p_Instance.maxInstanceCount = 10000000
+	
+	--print('Culldistance for FX_Amb_TankB_StormDust_XL set.')
+
+end)
 
 

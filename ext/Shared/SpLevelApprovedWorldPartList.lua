@@ -8,6 +8,8 @@
 
 -- TODO: Look into global sound, sound schematics, etc. causing client CTD
 
+    -- Don't read any partition not referring to a SP or COOP map
+	
 approvedWorldPartRefGuids = {
     -- Hit and Run COOP_002 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     '88312BCE-30C2-0B8B-4E77-40FBF3524B15', -- Default (terrain)
@@ -605,7 +607,8 @@ approvedWorldPartRefGuids = {
 	'5580D85D-DEAC-4957-AC92-9F321E23A8EB', -- AlBashirStrikeArt_Buildings
 
     -- Thunder Run SP_Tank ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    'A242FC6A-B0B9-1FB1-3B64-C69DDFD8DEF7', -- Default (terrain)
+
+    --[['A242FC6A-B0B9-1FB1-3B64-C69DDFD8DEF7', -- Default (terrain)
     'BF8CCF82-B3D6-4B02-B635-8D410D6E5464', -- Effects
     '35DA1DE8-4FC3-4A98-A3A7-F3D33BDD72AF', -- Lighting
     '0FCED9F8-76B5-4DCD-BFC5-D5981775E52C', -- Sound_Areas
@@ -657,9 +660,9 @@ approvedWorldPartRefGuids = {
 	'9086301D-DC7D-4E0E-A543-DE02F739F16E', -- Highway1_Ambient
 	'EBB5DF84-3D26-498A-B258-CE3958E37DBC', -- HighwayToTeheran_01_Ambient
 	'2C2B7BC6-2297-4088-86ED-EB627715ED4B', -- MICLIC_Ambient
-	'CC292601-3F66-4DC1-965C-9785AAA89338', -- MICLI_Ambient
-
-    -- Fear No Evil SP_Tank_B -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	'CC292601-3F66-4DC1-965C-9785AAA89338', -- MICLI_Ambient]]
+	
+	-- Fear No Evil SP_Tank_B -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'D0897FBA-6686-4116-840E-6333BA63D5FB', -- Default (terrain)
     'BE9A7AA1-C175-44EB-ACE2-3A6189FCD3B6', -- Effects
     '158C8D5D-2E65-488F-A609-401AF44866B6', -- Lighting
@@ -762,6 +765,4 @@ approvedWorldPartRefGuids = {
     '611D2D74-B014-46FD-9F74-A20624EA8E56', -- Lightmap_03_L
 	'68C1FC16-F090-4E32-BB75-250AB90EAFA6', -- Lightmap_Cutscene01_L
 	'5F333210-27DB-49B6-8370-3D345D82A6DB', -- Lightmap_Cutscene02_L
-
-
 }

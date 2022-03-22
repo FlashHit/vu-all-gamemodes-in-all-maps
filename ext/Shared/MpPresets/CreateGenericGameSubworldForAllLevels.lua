@@ -45,7 +45,7 @@ Events:Subscribe('Partition:Loaded', function(partition)
         return
     end
 
-    if (string.find(levelName, 'XP2_Office') == nil and string.find(levelName, 'XP2_Skybar') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'SquadRush0' then
+    if (string.find(levelName, 'XP2_Office') == nil and string.find(levelName, 'XP2_Skybar') == nil and string.find(levelName, 'COOP_010') == nil and string.find(levelName, 'COOP_002') == nil and string.find(levelName, 'XP2_Palace') == nil and string.find(levelName, 'XP2_Factory') == nil and string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'SquadRush0' then
         return
     end
 
@@ -571,4 +571,6 @@ Events:Subscribe('Partition:Loaded', function(partition)
 	print('wake Island Conquest Assault SubWorldReferenceObjectData added')
 
 end)
+
+
 

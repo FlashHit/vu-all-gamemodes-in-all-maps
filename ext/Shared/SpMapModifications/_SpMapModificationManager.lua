@@ -110,3 +110,13 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_010/COOP_010' then
+	return
+    end
+     
+    print('Initialising Eleventh Hour scripts...')
+
+    require '__shared/SpMapModifications/Elventh_Hour'
+
+end)

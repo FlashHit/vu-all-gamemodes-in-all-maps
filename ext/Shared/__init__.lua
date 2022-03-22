@@ -2,7 +2,7 @@
 -- Maybe I can find a proper fix later, but for now Fear No Evil is disabled by default, because it's a mediocre map and Thunder Run is fucken sick.
 -- To re-enable it (and thus disable SP_Tank), change the below to 'true'
 
-allowFearNoEvil = true
+allowFearNoEvil = false
 
 --[[Events:Subscribe('Level:LoadResources', function()
 
@@ -21,6 +21,7 @@ allowFearNoEvil = true
     require '__shared/SpLevelDataRemove'
 
 end)]]
+
 require '__shared/SpLevelDataModify'
 require '__shared/SpLevelDataRemove'
 require '__shared/SpMapModifications/_SpMapModificationManager'
@@ -83,6 +84,10 @@ require '__shared/MpPresets/Hit_and_run/MapModifications/_MapModificationManager
 -- Drop'em Like Liquid
 require '__shared/MpPresets/Drop_Like_Liquid/MpDataLoad'
 require '__shared/MpPresets/Drop_Like_Liquid/MapModifications/_MapModificationManager'
+
+-- The Eleventh Hour
+require '__shared/MpPresets/Eleventh_Hour/MpDataLoad'
+require '__shared/MpPresets/Eleventh_Hour/MapModifications/_MapModificationManager'
 
 
 --------------------

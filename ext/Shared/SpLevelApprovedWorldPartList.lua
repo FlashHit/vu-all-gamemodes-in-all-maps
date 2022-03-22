@@ -178,15 +178,21 @@ approvedWorldPartRefGuids = {
     'E354ACF8-4DDB-4EF9-927D-AA8B9145C1D3', -- AB03_Sound_Schematic
     '8C52AA98-BD43-4938-B14E-0E4D13EA8B22', -- AB03_AB04_Buffer_Art
     '410E9B4F-44B5-4743-91E9-4569915EE8AF', -- AB03_Art
-    '0E7DF455-D1FF-4490-9505-377AC052525A', -- AB04_Sound
-    'D3E629F1-38B4-449C-8BD4-BE80CBAB4FCE', -- AB04_Sound_Schematic
-    '2230A040-D150-4089-9F22-8FF86864F8EF', -- AB04_Art_exchange_hall
+    --'0E7DF455-D1FF-4490-9505-377AC052525A', -- AB04_Sound
+    --'D3E629F1-38B4-449C-8BD4-BE80CBAB4FCE', -- AB04_Sound_Schematic
+    --'2230A040-D150-4089-9F22-8FF86864F8EF', -- AB04_Art_exchange_hall
     '512C1505-55E8-40BB-9B59-FD30FDD24C35', -- AB05_Sound
     'BD3F9CED-4C35-450E-A1A5-832F87CAB8DB', -- AB05_Sound_Schematic
     '5BBE492B-AD82-4C0D-8948-A11786211039', -- AB05_Art_atrium
     'A0E6F05F-633E-4037-9AD0-BCD54F2E9BC9', -- AB06_Sound
     'B6F06504-6C1D-4BC7-AAD2-9DC640A41D97', -- AB06_Sound_Schematic
     '493FDBEE-0027-4881-99CD-B2E8C79842DE', -- AB06_Art
+	'3B56FC8F-7315-4086-BBC8-16055DFC6F41', -- AB01_GameplayLogic
+	'1B27A20B-24C6-4ECC-B974-FA1F1D0A6109', -- AB03_GameplayLogic
+	--'169C3A4E-A799-491E-8625-2DF792670203', -- AB04_GameplayLogic
+	'DACE3414-EF2F-4C2E-B4DC-402390739935', -- AB06_Gameplay_Logic
+	'927A3DB0-D87C-44B6-8A6C-7A176F36E1C6', -- Shadowmeshes
+	'7543470B-E679-4981-9CBC-75D70F283BFF', -- General_Connecting_Gameplay
 
     -- Operation Guillotine SP_Bank -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'C29859FA-A908-0935-5519-961A6B772E32', -- Default (terrain)

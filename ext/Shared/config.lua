@@ -35,6 +35,15 @@ Events:Subscribe('Level:LoadResources', function()
 
 end)
 
+Events:Subscribe('Level:LoadResources', function()
+    if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:GetCurrentGameMode() ~= 'ConquestAssaultLarge0' then
+	return
+    end
+
+    require '__shared/mergeTables'
+
+end)
+
 
 -- CUSTOM SHADER PARAMETERS
 local EMPTY_SHADER_CONFIG = {
@@ -129,6 +138,14 @@ local config = {
 	['2E568188-6949-63F6-9B8E-11E29D98A30B'] = EMPTY_SHADER_CONFIG,
 	-- levels/mp_subway/messscattering/meshes/mp_subway_tree_03_mesh/
 	['BB02E341-054A-44FD-31F5-2AA3CB51F1A7'] = EMPTY_SHADER_CONFIG,
+	-- levels/mp_subway/messscattering/meshes/mp_subway_bush_01_mesh/
+	['380D1A1F-B3F5-9433-560E-1751ECBD0922'] = EMPTY_SHADER_CONFIG,
+	-- levels/mp_subway/messscattering/meshes/mp_subway_bush_01_mesh/
+	['44E57D38-AD57-F208-9BA5-3534B9AB8AD5'] = EMPTY_SHADER_CONFIG,
+	-- levels/mp_subway/messscattering/meshes/mp_subway_bush_02_mesh/
+	['94639624-B4B1-A384-45DC-B8706688DAD0'] = EMPTY_SHADER_CONFIG,
+	-- levels/mp_subway/messscattering/meshes/mp_subway_bush_02_mesh/
+	['F35CDAF0-287C-2AFC-EAF9-1557A6EBEF46'] = EMPTY_SHADER_CONFIG,
 	-- levels/xp1_002/scattermeshes/xp1_002_trees_02_mesh/
 	['96057922-034F-7A37-9244-1ADEC21B3EF2'] = EMPTY_SHADER_CONFIG,
 	-- levels/xp1_002/scattermeshes/xp1_002_trees_02_mesh/

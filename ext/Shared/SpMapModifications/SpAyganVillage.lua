@@ -185,6 +185,9 @@ ParameterModificationType = {
 local CONFIG = require('__shared/config')
 
 Events:Subscribe('Partition:Loaded', function(partition)
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
+	return
+    end
 	if partition.primaryInstance:Is('MeshVariationDatabase') then
 		local meshVariationDatabase = MeshVariationDatabase(partition.primaryInstance)
 

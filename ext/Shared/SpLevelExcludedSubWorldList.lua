@@ -7,9 +7,16 @@ spLevelExcludedSubWorldList = {
 --------------------------------------------------------------------------
 --Eleventh Hour
 --------------------------------------------------------------------------
-	--'B27599C1-5850-408E-A346-3522907392B7', --AB03_AB04_Buffer_Parent
+	--'95066A89-C751-4519-845E-725CDE10153F', --AB01_Parent
+	--'A335FD94-0FCB-4F21-B2F5-470E425AFF86', --AB00_Parent
 	--'3DBDBFDD-EDA3-4ECF-B663-7A153A828C4D', --AB03_Parent
-	
+	--'253E3644-BA81-417C-8133-B03A3C7D0705', --AB04_Parent
+	--'3EE16B11-D6D7-4F41-8A17-C5B76361B304', --AB05_Parent
+	--'B27599C1-5850-408E-A346-3522907392B7', --AB03_AB04_Buffer_Parent
+	--'B3AB8992-6CA5-43ED-8649-82D80EF1A9E2', --AB00_Art_Parent
+	--'B1D65119-E762-4625-95B4-114DB5F10291', --AB01_Art_Parent
+	--'4BC8D091-E3F9-4A06-99FA-E36AC6FC6ADB', --AB01_AB03_Buffer_Parent
+	--'19322C7C-15CF-4C0C-A686-7D0F6F03B88A', --AB06_Parent
 	
 	
 	

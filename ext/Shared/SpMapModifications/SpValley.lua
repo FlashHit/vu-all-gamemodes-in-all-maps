@@ -361,6 +361,9 @@ ParameterModificationType = {
 local CONFIG = require('__shared/config')
 
 Events:Subscribe('Partition:Loaded', function(partition)
+    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
+	return
+    end
 	if partition.primaryInstance:Is('MeshVariationDatabase') then
 		local meshVariationDatabase = MeshVariationDatabase(partition.primaryInstance)
 

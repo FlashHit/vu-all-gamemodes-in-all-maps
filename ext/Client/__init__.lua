@@ -47,3 +47,12 @@ if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:Get
    require 'MpPresets/Operation_Metro/CapturePointNames_CAL'
 
 end)
+
+
+
+
+-----------------------------------
+
+--B flag
+
+require 'MpPresets/BFlag/Bflag'

@@ -74,3 +74,11 @@ Events:Subscribe('Level:LoadingInfo', function(screenInfo)
       RCON:SendCommand('vu.colorcorrectionenabled', {"false"})
   end
 end)
+
+
+
+-----------------------------------
+
+--B flag
+
+require 'MpPresets/BFlag/Bflag'

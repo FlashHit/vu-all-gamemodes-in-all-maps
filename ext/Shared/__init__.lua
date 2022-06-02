@@ -232,3 +232,12 @@ require '__shared/MpPresets/Kiasar/MapModifications/_MapModificationManager'
 require '__shared/MpPresets/Sabalan/MpDataLoad_Sabalan_Ziba'
 require '__shared/MpPresets/Sabalan/MapModifications/_MapModificationManager'
 
+----------------------------------------------
+
+--B flag
+
+require '__shared/Bflag/AN94Fix'
+require '__shared/Bflag/CapturePoints'
+require '__shared/Bflag/PlayZones'
+require '__shared/Bflag/MapBugFixes'
+

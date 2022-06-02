@@ -251,6 +251,23 @@ end)
 -- After that, there are a few more optional things to do. Those are detailed at the end of the CreateGameModeSubWorldRef.lua script.
 
 
-----test
+--Change Material Grid
+
+Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    if string.find(levelName, 'XP4_Rubble') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
+
+    -- The vehicles MaterialPair along with the levels MaterialGrid controls how and when a vehicle takes damage. Since Villa MaterialGrid doesnt have any info about tanks, the tank would never take damage.
+    p_LevelData = LevelData(p_LevelData)
+    p_LevelData:MakeWritable()
+    -- Exchanging Azadi Grid with XP5_001 materialGrid
+    p_LevelData.runtimeMaterialGrid = MaterialGridData(ResourceManager:FindInstanceByGuid(Guid('D40C7820-4338-83ED-FFEE-D8483C7BDC65'), Guid('4FD2B23F-D261-1DB4-217A-79A721C85046')))
+	--print('Material Grid Changed')
+end)
 
 

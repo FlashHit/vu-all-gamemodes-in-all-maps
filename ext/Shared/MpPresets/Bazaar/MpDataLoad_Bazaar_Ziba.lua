@@ -330,5 +330,22 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('5FAF9157-D6DD-17B5-2902-B6A31B
 end)
 
 
+--Change Material Grid
 
+Events:Subscribe('Level:RegisterEntityResources', function(p_LevelData)
+
+    local levelName = SharedUtils:GetLevelName()
+    local gameModeName = SharedUtils:GetCurrentGameMode()
+
+    if string.find(levelName, 'MP_001') == nil or gameModeName ~= 'CaptureTheFlag0' then
+        return
+    end
+
+    -- The vehicles MaterialPair along with the levels MaterialGrid controls how and when a vehicle takes damage. Since Villa MaterialGrid doesnt have any info about tanks, the tank would never take damage.
+    p_LevelData = LevelData(p_LevelData)
+    p_LevelData:MakeWritable()
+    -- Exchanging Bazaar materialGrid with XP5_002 materialGrid
+    p_LevelData.runtimeMaterialGrid = MaterialGridData(ResourceManager:FindInstanceByGuid(Guid('5CF190FB-D52E-82E2-27E5-5E68F3ADE7CD'), Guid('0A160D5A-31B5-A70B-5F23-3B0AAD229C0A')))
+	--print('Material Grid Changed')
+end)
 

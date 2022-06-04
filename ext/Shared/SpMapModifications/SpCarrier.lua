@@ -10,6 +10,16 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('1513889B-A8AE-11E0-B869-A6D2F6
     soundGraphData.nodes:erase(20)
 end)
 
+-- Remove Tunnel Vision
+ResourceManager:RegisterInstanceLoadHandler(Guid('05384936-68AD-4A6F-B4C7-42FF549DE3CD'), Guid('770135EB-8622-48AC-BEF2-FC0353402F71'), function(instance)
+    local thisInstance = VignetteComponentData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+	thisInstance.enable = false
+	--print('tunnel vision disabled...')
+end)
+
+
 -- Enable Player sounds
 ResourceManager:RegisterInstanceLoadHandler(Guid('C682DC62-6AE0-44D2-B0D6-2E5E4D8EEF9B'), Guid('991782A0-C1DF-4B12-99BC-ADB7F2BD9A98'), function(instance) -- To change
 

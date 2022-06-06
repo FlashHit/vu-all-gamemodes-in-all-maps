@@ -139,11 +139,10 @@ Events:Subscribe('Partition:Loaded', function(partition)
         return
     end
 
-    if (string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' then
+    if (string.find(levelName, 'SP_Valley') == nil) or gameModeName ~= 'TeamDeathMatch0' and gameModeName ~= 'TeamDeathMatchC0' and gameModeName ~= 'SquadDeathMatch0' then
         return
     end
 
-    -- Again, Ziba Tower is funny, so it puts all its gamemodes under the 'Deathmatch' SubWorld, so that's all we need to point our SP/COOP level towards.
 	
 ----------------------
 

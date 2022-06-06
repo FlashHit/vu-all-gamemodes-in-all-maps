@@ -4,8 +4,8 @@
 ------------------------
 ------------------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('0306AE0B-44DD-47B3-9995-1B3CD010B450'), Guid('87276DC1-1EBC-43E8-8E23-F0161BA0D3DB'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('BB416821-12D4-4366-ABFC-BE359C602AF1'), Guid('8EC1844A-6C4D-4C08-8E81-552EC126CF20'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
     --print('Removing minimap textures...')
@@ -18,8 +18,8 @@ end)
 
 --Base Camera Spawn--
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('9158B09C-4884-463A-B1BD-40337EB06A3A'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('F55451BE-B7F1-4482-ACEA-218537C232DC'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end --Camera base Spawn
 
@@ -32,8 +32,8 @@ end)
 
 --------OOB------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('A4B5DDF9-9CA2-4C34-B465-1567FA7537D0'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('E8571F11-B012-4C8F-8F2E-42E094757CFE'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -55,8 +55,8 @@ end)
 
 --------FRIENDLYZONES to prevent spawn in front of enemies------------
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('38BF075C-856C-4746-B267-5A42CA27E44E'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('4CD8EF5A-83D0-4547-91B7-2EDA74B2D993'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -76,8 +76,8 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUt
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C627F276-1F80-4032-B5EF-9E418C60D268'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('EB414DFC-0E7C-4C7D-927F-6CB28DF94391'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -97,8 +97,8 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUt
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E39412A4-AD5A-433C-8539-39086B9365D3'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('D8F14023-8D97-4098-A50C-62E3076F1440'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -118,8 +118,8 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUt
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('51A7A3F4-B355-4513-B247-C369CDA296A5'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('08B963F8-F630-4B7D-9B26-096DDE4968F6'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -139,8 +139,8 @@ if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUt
 
 end)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('DC623F73-0B82-4263-AFF1-7A101AD88BC1'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('41E5328D-60CB-4895-B4B8-CCAB92159457'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -166,8 +166,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('317075FD-2CC0-4232-865D-B61BD0809242'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('FC36CD11-E9AB-4FEA-BD8E-5AE9C6D5C795'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -187,8 +187,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('02F8AF0B-02CB-4BBB-A019-168239DF3B87'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('265B2444-6F75-4616-8BC6-F0FA07BBE753'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -208,8 +208,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('D543E53D-437A-484C-AF10-2F9A2D15BE3D'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('B2B8A137-8EDE-407D-AA37-780AF41EFEC3'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -229,8 +229,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('222934E0-4D36-4DE8-BA40-A2A858B03334'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('D79D2F24-5486-4DE0-9181-24B72D5BBDFF'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -250,8 +250,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E35E2937-EF6E-4980-945F-0E49D0F8F761'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('C05A1366-5266-455D-A79A-EA334FC2B450'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -271,8 +271,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('69E9AF97-7638-4913-ADE7-1174FEE1E82E'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('93BBCA1F-027F-416E-AD7D-199B89AE2B07'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -292,8 +292,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E1AE9FC7-A327-4B5C-ABE2-A746A4BCD885'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('4DDEA920-375C-442F-BA69-534A97AA703D'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -313,8 +313,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('87471EFE-608D-4FB6-95B6-80974CBDE940'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('5D629767-7A77-4DE4-A142-0996B138B1F0'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -334,8 +334,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('1F405006-2D29-4A82-B4E9-EAB9CEECA393'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('24E899DE-7798-4FFE-AA06-A5D264CC2516'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -355,8 +355,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('0B6529BE-5401-4C46-B912-04AE04DFB472'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('3FEB9742-E028-43C6-A351-39327DAED921'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -376,8 +376,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C56DD115-AA9C-498C-83E8-1621F0D5E2D0'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('62F0499A-53A0-4A12-9391-20DCF9D30ECB'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -397,8 +397,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('65FBB587-E286-4EF3-A21D-152D13C2F4B8'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('CB8DFB61-B601-4ED7-A020-DB08616A458D'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -418,8 +418,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('E7754718-A4AA-40DE-9DC9-44D937F321AE'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('CFAC2791-AB21-4589-9A35-0C088BBB11D5'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -439,8 +439,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('51EAC4B9-3A6C-4F02-AA32-834A5BB913AA'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('3BF5018C-5CA1-4C58-99D8-439467642833'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -460,8 +460,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C5943240-858A-4592-94EE-86D933E1C92C'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('7F8D14D9-B2AF-4CC9-B51F-6F66ED8A1E04'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -481,8 +481,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('138469AE-AD2D-4611-9B84-3205384E779F'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('57E8697A-FBBA-4D92-B66C-D71E6817EB14'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -502,8 +502,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('F1EDAC7B-7E36-4616-9334-C55CDD342FDF'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('0761269C-46D6-4818-B3F8-EC461B977349'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -523,8 +523,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('0153E7EE-886D-4F1C-A4E2-A608AA33B3D4'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('E378AC4D-B94A-4F72-87E5-E381B7E9F935'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -544,8 +544,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('B39E6E90-FCB3-4C7F-8975-431595DA816C'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('C75AD0B9-1455-42F6-BC20-D4A9D4B0AAAB'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -565,8 +565,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('26FEA1C8-4B0A-4955-B54D-D3D358AD0BAB'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('010C6DA1-2436-4430-9338-0111F2458970'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -586,8 +586,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('31692A02-6EC5-46D7-8555-F2F747D571FE'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('7A57D365-A629-42FD-A756-9106E4468953'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -607,8 +607,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('C894F12E-6478-4BA9-9558-15ADDABC9976'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('3A909321-6153-4896-A4C4-350C04750617'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -628,8 +628,8 @@ end)
 
 -- Infantry Spawn (using old)
 
-ResourceManager:RegisterInstanceLoadHandler(Guid('D6F5E047-51E7-4A55-81A4-DE0DBE1F64C3'), Guid('3E1FBA3C-3219-48B4-B7B1-C7F35D54B3D6'), function(instance)
-if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('96DADC94-3160-41E9-A3F5-4D79ECA1653C'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
         return
     end
 
@@ -644,5 +644,131 @@ Vec3(1313.762695, 107.342575, -1353.421875)
     )
 
     thisInstance.transform = infSpawn23
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('081E2446-BEAF-4EE0-840A-D3C25B4505AD'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn24 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn24
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('34238DEA-83E7-4DC0-92E3-915A7F237CC1'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn25 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn25
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('1324F8EF-D5CE-4FE6-9448-7B2AFBD47FD9'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn26 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn26
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('9DAB5EC7-DAA8-4D6E-ABC7-1E8B32207E26'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn27 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn27
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('48C9A0A0-61CE-417E-BE56-6A4FAACE2437'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn28 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn28
+
+end)
+
+-- Infantry Spawn (using old)
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('1355397F-1C4D-459B-9851-3AEA95D87451'), Guid('6927523C-847D-494F-8413-0573F856E974'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' == nil or SharedUtils:GetCurrentGameMode() ~= 'SquadDeathMatch0' then
+        return
+    end
+
+    local thisInstance = AlternateSpawnEntityData(instance)
+    thisInstance:MakeWritable()
+
+    local infSpawn29 = LinearTransform(
+        Vec3(0.999942, 0.000000, 0.010737),
+Vec3(0.000000, 1.000000, 0.000000),
+Vec3(-0.010737, 0.000000, 0.999942),
+Vec3(1313.762695, 107.342575, -1353.421875)
+    )
+
+    thisInstance.transform = infSpawn29
 
 end)

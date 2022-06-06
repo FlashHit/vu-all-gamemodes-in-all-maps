@@ -5,6 +5,10 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7C1CE10D-3D06-47EE-87E2-339860588EC2'), Guid('685B6EF2-ECC3-47A3-8193-9BF44F92FBFF'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
+
 
     --print('Removing minimap textures...')
 
@@ -17,6 +21,9 @@ end)
 
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('9F5CDA80-4F81-44BF-8349-877F2E7D75A7'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = ReferenceObjectData(instance)
     thisInstance:MakeWritable()
@@ -26,6 +33,9 @@ end)
 
 -- Infantry Spawn (using old)
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('1460CD85-AEF7-4BFB-8C18-69A808024A06'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -43,6 +53,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('A84E4BBD-4B70-4D4B-BC5B-56D1200722B7'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -60,6 +73,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('4A776587-940B-4942-84A4-CE857FC1F17B'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -77,6 +93,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('D87A01D1-644F-42CA-9D30-55286F0D1EDB'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -94,6 +113,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('B38E9EBA-80A0-4CFF-B653-C82057118C83'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -111,6 +133,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('36BF8C7F-39A0-4803-A5FA-99F4D0510201'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -128,6 +153,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('C311285B-D8FF-4977-8E04-59C4324E83B7'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -145,6 +173,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('031BC46B-CAF4-4D5F-8101-B49332B374E1'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -162,6 +193,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('5E3D3759-A38B-4ECC-8021-39A5A51D2A63'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -179,6 +213,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('B20455AD-C770-4786-9FBB-6D757819029A'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -196,6 +233,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('76D5AF1B-D5CF-4A76-A617-03B0E477775B'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -213,6 +253,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('DE964A5E-4EFB-4FDE-8ED6-236AE0B5CBF9'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -230,6 +273,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('96BCA32B-8054-470D-8DA0-680EB2CAEFAF'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -247,6 +293,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('124AAB5D-6D2C-4D44-8EE9-27C0DB72E22A'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -264,6 +313,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('3E557EFB-8FFE-4E0F-ACBE-6A6B3A8FC837'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -281,6 +333,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('C1F73880-0E7E-41A1-83AC-32F0893A04B3'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -298,6 +353,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('B6D24BFC-9A46-46AE-A6CB-21CBD23F925D'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -315,6 +373,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('FBAC1496-B59C-40B2-829C-A27E86F41248'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -332,6 +393,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('58D76F36-3FCC-4DC1-836E-EBC0664D20E1'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -349,6 +413,9 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('A5DEDA1F-A5C3-433D-8BAB-043E4FDE6D45'), Guid('705904ED-C530-4921-B4BE-E5798D901ACD'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = AlternateSpawnEntityData(instance)
     thisInstance:MakeWritable()
@@ -375,6 +442,9 @@ end)
 ----------Main Redzone area-------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('0F0F2FC1-5AE1-427D-9FB6-4BC25574AAF2'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -396,6 +466,9 @@ end)
 --------FRIENDLYZONES to prevent spawn in front of enemies------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('01D1A0D5-6C52-4D02-837E-25A4C2B934B1'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -413,6 +486,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BA
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('2756753D-2709-4FB3-8927-CE3E17729CAA'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -430,6 +506,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BA
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('BAE7D359-93DE-4B14-B023-EC4DD4B98E36'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -447,6 +526,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BA
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('EE493F01-26F1-47E1-9E18-68A50356EDD6'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()
@@ -464,6 +546,9 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BA
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E4AF4E63-241B-4906-B226-A133BAD1F8CE'), Guid('4F454741-86A2-42DD-826D-804CD7C650A0'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' == nil or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
+        return
+    end
 
     local thisInstance = VolumeVectorShapeData(instance)
     thisInstance:MakeWritable()

@@ -1,6 +1,6 @@
 -- Check map being loaded
 Events:Subscribe('Level:LoadResources', function(levelName, gameMode, isDedicatedServer)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 end)
@@ -12,7 +12,7 @@ end)
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('120F23BF-5F28-4741-B3A9-EF6C00F035B8'), Guid('06C2D063-A47F-4EA5-9AE0-5E8EE8760262'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -27,7 +27,7 @@ end)
 --Base Camera Spawn--
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('B9F52B68-2134-4611-AE2E-9DFB8CBEEDD2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end --Camera base Spawn
 
@@ -41,7 +41,7 @@ end)
 --------OOB------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('B6347712-B303-4C2F-8A4F-1EF7067329AB'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -63,7 +63,7 @@ end)
 --------FRIENDLYZONES to prevent spawn in front of enemies------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('09EC86AF-0C4E-405D-8F90-0B050966097B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -83,7 +83,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('477EA804-EC71-4AA2-82E0-7C55FBBA4D32'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -103,7 +103,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('DACA9711-20F1-4A0A-BBF3-700BA32E5984'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -123,7 +123,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('C7C797F7-3B81-44D3-8FCE-7D97B0964049'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -143,7 +143,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E0BE8461-6667-48C6-BC2D-D140F1E5EE1A'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -163,7 +163,7 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E
 end)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('B394EAE0-A6B7-4AF4-9CCB-5338B78E5C7A'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -189,7 +189,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('2D26B195-37A0-4785-8A28-D996D9EFBFDF'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -210,7 +210,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('6DE9CE8D-4BBD-4601-9573-32E3AEE093E4'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -231,7 +231,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('15379084-8A74-4E54-B985-D73B3BD5D989'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -252,7 +252,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('C95967A5-F213-42FF-B061-6EB4798218AF'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -273,7 +273,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('38275041-C4F0-489F-826C-076167A36860'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -294,7 +294,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('4D87D22A-C3EE-4E5B-8466-ECBCB510A0D7'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -315,7 +315,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('D0272C03-1C4F-45BA-9766-B464028CAC4C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -336,7 +336,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('3295C00D-76E2-4FEA-9E0A-60D31F37942B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -357,7 +357,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('D5AE3DCC-0AAD-4685-8967-43C5D6BE724B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -378,7 +378,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('366F717F-5E0D-4091-9D9C-859DFB4F8990'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -399,7 +399,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('55059BDF-6E2B-4ED4-8735-7C0F4DED5ADB'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -420,7 +420,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('2A645521-9489-4B4B-901C-032D794E3656'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -441,7 +441,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('FF5A54D6-5726-499A-8413-86A9F5F7D3F3'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -462,7 +462,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('3D5BE367-FA53-40C8-BB38-8B44EDCAECC2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -483,7 +483,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('547AC893-83BB-41C7-BD16-ED3CCBAD5C63'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -504,7 +504,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('A34A8AA8-140A-4A8D-84ED-64712D896E1C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -525,7 +525,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('DDF37E14-F237-4E5D-8AE4-E3683C11B69B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -546,7 +546,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('CA096E90-B402-4270-A2D4-79557730C75C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -567,7 +567,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('412A945C-6FD2-49CF-A1BC-2199ACEFDA43'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -588,7 +588,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('69994B4D-179C-491E-A3E0-2C31F68AD1C7'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -609,7 +609,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E3BC0488-5FE8-4440-B5A3-88D26BF2BCB9'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -630,7 +630,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('B1531EC9-5D76-4B24-AF60-2C6B706CE4B6'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -651,7 +651,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('DFD8B385-3342-48BE-82A1-81D87ACF4D94'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -672,7 +672,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('30AF1DF2-BE1D-4381-A3AF-822F5CE0E586'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -693,7 +693,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E6BEDA07-9390-4685-A434-4D0174DB47ED'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -714,7 +714,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('A7224D76-E367-4B2C-B515-FB6C28E9354A'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -735,7 +735,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E3B5B021-4C47-4521-B6DC-6B2444E69E6C'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -756,7 +756,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('C3BDBE4A-431F-41CE-B89A-C05870E32B64'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -777,7 +777,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('37048AF5-2C78-46BF-9157-DD772ADA3BF7'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -798,7 +798,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E8A91ECE-4CC2-4366-B993-A88F90DA9897'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -819,7 +819,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('B6E977C6-515A-42B1-9E81-7EA2CDA5FC8B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -840,7 +840,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('CFB11C4D-CADA-4382-B85B-E7E715FC33F2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -861,7 +861,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('C7BF1496-D15C-42EB-9DBF-C1E5ECD80BF2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -882,7 +882,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('4C84E18A-DC4A-41B0-BFE1-659316E7A60A'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -903,7 +903,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('2482AF6C-C8F4-41C0-AA2D-81554221B0F2'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -924,7 +924,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('DFF92354-9C08-4529-8B07-B3995FCB373B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -945,7 +945,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('A31D4738-FF61-41A9-BD8B-578625E72E95'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -966,7 +966,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('E4D03AC1-873E-4803-9AC2-CD4F8CB8CE5D'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -987,7 +987,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('2725AE7D-E3EB-4726-B193-E396E7E1E73B'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 
@@ -1008,7 +1008,7 @@ end)
 -- Infantry Spawn (using old)
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('E50B16F6-8FAC-4828-B913-64846E631279'), Guid('34C81EDA-646B-4BCF-AAEB-62BFEAE4DC48'), function(instance)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' then
+    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' or SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatch0' and SharedUtils:GetCurrentGameMode() ~= 'TeamDeathMatchC0' then
 	return
     end
 

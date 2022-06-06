@@ -107,9 +107,9 @@ Events:Subscribe('Level:LoadResources', function()
     if string.find(levelName, 'SP_Valley') and gameModeName == 'SquadDeathMatch0' then
      
 
-    print('Initialising Valley Squad TDM scripts...')
+    print('Initialising Valley Squad SquadTDM scripts...')
 
-    require '__shared/MpPresets/Valley/MapModifications/TDM'
+    require '__shared/MpPresets/Valley/MapModifications/SquadTDM'
 	else
 	--print('Blocking Valley Domination scripts...')
 	return

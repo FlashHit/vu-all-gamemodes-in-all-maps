@@ -5,6 +5,9 @@
 ------------------------
 
 ResourceManager:RegisterInstanceLoadHandler(Guid('7C1CE10D-3D06-47EE-87E2-339860588EC2'), Guid('685B6EF2-ECC3-47A3-8193-9BF44F92FBFF'), function(instance)
+if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' or SharedUtils:GetCurrentGameMode() ~= 'GunMaster0' then
+        return
+    end
 
     --print('Removing minimap textures...')
 

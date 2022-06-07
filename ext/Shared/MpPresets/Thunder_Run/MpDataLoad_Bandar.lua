@@ -92,8 +92,6 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
 			--'levels/xp3_desert/rush',
 			--'levels/xp3_desert/deathmatch',
 			--'levels/xp3_desert/tanksuperiority',
-
-            bundles[1],
         }
 
         hook:Pass(bundles, compartment)
@@ -112,8 +110,25 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         end
     end
 
-    -- TODO: UI Pre-EOR and EOR
-
+    for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiPreEndOfRound' then
+            bundles = {
+                'ui/flow/bundle/preeorbundle', -- Leave this
+                'levels/xp3_desert/xp3_desert_uipreendofround' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
+	
+	for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiEndOfRound' then
+            bundles = {
+                'ui/flow/bundle/eorbundle', -- Leave this
+                'levels/xp3_desert/xp3_desert_uiendofround' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
 end)
 
 -- Add resources to registry

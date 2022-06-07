@@ -1,48 +1,7 @@
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
-	return
-    end
-
-    require '__shared/mergeTables'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-	return
-    end
-
-    require '__shared/mergeTables'
-	
-end)
+require '__shared/mergeTables'
 
 
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
-	return
-    end
 
-    require '__shared/mergeTables'
-end)
-
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Tank/SP_Tank' then
-	return
-    end
-
-    require '__shared/mergeTables'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:GetCurrentGameMode() ~= 'ConquestAssaultLarge0' then
-	return
-    end
-
-    require '__shared/mergeTables'
-
-end)
 
 
 -- CUSTOM SHADER PARAMETERS

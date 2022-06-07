@@ -95,7 +95,25 @@ Hooks:Install('ResourceManager:LoadBundles', 500, function(hook, bundles, compar
         end
     end
 
-    -- TODO: UI Pre-EOR and EOR
+    for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiPreEndOfRound' then
+            bundles = {
+                'ui/flow/bundle/preeorbundle', -- Leave this
+                'levels/xp4_rubble/xp4_rubble_uipreendofround' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
+	
+	for i, bundle in pairs(bundles) do
+        if bundle == levelName..'_UiEndOfRound' then
+            bundles = {
+                'ui/flow/bundle/eorbundle', -- Leave this
+                'levels/xp4_rubble/xp4_rubble_uiendofround' -- Replace with the MP level you're using. LEAVE THE _uiplaying AT THE END.
+            }
+            hook:Pass(bundles,compartment)
+        end
+    end
 
 end)
 

@@ -261,15 +261,23 @@ ParameterModificationType = {
 
 local CONFIG = require('__shared/config')
 
-Events:Subscribe('Partition:Loaded', function(partition)
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' and SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' and SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' and SharedUtils:GetLevelName() ~= 'Levels/SP_Tank/SP_Tank' and SharedUtils:GetLevelName() ~= 'Levels/MP_Subway/MP_Subway' or SharedUtils:GetCurrentGameMode() ~= 'ConquestAssaultLarge0' and SharedUtils:GetCurrentGameMode() ~= 'Domination0' then
-	return
-    end
-	if partition.primaryInstance:Is('MeshVariationDatabase') then
-		local meshVariationDatabase = MeshVariationDatabase(partition.primaryInstance)
 
-		ModifyDatabase(meshVariationDatabase)
-	end
+-- Operation Metro
+ResourceManager:RegisterInstanceLoadHandler(Guid('370966A0-317F-3890-507A-1DD504BCDFF8'), Guid('370966A0-317F-3890-507A-1DD504BCDFF8'), function(instance)
+  local meshVariationDatabase = MeshVariationDatabase(instance)
+  ModifyDatabase(meshVariationDatabase)
+end)
+
+-- Aygan Village
+ResourceManager:RegisterInstanceLoadHandler(Guid('9FE4EBB2-CD07-AF1A-C8B5-B7C343809D04'), Guid('9FE4EBB2-CD07-AF1A-C8B5-B7C343809D04'), function(instance)
+  local meshVariationDatabase = MeshVariationDatabase(instance)
+  ModifyDatabase(meshVariationDatabase)
+end)
+
+-- Valley
+ResourceManager:RegisterInstanceLoadHandler(Guid('BEFD2227-3F35-28AD-6F24-5E74E62726B6'), Guid('BEFD2227-3F35-28AD-6F24-5E74E62726B6'), function(instance)
+  local meshVariationDatabase = MeshVariationDatabase(instance)
+  ModifyDatabase(meshVariationDatabase)
 end)
 
 function ModifyDatabase(meshVariationDatabase)
@@ -280,6 +288,7 @@ function ModifyDatabase(meshVariationDatabase)
 
 		if meshConfig ~= nil then
 			if entry.variationAssetNameHash == (meshConfig.VARIATION_HASH or 0) then
+			--print('ResourceManager:RegisterInstanceLoadHandler(Guid("'..tostring(meshVariationDatabase.partition.guid)..'"), Guid("'..tostring(meshVariationDatabase.instanceGuid).."'), function(instance)")
 				ModifyEntry(entry, meshConfig)
 			end
 		end

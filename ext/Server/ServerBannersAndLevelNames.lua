@@ -223,3 +223,18 @@ Events:Subscribe('Level:LoadResources', function()
     ::cont::
 
 end)
+
+
+
+
+--King of the Hill
+
+Events:Subscribe('Level:LoadResources', function()
+	if SharedUtils:GetLevelName() == "Levels/COOP_006/COOP_006" and SharedUtils:GetCurrentGameMode() == "TankSuperiority0" then
+		if ServerUtils:GetCustomGameModeName() == nil or ServerUtils:GetCustomGameModeName() ~= 'King of The Hill' then
+			ServerUtils:SetCustomGameModeName('King of The Hill')
+		end
+	elseif ServerUtils:GetCustomGameModeName() ~= nil and ServerUtils:GetCustomGameModeName() == 'King of The Hill' then
+		ServerUtils:ClearCustomGameModeName()
+	end
+end)

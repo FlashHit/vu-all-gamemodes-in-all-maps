@@ -266,4 +266,13 @@ ResourceManager:RegisterInstanceLoadHandler(Guid('82DDBB66-BF9D-46C0-A723-F1CFB6
 end)
 
 
+--- Remove Showroom
+
+ResourceManager:RegisterInstanceLoadHandler(Guid('B1BA4ED3-E692-11DF-8AB9-825AA2E1EF0A'), Guid('A719A81F-DD48-4569-8CB8-F8D983EAD4C6'), function(instance)
+
+    local thisInstance = ReferenceObjectData(instance)
+    thisInstance:MakeWritable()
+    thisInstance.excluded = true
+end)
+
 

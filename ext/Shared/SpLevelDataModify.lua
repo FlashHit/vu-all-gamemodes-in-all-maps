@@ -111,6 +111,24 @@ Events:Subscribe('Partition:Loaded', function(partition) -- Iterates through eve
         end
 
         -- TODO: VisualEnvironment stuff
+		
+		
+		-- Enable End of Round UI
+		
+		if instance.typeInfo.name == 'VeniceRichPresenceLevelDescriptionComponent' then
+
+            
+            local thisInstance = VeniceRichPresenceLevelDescriptionComponent(instance)
+            thisInstance:MakeWritable()
+
+            
+            thisInstance.presenceMode = '0B0221A2-FAD6-4255-B384-3E6FF14C0620'
+			thisInstance.contextValues:erase(1)
+			--print('VeniceRichPresenceLevelDescriptionComponent YOOOOOOOOOOOOOOOOOOOOOOOOOOO')
+			
+			
+
+        end
 
     end
 

@@ -1,64 +1,12 @@
--- Ticket count
+-- Adjust Ticket count
+local s_GameMode = SharedUtils:GetCurrentGameMode()
 
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-    --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
-
-    if SharedUtils:GetCurrentGameMode():match("RushLarge0") then
-        RCON:SendCommand('vars.gameModeCounter', {"60"})
-	end
-end)
-
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-    --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
-
-    if SharedUtils:GetCurrentGameMode():match("TeamDeathMatch0") then
-        RCON:SendCommand('vars.gameModeCounter', {"100"})
-	end
-end)
-
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-    --print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
-
-    if SharedUtils:GetCurrentGameMode():match("ConquestLarge0") then
-        RCON:SendCommand('vars.gameModeCounter', {"100"})
-	end
-end)
-
-Events:Subscribe('Level:LoadingInfo', function(screenInfo)
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-        return
-    end
-    if screenInfo ~= "Registering entity resources" then
-        return
-    end
-
-   -- print("Current Gamemode: " .. tostring(SharedUtils:GetCurrentGameMode()))
-
-    if SharedUtils:GetCurrentGameMode():match("SquadRush0") then
-        RCON:SendCommand('vars.gameModeCounter', {"200"})
-	end
-end)
-
-
-
+if s_GameMode == "RushLarge0" then
+	RCON:SendCommand('vars.gameModeCounter', { "60" })
+elseif s_GameMode == "TeamDeathMatch0" then
+	RCON:SendCommand('vars.gameModeCounter', { "100" })
+elseif s_GameMode == "ConquestLarge0" then
+	RCON:SendCommand('vars.gameModeCounter', { "100" })
+elseif s_GameMode == "SquadRush0" then
+	RCON:SendCommand('vars.gameModeCounter', { "200" })
+end

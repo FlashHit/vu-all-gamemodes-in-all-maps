@@ -3,6 +3,7 @@ Hooks:Install('EntityFactory:CreateFromBlueprint', 1, function(p_HookCtx, p_Blue
 	if SharedUtils:GetLevelName() ~= "Levels/MP_001/MP_001" or SharedUtils:GetCurrentGameMode() ~= "ConquestSmall0" then
 		return
 	end
+
 	if Blueprint(p_Blueprint).name:match("Props/BuildingProps/CardboardBox_01") then
 		p_HookCtx:Return()
 	end

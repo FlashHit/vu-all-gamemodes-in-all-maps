@@ -40,6 +40,6 @@ Events:Subscribe('Level:LoadResources', function()
 		require '__shared/SpMapModifications/Drop_like_Liquid'
 	elseif s_LevelName == 'Levels/COOP_010/COOP_010' then
 		print('Initialising Eleventh Hour scripts...')
-		require '__shared/SpMapModifications/Elventh_Hour'
+		require '__shared/SpMapModifications/Eleventh_Hour'
 	end
 end)

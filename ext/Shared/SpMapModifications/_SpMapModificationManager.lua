@@ -8,115 +8,38 @@
 -- Removes doors and invisible walls.
 -- Allows the Basement_Logic WorldPartData to be loaded for basement lights. Thanks to keku645.
 
-
 Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Jet/SP_Jet' then
-	return
-    end
-     
-    print('Initialising Carrier SP scripts...')
+	local s_LevelName = SharedUtils:GetLevelName()
 
-    require '__shared/SpMapModifications/SpCarrier'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_006/COOP_006' then
-	return
-    end
-     
-
-    print('Initialising Aygan Village SP scripts...')
-
-    require '__shared/SpMapModifications/SpAyganVillage'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Valley/SP_Valley' then
-	return
-    end
-     
-
-    print('Initialising Valley SP scripts...')
-
-    require '__shared/SpMapModifications/SpValley'
-	
-end)
-
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Villa/SP_Villa' then
-	return
-    end
-     
-    print('Initialising Villa SP scripts...')
-
-    require '__shared/SpMapModifications/SpVilla'
-end)
-	
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_002/COOP_002' then
-	return
-    end
-     
-    print('Initialising Hit and Run scripts...')
-
-    require '__shared/SpMapModifications/Hit_and_Run'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Tank/SP_Tank' then
-	return
-    end
-     
-    print('Initialising Thunder Run scripts...')
-
-    require '__shared/SpMapModifications/Thunder_Run'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Earthquake/SP_Earthquake' then
-	return
-    end
-     
-    print('Initialising Operation Swordbreaker scripts...')
-
-    require '__shared/SpMapModifications/Operation_Swordbreaker'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/SP_Sniper/SP_Sniper' then
-	return
-    end
-     
-    print('Initialising Night Shift scripts...')
-
-    require '__shared/SpMapModifications/Night_Shift'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_003/COOP_003' then
-	return
-    end
-     
-    print('Initialising Drop Like Liquid scripts...')
-
-    require '__shared/SpMapModifications/Drop_like_Liquid'
-
-end)
-
-Events:Subscribe('Level:LoadResources', function()
-    if SharedUtils:GetLevelName() ~= 'Levels/COOP_010/COOP_010' then
-	return
-    end
-     
-    print('Initialising Eleventh Hour scripts...')
-
-    require '__shared/SpMapModifications/Elventh_Hour'
-
+	if s_LevelName == 'Levels/SP_Jet/SP_Jet' then
+		print('Initialising Carrier SP scripts...')
+		require '__shared/SpMapModifications/SpCarrier'
+	elseif s_LevelName == 'Levels/COOP_006/COOP_006' then
+		print('Initialising Aygan Village SP scripts...')
+		require '__shared/SpMapModifications/SpAyganVillage'
+	elseif s_LevelName == 'Levels/SP_Valley/SP_Valley' then
+		print('Initialising Valley SP scripts...')
+		require '__shared/SpMapModifications/SpValley'
+	elseif s_LevelName == 'Levels/SP_Villa/SP_Villa' then
+		print('Initialising Villa SP scripts...')
+		require '__shared/SpMapModifications/SpVilla'
+	elseif s_LevelName == 'Levels/COOP_002/COOP_002' then
+		print('Initialising Hit and Run scripts...')
+		require '__shared/SpMapModifications/Hit_and_Run'
+	elseif s_LevelName == 'Levels/SP_Tank/SP_Tank' then
+		print('Initialising Thunder Run scripts...')
+		require '__shared/SpMapModifications/Thunder_Run'
+	elseif s_LevelName == 'Levels/SP_Earthquake/SP_Earthquake' then
+		print('Initialising Operation Swordbreaker scripts...')
+		require '__shared/SpMapModifications/Operation_Swordbreaker'
+	elseif s_LevelName == 'Levels/SP_Sniper/SP_Sniper' then
+		print('Initialising Night Shift scripts...')
+		require '__shared/SpMapModifications/Night_Shift'
+	elseif s_LevelName == 'Levels/COOP_003/COOP_003' then
+		print('Initialising Drop Like Liquid scripts...')
+		require '__shared/SpMapModifications/Drop_like_Liquid'
+	elseif s_LevelName == 'Levels/COOP_010/COOP_010' then
+		print('Initialising Eleventh Hour scripts...')
+		require '__shared/SpMapModifications/Elventh_Hour'
+	end
 end)
